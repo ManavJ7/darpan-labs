@@ -1,5 +1,5 @@
 """
-Database configuration with async SQLAlchemy and pgvector support.
+Database configuration with async SQLAlchemy.
 """
 
 from typing import AsyncGenerator
@@ -38,10 +38,11 @@ class Base(DeclarativeBase):
 
 
 async def init_db() -> None:
-    """Initialize database with pgvector extension."""
+    """Initialize database — create all tables if they don't exist."""
+    from app.models import User, ConsentEvent, InterviewSession, InterviewModule, InterviewTurn  # noqa: F401
+
     async with engine.begin() as conn:
-        # Create pgvector extension if not exists
-        await conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
+        await conn.run_sync(Base.metadata.create_all)
 
 
 async def get_session() -> AsyncGenerator[AsyncSession, None]:
