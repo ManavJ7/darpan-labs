@@ -1,0 +1,192 @@
+[
+  {
+    "participant_id": "P12",
+    "archetypes_per_dim": [
+      {
+        "dimension_name": "Emotional vs Rational Processing of Advertising Messages",
+        "selected_question": {
+          "question_id": "generated",
+          "question_text": "When you come across an advertisement for a body wash, whether on YouTube, in-store, or online, what type of message is more likely to catch your attention and make you interested? For instance, a story-driven ad that shows someone enjoying a luxurious bathing experience, or a fact-based ad that highlights specific ingredients, certifications, and clinical results?",
+          "why_selected": "This question directly probes emotional vs rational processing by asking about preference for narrative vs factual content in ads, which is not covered in the original 59 questions. Given the person's reliance on YouTube reviews for 'feel or look' but also strong emphasis on ingredients and certifications, it effectively reveals their ad response style, crucial for predicting concept and ad campaign reactions."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Emotionally Resonant Shoppers",
+            "position_on_dimension": "High emotional processing",
+            "answer_text": "I'm totally drawn to ads that tell a story or create a vibe. Like, if I see a video where someone is having a relaxing shower with earthy-sweet scents and calming music, it makes me feel that self-care moment. Since my grooming is mood-dependent, I'd want to try the product to capture that experience, just like how I enjoy the lush shower feel from BBW.",
+            "why_plausible": "Consistent with Q58 where they focus on 'feel or look' in YouTube reviews, Q30's mood-dependent grooming, and Q10's ideal of a light, enjoyable routine. Their passion for fragrance (Q44) and sensory experiences supports emotional appeal.",
+            "concept_test_prediction": "This twin would positively respond to body wash concepts framed around sensory indulgence, self-care narratives, or mood-enhancing benefits. For example, a concept like 'escape with earthy vanilla and rain notes' would resonate more than technical claims.",
+            "ad_test_prediction": "Higher engagement with video ads depicting relatable, aspirational bathing scenes with emotional storytelling or influencer moments. Might ignore ads heavy on text or data, leading to lower click-through rates for rational campaigns."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Fact-Feel Evaluators",
+            "position_on_dimension": "Balanced emotional and rational processing",
+            "answer_text": "I need both\u2014a good ad should make me feel something but also back it up. Show me the enjoyable experience, like a refreshing shower, but also mention key ingredients like ayurvedic or natural components. From YouTube reviews, I look for both the feel and specifics, so ads that mix emotion with facts, like before-and-after results, work best.",
+            "why_plausible": "Aligns with their mix of valuing fragrance (Q44) and ingredients (Q11, Q12), and reliance on YouTube reviews for both feel and look (Q58). Their preference for local brands with quality (Q16) and certifications (Q15) shows a balanced approach.",
+            "concept_test_prediction": "Would prefer concepts that blend emotional appeal with rational benefits, such as a body wash promising a luxurious feel with proven natural ingredients for hard water. Might evaluate based on both narrative and evidence.",
+            "ad_test_prediction": "Engages with hybrid ad formats, like videos showing user experiences while highlighting ingredient transparency or certifications. Could respond well to ads with emotional hooks followed by factual bullet points, leading to moderate engagement across campaign types."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Rationally Driven Decision-Makers",
+            "position_on_dimension": "High rational processing",
+            "answer_text": "I'm more convinced by ads that give clear, factual info. Show me the ingredients list, certifications like dermatologist-tested or organic, and maybe clinical results. Emotional scenes don't do much; I want to know what's in it and how it works, especially since I avoid chemicals and prefer natural products for my skin needs.",
+            "why_plausible": "Reflects their strong emphasis on ingredients (Q12, Q13), certifications (Q15), and preference for avoiding laboratory interventions. Their focus on YouTube reviews for 'intended feel or look' (Q58) could be about assessing practical outcomes, not just emotion.",
+            "concept_test_prediction": "Would gravitate towards concepts emphasizing clinical evidence, transparency in ingredients, and certifications like Ayurvedic or sulfate-free. For example, a 'clinically tested for Indian skin' concept would appeal more than sensory narratives.",
+            "ad_test_prediction": "More likely to click on ads with comparative charts, expert testimonials, or text-heavy explanations of benefits. Video ads with too much storytelling might be skipped, leading to higher engagement with data-driven campaigns."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Visual vs Textual Preference in Ad Content Consumption",
+        "selected_question": {
+          "question_id": "generated",
+          "question_text": "When you're browsing online and come across ads for body washes, what type of ad content makes you stop and consider the product more: a short, visually engaging video showing the product in use, or a text-heavy ad with detailed lists of ingredients, benefits, and user reviews?",
+          "why_selected": "This question directly targets the uncaptured dimension by asking about preference in ad content format, which is crucial for predicting reactions to concepts and ads. Given the person's use of YouTube reviews (visual) but also focus on ingredients and reviews (textual), this probes their natural inclination in a scenario relevant to metro India consumers aged 20-30."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Visual-First Engager",
+            "position_on_dimension": "High visual preference",
+            "answer_text": "I almost always go for the video ads because they give me a quick, real feel of the product. Like with YouTube reviews, I love seeing the body wash's texture and how it lathers\u2014it's more immersive and helps me imagine using it. Text-heavy ads feel too dense, and I might scroll past unless I'm specifically researching.",
+            "why_plausible": "This aligns with their curiosity and passion (Q6), enjoyment of YouTube reviews for product feel (Q58, Q59), and preference for natural packaging aesthetics (Q42), suggesting a visual engagement style.",
+            "concept_test_prediction": "This twin would be highly responsive to product concepts with vibrant packaging mockups, infographics, or video demos, prioritizing aesthetic appeal and sensory experience over written details.",
+            "ad_test_prediction": "Would have higher click-through rates on social media or video ads with dynamic visuals, such as Instagram Reels or YouTube shorts, and disengage from text-heavy campaigns like Facebook carousels with lengthy descriptions."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Text-Detail Seeker",
+            "position_on_dimension": "High textual preference",
+            "answer_text": "I prefer the text-heavy ads because I need to scrutinize ingredients and benefits before trying anything new. Reading through certifications like Ayurvedic or cruelty-free, and user reviews, gives me confidence\u2014it's how I make informed choices, similar to how I browse online for ingredients first. Videos are nice, but they often skip the details I care about.",
+            "why_plausible": "Consistent with their focus on ingredients (Q11, Q12, Q13), trust in certifications (Q15), and habit of checking reviews and ingredients online (Q24), indicating a preference for detailed, textual information.",
+            "concept_test_prediction": "Would engage more with concepts that include written benefit claims, ingredient breakdowns, and FAQ sections, valuing transparency and factual information over visual flair.",
+            "ad_test_prediction": "More likely to respond to ad campaigns with detailed text, such as blog-style articles or carousel ads highlighting ingredients and reviews, while ignoring purely visual ads on platforms like Instagram."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Balanced Mood-Based Viewer",
+            "position_on_dimension": "Context-dependent or balanced",
+            "answer_text": "It really depends on my mood and what I'm looking for that day. Sometimes a catchy video ad grabs my attention first, but if I'm serious about buying, I'll switch to reading the text for specifics. For example, I might watch a quick ad for inspiration, then dive into reviews or ingredient lists before deciding\u2014it's a mix of both.",
+            "why_plausible": "Reflects their mood-dependent grooming routine (Q30), collaborative and curious nature (Q6), and use of both visual (YouTube) and textual (online browsing) sources, showing flexibility in content consumption.",
+            "concept_test_prediction": "Would respond best to concepts that blend visual appeal with clear textual information, needing both elements\u2014like aesthetically pleasing packaging accompanied by detailed benefit descriptions\u2014to feel convinced.",
+            "ad_test_prediction": "Engages with ads that combine visuals and text, such as video ads with subtitles or image ads embedded with bullet points, and might switch between platforms based on the ad format, showing moderate response across campaigns."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Aspirational vs Relatable Response to Brand Positioning",
+        "selected_question": {
+          "question_id": "QN022",
+          "question_text": "Imagine you're choosing between these three body washes at a store. Rank them in order of purchase preference: A) \u20b9149 \u2014 basic cleansing, no special claims, trusted old brand (like Lifebuoy) B) \u20b9299 \u2014 moisturizing, pleasant fragrance, mid-tier brand (like Nivea) C) \u20b9499 \u2014 organic ingredients, eco-friendly packaging, Instagram-famous D2C brand",
+          "why_selected": "This question directly contrasts different brand positioning tiers\u2014basic (relatable/practical), mid-tier (balanced), and premium D2C (aspirational/modern). Given the person's profile of valuing natural ingredients, Ayurvedic certifications, and spending above \u20b9500 on body wash, their ranking can reveal whether they are driven by aspirational cues (like organic, Instagram-famous appeal) or relatable factors (trust, practicality), which predicts responses to product concepts and ad campaigns."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Aspiration-Driven Explorer",
+            "position_on_dimension": "High aspirational",
+            "answer_text": "I'd rank C first, then B, then A. The organic ingredients and eco-friendly packaging of option C really speak to me\u2014it feels premium and aligned with my values for natural products. Even though it's pricier, the Instagram-famous aspect makes it seem trendy and high-quality, which I'm curious to try. Option B is fine, but C offers that unique, sensory experience I enjoy, like with BBW or Plum.",
+            "why_plausible": "Consistent with their high rating for natural ingredients (Q12), preference for Ayurvedic and cruelty-free certifications (Q15), willingness to pay premium for such values (Q17), and enjoyment of unique fragrances and brands like BBW and Plum (Q23, Q36, Q48). Their perfect body wash description (Q49) is creative and aspirational.",
+            "concept_test_prediction": "Would favor body wash concepts positioned as exclusive or transformative, such as 'luxury Ayurvedic elixir' or 'spa-inspired detox with exotic fragrances.' Likely to respond positively to claims of premium ingredients and eco-friendly packaging, while being less interested in basic, functional positioning.",
+            "ad_test_prediction": "Engaged by ad campaigns featuring influencers in luxurious settings, cinematic visuals, and narratives of self-care as an aspirational lifestyle. Would be more likely to interact with social media ads that portray idealized beauty and success, perceiving the brand as high-quality."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Value-Conscious Practicalist",
+            "position_on_dimension": "Moderate, context-dependent",
+            "answer_text": "I'd probably go with B first, then C, then A. Option B has moisturizing and pleasant fragrance, which are key for my daily routine, and the price is reasonable for a mid-tier brand like Nivea. Option C is interesting for its organic claims, but \u20b9499 is a bit steep unless it offers exceptional benefits like exfoliation or hard water compatibility. I might try C if there's a sample or discount, but B is a reliable choice that balances quality and cost.",
+            "why_plausible": "Reflects their low brand loyalty (Q18), tendency to browse and switch based on factors like smell and free samples (Q22), and practical approach as a student. They value ingredients and fragrance (Q11) but also consider price, and have a mood-dependent routine (Q30), showing a balance between aspiration and practicality.",
+            "concept_test_prediction": "Would evaluate body wash concepts based on a mix of benefits, price, and alignment with specific needs like exfoliation or moisturizing. Might prefer concepts that highlight practical advantages, such as 'formulated for Indian hard water' or 'long-lasting fragrance for daily use,' without overhyping luxury aspects.",
+            "ad_test_prediction": "Responds well to ad campaigns that show real people in everyday scenarios, like a student managing quick showers, emphasizing practical benefits and value. Likely to trust relatable testimonials or YouTube reviews that demonstrate effectiveness, rather than purely aspirational imagery."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Trust-First Traditionalist",
+            "position_on_dimension": "High relatable",
+            "answer_text": "I'd choose B first, then A, then C. Option B offers good value with moisturizing and fragrance, and mid-tier brands like Nivea are reliable and trusted. I'm wary of Instagram-famous brands\u2014they can be overhyped, and I prefer products that are proven and straightforward, like trusted old brands or those with solid reviews. Option A is basic but trustworthy for backup, though B fits my need for a pleasant daily experience.",
+            "why_plausible": "Aligns with their reliance on YouTube reviews for trust (Q56, Q58), preference for local Indian brands that emphasize quality (Q16), and skepticism towards some D2C brands rated low in Q48 (e.g., mCaffeine, Beardo). Their practical side is shown in using bar soap when in a hurry (Q29) and caring about skin concerns like dryness (Q31).",
+            "concept_test_prediction": "Would gravitate towards body wash concepts that emphasize trust, tradition, and solving daily issues like body odor or sensitivity. Might be skeptical of concepts with overly luxurious or trendy positioning, preferring those with clear, evidence-based claims or Ayurvedic heritage.",
+            "ad_test_prediction": "Prefers ad campaigns with authentic, user-generated content, practical demonstrations, or endorsements from trusted sources like dermatologists. Would respond better to ads featuring everyday situations, such as battling urban dust, and find relatable narratives more convincing than aspirational lifestyle portrayals."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Impulse vs Deliberate Purchase Decision-Making Style",
+        "selected_question": {
+          "question_id": "QN036",
+          "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+          "why_selected": "This question directly tests impulse versus deliberation by presenting a time-sensitive financial incentive without immediate product need. Given this person's profile\u2014low loyalty (Q18), use of quick commerce (Q25, Q26) suggesting impulsive tendencies, yet reliance on YouTube reviews (Q56, Q58) and value for ingredients indicating deliberation\u2014their response would reveal where they fall on this spectrum, predicting reactions to urgency-based vs. information-heavy marketing."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Curious Impulse Buyer",
+            "position_on_dimension": "High impulse, low deliberation",
+            "answer_text": "I'd use the coupon right away\u2014it's a solid deal, and I'm always up for trying something new, especially if it's natural or cruelty-free. Even with two weeks left, stocking up feels smart, and the discount lowers the risk. I might check the ingredients quickly, but the urgency pushes me to act.",
+            "why_plausible": "Consistent with their low loyalty (Q18), mood-dependent routine (Q30), and history of switching due to quick commerce pushes (Q26), showing a tendency for quick decisions driven by curiosity and deals.",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or bold fragrance claims, making quick purchase decisions without extensive research.",
+            "ad_test_prediction": "Ads with flash sales, minimalist designs emphasizing discounts, or influencer endorsements without deep detail would trigger immediate clicks and purchases, especially on quick commerce platforms."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Value Seeker",
+            "position_on_dimension": "Moderate impulse and deliberation",
+            "answer_text": "I'd browse their site to see the ingredients and certifications\u2014if it's Ayurvedic, cruelty-free, and has good reviews, I might use the coupon. But I won't rush; if it doesn't align with my preference for natural products, I'll skip it. The discount is tempting, but only if the brand feels trustworthy.",
+            "why_plausible": "Aligns with their emphasis on ingredients and certifications (Q12, Q15), use of YouTube reviews (Q56), and mixed discovery methods (Q54), showing a cautious yet open approach to new brands.",
+            "concept_test_prediction": "Would engage with concepts that balance value claims (like Ayurvedic or sustainable) with moderate detail, requiring some proof points but swayed by deals that match their values.",
+            "ad_test_prediction": "Responds best to ads that combine incentives (e.g., discounts) with clear information on ingredients or benefits, possibly through video reviews or side-by-side comparisons, leading to considered but timely purchases."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Research-First Deliberator",
+            "position_on_dimension": "Low impulse, high deliberation",
+            "answer_text": "I'd let the coupon expire\u2014I don't need it now, and I prefer to research thoroughly before trying an unknown brand. When I run out, I'll look up YouTube reviews to check the feel and ingredients, especially for hard water suitability. A discount isn't enough without knowing it fits my skin needs.",
+            "why_plausible": "Reflects their reliance on YouTube reviews for product confidence (Q58, Q59), priority on ingredients (Q11, Q24), and planned routine (Q28), indicating a deliberate, information-gathering style.",
+            "concept_test_prediction": "Needs extensive concept details, such as clinical testing data, ingredient transparency, or comparisons to competitors, to even consider purchase; urgency tactics would be ineffective.",
+            "ad_test_prediction": "Ads must provide in-depth information, links to expert reviews, or demonstrations of benefits (like exfoliation or moisturizing) to capture attention; flash sales would be ignored in favor of thorough evaluation."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Contextual Sensitivity to Advertising Receptivity",
+        "selected_question": {
+          "question_id": "generated",
+          "question_text": "Imagine you see a social media ad for a new body wash while you're in the middle of a hectic study session. Later, you see the same ad while you're relaxing at home after a shower. How would your reaction to the ad differ in these two situations? Describe what you might do or think in each case.",
+          "why_selected": "This question directly probes how immediate context (busy vs. leisure) influences ad engagement and consideration, which is core to the uncaptured dimension. Given the person's mood-dependent bathing routine (Q30) and dual self-care routes (Q34), it effectively reveals their sensitivity to context in advertising receptivity, predicting varied responses to concepts and ads."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Context-Driven Engager",
+            "position_on_dimension": "High sensitivity",
+            "answer_text": "During a hectic study session, I'd totally ignore the ad\u2014no time for distractions. But when I'm relaxing at home, I'd click on it, check the ingredients and reviews, and if it has an earthy-sweet vanilla scent or exfoliating feature, I might even add it to my cart for later. My interest really depends on whether I'm in a rush or unwinding.",
+            "why_plausible": "Consistent with their mood-dependent grooming (Q30) and dual routine (Q34), showing high adaptability. Their curiosity (Q6) and preference for natural ingredients (Q12) align with exploring products only in conducive contexts.",
+            "concept_test_prediction": "In a stressful context (e.g., exam time), this twin would reject complex concepts, preferring simple, calming body washes with basic claims. In a leisure context, they'd enthusiastically explore innovative concepts like exfoliating gels with earthy-sweet fragrances, showing higher purchase intent.",
+            "ad_test_prediction": "Ads encountered during busy periods would be ignored, leading to low engagement and negative perception. Ads seen during relaxation would garner high click-through rates, positive emotional response, and increased likelihood to share or save for later, especially if the ad emphasizes natural ingredients and soothing visuals."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "position_on_dimension": "Medium sensitivity",
+            "answer_text": "Even when busy, I might notice the ad if the packaging looks natural or it promises Ayurvedic benefits, but I'd just save it to check later. While relaxed, I'd spend more time comparing it to my current BBW or Plum options, focusing on fragrance and ingredients. My decision ultimately hinges on product merits, but I'm a bit more engaged when I have time.",
+            "why_plausible": "Reflects their balanced approach: curious (Q6) and regularly cares for skin (Q9), but with low loyalty (Q18) and focus on ingredients (Q11). Their mood-dependent routine (Q30) suggests some context influence without overriding core criteria.",
+            "concept_test_prediction": "Moderate variation based on context; in busy times, they'd skim concepts but still evaluate based on key attributes like fragrance and natural ingredients. In leisure, they'd delve deeper into details like exfoliating texture or hard water compatibility, but overall response is more stable than Archetype A.",
+            "ad_test_prediction": "Ads seen during hectic moments might get brief attention if they highlight quick benefits like long-lasting smell; during leisure, engagement increases with detailed reviews or influencer endorsements. Purchase intent is consistently tied to ad clarity on ingredients and value, with slight context-based fluctuations in ad recall."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Consistent Explorer",
+            "position_on_dimension": "Low sensitivity",
+            "answer_text": "I'd react similarly in both situations\u2014I'm always on the lookout for new body washes, especially if they're natural or have good reviews. Whether I'm studying or relaxing, I'd make a mental note to look it up later on Nykaa or YouTube, focusing on things like scent and whether it's cruelty-free. My interest doesn't waver much with my mood.",
+            "why_plausible": "Aligns with their high comfort trying new brands (Q7), low loyalty (Q18), and consistent priorities like ingredients and reviews (Q11, Q24). Their passionate and collaborative personality (Q6) drives steady exploration regardless of context.",
+            "concept_test_prediction": "Consistently evaluates concepts based on fixed criteria like fragrance, ingredients, and price; context has minimal impact. They'd respond similarly to complex or simple concepts, showing stable interest in innovations like charcoal detox or Ayurvedic claims, as long as they align with their preferences.",
+            "ad_test_prediction": "Engages with ads similarly across contexts; ad effectiveness depends solely on content quality, such as showcasing natural packaging or dermatologist-tested claims. No significant difference in click-through or purchase intent based on timing, leading to predictable responses in campaign testing."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Ahmedabad, Gujarat"
+M1,What is your current occupation or primary activity?,Student
+M1,What is your approximate monthly household income range?,1l_2l
+M1,What is your household composition?,Alone
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English,hindi"
+M1,How would you describe your personality in 3-5 words?,"Impulsive, exploratory, fast, emotional"
+M1,How comfortable are you trying new brands or products you haven't used before?,4
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",It is very important to me. Grooming is more about the confidence you get from looking nice
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Very important to me. Grooming is about the confidence you get from looking nice.
+M1,"When you imagine your ideal grooming routine — not what you do now, but what you'd love — what does it look like?","Essentially my grooming routine is, my ideal grooming routine would be some cleanser and scrub, followed by a face wash and possibly those things that you put under your eyebrows for dark circles, followed by some nice relaxing mask that makes my skin feel fresh and yeah, that would be all"
+M2,"When buying any personal care product, rank these factors from most to least important:","My ideal grooming routine: cleanser and scrub, followed by face wash, under-eye patches for dark circles, then a relaxing mask that makes my skin feel fresh."
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":2,""explanation"":""""}"
+M2,Is there a specific reason why 'natural' or 'chemical-free' products aren't a priority for you?,"It's really just marketing. There's no real truth to natural or chemical-free. I would rather look into the ingredients and see what info we have on them, rather than believing a natural or chemical-free label"
+M2,Which certifications or labels influence your purchase? Select all that apply.,It's just marketing. There's no real truth to natural or chemical-free. I'd rather look into the ingredients and see what info we have on them than believe a natural or chemical-free label.
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"I prefer Indian personal care brands in some products only because they are built for Indian skin to some extent. Some international brands have some amazing products that I would always be using, but for something that I am experimenting with, I would definitely try an Indian personal care brand"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"I prefer Indian personal care brands for some products because they're built for Indian skin. Some international brands have amazing products I'll always use, but for experimenting, I'd try an Indian brand."
+M2,How loyal are you to personal care brands?,Very_loyal
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""Dermatologists or skin doctors"":5,""TV advertisements"":2,""Instagram or YouTube influencers"":1,""Friends and family"":4,""Online reviews (Amazon, Nykaa)"":3,""Claims written on the product packaging"":1}"
+M3,"When your current body wash/soap runs out, what is your typical next step?",Repurchase_same
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""nykaa"",""pharmacy"",""quick_commerce""]"
+M3,How much do you typically spend on a single body wash purchase?,200_350
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""free_sample"",""friend_rec"",""doctor_rec""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,"I have been using the same brand for quite some time and the last time I switched it was sometime in 2022 because one of my friends recommended something that worked for her really yes and I started using it and it was good so yes, I continued using it"
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","I've been using the same brand for quite some time. Last switched in 2022 because a friend recommended something that worked for her. I started using it, it was good, so I continued."
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?","Yes, it does often enough and yes, I would sometimes not care about what product I buy just because it will be available faster on Blinkit"
+M3,"If a brand you liked raised its price by 30%, what would you do?",Look_alternatives
+M4,How many times a day do you typically shower/bathe?,"Yes, I use quick commerce often enough. I sometimes don't care about what product I buy just because it's available faster on Blinkit."
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,"I essentially start by shampooing my hair after which I put in conditioner because I would to leave it in for a while, while that happens I will generally scrub my face, put in face wash, then move on and put some body wash on myself and finish by rinsing all of it off generally"
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?",I use body wash only because it is more convenient to use
+M4,How would you describe your relationship with bathing/grooming?,"Start by shampooing hair, then apply conditioner and leave it in. While that sits, scrub face, apply face wash, then apply body wash, and finish by rinsing everything off."
+M4,"What specific skin concerns, if any, do you have? Select all that apply.",Body wash only because it's more convenient to use.
+M4,Do other household members use the same body wash as you? Who decides what to buy?,"No, people generally use different products"
+M4,Who usually takes the lead in deciding which products get purchased for each person?,The person themselves
+M4,"How does your water quality affect your product choices, if at all?","Essentially, the water quality influences my choice in a couple of ways. If I am getting slightly harder water, I switch to more harsher products. I would go for a stronger generic shampoo rather than going for something niche that would need better water to work with"
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"Water quality influences my choice. If I'm getting harder water, I switch to harsher products � a stronger generic shampoo rather than something niche that needs better water to work with."
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,"I don't think I have bought products based on how they smell, essentially"
+M5,"Can you recall a time when a fragrance unexpectedly stood out to you, even if it wasn't the reason for your purchase?","Cocoa stands out to me at times, it is not always the reason for my purchase because I still look for different things in a product but it is a very common fragrance that stands out to me in lip balms, in creams and all of that"
+M5,How long should a body wash fragrance last on your skin?,I don't think I've bought products based on how they smell.
+M5,How important is lather/foam to your body wash experience?,"Cocoa stands out to me at times. It's not always the reason for my purchase because I still look for different things, but it's a very common fragrance that stands out to me in lip balms, creams, and similar products."
+M5,What texture do you prefer in a body wash?,Thick_cream
+M5,What is your ideal post-wash skin feeling?,Moisturized
+M5,Do you prefer packaging that looks:,Clinical
+M6,What body wash brand(s) do you currently use? List all.,I'll use Dove. I'll sometimes go for a Scene and Clear or something because it has those exfoliating beads. Yes
+M6,What do you like MOST about your current body wash? (Top 1-2 things),Dove. Sometimes Clean & Clear because it has exfoliating beads.
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?","It leaves my skin feeling a little moisturized. It's not very dry, which is nice."
+M6,Is there anything about the texture or scent of the body wash that you wish could be improved?,Nothing frustrates me about my current body wash.
+M6,Is there a specific body wash you've tried before that had a texture or scent you really loved or disliked?,Very important. The texture should be really nice and it should make me smell fresh.
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"Not really, I'm fine with my current body wash."
+M6,How would you categorize body washes in your mind? What makes one different from another?,I essentially categorize them and based on their texture they can either be the ones that are more thicker or the ones that are more clearer and oil based
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"I categorize them based on texture: either thicker ones or clearer, oil-based ones."
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price — anything.",I would something with cocoa fragrance it should have a silky texture it should leave my skin feeling moisturized and smooth instead of grainy I would for it to have a very particular packaging that makes it easier to use I would for it to be minimalist the price range I would go for is some 500 to 600 bucks per month one bottle of body wash or something
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"Cocoa fragrance, silky texture, leaves skin feeling moisturized and smooth (not grainy). Minimalist packaging designed for easy use. Price range: 500-600 rupees per month for one bottle."
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,900 रुपीज वर्थ रहा था।
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""friends_family"",""influencer"",""salon_derm""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,A couple of influencers I know. I trust Dietsabya.
+M7,What is it about Dietsabya's content or approach that makes you feel confident in their recommendations?,I follow their content and believe they know what's good. Their content isn't just recommendations but mostly about culture. So it's about relatability and genuine interest in their information.
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,"Yes, and it was pretty good. It came from a very trusted influencer."
+M7,Could you share which product it was and on which platform you discovered it?,A moisturizing cream. Discovered it on Instagram.
+M7,What type of content makes you most likely to try a new product? Pick top 2:,"Celebrity,expert_review"

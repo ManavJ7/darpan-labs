@@ -1,0 +1,52 @@
+[
+  {
+    "participant_id": "P08",
+    "dimensions": [
+      {
+        "dimension_id": 1,
+        "dimension_name": "Emotional vs Rational Ad Message Processing",
+        "what_it_captures": "Whether the individual is more influenced by emotional appeals (e.g., confidence, happiness) or rational arguments (e.g., ingredients, clinical proof) in advertising messages.",
+        "concept_test_impact": "Emotional processors would resonate with concepts emphasizing feelings and experiences (e.g., 'uplifting shower ritual'), while rational processors would prefer concepts highlighting specifications and evidence (e.g., 'dermatologist-tested with 99% natural ingredients').",
+        "ad_test_impact": "Emotional processors engage more with ads using storytelling, mood visuals, or music; rational processors respond better to ads with factual data, comparisons, or expert testimonials.",
+        "what_we_can_infer": "From Q18, they trust dermatologists (rational) and enjoy fragrance (emotional in Q36), but it's uncertain which processing style dominates their ad responses.",
+        "example_variation": "For a body wash ad with scenic visuals and emotional narration, Twin A (emotional) feels inspired and clicks to learn more, while Twin B (rational) skips it, preferring an ad listing ingredient benefits and study results."
+      },
+      {
+        "dimension_id": 2,
+        "dimension_name": "Feature-First vs Benefit-First Concept Evaluation",
+        "what_it_captures": "Whether the individual prioritizes product features (e.g., ingredients, certifications) or benefits (e.g., skin feel, long-term effects) when evaluating new product concepts.",
+        "concept_test_impact": "Feature-first evaluators focus on technical details like ingredient lists or pH balance; benefit-first evaluators assess how the product improves their daily routine or well-being.",
+        "ad_test_impact": "In ads, feature-first responders need clear specifications upfront to engage; benefit-first responders are drawn to messaging that highlights outcomes like '24-hour moisturization' or 'refreshed skin'.",
+        "what_we_can_infer": "Q11 ranks ingredients mid-list, and Q50 prefers clinical studies (feature-leaning), but Q44 values fragrance and natural feel (benefit-leaning), leaving their evaluation priority uncertain.",
+        "example_variation": "When shown a concept with 'shea butter and vitamin E,' Twin A (feature-first) examines the ingredient percentages, while Twin B (benefit-first) imagines the moisturizing effect on their skin."
+      },
+      {
+        "dimension_id": 3,
+        "dimension_name": "Aspirational Premium vs Relatable Value Positioning",
+        "what_it_captures": "How the individual responds to marketing that positions products as luxury/aspirational versus practical/value-driven, affecting their perception of price and branding.",
+        "concept_test_impact": "Those with premium affinity are drawn to concepts with high-end packaging, exclusive claims, and higher price points; value affinity leads to preference for cost-effective, no-frills concepts emphasizing functionality.",
+        "ad_test_impact": "Premium responders engage with ads showcasing luxurious lifestyles or celebrity endorsements; value responders prefer ads highlighting affordability, everyday use, or money-saving offers.",
+        "what_we_can_infer": "Q41 prefers luxurious packaging and Q49 desires premium packaging, but Q16 shows limited premium willingness for some values, making their positioning resonance ambiguous.",
+        "example_variation": "For an ad set in a high-end spa, Twin A (premium) feels aspirational and considers paying more, while Twin B (value) sees it as unrealistic and seeks cheaper alternatives."
+      },
+      {
+        "dimension_id": 4,
+        "dimension_name": "Impulse-Driven vs Deliberate Purchase Decision-Making",
+        "what_it_captures": "Tendency to make quick, unplanned purchases based on immediate appeal versus taking time to research, compare, and deliberate before buying.",
+        "concept_test_impact": "Impulse buyers might approve concepts quickly based on visual or emotional appeal; deliberate buyers require more information, reviews, and time to evaluate before intent to purchase.",
+        "ad_test_impact": "Impulse responders are likely to click on ads with strong calls-to-action, limited-time offers, or eye-catching visuals; deliberate responders might save or research ads further before acting.",
+        "what_we_can_infer": "Q7 shows mid-level comfort trying new brands, and Q23 indicates past switches were review-driven (deliberate), but their impulsivity in ad-driven purchases remains unknown.",
+        "example_variation": "Upon seeing a social media ad with a flash sale, Twin A (impulse) buys immediately, while Twin B (deliberate) bookmarks it to read reviews later."
+      },
+      {
+        "dimension_id": 5,
+        "dimension_name": "Mood and Context Ad Receptivity",
+        "what_it_captures": "How the individual's current mood, environment, or occasion (e.g., time of day, location) influences their openness and response to advertisements or new product concepts.",
+        "concept_test_impact": "In positive moods or relaxing contexts, they might be more receptive to innovative or premium concepts; in stressful moods, they may prefer familiar or practical options.",
+        "ad_test_impact": "Ads seen during leisure time or in mood-congruent settings (e.g., relaxing ads when tired) yield higher engagement; ads in busy or mismatched contexts are ignored.",
+        "what_we_can_infer": "Q32 mentions mood-dependent bathing habits, hinting at context sensitivity for product use, but no clues on how mood affects ad reception, leaving it uncertain.",
+        "example_variation": "An ad viewed during a work break: Twin A (context-sensitive) finds it distracting and ignores it, while Twin B (less sensitive) engages equally regardless of context."
+      }
+    ]
+  }
+]

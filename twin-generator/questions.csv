@@ -1,0 +1,60 @@
+﻿module_id,question_text
+M1,Where do you currently live? (City and state)
+M1,What is your current occupation or primary activity?
+M1,What is your approximate monthly household income range?
+M1,What is your household composition?
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?"
+M1,How would you describe your personality in 3-5 words?
+M1,How comfortable are you trying new brands or products you haven't used before?
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?"
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?
+M1,"When you imagine your ideal grooming routine — not what you do now, but what you'd love — what does it look like?"
+M2,"When buying any personal care product, rank these factors from most to least important:"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?
+M2,Which certifications or labels influence your purchase? Select all that apply.
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:
+M2,How loyal are you to personal care brands?
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:
+M2,Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?
+M3,"When your current body wash/soap runs out, what is your typical next step?"
+M3,Where do you most often buy personal care products? Pick your top 3:
+M3,How much do you typically spend on a single body wash purchase?
+M3,What would make you switch away from your current body wash? Pick your top 3:
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?"
+M3,"When using quick commerce platforms like Blinkit or Zepto, do you find that the limited selection often leads you to try new brands or stick with familiar ones?"
+M4,How many times a day do you typically shower/bathe?
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?
+M4,Could you walk me through what you do first when you start your routine and the order in which you apply each product?
+M4,Could you share if there's a specific reason you choose to apply body lotion before creams in your routine?
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?"
+M4,How would you describe your relationship with bathing/grooming?
+M4,"What specific skin concerns, if any, do you have? Select all that apply."
+M4,Do other household members use the same body wash as you? Who decides what to buy?
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?
+M5,"What is it about the lavender lux body wash's scent that makes it stand out for you, and have you found yourself repurchasing it for that reason?"
+M5,How long should a body wash fragrance last on your skin?
+M5,How important is lather/foam to your body wash experience?
+M5,What texture do you prefer in a body wash?
+M5,What is your ideal post-wash skin feeling?
+M5,Do you prefer packaging that looks:
+M6,What body wash brand(s) do you currently use? List all.
+M6,What do you like MOST about your current body wash? (Top 1-2 things)
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?"
+M6,What body wash brands can you name off the top of your head? List as many as you can.
+M6,How would you categorize body washes in your mind? What makes one different from another?
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price — anything."
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?
+M6,"What was it about that body wash that made you decide to spend that amount, and did it meet your expectations?"
+M6,"What made you choose a milk-based body lotion at that price, and did it feel like it was worth the investment for you?"
+M7,Where do you typically discover new personal care products? Pick your top 3:
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.
+M7,What type of content makes you most likely to try a new product? Pick top 2:
+M7,Do you read online reviews before buying personal care products? Where?
+M7,"If a friend recommends a body wash to you, how likely are you to try it vs. researching it yourself first?"

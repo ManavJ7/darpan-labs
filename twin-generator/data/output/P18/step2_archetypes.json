@@ -1,0 +1,192 @@
+[
+  {
+    "participant_id": "P18",
+    "archetypes_per_dim": [
+      {
+        "dimension_name": "Emotional vs Rational Ad Processing Style",
+        "selected_question": {
+          "question_id": "QN026",
+          "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+          "why_selected": "This question directly contrasts a rational appeal (expert recommendation with clinical focus) against an emotional/social proof appeal (popular influencer with fragrance focus), probing whether the individual prioritizes expertise or popularity. Given the person's trust in influencers based on follower count (Q55) and interest in clinical studies (Q50), it effectively reveals their emotional vs rational processing style in ad-related decisions."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Expert Follower",
+            "position_on_dimension": "Rational-leaning",
+            "answer_text": "I'd be more influenced by Influencer A, the skincare expert. Clinical claims mean it's backed by science, and I trust expertise over just popularity. But since it's pricier, I'd check online reviews on Nykaa or Amazon to see if the benefits are worth the extra cost.",
+            "why_plausible": "Consistent with their trust in dermatologists (Q18 rating 3), interest in clinical studies (Q50), and rational approach to value\u2014though price-sensitive, they consider data for justified spending.",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing 'clinical studies,' 'dermatologist-tested,' or ingredient transparency, and may dismiss concepts focused solely on emotional benefits without data backing.",
+            "ad_test_prediction": "More engaged by ads featuring experts, lab scenes, or statistics; less likely to share emotional storytelling ads and would prefer ads highlighting logical claims and reviews."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Social Proof Scent Seeker",
+            "position_on_dimension": "Emotional-leaning",
+            "answer_text": "Influencer B with 2M followers would influence me more. A large following means many people trust them, and the fragrant body wash at a lower price sounds appealing. I love good scents like citrus, and if it makes me feel fresh and confident after a shower, I'd go for it.",
+            "why_plausible": "Aligns with their trust in influencers based on follower count (Q55), importance of fragrance (Q36, Q49), and grooming being about feeling good themselves (Q8), showing emotional drive.",
+            "concept_test_prediction": "Drawn to concepts highlighting 'refreshing fragrance,' 'boost of confidence,' or social appeal; likely to overlook technical details and prioritize sensory and emotional benefits.",
+            "ad_test_prediction": "Responds well to ads with relatable stories, upbeat music, or influencer testimonials; more likely to share ads that evoke positive feelings and align with popular trends."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balanced Buyer",
+            "position_on_dimension": "Balanced/Mixed",
+            "answer_text": "It depends on my current needs. If I have skin issues, I might lean towards the clinical one from Influencer A. But for daily use, the fragrant one from Influencer B is cheaper and smells good, so I'd probably go with that. I'd weigh both and see what fits my budget and mood.",
+            "why_plausible": "Reflects their ambivert, context-dependent personality (Q6, Q8), moderate loyalty (Q17), and balanced approach\u2014valuing both rational benefits and emotional satisfaction based on situation.",
+            "concept_test_prediction": "Open to both emotional and rational concepts but prefers a balance, e.g., 'moisturizing with a pleasant scent' backed by mild claims; decision varies with immediate skin concerns or budget.",
+            "ad_test_prediction": "Might engage with ads that combine emotional storytelling with some factual backing, like 'feel fresh with our clinically proven formula'; response is flexible and depends on ad context and personal state."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Visual vs Textual Content Preference",
+        "selected_question": {
+          "question_id": "QN015",
+          "question_text": "Allocate 100 points across these five factors based on what actually drives your final body wash purchase decision at the moment of clicking 'Buy' or picking it off the shelf: 1) Price/deal available right now 2) Past experience with the product 3) How the bottle/packaging looks 4) Specific skin benefit promised 5) Brand name recognition",
+          "why_selected": "This question directly probes the weight given to visual (packaging looks) and textual (skin benefit promised) elements in decision-making. By analyzing point allocation, it reveals whether this person prioritizes visual aesthetics or textual information, addressing the mixed signals in their profile (e.g., Q41 vs Q49) and predicting reactions to concepts and ads."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Visually Driven Evaluator",
+            "position_on_dimension": "High visual preference",
+            "answer_text": "Price is obviously crucial, so I'd give it 35 points. Past experience gets 20 points. But how the bottle looks really matters to me \u2013 I'd allocate 30 points there because a sleek, luxurious design catches my eye first and makes the product feel premium. Skin benefit promised gets only 10 points since I assume it works if the packaging looks good, and brand name just 5 points as I don't care much about that.",
+            "why_plausible": "Consistent with Q41 where they prefer luxurious packaging, and their reliance on Instagram Reels and follower counts (Q55-58) for visual social media content, indicating a draw to aesthetics.",
+            "concept_test_prediction": "This twin would be strongly swayed by body wash concepts with sleek, visually appealing packaging and mockups, potentially overlooking detailed benefit claims if the design is attractive. They might favor concepts that highlight luxury and visual appeal in metro Indian contexts.",
+            "ad_test_prediction": "More likely to engage with ad campaigns featuring high-quality visuals, aesthetic storytelling, and influencer reels with beautiful shots, while ignoring text-heavy ads. They'd respond well to social media ads that prioritize visual appeal over explanatory text."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "position_on_dimension": "Moderate, context-dependent",
+            "answer_text": "I'd split it practically: 40 points to price and deals since value is key, as I'm always looking for affordability. Past experience gets 25 points because I tend to repurchase what works. Packaging looks 15 points \u2013 it does catch my eye, but isn't a deal-breaker. Skin benefit promised 15 points, since I read claims for moisturizing effects, and brand recognition 5 points, not a big factor for me.",
+            "why_plausible": "Reflects their practical, price-sensitive nature from Q13 and Q23, with mixed signals on packaging (Q41 vs Q49) and a balanced approach to grooming from Q8 and Q9, showing they consider both self-feel and external factors.",
+            "concept_test_prediction": "Would evaluate body wash concepts by balancing visual design with textual benefit claims, needing both appealing packaging and credible moisturizing promises to be convinced. They might favor mid-range concepts that offer visual appeal without compromising on stated benefits.",
+            "ad_test_prediction": "Responds best to ad campaigns that combine attractive visuals with clear, concise textual information, such as Instagram posts with eye-catching images and highlighted benefits. They'd engage with ads that show value and practicality in metro Indian settings."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Text-Focused Researcher",
+            "position_on_dimension": "High textual preference",
+            "answer_text": "Price gets 35 points, past experience 25 points since I stick to what's reliable. Packaging looks only 5 points \u2013 honestly, I don't care much about how it looks, as I said earlier. Skin benefit promised is important, so 30 points, especially for moisturizing claims that match my skin needs. Brand name 5 points. I always check online reviews and ingredient lists before buying.",
+            "why_plausible": "Aligns with Q49 where they state packaging doesn't matter much, and their trust in online reviews and textual information from Q18, Q59, and Q34, indicating a focus on claims and data over aesthetics.",
+            "concept_test_prediction": "Focuses primarily on textual elements like ingredient lists, clinical study claims, and benefit descriptions in body wash concepts, often ignoring visual packaging. They'd prefer concepts that emphasize detailed, India-specific claims (e.g., for hard water) over sleek designs.",
+            "ad_test_prediction": "Prefers ad campaigns that provide detailed textual information, such as explainer videos, posts with data, reviews, or dermatologist recommendations, over purely visual content. They'd engage with ads that highlight credible benefits and specifications relevant to metro Indian consumers."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Aspirational vs Relatable Positioning Appeal",
+        "selected_question": {
+          "question_id": "QN022",
+          "question_text": "Imagine you're choosing between these three body washes at a store. Rank them in order of purchase preference: A) \u20b9149 \u2014 basic cleansing, no special claims, trusted old brand (like Lifebuoy) B) \u20b9299 \u2014 moisturizing, pleasant fragrance, mid-tier brand (like Nivea) C) \u20b9499 \u2014 organic ingredients, eco-friendly packaging, Instagram-famous D2C brand",
+          "why_selected": "This question directly pits practical, value-driven options against aspirational, premium branding, forcing a choice that reveals whether the individual prioritizes cost-effectiveness or aspirational appeal. Given their profile\u2014price sensitivity (Q13, Q21), use of mid-range body wash (Q37), interest in luxurious packaging (Q41), and influence from social media (Q55-Q57)\u2014this trade-off will uncover their underlying inclination towards relatable vs. aspirational positioning in a way that predicts reactions to product concepts and ads."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Cost-Conscious Pragmatist",
+            "position_on_dimension": "low",
+            "answer_text": "I'd rank A first because at \u20b9149, it's the most budget-friendly and does the basic job well\u2014no need for extra frills. B at \u20b9299 is okay if I want a nicer smell sometimes, but C at \u20b9499 is way too expensive for a body wash; I'd rather save that money for other things. For daily use, a trusted basic brand is perfectly fine.",
+            "why_plausible": "Consistent with their strong price sensitivity (Q13), satisfaction with cheaper alternatives (Q23), and preference for value over certifications (Q12-Q13). Their grooming focus is on feeling good themselves rather than impressing others (Q8).",
+            "concept_test_prediction": "This twin would reject premium body wash concepts with luxury positioning, favoring concepts that emphasize affordability, functional benefits like cleansing, and straightforward claims. They'd prioritize cost-effective formulations and avoid aspirational packaging or high-end ingredients.",
+            "ad_test_prediction": "Would respond best to relatable ad campaigns featuring everyday scenarios, practical demonstrations of value, and messaging around savings and reliability. Glamorous or influencer-heavy ads would be less effective compared to ads showing common use cases and budget-friendly appeals."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Occasional Indulger",
+            "position_on_dimension": "medium",
+            "answer_text": "I'd go with B first because \u20b9299 feels like a sweet spot\u2014good fragrance, moisturizing, and not too pricey. A is a decent backup for when I'm tight on cash, and C might be tempting for a special treat or if I see great reviews, but I wouldn't regularly splurge on it. It's about balancing quality with what I can afford.",
+            "why_plausible": "Aligns with their use of mid-range body wash (Cinthol at around \u20b9100-200, Q21, Q37), openness to trying new brands (Q7, Q48), and tension between price sensitivity and liking luxurious packaging (Q41, Q49). Their ambivert personality (Q6) suggests a mix of practical and social considerations.",
+            "concept_test_prediction": "Would be open to mid-range to slightly premium concepts if they offer clear benefits like better fragrance or skin feel, but would scrutinize value. Might consider aspirational concepts only if justified by tangible advantages or social proof, defaulting to reliable mid-tier options.",
+            "ad_test_prediction": "Engages with ads that blend aspirational elements with relatability\u2014e.g., ads showing premium experiences in accessible settings or influencer endorsements that feel authentic. Both glamorous and practical ads could work, but messaging needs to highlight balanced benefits without overpromising."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Aspirational Trend-Follower",
+            "position_on_dimension": "high",
+            "answer_text": "C would be my first choice\u2014I'm drawn to the Instagram-famous brand because it feels exclusive and trendy, and the eco-friendly packaging adds to the appeal. B is a reliable fallback, but A seems too basic; I'd pay more for something that makes me feel good and aligns with what I see online. Even if it's pricier, the social cachet and perceived quality are worth it sometimes.",
+            "why_plausible": "Reflects their trust in social media influencers based on follower counts (Q55-Q56), purchases driven by social media (Q57), preference for luxurious packaging (Q41), and experimentation with premium brands like Bombay Shaving Company and Dot & Key (Q48). Their people-person nature (Q6) hints at social awareness.",
+            "concept_test_prediction": "Would positively respond to premium body wash concepts with aspirational positioning, such as luxury ingredients, sleek packaging, and claims tied to social status or trends. Relatable concepts might be overlooked unless they incorporate aspirational elements or strong influencer backing.",
+            "ad_test_prediction": "Most influenced by aspirational ad campaigns featuring influencers, glamorous settings, and messaging that elevates self-image. Relatable ads with everyday scenarios would be less effective unless they subtly incorporate aspirational cues or social validation from trusted sources."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Impulse vs Deliberate Purchase Behavior",
+        "selected_question": {
+          "question_id": "QN006",
+          "question_text": "You see an Instagram ad for a new body wash with 4.5-star ratings and 10,000+ reviews at \u20b9399. The same day, your mother suggests trying a \u20b9120 Ayurvedic body wash from Patanjali that she's been using. You need a new body wash today. Which do you buy?",
+          "why_selected": "This question directly pits an impulse trigger (social media ad with social proof) against a deliberate, cost-effective option (trusted family recommendation), testing whether immediate reaction overrides price sensitivity. Given the person's trust in online reviews, past purchases from social media, and price consciousness, it reveals their position on the impulse-deliberate spectrum in a realistic scenario."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Impulsive Social Media Follower",
+            "position_on_dimension": "High impulse",
+            "answer_text": "I'd go for the Instagram ad body wash. The 4.5-star ratings and 10,000+ reviews make it seem trustworthy, and I often buy things based on social media. Even though \u20b9399 is more than I usually spend, I need it today and it might be worth trying once.",
+            "why_plausible": "Consistent with their comfort in trying new brands (Q7 rating 4), trust in online reviews (Q18 rating 4), and past purchases from social media (Q59). Their price sensitivity (Q13, Q21) is overridden by impulse in this context.",
+            "concept_test_prediction": "This twin would show high immediate purchase intent for new body wash concepts, especially those with strong social proof or influencer endorsements, without extensive comparison.",
+            "ad_test_prediction": "Ads with urgency cues (e.g., limited-time offers), high ratings displays, and influencer content would trigger immediate clicks or purchases, with less focus on detailed information."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Value Seeker",
+            "position_on_dimension": "Medium impulse (context-dependent)",
+            "answer_text": "I'd consider both, but probably buy the Patanjali one for now. \u20b9399 is too high for my usual budget, and my mother's suggestion is cheap and reliable. I might save the Instagram ad for later if I see more reviews or a discount.",
+            "why_plausible": "Aligns with their price sensitivity (Q13, Q23), moderate loyalty (Q17), and deliberate behavior in non-urgent situations (Q25 buffer for cheaper options). Trusts both online reviews and family recommendations (Q18 ratings 3-4).",
+            "concept_test_prediction": "Would require more information and time for new concepts, potentially adding to wishlist for future research. Values clear benefits and price justification.",
+            "ad_test_prediction": "Responds to ads that balance social proof with detailed benefits and price transparency. Urgency cues alone are less effective; needs compelling reasons to act."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Cost-Conscious",
+            "position_on_dimension": "Low impulse",
+            "answer_text": "Definitely the Patanjali body wash. At \u20b9120, it's a great deal, and I trust my mother's experience. The Instagram ad is expensive, and even with good reviews, I prefer sticking to affordable, proven options.",
+            "why_plausible": "Strongly consistent with their price-first approach (Q13, Q21, Q23), value for money priority, and trust in family recommendations (Q18 rating 3). Shows deliberate switching behavior for cost savings (Q23).",
+            "concept_test_prediction": "Only considers new concepts if they offer clear value, are cost-effective, and have strong trusted endorsements. Requires extensive comparison and proof of efficacy.",
+            "ad_test_prediction": "Unlikely to be swayed by flashy or urgent ads; needs practical information, clinical proofs, and price discounts. Prefers ads that highlight affordability and trusted sources."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Contextual Mood-Based Ad Receptivity",
+        "selected_question": {
+          "question_id": "generated",
+          "question_text": "You're scrolling through Instagram. An ad for a new body wash pops up. How does what you're doing at that moment (e.g., studying, taking a break, after sports) influence whether you stop to look at the ad or skip it?",
+          "why_selected": "This question directly probes how current activity or mood affects engagement with ads, which is the core of the dimension. Given this person's profile\u2014using Instagram for personal care content, trusting follower counts, and mentioning that smell matters in social situations\u2014it effectively reveals context-dependent ad receptivity that predicts responses to concepts and campaigns."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Mood-Indifferent Engager",
+            "position_on_dimension": "low",
+            "answer_text": "It doesn't really change based on what I'm doing. If the ad has high views or is from an influencer with lots of followers, I'll probably watch it regardless. I'm pretty chill, so my mood doesn't affect it much\u2014I just go by what catches my eye on Instagram.",
+            "why_plausible": "Consistent with their ambivert, chill personality and trust in follower counts (from Q55, Q58), indicating ad engagement is driven more by social proof than context.",
+            "concept_test_prediction": "This twin would evaluate body wash concepts consistently based on features like price and fragrance, regardless of when or how they're presented, showing stable interest across different scenarios.",
+            "ad_test_prediction": "In ad testing, they would respond similarly to campaigns shown at different times, with engagement primarily influenced by ad elements like influencer endorsements or viewer counts rather than timing or context."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware Browser",
+            "position_on_dimension": "medium",
+            "answer_text": "Yeah, it depends. When I'm busy with studies, I just skip ads quickly. But if I'm scrolling during a break or relaxing, I might stop and check out the ad, especially if it shows a citrus scent or good offers. It's about balancing my time and interest.",
+            "why_plausible": "Aligns with their student lifestyle (Q2) and pragmatic approach from Q8, where grooming importance varies with social situations, suggesting moderate context sensitivity in daily routines.",
+            "concept_test_prediction": "This twin would show varying interest in body wash concepts based on presentation context\u2014more receptive during leisure moments but dismissive when busy, affecting concept validation scores.",
+            "ad_test_prediction": "Ad campaigns would be more effective when shown during relaxed browsing times (e.g., weekends or breaks), with higher engagement rates compared to stressful periods like exam times."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "High-Context Receptive",
+            "position_on_dimension": "high",
+            "answer_text": "It makes a big difference! If I'm stressed or in a hurry, I ignore ads completely. But after playing sports or when I'm getting ready to go out, I'm more likely to engage with body wash ads because I'm thinking about grooming and smell. The context totally drives my attention.",
+            "why_plausible": "Directly linked to Q8 where they mention smell becomes important during sports or social interactions, indicating high sensitivity to context in grooming-related decisions.",
+            "concept_test_prediction": "This twin would respond strongly to body wash concepts aligned with specific occasions (e.g., sports or social events), with concept appeal heavily dependent on contextual relevance.",
+            "ad_test_prediction": "Ad campaigns would see significantly higher engagement when targeted around relevant contexts (e.g., post-workout or pre-event content), with poor performance during unrelated or stressful times."
+          }
+        ]
+      }
+    ]
+  }
+]

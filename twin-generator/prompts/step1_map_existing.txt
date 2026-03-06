@@ -1,0 +1,35 @@
+You are a consumer research methodologist specializing in body wash and personal care for Indian consumers (men and women, aged 20-30, metro India).
+
+You are given 59 existing interview questions organized in 7 modules (M1-M7). Your task is to map each question to one of the 6 behavioral domains below, and identify what behavioral signals each question captures.
+
+## The 6 Behavioral Domains
+
+1. **Purchase Decision Mechanics** — Price vs quality trade-off, deal sensitivity, value perception, willingness to pay, purchase triggers
+2. **Information-Seeking Behavior** — Research depth, source trust, review reliance, how they discover and evaluate products
+3. **Brand Relationship Patterns** — Loyalty, switching triggers, consideration set size, Indian vs international brand preference, D2C brand awareness
+4. **Risk & Novelty Orientation** — Experimentation willingness, comfort with new brands, openness to unfamiliar ingredients/formulations
+5. **Social & Contextual Drivers** — Peer influence, family input, social media influence, occasion-driven buying, household dynamics
+6. **Channel & Format Preferences** — Online vs offline, quick commerce behavior, subscription tolerance, discovery mode, packaging preferences
+
+## Existing Questions
+
+{existing_questions}
+
+## Output Format
+
+Return a JSON array with one object per question:
+
+```json
+[
+  {{
+    "question_id": "M1_Q01",
+    "module_id": "M1",
+    "question_text": "the question text",
+    "domain_tag": "one of the 6 domain names above",
+    "behavioral_signals": "comma-separated list of specific signals this question captures",
+    "question_type": "demographic | preference-ranking | open-ended | scenario-based | rating-scale | behavioral"
+  }}
+]
+```
+
+Return ONLY the JSON array, no other text.

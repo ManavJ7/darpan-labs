@@ -1,0 +1,60 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Gurgaon, Haryana, India"
+M1,What is your current occupation or primary activity?,Professional_office
+M1,What is your approximate monthly household income range?,50k_1l
+M1,What is your household composition?,Shared_housing
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English,hindi"
+M1,How would you describe your personality in 3-5 words?,"Fun-loving, happy, slightly lazy"
+M1,How comfortable are you trying new brands or products you haven't used before?,3
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",Body odour is very important. Grooming is about both feeling good about myself and how others perceive me
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Regularly_care
+M1,"When you imagine your ideal grooming routine â€” not what you do now, but what you'd love â€” what does it look like?","Extensive routine: thorough shower, hair wash, nail care, face skin care, scrubbing, exfoliating, moisturizing, full body deep cleaning"
+M2,"When buying any personal care product, rank these factors from most to least important:","[""ingredients"",""brand"",""price"",""recommendation"",""expert"",""reviews"",""packaging"",""fragrance""]"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":5,""explanation"":""natural means it free of all toxics that will have carcinogenic effect on my face, body or skin""}"
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Paraben_free,ph_balanced,sulfate_free,cruelty_free"
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"Indian personal care brands are performing well Ñ appropriately priced, easy to access and restock. Don't enjoy international brands as they lack credibility"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"{""Sustainable/eco-friendly packaging"":""0"",""Ayurvedic or traditional ingredients"":""0"",""Clinical-grade, lab-tested formulation"":""0"",""Cruelty-free, not tested on animals"":""0"",""Made in India"":""0""}"
+M2,How loyal are you to personal care brands?,Very_loyal
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""TV advertisements"":1,""Instagram or YouTube influencers"":2,""Dermatologists or skin doctors"":2,""Friends and family"":4,""Online reviews (Amazon, Nykaa)"":4,""Claims written on the product packaging"":1}"
+M2,Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?,No_preference
+M3,"When your current body wash/soap runs out, what is your typical next step?",Repurchase_same
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""amazon"",""quick_commerce"",""nykaa""]"
+M3,How much do you typically spend on a single body wash purchase?,200_350
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""doctor_rec"",""free_sample""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,"Got it for free, otherwise loyal to Dove. Body wash doesn't give much satisfaction Ñ Dove is light on body and skin, been using since childhood"
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","[""ingredients"",""review_count"",""brand_name""]"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?","Yes, use quick commerce. If limited selection, look on Amazon or Nykaa"
+M3,"If a brand you liked raised its price by 30%, what would you do?",Look_alternatives
+M4,How many times a day do you typically shower/bathe?,Once
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,"Apply body wash all over including face (gentle enough), brush teeth, wash hair if needed, rinse with water, walk out"
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?",Only body wash Ñ easy to use
+M4,How would you describe your relationship with bathing/grooming?,Mood_dependent
+M4,"What specific skin concerns, if any, do you have? Select all that apply.",Dryness
+M4,Do other household members use the same body wash as you? Who decides what to buy?,I decide what to buy; don't know what others use
+M4,"Do you ever notice if the body wash gets used up faster than expected, suggesting others might be using it too?",Only I use my bottle in my personal bathroom
+M4,"How does your water quality affect your product choices, if at all?","Water is fine, never had to think about it"
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"Floral,ocean_aquatic"
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,Nike Up or Down perfume Ñ nice fragrance
+M5,What specific notes or aspects of its fragrance made it stand out to you compared to others?,"Refreshing, not sweet, fresh, long-lasting"
+M5,How long should a body wash fragrance last on your skin?,All_day
+M5,How important is lather/foam to your body wash experience?,Nice_to_have
+M5,What texture do you prefer in a body wash?,Lightweight
+M5,What is your ideal post-wash skin feeling?,Moisturized
+M5,Do you prefer packaging that looks:,Natural
+M6,What body wash brand(s) do you currently use? List all.,Dove only
+M6,What do you like MOST about your current body wash? (Top 1-2 things),"Lightweight, can use on face, cleans effectively, mild, been using since childhood"
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",Price is high
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"Fiama, Plum, Bath & Body Works, Body Shop, Dove, Pears"
+M6,How would you categorize body washes in your mind? What makes one different from another?,"Has chemicals, harsh on skin, unnecessarily expensive, fancy but doesn't really work"
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"{""mCaffeine (coffee-based)"":5}"
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price â€” anything.","Big sustainable bottle with refill bags, fragrance not important, lightweight gentle formulation, cleans and moisturizes, simple minimal packaging with ingredients clearly listed, price below _400"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"[""india_specific"",""intense_moisture"",""natural""]"
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,"_350-400, yes worth it"
+M6,Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?,"{""rating"":5,""explanation"":""yes""}"
+M6,What specific benefits or features would you expect from a body wash designed for Indian skin and hard water?,"Lightweight, mild, rinses off easily, moisturizes, cleans, gentle on skin"
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""youtube"",""friends_family"",""instagram""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,"Ankush Bahuguna (only name recalled), mostly friends and family"
+M7,What is it about Ankush Bahuguna that makes you trust his opinions on personal care products?,"Honest, genuine, uses few products so clearly not PR, very honest reviews"
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,"Lipsticks and creams Ñ cream was fine, lipstick (Fae Beauty) was not"
+M7,What type of content makes you most likely to try a new product? Pick top 2:,"Expert_review,ingredient_breakdown"
+M7,Do you read online reviews before buying personal care products? Where?,"Reddit,youtube,amazon,nykaa"

@@ -1,0 +1,1309 @@
+[
+  {
+    "participant_id": "P06",
+    "n_original": 100,
+    "n_selected": 20,
+    "twins": [
+      {
+        "twin_id": "P06_T001",
+        "participant_id": "P06",
+        "combo_id": 7,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "A",
+            "archetype_label": "Emotional Experience Seeker",
+            "answer_text": "Definitely Ad A. The mood film just clicks with me. My bathing time is my self-care ritual, and that ad feels like it gets that. Seeing someone actually enjoying that quiet moment with nice visuals and music is more relatable than a doctor listing facts. It makes me imagine using the product for that same feeling.",
+            "position_on_dimension": "High preference for emotional storytelling",
+            "concept_test_prediction": "This twin would strongly prefer concepts emphasizing sensory indulgence, mood transformation (e.g., 'de-stress,' 'uplift your spirit'), and packaging/imagery that evokes a premium, experiential feel. Ingredient lists matter less than the overall 'vibe' and promise of a better bathing ritual.",
+            "ad_test_prediction": "Would have higher engagement and purchase intent for ads using evocative visuals, aspirational storytelling, relatable slice-of-life moments, and sensory cues (sound, imagery of foam/fragrance). Rational ads with data would be seen as boring or irrelevant."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "A",
+            "archetype_label": "Visually Driven Evaluator",
+            "answer_text": "I'd go for Option A with the beautiful packaging every time. The visuals just pull me in, and if it looks natural and appealing, like what I prefer, I'm sold. A short description is fine\u2014I trust my gut from the images and can always check reviews later if needed.",
+            "position_on_dimension": "High visual dominance",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts with elegant, minimalist packaging and visual demos; might overlook or downplay detailed claims if the design isn't appealing, leading to quicker positive evaluations based on aesthetics.",
+            "ad_test_prediction": "More likely to engage with video ads, Instagram reels, or image-heavy social media posts; would skip text-heavy advertisements, responding better to visual storytelling in campaigns."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T002",
+        "participant_id": "P06",
+        "combo_id": 39,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "B",
+            "archetype_label": "Rational Benefit Validator",
+            "answer_text": "Ad B, for sure. I need to know what's in it and what it actually does, especially with my dry skin. A dermatologist explaining things gives me confidence. The mood film is nice, but it doesn't tell me anything. I'd watch Ad B fully to understand the benefits and if the ingredients match what I look for online.",
+            "position_on_dimension": "High preference for logical claims",
+            "concept_test_prediction": "This twin would favor concepts highlighting specific ingredients (shea, vitamin E), certifications (pH-balanced, dermatologist-tested), and clear functional benefits for skin concerns (dryness). Sensory or mood claims would be secondary unless backed by proof.",
+            "ad_test_prediction": "Would respond better to ads featuring expert testimonials (dermatologists), clear before/after visuals, ingredient breakdowns, and side-by-side comparisons. Purely emotional ads would be dismissed as fluff without substance."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "B",
+            "archetype_label": "Practical Realist",
+            "answer_text": "The everyday situations ads speak to me more because I can see myself in those scenarios, like rushing to college or dealing with dry skin after a long day. It feels authentic and shows how the product fits into my real life, which matters since I look for solutions that work\u2014like when an influencer addresses dry skin issues I relate to.",
+            "position_on_dimension": "High alignment with relatable scenarios",
+            "concept_test_prediction": "This twin would prefer body wash concepts emphasizing practicality, value, and solutions for common issues like dryness or sensitivity (e.g., products for Indian skin or hard water). They might favor claims based on real-user testimonials or clinical proof, leading to interest in mid-range, functional products.",
+            "ad_test_prediction": "Ads showing ordinary people in familiar environments (e.g., a student in a hostel bathroom or at the gym) would be more effective, building trust through authenticity. They'd respond better to content that highlights daily use cases, increasing likelihood to try based on perceived relevance."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "A",
+            "archetype_label": "Mood-Dependent Receptive",
+            "answer_text": "If I'm rushing between classes, I'd just scroll past the ad without even registering it \u2013 too stressed and focused on other things. But when I'm chilling at home, maybe after a shower with candles lit, I'd stop to watch the ad, check if it's natural or Ayurvedic, and might even save it for later. The difference is huge because my mood totally changes how open I am to new stuff.",
+            "position_on_dimension": "High context sensitivity",
+            "concept_test_prediction": "In a stressed context (e.g., during exams), they might reject premium or innovative body wash concepts as unnecessary; in a relaxed context, they'd be more open to exploring concepts with long-lasting fragrance or Ayurvedic claims.",
+            "ad_test_prediction": "Ads seen during busy times have low click-through and are ignored; during leisure, ads with calming visuals or influencer endorsements can capture attention and drive exploration on platforms like Instagram."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T003",
+        "participant_id": "P06",
+        "combo_id": 242,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Value-Conscious Explorer",
+            "answer_text": "I'd browse their website first to see what the body wash offers. If it has natural ingredients like fruit-based ones or certifications like Ayurvedic or sulfate-free, I might use the coupon. But if it's just a basic product, I'll pass and stick with my regular\u2014after all, a deal is only good if the product aligns with what I value.",
+            "position_on_dimension": "Moderate spontaneity",
+            "concept_test_prediction": "Might engage with body wash concepts that highlight specific benefits like 'natural' or 'pH-balanced,' but only after verifying claims through reviews or ingredient lists, not purely on impulse.",
+            "ad_test_prediction": "Responds to ads that emphasize value propositions, such as certifications or skin benefits, and might engage if the ad includes credible sources like influencer reviews addressing specific problems (Q58, Q59), but without urgency pressure."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "C",
+            "archetype_label": "Detail-Oriented Researcher",
+            "answer_text": "Option B with the detailed description is my pick. I always check ingredients first because of my skin sensitivity, and plain packaging doesn't matter if the product is effective. For me, knowing exactly what's in it and how it helps is key to feeling good about buying.",
+            "position_on_dimension": "Low visual dominance / high textual dominance",
+            "concept_test_prediction": "Would critically assess body wash concepts based on ingredient lists, claims, and certifications; packaging aesthetics are secondary, leading to slower evaluations focused on textual accuracy and benefits.",
+            "ad_test_prediction": "Prefers ad campaigns with detailed blog posts, written reviews, or ads highlighting ingredients and clinical proof; less likely to engage with purely visual content, favoring comprehensive information in messaging."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "C",
+            "archetype_label": "Consistently Receptive",
+            "answer_text": "I don't think my reaction changes much based on what I'm doing. If an ad for a body wash pops up, I'll check it out if I need one or if it looks interesting \u2013 like if it's natural or has a good deal. Whether I'm busy or relaxing, I decide based on the product's smell, price, and reviews, not my mood. So, I'm always open to seeing what's new.",
+            "position_on_dimension": "Low context sensitivity",
+            "concept_test_prediction": "Evaluates body wash concepts consistently based on intrinsic merits like fragrance duration, foam, and price (Q44, Q56), with minimal influence from external context. Innovative or premium concepts are judged on their own terms.",
+            "ad_test_prediction": "Ad response is driven by ad content quality, such as relatable experiences or clear claims (Q61, Q62), not by when it's seen. They might engage equally across contexts, leading to stable click-through rates and consideration."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T004",
+        "participant_id": "P06",
+        "combo_id": 64,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "A",
+            "archetype_label": "Luxury-Seeker Idealist",
+            "answer_text": "I definitely prefer the luxurious lifestyle ads. Seeing someone in a spa or on vacation makes me feel like I'm treating myself to something special\u2014it inspires me to upgrade my routine and adds a bit of fantasy to my daily life. Since I love creating a better ambience with sound and light in my grooming, these ads align with my ideal self-care moments.",
+            "position_on_dimension": "High alignment with aspirational lifestyles",
+            "concept_test_prediction": "This twin would be attracted to body wash concepts positioned as premium, exclusive, or with spa-like benefits (e.g., formulations with rare ingredients or luxury packaging). They might respond positively to claims of indulgence or trend-setting, leading to higher interest in high-priced products.",
+            "ad_test_prediction": "Ads featuring celebrities, exotic locations, or sophisticated settings (e.g., a model in a five-star hotel) would resonate well, increasing engagement and purchase intent. They'd be more likely to share such content, seeing it as aspirational and aligning with their curiosity for enhanced experiences."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T005",
+        "participant_id": "P06",
+        "combo_id": 13,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "A",
+            "archetype_label": "Emotional Experience Seeker",
+            "answer_text": "Definitely Ad A. The mood film just clicks with me. My bathing time is my self-care ritual, and that ad feels like it gets that. Seeing someone actually enjoying that quiet moment with nice visuals and music is more relatable than a doctor listing facts. It makes me imagine using the product for that same feeling.",
+            "position_on_dimension": "High preference for emotional storytelling",
+            "concept_test_prediction": "This twin would strongly prefer concepts emphasizing sensory indulgence, mood transformation (e.g., 'de-stress,' 'uplift your spirit'), and packaging/imagery that evokes a premium, experiential feel. Ingredient lists matter less than the overall 'vibe' and promise of a better bathing ritual.",
+            "ad_test_prediction": "Would have higher engagement and purchase intent for ads using evocative visuals, aspirational storytelling, relatable slice-of-life moments, and sensory cues (sound, imagery of foam/fragrance). Rational ads with data would be seen as boring or irrelevant."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "B",
+            "archetype_label": "Practical Realist",
+            "answer_text": "The everyday situations ads speak to me more because I can see myself in those scenarios, like rushing to college or dealing with dry skin after a long day. It feels authentic and shows how the product fits into my real life, which matters since I look for solutions that work\u2014like when an influencer addresses dry skin issues I relate to.",
+            "position_on_dimension": "High alignment with relatable scenarios",
+            "concept_test_prediction": "This twin would prefer body wash concepts emphasizing practicality, value, and solutions for common issues like dryness or sensitivity (e.g., products for Indian skin or hard water). They might favor claims based on real-user testimonials or clinical proof, leading to interest in mid-range, functional products.",
+            "ad_test_prediction": "Ads showing ordinary people in familiar environments (e.g., a student in a hostel bathroom or at the gym) would be more effective, building trust through authenticity. They'd respond better to content that highlights daily use cases, increasing likelihood to try based on perceived relevance."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T006",
+        "participant_id": "P06",
+        "combo_id": 15,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "A",
+            "archetype_label": "Emotional Experience Seeker",
+            "answer_text": "Definitely Ad A. The mood film just clicks with me. My bathing time is my self-care ritual, and that ad feels like it gets that. Seeing someone actually enjoying that quiet moment with nice visuals and music is more relatable than a doctor listing facts. It makes me imagine using the product for that same feeling.",
+            "position_on_dimension": "High preference for emotional storytelling",
+            "concept_test_prediction": "This twin would strongly prefer concepts emphasizing sensory indulgence, mood transformation (e.g., 'de-stress,' 'uplift your spirit'), and packaging/imagery that evokes a premium, experiential feel. Ingredient lists matter less than the overall 'vibe' and promise of a better bathing ritual.",
+            "ad_test_prediction": "Would have higher engagement and purchase intent for ads using evocative visuals, aspirational storytelling, relatable slice-of-life moments, and sensory cues (sound, imagery of foam/fragrance). Rational ads with data would be seen as boring or irrelevant."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "A",
+            "archetype_label": "Mood-Dependent Receptive",
+            "answer_text": "If I'm rushing between classes, I'd just scroll past the ad without even registering it \u2013 too stressed and focused on other things. But when I'm chilling at home, maybe after a shower with candles lit, I'd stop to watch the ad, check if it's natural or Ayurvedic, and might even save it for later. The difference is huge because my mood totally changes how open I am to new stuff.",
+            "position_on_dimension": "High context sensitivity",
+            "concept_test_prediction": "In a stressed context (e.g., during exams), they might reject premium or innovative body wash concepts as unnecessary; in a relaxed context, they'd be more open to exploring concepts with long-lasting fragrance or Ayurvedic claims.",
+            "ad_test_prediction": "Ads seen during busy times have low click-through and are ignored; during leisure, ads with calming visuals or influencer endorsements can capture attention and drive exploration on platforms like Instagram."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T007",
+        "participant_id": "P06",
+        "combo_id": 43,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "B",
+            "archetype_label": "Rational Benefit Validator",
+            "answer_text": "Ad B, for sure. I need to know what's in it and what it actually does, especially with my dry skin. A dermatologist explaining things gives me confidence. The mood film is nice, but it doesn't tell me anything. I'd watch Ad B fully to understand the benefits and if the ingredients match what I look for online.",
+            "position_on_dimension": "High preference for logical claims",
+            "concept_test_prediction": "This twin would favor concepts highlighting specific ingredients (shea, vitamin E), certifications (pH-balanced, dermatologist-tested), and clear functional benefits for skin concerns (dryness). Sensory or mood claims would be secondary unless backed by proof.",
+            "ad_test_prediction": "Would respond better to ads featuring expert testimonials (dermatologists), clear before/after visuals, ingredient breakdowns, and side-by-side comparisons. Purely emotional ads would be dismissed as fluff without substance."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T008",
+        "participant_id": "P06",
+        "combo_id": 58,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "A",
+            "archetype_label": "Visually Driven Evaluator",
+            "answer_text": "I'd go for Option A with the beautiful packaging every time. The visuals just pull me in, and if it looks natural and appealing, like what I prefer, I'm sold. A short description is fine\u2014I trust my gut from the images and can always check reviews later if needed.",
+            "position_on_dimension": "High visual dominance",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts with elegant, minimalist packaging and visual demos; might overlook or downplay detailed claims if the design isn't appealing, leading to quicker positive evaluations based on aesthetics.",
+            "ad_test_prediction": "More likely to engage with video ads, Instagram reels, or image-heavy social media posts; would skip text-heavy advertisements, responding better to visual storytelling in campaigns."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "B",
+            "archetype_label": "Practical Realist",
+            "answer_text": "The everyday situations ads speak to me more because I can see myself in those scenarios, like rushing to college or dealing with dry skin after a long day. It feels authentic and shows how the product fits into my real life, which matters since I look for solutions that work\u2014like when an influencer addresses dry skin issues I relate to.",
+            "position_on_dimension": "High alignment with relatable scenarios",
+            "concept_test_prediction": "This twin would prefer body wash concepts emphasizing practicality, value, and solutions for common issues like dryness or sensitivity (e.g., products for Indian skin or hard water). They might favor claims based on real-user testimonials or clinical proof, leading to interest in mid-range, functional products.",
+            "ad_test_prediction": "Ads showing ordinary people in familiar environments (e.g., a student in a hostel bathroom or at the gym) would be more effective, building trust through authenticity. They'd respond better to content that highlights daily use cases, increasing likelihood to try based on perceived relevance."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T009",
+        "participant_id": "P06",
+        "combo_id": 60,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "A",
+            "archetype_label": "Visually Driven Evaluator",
+            "answer_text": "I'd go for Option A with the beautiful packaging every time. The visuals just pull me in, and if it looks natural and appealing, like what I prefer, I'm sold. A short description is fine\u2014I trust my gut from the images and can always check reviews later if needed.",
+            "position_on_dimension": "High visual dominance",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts with elegant, minimalist packaging and visual demos; might overlook or downplay detailed claims if the design isn't appealing, leading to quicker positive evaluations based on aesthetics.",
+            "ad_test_prediction": "More likely to engage with video ads, Instagram reels, or image-heavy social media posts; would skip text-heavy advertisements, responding better to visual storytelling in campaigns."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "A",
+            "archetype_label": "Mood-Dependent Receptive",
+            "answer_text": "If I'm rushing between classes, I'd just scroll past the ad without even registering it \u2013 too stressed and focused on other things. But when I'm chilling at home, maybe after a shower with candles lit, I'd stop to watch the ad, check if it's natural or Ayurvedic, and might even save it for later. The difference is huge because my mood totally changes how open I am to new stuff.",
+            "position_on_dimension": "High context sensitivity",
+            "concept_test_prediction": "In a stressed context (e.g., during exams), they might reject premium or innovative body wash concepts as unnecessary; in a relaxed context, they'd be more open to exploring concepts with long-lasting fragrance or Ayurvedic claims.",
+            "ad_test_prediction": "Ads seen during busy times have low click-through and are ignored; during leisure, ads with calming visuals or influencer endorsements can capture attention and drive exploration on platforms like Instagram."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T010",
+        "participant_id": "P06",
+        "combo_id": 232,
+        "coherence_score": 0.98,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Value-Conscious Explorer",
+            "answer_text": "I'd browse their website first to see what the body wash offers. If it has natural ingredients like fruit-based ones or certifications like Ayurvedic or sulfate-free, I might use the coupon. But if it's just a basic product, I'll pass and stick with my regular\u2014after all, a deal is only good if the product aligns with what I value.",
+            "position_on_dimension": "Moderate spontaneity",
+            "concept_test_prediction": "Might engage with body wash concepts that highlight specific benefits like 'natural' or 'pH-balanced,' but only after verifying claims through reviews or ingredient lists, not purely on impulse.",
+            "ad_test_prediction": "Responds to ads that emphasize value propositions, such as certifications or skin benefits, and might engage if the ad includes credible sources like influencer reviews addressing specific problems (Q58, Q59), but without urgency pressure."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T011",
+        "participant_id": "P06",
+        "combo_id": 68,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "B",
+            "archetype_label": "Practical Realist",
+            "answer_text": "The everyday situations ads speak to me more because I can see myself in those scenarios, like rushing to college or dealing with dry skin after a long day. It feels authentic and shows how the product fits into my real life, which matters since I look for solutions that work\u2014like when an influencer addresses dry skin issues I relate to.",
+            "position_on_dimension": "High alignment with relatable scenarios",
+            "concept_test_prediction": "This twin would prefer body wash concepts emphasizing practicality, value, and solutions for common issues like dryness or sensitivity (e.g., products for Indian skin or hard water). They might favor claims based on real-user testimonials or clinical proof, leading to interest in mid-range, functional products.",
+            "ad_test_prediction": "Ads showing ordinary people in familiar environments (e.g., a student in a hostel bathroom or at the gym) would be more effective, building trust through authenticity. They'd respond better to content that highlights daily use cases, increasing likelihood to try based on perceived relevance."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "C",
+            "archetype_label": "Consistently Receptive",
+            "answer_text": "I don't think my reaction changes much based on what I'm doing. If an ad for a body wash pops up, I'll check it out if I need one or if it looks interesting \u2013 like if it's natural or has a good deal. Whether I'm busy or relaxing, I decide based on the product's smell, price, and reviews, not my mood. So, I'm always open to seeing what's new.",
+            "position_on_dimension": "Low context sensitivity",
+            "concept_test_prediction": "Evaluates body wash concepts consistently based on intrinsic merits like fragrance duration, foam, and price (Q44, Q56), with minimal influence from external context. Innovative or premium concepts are judged on their own terms.",
+            "ad_test_prediction": "Ad response is driven by ad content quality, such as relatable experiences or clear claims (Q61, Q62), not by when it's seen. They might engage equally across contexts, leading to stable click-through rates and consideration."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T012",
+        "participant_id": "P06",
+        "combo_id": 214,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "B",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Value-Conscious Explorer",
+            "answer_text": "I'd browse their website first to see what the body wash offers. If it has natural ingredients like fruit-based ones or certifications like Ayurvedic or sulfate-free, I might use the coupon. But if it's just a basic product, I'll pass and stick with my regular\u2014after all, a deal is only good if the product aligns with what I value.",
+            "position_on_dimension": "Moderate spontaneity",
+            "concept_test_prediction": "Might engage with body wash concepts that highlight specific benefits like 'natural' or 'pH-balanced,' but only after verifying claims through reviews or ingredient lists, not purely on impulse.",
+            "ad_test_prediction": "Responds to ads that emphasize value propositions, such as certifications or skin benefits, and might engage if the ad includes credible sources like influencer reviews addressing specific problems (Q58, Q59), but without urgency pressure."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "B",
+            "archetype_label": "Rational Benefit Validator",
+            "answer_text": "Ad B, for sure. I need to know what's in it and what it actually does, especially with my dry skin. A dermatologist explaining things gives me confidence. The mood film is nice, but it doesn't tell me anything. I'd watch Ad B fully to understand the benefits and if the ingredients match what I look for online.",
+            "position_on_dimension": "High preference for logical claims",
+            "concept_test_prediction": "This twin would favor concepts highlighting specific ingredients (shea, vitamin E), certifications (pH-balanced, dermatologist-tested), and clear functional benefits for skin concerns (dryness). Sensory or mood claims would be secondary unless backed by proof.",
+            "ad_test_prediction": "Would respond better to ads featuring expert testimonials (dermatologists), clear before/after visuals, ingredient breakdowns, and side-by-side comparisons. Purely emotional ads would be dismissed as fluff without substance."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "C",
+            "archetype_label": "Detail-Oriented Researcher",
+            "answer_text": "Option B with the detailed description is my pick. I always check ingredients first because of my skin sensitivity, and plain packaging doesn't matter if the product is effective. For me, knowing exactly what's in it and how it helps is key to feeling good about buying.",
+            "position_on_dimension": "Low visual dominance / high textual dominance",
+            "concept_test_prediction": "Would critically assess body wash concepts based on ingredient lists, claims, and certifications; packaging aesthetics are secondary, leading to slower evaluations focused on textual accuracy and benefits.",
+            "ad_test_prediction": "Prefers ad campaigns with detailed blog posts, written reviews, or ads highlighting ingredients and clinical proof; less likely to engage with purely visual content, favoring comprehensive information in messaging."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T013",
+        "participant_id": "P06",
+        "combo_id": 10,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "A",
+            "archetype_label": "Emotional Experience Seeker",
+            "answer_text": "Definitely Ad A. The mood film just clicks with me. My bathing time is my self-care ritual, and that ad feels like it gets that. Seeing someone actually enjoying that quiet moment with nice visuals and music is more relatable than a doctor listing facts. It makes me imagine using the product for that same feeling.",
+            "position_on_dimension": "High preference for emotional storytelling",
+            "concept_test_prediction": "This twin would strongly prefer concepts emphasizing sensory indulgence, mood transformation (e.g., 'de-stress,' 'uplift your spirit'), and packaging/imagery that evokes a premium, experiential feel. Ingredient lists matter less than the overall 'vibe' and promise of a better bathing ritual.",
+            "ad_test_prediction": "Would have higher engagement and purchase intent for ads using evocative visuals, aspirational storytelling, relatable slice-of-life moments, and sensory cues (sound, imagery of foam/fragrance). Rational ads with data would be seen as boring or irrelevant."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "A",
+            "archetype_label": "Luxury-Seeker Idealist",
+            "answer_text": "I definitely prefer the luxurious lifestyle ads. Seeing someone in a spa or on vacation makes me feel like I'm treating myself to something special\u2014it inspires me to upgrade my routine and adds a bit of fantasy to my daily life. Since I love creating a better ambience with sound and light in my grooming, these ads align with my ideal self-care moments.",
+            "position_on_dimension": "High alignment with aspirational lifestyles",
+            "concept_test_prediction": "This twin would be attracted to body wash concepts positioned as premium, exclusive, or with spa-like benefits (e.g., formulations with rare ingredients or luxury packaging). They might respond positively to claims of indulgence or trend-setting, leading to higher interest in high-priced products.",
+            "ad_test_prediction": "Ads featuring celebrities, exotic locations, or sophisticated settings (e.g., a model in a five-star hotel) would resonate well, increasing engagement and purchase intent. They'd be more likely to share such content, seeing it as aspirational and aligning with their curiosity for enhanced experiences."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T014",
+        "participant_id": "P06",
+        "combo_id": 12,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "A",
+            "archetype_label": "Emotional Experience Seeker",
+            "answer_text": "Definitely Ad A. The mood film just clicks with me. My bathing time is my self-care ritual, and that ad feels like it gets that. Seeing someone actually enjoying that quiet moment with nice visuals and music is more relatable than a doctor listing facts. It makes me imagine using the product for that same feeling.",
+            "position_on_dimension": "High preference for emotional storytelling",
+            "concept_test_prediction": "This twin would strongly prefer concepts emphasizing sensory indulgence, mood transformation (e.g., 'de-stress,' 'uplift your spirit'), and packaging/imagery that evokes a premium, experiential feel. Ingredient lists matter less than the overall 'vibe' and promise of a better bathing ritual.",
+            "ad_test_prediction": "Would have higher engagement and purchase intent for ads using evocative visuals, aspirational storytelling, relatable slice-of-life moments, and sensory cues (sound, imagery of foam/fragrance). Rational ads with data would be seen as boring or irrelevant."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "B",
+            "archetype_label": "Practical Realist",
+            "answer_text": "The everyday situations ads speak to me more because I can see myself in those scenarios, like rushing to college or dealing with dry skin after a long day. It feels authentic and shows how the product fits into my real life, which matters since I look for solutions that work\u2014like when an influencer addresses dry skin issues I relate to.",
+            "position_on_dimension": "High alignment with relatable scenarios",
+            "concept_test_prediction": "This twin would prefer body wash concepts emphasizing practicality, value, and solutions for common issues like dryness or sensitivity (e.g., products for Indian skin or hard water). They might favor claims based on real-user testimonials or clinical proof, leading to interest in mid-range, functional products.",
+            "ad_test_prediction": "Ads showing ordinary people in familiar environments (e.g., a student in a hostel bathroom or at the gym) would be more effective, building trust through authenticity. They'd respond better to content that highlights daily use cases, increasing likelihood to try based on perceived relevance."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "A",
+            "archetype_label": "Mood-Dependent Receptive",
+            "answer_text": "If I'm rushing between classes, I'd just scroll past the ad without even registering it \u2013 too stressed and focused on other things. But when I'm chilling at home, maybe after a shower with candles lit, I'd stop to watch the ad, check if it's natural or Ayurvedic, and might even save it for later. The difference is huge because my mood totally changes how open I am to new stuff.",
+            "position_on_dimension": "High context sensitivity",
+            "concept_test_prediction": "In a stressed context (e.g., during exams), they might reject premium or innovative body wash concepts as unnecessary; in a relaxed context, they'd be more open to exploring concepts with long-lasting fragrance or Ayurvedic claims.",
+            "ad_test_prediction": "Ads seen during busy times have low click-through and are ignored; during leisure, ads with calming visuals or influencer endorsements can capture attention and drive exploration on platforms like Instagram."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T015",
+        "participant_id": "P06",
+        "combo_id": 16,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "A",
+            "archetype_label": "Emotional Experience Seeker",
+            "answer_text": "Definitely Ad A. The mood film just clicks with me. My bathing time is my self-care ritual, and that ad feels like it gets that. Seeing someone actually enjoying that quiet moment with nice visuals and music is more relatable than a doctor listing facts. It makes me imagine using the product for that same feeling.",
+            "position_on_dimension": "High preference for emotional storytelling",
+            "concept_test_prediction": "This twin would strongly prefer concepts emphasizing sensory indulgence, mood transformation (e.g., 'de-stress,' 'uplift your spirit'), and packaging/imagery that evokes a premium, experiential feel. Ingredient lists matter less than the overall 'vibe' and promise of a better bathing ritual.",
+            "ad_test_prediction": "Would have higher engagement and purchase intent for ads using evocative visuals, aspirational storytelling, relatable slice-of-life moments, and sensory cues (sound, imagery of foam/fragrance). Rational ads with data would be seen as boring or irrelevant."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T016",
+        "participant_id": "P06",
+        "combo_id": 37,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "B",
+            "archetype_label": "Rational Benefit Validator",
+            "answer_text": "Ad B, for sure. I need to know what's in it and what it actually does, especially with my dry skin. A dermatologist explaining things gives me confidence. The mood film is nice, but it doesn't tell me anything. I'd watch Ad B fully to understand the benefits and if the ingredients match what I look for online.",
+            "position_on_dimension": "High preference for logical claims",
+            "concept_test_prediction": "This twin would favor concepts highlighting specific ingredients (shea, vitamin E), certifications (pH-balanced, dermatologist-tested), and clear functional benefits for skin concerns (dryness). Sensory or mood claims would be secondary unless backed by proof.",
+            "ad_test_prediction": "Would respond better to ads featuring expert testimonials (dermatologists), clear before/after visuals, ingredient breakdowns, and side-by-side comparisons. Purely emotional ads would be dismissed as fluff without substance."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "A",
+            "archetype_label": "Luxury-Seeker Idealist",
+            "answer_text": "I definitely prefer the luxurious lifestyle ads. Seeing someone in a spa or on vacation makes me feel like I'm treating myself to something special\u2014it inspires me to upgrade my routine and adds a bit of fantasy to my daily life. Since I love creating a better ambience with sound and light in my grooming, these ads align with my ideal self-care moments.",
+            "position_on_dimension": "High alignment with aspirational lifestyles",
+            "concept_test_prediction": "This twin would be attracted to body wash concepts positioned as premium, exclusive, or with spa-like benefits (e.g., formulations with rare ingredients or luxury packaging). They might respond positively to claims of indulgence or trend-setting, leading to higher interest in high-priced products.",
+            "ad_test_prediction": "Ads featuring celebrities, exotic locations, or sophisticated settings (e.g., a model in a five-star hotel) would resonate well, increasing engagement and purchase intent. They'd be more likely to share such content, seeing it as aspirational and aligning with their curiosity for enhanced experiences."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T017",
+        "participant_id": "P06",
+        "combo_id": 40,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "B",
+            "archetype_label": "Rational Benefit Validator",
+            "answer_text": "Ad B, for sure. I need to know what's in it and what it actually does, especially with my dry skin. A dermatologist explaining things gives me confidence. The mood film is nice, but it doesn't tell me anything. I'd watch Ad B fully to understand the benefits and if the ingredients match what I look for online.",
+            "position_on_dimension": "High preference for logical claims",
+            "concept_test_prediction": "This twin would favor concepts highlighting specific ingredients (shea, vitamin E), certifications (pH-balanced, dermatologist-tested), and clear functional benefits for skin concerns (dryness). Sensory or mood claims would be secondary unless backed by proof.",
+            "ad_test_prediction": "Would respond better to ads featuring expert testimonials (dermatologists), clear before/after visuals, ingredient breakdowns, and side-by-side comparisons. Purely emotional ads would be dismissed as fluff without substance."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "B",
+            "archetype_label": "Practical Realist",
+            "answer_text": "The everyday situations ads speak to me more because I can see myself in those scenarios, like rushing to college or dealing with dry skin after a long day. It feels authentic and shows how the product fits into my real life, which matters since I look for solutions that work\u2014like when an influencer addresses dry skin issues I relate to.",
+            "position_on_dimension": "High alignment with relatable scenarios",
+            "concept_test_prediction": "This twin would prefer body wash concepts emphasizing practicality, value, and solutions for common issues like dryness or sensitivity (e.g., products for Indian skin or hard water). They might favor claims based on real-user testimonials or clinical proof, leading to interest in mid-range, functional products.",
+            "ad_test_prediction": "Ads showing ordinary people in familiar environments (e.g., a student in a hostel bathroom or at the gym) would be more effective, building trust through authenticity. They'd respond better to content that highlights daily use cases, increasing likelihood to try based on perceived relevance."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T018",
+        "participant_id": "P06",
+        "combo_id": 42,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "B",
+            "archetype_label": "Rational Benefit Validator",
+            "answer_text": "Ad B, for sure. I need to know what's in it and what it actually does, especially with my dry skin. A dermatologist explaining things gives me confidence. The mood film is nice, but it doesn't tell me anything. I'd watch Ad B fully to understand the benefits and if the ingredients match what I look for online.",
+            "position_on_dimension": "High preference for logical claims",
+            "concept_test_prediction": "This twin would favor concepts highlighting specific ingredients (shea, vitamin E), certifications (pH-balanced, dermatologist-tested), and clear functional benefits for skin concerns (dryness). Sensory or mood claims would be secondary unless backed by proof.",
+            "ad_test_prediction": "Would respond better to ads featuring expert testimonials (dermatologists), clear before/after visuals, ingredient breakdowns, and side-by-side comparisons. Purely emotional ads would be dismissed as fluff without substance."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "A",
+            "archetype_label": "Mood-Dependent Receptive",
+            "answer_text": "If I'm rushing between classes, I'd just scroll past the ad without even registering it \u2013 too stressed and focused on other things. But when I'm chilling at home, maybe after a shower with candles lit, I'd stop to watch the ad, check if it's natural or Ayurvedic, and might even save it for later. The difference is huge because my mood totally changes how open I am to new stuff.",
+            "position_on_dimension": "High context sensitivity",
+            "concept_test_prediction": "In a stressed context (e.g., during exams), they might reject premium or innovative body wash concepts as unnecessary; in a relaxed context, they'd be more open to exploring concepts with long-lasting fragrance or Ayurvedic claims.",
+            "ad_test_prediction": "Ads seen during busy times have low click-through and are ignored; during leisure, ads with calming visuals or influencer endorsements can capture attention and drive exploration on platforms like Instagram."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T019",
+        "participant_id": "P06",
+        "combo_id": 61,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "A",
+            "archetype_label": "Visually Driven Evaluator",
+            "answer_text": "I'd go for Option A with the beautiful packaging every time. The visuals just pull me in, and if it looks natural and appealing, like what I prefer, I'm sold. A short description is fine\u2014I trust my gut from the images and can always check reviews later if needed.",
+            "position_on_dimension": "High visual dominance",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts with elegant, minimalist packaging and visual demos; might overlook or downplay detailed claims if the design isn't appealing, leading to quicker positive evaluations based on aesthetics.",
+            "ad_test_prediction": "More likely to engage with video ads, Instagram reels, or image-heavy social media posts; would skip text-heavy advertisements, responding better to visual storytelling in campaigns."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "C",
+            "archetype_label": "Adaptable Enthusiast",
+            "answer_text": "It really depends on my mood and what I need\u2014sometimes the luxurious ads catch my eye and make me dream a bit, but the realistic ones help me decide if it's practical for my life. I enjoy both because grooming is about feeling good myself and how others perceive me, so I look for inspiration and functionality in equal measure.",
+            "position_on_dimension": "Moderate or context-dependent; values both aspects",
+            "concept_test_prediction": "This twin would be receptive to a range of concepts, from premium to practical, but might need messaging that bridges both (e.g., a body wash with luxury fragrance at an affordable price). They could be swayed by versatile claims like 'natural' with clinical backing, leading to moderate interest across segments.",
+            "ad_test_prediction": "Ads that blend aspirational elements with relatable contexts (e.g., a premium product shown in a common metro India setting) would appeal most, driving engagement through a mix of inspiration and authenticity. They might respond well to campaigns that offer both lifestyle enhancement and everyday utility, leading to consistent but varied interest."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Moderated Interest",
+            "answer_text": "When I'm busy, I might notice the ad if it has a catchy claim like 'pH balanced' or a nice ocean fragrance, but I'd probably just bookmark it for later. Relaxed at home, I'm more likely to watch the full ad, read reviews, and consider buying, but only if the product seems worth it with good ingredients. So context matters, but the product itself has to appeal too.",
+            "position_on_dimension": "Medium context sensitivity",
+            "concept_test_prediction": "Context affects initial interest; in stressful times, they might prefer familiar or budget concepts, but strong benefits like moisturizing or natural ingredients can still attract them. In relaxed states, they're more receptive to mid-range or D2C concepts.",
+            "ad_test_prediction": "Ads need to highlight key benefits quickly to cut through in busy contexts; in relaxed contexts, detailed ads with unboxing or expert reviews (Q62) are more effective, leading to higher consideration and potential purchase."
+          }
+        ]
+      },
+      {
+        "twin_id": "P06_T020",
+        "participant_id": "P06",
+        "combo_id": 63,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Speed and spontaneity in buying decisions",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Driven Impulse Buyer",
+            "answer_text": "I'd use the coupon right away\u2014\u20b9249 for a new body wash is a great deal, and since I'm always curious to try new things, I'll grab it even though I have some left. The 48-hour limit makes it feel urgent and exciting, so why wait? Plus, stocking up saves me from browsing later.",
+            "position_on_dimension": "High spontaneity",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts with limited-time offers, eye-catching packaging, or novel claims like 'exclusive launch,' making quick decisions without extensive research on ingredients.",
+            "ad_test_prediction": "Likely to engage with flashy social media ads featuring urgency cues (e.g., 'limited stock' or 'flash sale') and immediate calls-to-action, clicking to purchase based on vibrant visuals and influencer endorsements."
+          },
+          {
+            "dimension_name": "Preference for emotional storytelling over logical claims",
+            "question_text": "Imagine two YouTube ads for the same new body wash. Ad A is a 30-second mood film: no talking, just beautiful visuals of someone enjoying a calming bath with soft music, ending with text about 'a moment for yourself.' Ad B is a 30-second explainer: a dermatologist lists key ingredients, shows lab test results for moisturizing, and states pH-balanced facts. Which ad is more likely to make you pause, watch fully, and consider the product?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced Connector",
+            "answer_text": "That's tough. I think I'd probably watch both, but I'd need a bit of each. The mood of Ad A grabs my attention first\u2014it looks premium and relaxing. But to actually consider buying, I'd then look for something like Ad B's details. An ideal ad would start with that beautiful feel but also quickly show me the key ingredient or certification that makes it trustworthy.",
+            "position_on_dimension": "Requires both emotional hook and rational proof",
+            "concept_test_prediction": "This twin would prefer hybrid concepts that pair an emotional benefit (e.g., 'a moment of ancient calm') with a tangible, credence-based claim (e.g., 'with 100% Ayurvedic herbs certified by XYZ'). The story and the substance must feel integrated.",
+            "ad_test_prediction": "Most responsive to a narrative ad that seamlessly weaves an emotional journey (e.g., someone's self-care routine) with clear, credible proof points (e.g., text overlays of 'pH-balanced,' 'dermatologist-tested') or a trusted figure explaining benefits within a relatable story."
+          },
+          {
+            "dimension_name": "Dominance of visual cues over written information",
+            "question_text": "When browsing online for a new body wash, you see two options: Option A has stunning product images and elegant packaging design, but the product description is short. Option B has basic images but a very detailed description listing all ingredients, benefits, and usage instructions. Which option are you more likely to investigate further, and what drives your choice?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Information Processor",
+            "answer_text": "I'd probably start with Option A because the packaging catches my eye, but I'd quickly switch to Option B for the details. Since I care about ingredients and have dry skin, I need both: good looks to enjoy the process and solid info to make sure it works.",
+            "position_on_dimension": "Medium / context-dependent",
+            "concept_test_prediction": "Would evaluate body wash concepts by weighing both packaging design and textual claims; might be swayed by concepts that blend visual appeal with clear, ingredient-focused descriptions, requiring a balance for approval.",
+            "ad_test_prediction": "Engages with mixed media ads, like video reviews with detailed captions or influencer content that combines visuals and facts; might respond moderately to both visual and text-based campaigns depending on context."
+          },
+          {
+            "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+            "question_text": "When you see advertisements for body wash, which type of scenario resonates more with you: one that depicts an ideal, luxurious lifestyle (like a spa day or a vacation), or one that shows realistic, everyday situations (like getting ready for college or work)? Why?",
+            "archetype_id": "A",
+            "archetype_label": "Luxury-Seeker Idealist",
+            "answer_text": "I definitely prefer the luxurious lifestyle ads. Seeing someone in a spa or on vacation makes me feel like I'm treating myself to something special\u2014it inspires me to upgrade my routine and adds a bit of fantasy to my daily life. Since I love creating a better ambience with sound and light in my grooming, these ads align with my ideal self-care moments.",
+            "position_on_dimension": "High alignment with aspirational lifestyles",
+            "concept_test_prediction": "This twin would be attracted to body wash concepts positioned as premium, exclusive, or with spa-like benefits (e.g., formulations with rare ingredients or luxury packaging). They might respond positively to claims of indulgence or trend-setting, leading to higher interest in high-priced products.",
+            "ad_test_prediction": "Ads featuring celebrities, exotic locations, or sophisticated settings (e.g., a model in a five-star hotel) would resonate well, increasing engagement and purchase intent. They'd be more likely to share such content, seeing it as aspirational and aligning with their curiosity for enhanced experiences."
+          },
+          {
+            "dimension_name": "Influence of immediate context on marketing receptivity",
+            "question_text": "Imagine you see an ad for a new body wash while you're in a hurry between classes or work tasks. The same ad appears later when you're relaxing at home with no urgent tasks. How differently would you react to the ad in these two situations?",
+            "archetype_id": "A",
+            "archetype_label": "Mood-Dependent Receptive",
+            "answer_text": "If I'm rushing between classes, I'd just scroll past the ad without even registering it \u2013 too stressed and focused on other things. But when I'm chilling at home, maybe after a shower with candles lit, I'd stop to watch the ad, check if it's natural or Ayurvedic, and might even save it for later. The difference is huge because my mood totally changes how open I am to new stuff.",
+            "position_on_dimension": "High context sensitivity",
+            "concept_test_prediction": "In a stressed context (e.g., during exams), they might reject premium or innovative body wash concepts as unnecessary; in a relaxed context, they'd be more open to exploring concepts with long-lasting fragrance or Ayurvedic claims.",
+            "ad_test_prediction": "Ads seen during busy times have low click-through and are ignored; during leisure, ads with calming visuals or influencer endorsements can capture attention and drive exploration on platforms like Instagram."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Ahmedabad, Gujarat"
+M1,What is your current occupation or primary activity?,Student
+M1,What is your approximate monthly household income range?,1l_2l
+M1,What is your household composition?,Alone
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English,hindi"
+M1,How would you describe your personality in 3-5 words?,"Energetic, full of life and optimistic"
+M1,How comfortable are you trying new brands or products you haven't used before?,4
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?","It's about how others perceive me and whether they have a positive feeling after interacting with me. If I don't smell good, it negatively impacts their perception"
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Notice_problems
+M1,"When you imagine your ideal grooming routine â€” not what you do now, but what you'd love â€” what does it look like?",A grooming schedule twice a day Ñ after waking up and before sleep. Ideally three-four products covering different angles of grooming and skincare
+M2,"When buying any personal care product, rank these factors from most to least important:","[""expert"",""recommendation"",""price"",""brand"",""reviews"",""ingredients"",""packaging"",""fragrance""]"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":3,""explanation"":""These claims of natural and sustainable are a gimmick to some extent. Those products also contain chemicals, and brands not claiming natural aren't giving you toxic stuff either Ñ those are also good products.""}"
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Dermatologist_tested,ph_balanced"
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"International brands signal better quality than Indian brands. Indian brands are known for cheap production, which gives me less confidence to use them"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"{""Sustainable/eco-friendly packaging"":""0"",""Ayurvedic or traditional ingredients"":""0"",""Clinical-grade, lab-tested formulation"":""10_20"",""Cruelty-free, not tested on animals"":""0"",""Made in India"":""10_20""}"
+M2,How loyal are you to personal care brands?,Moderate_loyalty
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""TV advertisements"":3,""Instagram or YouTube influencers"":2,""Dermatologists or skin doctors"":5,""Friends and family"":4,""Online reviews (Amazon, Nykaa)"":3,""Claims written on the product packaging"":1}"
+M2,Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?,Strong_clinical
+M3,"When your current body wash/soap runs out, what is your typical next step?",Browse_online
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""quick_commerce"",""amazon"",""social_commerce""]"
+M3,How much do you typically spend on a single body wash purchase?,100_200
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""skin_problem"",""doctor_rec"",""cheaper""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,"No particular reason Ñ there was a discount on Blinkit, so I tried the brand. I was satisfied because I don't have nuanced body wash requirements; pretty much any product works"
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","[""price"",""brand_name"",""star_rating""]"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?","Yes, I heavily use Blinkit, Swiggy, Instamart for personal care Ñ instant delivery whenever I run out. Usually satisfied with the selection; enough options to choose from"
+M3,"If a brand you liked raised its price by 30%, what would you do?",Look_alternatives
+M4,How many times a day do you typically shower/bathe?,Once
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,"Start with shaving/trimming beard. Wash body with water, apply body wash/soap/shampoo, then conditioner, rinse again. Takes about five minutes total"
+M4,"I'm curious, do you have any favorite brands for your body wash or shampoo that you always use?","No favorite brands, but I frequently end up using Lux and Nivea"
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?","Currently use body wash. Stopped using bar soap since childhood Ñ prefer a product untouched by others. In shared bathrooms, bar soap gets contaminated, but body wash stays pure for next use"
+M4,How would you describe your relationship with bathing/grooming?,Small_pleasure
+M4,"What specific skin concerns, if any, do you have? Select all that apply.",Dryness
+M4,Do other household members use the same body wash as you? Who decides what to buy?,Other household members use bar soap; price is the main concern. Father makes purchase decisions with some input from mother
+M4,"How does your water quality affect your product choices, if at all?",Water quality does not affect my product choices at all
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"Fresh_citrus,ocean_aquatic"
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,Liked a Lux Body Wash fragrance. Did not repurchase for scent Ñ bought a cheaper alternative instead. A fragrance feels special if it lasts longer and signals freshly bathed
+M5,How long should a body wash fragrance last on your skin?,Half_day
+M5,How important is lather/foam to your body wash experience?,Dont_care
+M5,What texture do you prefer in a body wash?,Oil_to_foam
+M5,What is your ideal post-wash skin feeling?,Fresh_tingling
+M5,Do you prefer packaging that looks:,Playful
+M5,"If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",I don't have any particular views on this
+M6,What body wash brand(s) do you currently use? List all.,The fragrance and how well it spreads on the body
+M6,What do you like MOST about your current body wash? (Top 1-2 things),Foam production can be improved. Feels very liquidy and doesn't convert into foam easily
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",The amount of foam it creates can be improved. It feels very liquidy and does not convert into a foam very easily
+M6,What body wash brands can you name off the top of your head? List as many as you can.,McCaffin Bombay Shaving Company Lux Nivea Dettol Fiamma
+M6,How would you categorize body washes in your mind? What makes one different from another?,"What makes it different from another is:
+- how it cleans your body
+- the fragrance it leaves on your body
+- whether it has any side effects or not"
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"- Fragrance: natural lime flavor
+- Texture: exfoliating, so body feels cleaned
+- Benefits: complementary to skin needs Ñ if skin feels dry, it should address dryness
+- Packaging: lively and inviting
+- Price: low, no premium required"
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price â€” anything.","- The fragrance should be natural lime flavor.
+- The texture has to be an exfoliating texture so that I feel that my body is being cleaned.
+- Benefits have to be complimentary to how my skill feels. If my skin feels dry, then it needs to make me not feel dry.
+- The packaging needs to be lively and inviting.
+- The price has to be low so that I don't have to spend a premium to get that product"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,Paid _250-300 for a Lux premium body wash. Didn't feel any different from sub-_100 Nivea and other brands
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,"{""rating"":4,""explanation"":""India-specific means tailored to Indian skin types, performing better in Indian conditions versus foreign products just copied from outside.""}"
+M6,Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?,Only if people notice I've changed body washes and are impressed by the fragrance or something about it
+M6,What would a body wash need to offer for you to pay 2x your current price?,The only reason I would pay 2x my current price is if people notice that I have changed body washes and they are impressed by the fragrance or something
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""instagram"",""friends_family"",""quick_commerce""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,"Consistency in messaging is key. If they support one product then flip to a competitor the next day, it signals they're only after money, not interested in spreading truth. That would break my trust"
+M7,Are there any specific qualities or behaviors in influencers that would make you consider trusting them in the future?,Saw Instagram ads with recognizable people at a very low price point Ñ an offer where you just pay for shipping (_1 for the product itself). Bought a product or two this way
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,"I saw some Instagram ads with some recognizable people, and the price point was very low. There was an offer related to just paying for shipping, and you don't have to pay; you just have to pay â‚¹1 or something for the product itself. I might have bought a product or two this way"
+M7,What type of content makes you most likely to try a new product? Pick top 2:,"Expert_review,discount"
+M7,Do you read online reviews before buying personal care products? Where?,None

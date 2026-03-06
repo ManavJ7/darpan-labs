@@ -1,0 +1,66 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Ahmedabad, Gujarat"
+M1,What is your current occupation or primary activity?,Student
+M1,What is your approximate monthly household income range?,Above_2l
+M1,What is your household composition?,Alone
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English, Hindi, other regional"
+M1,How would you describe your personality in 3-5 words?,"Calm, composed, relentless"
+M1,How comfortable are you trying new brands or products you haven't used before?,3
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",Care a lot. Mix of both
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Notice_problems
+M1,"When you imagine your ideal grooming routine â€” not what you do now, but what you'd love â€” what does it look like?","Facewash, face serum, face cream etc."
+M2,"When buying any personal care product, rank these factors from most to least important:","[""brand"",""expert"",""reviews"",""fragrance"",""price"",""packaging""]"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":4,""explanation"":""Less chemicals, greener packaging, doctor recommended""}"
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Dermatologist_tested,organic,ph_balanced"
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,Bias towards international brands
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"{""Sustainable/eco-friendly packaging"":""0"",""Ayurvedic or traditional ingredients"":""10_20"",""Clinical-grade, lab-tested formulation"":""0"",""Cruelty-free, not tested on animals"":""0"",""Made in India"":""10_20""}"
+M2,How loyal are you to personal care brands?,Moderate_loyalty
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""Instagram or YouTube influencers"":3,""Dermatologists or skin doctors"":5,""Friends and family"":4,""Online reviews (Amazon, Nykaa)"":4,""Claims written on the product packaging"":3,""TV advertisements"":2}"
+M2,Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?,Slight_clinical
+M3,"When your current body wash/soap runs out, what is your typical next step?",Repurchase_same
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""quick_commerce""]"
+M3,How much do you typically spend on a single body wash purchase?,350_500
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""doctor_rec"",""ad_resonance"",""skin_problem""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,Switched to a dermat-recommended face wash. Close friends urged the switch. Very satisfied; been using that brand since
+M3,"Can you recall a specific instance when you switched body wash brands, and what prompted that change?",Persistent ads when already thinking about switching
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","[""star_rating"",""brand_name"",""review_count""]"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?",Yes. Only look for specific products I use; able to get them from these platforms
+M4,How many times a day do you typically shower/bathe?,Once
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,"Shampoo, body wash, then face wash"
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?",Body wash
+M4,"Is there a particular reason you prefer body wash over bar soap, like the way it feels on your skin or perhaps the scent options?",Skin reacted harshly to bar soaps; using body wash for 10+ years
+M4,How would you describe your relationship with bathing/grooming?,Functional
+M4,"What specific skin concerns, if any, do you have? Select all that apply.","Sensitivity,body_odor"
+M4,Do other household members use the same body wash as you? Who decides what to buy?,No. Every individual decides for themselves
+M4,"How does your water quality affect your product choices, if at all?",It doesn't
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,Ocean_aquatic
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,Nivea men's. Liked the scent Ñ manly and fresh
+M5,How long should a body wash fragrance last on your skin?,1_2hours
+M5,How important is lather/foam to your body wash experience?,Nice_to_have
+M5,What texture do you prefer in a body wash?,Lightweight
+M5,What is your ideal post-wash skin feeling?,Fresh_tingling
+M5,Do you prefer packaging that looks:,Clinical
+M5,"If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",Fragrance of Nivea with texture of Cetaphil
+M6,What body wash brand(s) do you currently use? List all.,"Body wash: Nivea
+Face wash: Cetaphil"
+M6,What do you like MOST about your current body wash? (Top 1-2 things),"Cleans body smells good, suits my skin"
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",Fragrance is just okay
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"Nivea, Bath and Body Works, Dove, Cetaphil"
+M6,How would you categorize body washes in your mind? What makes one different from another?,"Categories: Natural, fragrance-focused
+Differentiators: Packaging, pricing, marketing"
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"{""mCaffeine (coffee-based)"":2,""Beardo (men's grooming)"":4,""Minimalist (clinical, transparent bottles)"":5}"
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price â€” anything.","Fragrance: Aquatic, fresh
+Texture: Semi-thick (Cetaphil-like)
+Benefit: Soft skin, good fragrance, fresh feeling
+Packaging: Minimalistic, medical
+Price: _300Ð500"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"[""india_specific"",""derm_recommended"",""natural""]"
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,"_1500. New international brand, someone recommended. Not worth it; never bought again"
+M6,Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?,"{""rating"":5,""explanation"":""""}"
+M6,"Could you share why this specific formulation appeals to you, especially considering your past experience with international brands?",Indian water conditions are unique (hard water in most cities) and skin type is unique. But more likely to trust an international brand that develops such a product
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""influencer"",""instagram"",""quick_commerce""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,No specific one
+M7,Is there a particular type of content or style from influencers that makes you more inclined to trust their recommendations?,"Natural content, less flashy"
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,No
+M7,"Has there ever been a time when a friend's recommendation on social media led you to consider a personal care product, even if you didn't end up buying it?",Considered but never bought
+M7,What type of content makes you most likely to try a new product? Pick top 2:,"Expert_review,before_after"

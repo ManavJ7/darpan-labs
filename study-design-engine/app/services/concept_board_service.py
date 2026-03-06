@@ -314,9 +314,9 @@ class ConceptBoardService:
         study = await self._get_study(study_id, db)
         concept = await self._get_concept(study_id, concept_id, db)
 
-        if concept.status not in ("raw", "refined"):
+        if concept.status not in ("raw", "refined", "approved"):
             raise ValueError(
-                f"Concept must be in 'raw' or 'refined' status to refine, currently '{concept.status}'"
+                f"Concept must be in 'raw', 'refined', or 'approved' status to refine, currently '{concept.status}'"
             )
 
         # Gather context from the study brief

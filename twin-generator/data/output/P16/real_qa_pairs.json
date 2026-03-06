@@ -1,0 +1,303 @@
+[
+  {
+    "participant_id": "P16",
+    "source_file": "interview_transcript_16.csv",
+    "qa_pairs": [
+      {
+        "module_id": "M1",
+        "question_text": "Where do you currently live? (City and state)",
+        "answer_text": "Ahmedabad, Gujarat"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What is your current occupation or primary activity?",
+        "answer_text": "Student"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What is your approximate monthly household income range?",
+        "answer_text": "Above_2l"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What is your household composition?",
+        "answer_text": "Alone"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?",
+        "answer_text": "English, Hindi, other regional"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How would you describe your personality in 3-5 words?",
+        "answer_text": "Calm, composed, relentless"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How comfortable are you trying new brands or products you haven't used before?",
+        "answer_text": "3"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",
+        "answer_text": "Care a lot. Mix of both"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How much attention do you pay to how your skin looks and feels on a daily basis?",
+        "answer_text": "Notice_problems"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "When you imagine your ideal grooming routine \u00e2\u0080\u0094 not what you do now, but what you'd love \u00e2\u0080\u0094 what does it look like?",
+        "answer_text": "Facewash, face serum, face cream etc."
+      },
+      {
+        "module_id": "M2",
+        "question_text": "When buying any personal care product, rank these factors from most to least important:",
+        "answer_text": "[\"brand\",\"expert\",\"reviews\",\"fragrance\",\"price\",\"packaging\"]"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?",
+        "answer_text": "{\"rating\":4,\"explanation\":\"Less chemicals, greener packaging, doctor recommended\"}"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "Which certifications or labels influence your purchase? Select all that apply.",
+        "answer_text": "Dermatologist_tested,organic,ph_balanced"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?",
+        "answer_text": "Bias towards international brands"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:",
+        "answer_text": "{\"Sustainable/eco-friendly packaging\":\"0\",\"Ayurvedic or traditional ingredients\":\"10_20\",\"Clinical-grade, lab-tested formulation\":\"0\",\"Cruelty-free, not tested on animals\":\"0\",\"Made in India\":\"10_20\"}"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How loyal are you to personal care brands?",
+        "answer_text": "Moderate_loyalty"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How much do you trust the following sources for personal care product information? Rate each 1-5:",
+        "answer_text": "{\"Instagram or YouTube influencers\":3,\"Dermatologists or skin doctors\":5,\"Friends and family\":4,\"Online reviews (Amazon, Nykaa)\":4,\"Claims written on the product packaging\":3,\"TV advertisements\":2}"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?",
+        "answer_text": "Slight_clinical"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "When your current body wash/soap runs out, what is your typical next step?",
+        "answer_text": "Repurchase_same"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "Where do you most often buy personal care products? Pick your top 3:",
+        "answer_text": "[\"quick_commerce\"]"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "How much do you typically spend on a single body wash purchase?",
+        "answer_text": "350_500"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "What would make you switch away from your current body wash? Pick your top 3:",
+        "answer_text": "[\"doctor_rec\",\"ad_resonance\",\"skin_problem\"]"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?",
+        "answer_text": "Switched to a dermat-recommended face wash. Close friends urged the switch. Very satisfied; been using that brand since"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "Can you recall a specific instance when you switched body wash brands, and what prompted that change?",
+        "answer_text": "Persistent ads when already thinking about switching"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "When shopping online for personal care, what do you look at first? Pick your top 3:",
+        "answer_text": "[\"star_rating\",\"brand_name\",\"review_count\"]"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?",
+        "answer_text": "Yes. Only look for specific products I use; able to get them from these platforms"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "How many times a day do you typically shower/bathe?",
+        "answer_text": "Once"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Walk me through your typical bathing routine step by step. What products do you use and in what order?",
+        "answer_text": "Shampoo, body wash, then face wash"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Do you currently use body wash, bar soap, or both? What drives that choice?",
+        "answer_text": "Body wash"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Is there a particular reason you prefer body wash over bar soap, like the way it feels on your skin or perhaps the scent options?",
+        "answer_text": "Skin reacted harshly to bar soaps; using body wash for 10+ years"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "How would you describe your relationship with bathing/grooming?",
+        "answer_text": "Functional"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "What specific skin concerns, if any, do you have? Select all that apply.",
+        "answer_text": "Sensitivity,body_odor"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Do other household members use the same body wash as you? Who decides what to buy?",
+        "answer_text": "No. Every individual decides for themselves"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "How does your water quality affect your product choices, if at all?",
+        "answer_text": "It doesn't"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "What fragrance families do you naturally gravitate toward? Pick your top 2:",
+        "answer_text": "Ocean_aquatic"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?",
+        "answer_text": "Nivea men's. Liked the scent \u00d1 manly and fresh"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "How long should a body wash fragrance last on your skin?",
+        "answer_text": "1_2hours"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "How important is lather/foam to your body wash experience?",
+        "answer_text": "Nice_to_have"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "What texture do you prefer in a body wash?",
+        "answer_text": "Lightweight"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "What is your ideal post-wash skin feeling?",
+        "answer_text": "Fresh_tingling"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "Do you prefer packaging that looks:",
+        "answer_text": "Clinical"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",
+        "answer_text": "Fragrance of Nivea with texture of Cetaphil"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What body wash brand(s) do you currently use? List all.",
+        "answer_text": "Body wash: Nivea\nFace wash: Cetaphil"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What do you like MOST about your current body wash? (Top 1-2 things)",
+        "answer_text": "Cleans body smells good, suits my skin"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What, if anything, frustrates you or feels 'just okay' about your current body wash?",
+        "answer_text": "Fragrance is just okay"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What body wash brands can you name off the top of your head? List as many as you can.",
+        "answer_text": "Nivea, Bath and Body Works, Dove, Cetaphil"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "How would you categorize body washes in your mind? What makes one different from another?",
+        "answer_text": "Categories: Natural, fragrance-focused\nDifferentiators: Packaging, pricing, marketing"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:",
+        "answer_text": "{\"mCaffeine (coffee-based)\":2,\"Beardo (men's grooming)\":4,\"Minimalist (clinical, transparent bottles)\":5}"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price \u00e2\u0080\u0094 anything.",
+        "answer_text": "Fragrance: Aquatic, fresh\nTexture: Semi-thick (Cetaphil-like)\nBenefit: Soft skin, good fragrance, fresh feeling\nPackaging: Minimalistic, medical\nPrice: _300\u00d0500"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:",
+        "answer_text": "[\"india_specific\",\"derm_recommended\",\"natural\"]"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What is the most you have ever paid for a body wash? What was it and was it worth it?",
+        "answer_text": "_1500. New international brand, someone recommended. Not worth it; never bought again"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?",
+        "answer_text": "{\"rating\":5,\"explanation\":\"\"}"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "Could you share why this specific formulation appeals to you, especially considering your past experience with international brands?",
+        "answer_text": "Indian water conditions are unique (hard water in most cities) and skin type is unique. But more likely to trust an international brand that develops such a product"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Where do you typically discover new personal care products? Pick your top 3:",
+        "answer_text": "[\"influencer\",\"instagram\",\"quick_commerce\"]"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.",
+        "answer_text": "No specific one"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Is there a particular type of content or style from influencers that makes you more inclined to trust their recommendations?",
+        "answer_text": "Natural content, less flashy"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Have you ever bought a personal care product because you saw it on social media? Describe what happened.",
+        "answer_text": "No"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Has there ever been a time when a friend's recommendation on social media led you to consider a personal care product, even if you didn't end up buying it?",
+        "answer_text": "Considered but never bought"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "What type of content makes you most likely to try a new product? Pick top 2:",
+        "answer_text": "Expert_review,before_after"
+      }
+    ]
+  }
+]

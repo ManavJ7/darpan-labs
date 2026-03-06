@@ -1,0 +1,81 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Bengaluru, Karnataka"
+M1,What is your current occupation or primary activity?,Professional_office
+M1,What is your approximate monthly household income range?,1l_2l
+M1,What is your household composition?,Alone
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?",English
+M1,How would you describe your personality in 3-5 words?,"Polite
+Introverted
+Careful planner"
+M1,How comfortable are you trying new brands or products you haven't used before?,2
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",Grooming is about feeling good about myself; others' perception is not important
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Regularly_care
+M1,"When you imagine your ideal grooming routine â€” not what you do now, but what you'd love â€” what does it look like?","No ideal routine in mind. Usual rest-day routine:
+AM Pre-routine: hair cream (Loreal, night before), hair mask (Loreal Professionnel)
+Bathing: body wash (Dove), face wash (Cetaphil), shampoo & conditioner (Loreal)
+Post-routine: hair moisturiser (Curlzmoist), hair gel (Livon), toner (Tonymoly ceramide), moisturiser (Minimalist), sunscreen (Beauty of Joseon), roll-on deodorant (Chemist at Play), body lotion (Bioderma)
+PM: face wash (Cetaphil), rose water (Dabur), toner (Tonymoly ceramide), face serum (Minimalist), hair serum (Minimalist), moisturiser (Minimalist / La Roche Posay / Bioderma)"
+M2,"When buying any personal care product, rank these factors from most to least important:","[""ingredients"",""reviews"",""brand"",""expert"",""price"",""packaging"",""fragrance"",""recommendation""]"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":2,""explanation"":""Natural means simple, single-ingredient, plant-based, research-backed products with low shelf life (no preservatives)""}"
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Dermatologist_tested,ph_balanced,organic,ayurvedic"
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"Would prefer better-quality Indian products, but selection is too narrow. Only a handful of brands making meaningful products. Due to lack of certified lab tests and research-backed ingredients in popular Indian brands, I'd pick a reputed international brand over a similar Indian one"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"{""Sustainable/eco-friendly packaging"":""10_20"",""Ayurvedic or traditional ingredients"":""10_20"",""Clinical-grade, lab-tested formulation"":""unlimited"",""Cruelty-free, not tested on animals"":""0"",""Made in India"":""10_20""}"
+M2,How loyal are you to personal care brands?,Very_loyal
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""TV advertisements"":1,""Instagram or YouTube influencers"":1,""Dermatologists or skin doctors"":5,""Friends and family"":3,""Online reviews (Amazon, Nykaa)"":2,""Claims written on the product packaging"":4}"
+M2,Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?,Strong_clinical
+M3,"When your current body wash/soap runs out, what is your typical next step?",Repurchase_same
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""nykaa"",""amazon""]"
+M3,How much do you typically spend on a single body wash purchase?,350_500
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""skin_problem"",""doctor_rec"",""better_smell""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,"Tried Playboy body washes last year from Myntra sale. Bought 5, gave away 3. The 2 I used were okay but couldn't match Dove, so switched right back to Dove"
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","[""ingredients"",""brand_name"",""review_count""]"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?","Only use Qcom for last-minute/urgent buys, which rarely happens Ñ meticulous planner, never run out of essentials.
+If forced to buy from Qcom, I'd buy the smallest size to finish quickly and resume buying my usual product"
+M3,"If a brand you liked raised its price by 30%, what would you do?",Keep_buying
+M4,How many times a day do you typically shower/bathe?,Once
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,"Pre-routine: hair cream (night before), hair mask (20 mins before shampoo) Actual routine: Shampoo, conditioner, face wash, body wash"
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?","Body wash Ñ more convenient, less messy than bar soap, and available in a wider range of variants"
+M4,How would you describe your relationship with bathing/grooming?,Mood_dependent
+M4,"What specific skin concerns, if any, do you have? Select all that apply.",Sensitivity
+M4,Do other household members use the same body wash as you? Who decides what to buy?,"Family uses bar soap; nobody touches my products.
+I decide on my own personal care. Others make a common choice Ñ mostly the cheapest option"
+M4,"How does your water quality affect your product choices, if at all?",Water quality is not a consideration currently
+M4,"Has your bathing routine changed in the last 2 years? If so, how and why?","Pre-routine is a new addition.
+Main routine mostly unchanged; only products have been upgraded"
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"Sweet_gourmand,floral"
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,"Chemist at Play roll-on deodorant, variant Aqua. Not my usual fragrance type, but now a big part of my routine.
+Like the fragrance because it's not overpowering and layers well with other products"
+M5,How long should a body wash fragrance last on your skin?,Shower_only
+M5,How important is lather/foam to your body wash experience?,Nice_to_have
+M5,What texture do you prefer in a body wash?,Thick_cream
+M5,What is your ideal post-wash skin feeling?,Moisturized
+M5,Do you prefer packaging that looks:,Clinical
+M5,"If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",Fragrance of Eva deodorant in the variant Wild with the texture of plum solid perfume
+M6,What body wash brand(s) do you currently use? List all.,Dove Ñ shea butter and vanilla variant
+M6,What do you like MOST about your current body wash? (Top 1-2 things),"Good fragrance
+Decent lathering and cleaning
+Not harsh Ñ doesn't dry the skin"
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",Fragrance lasting power is just okay
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"Dove, Lux, Plum, Cetaphil, CeraVe, mCaffeine, Pears, Chemist at Play"
+M6,How would you categorize body washes in your mind? What makes one different from another?,"1. Bare minimum, very affordable Ñ Pears, Liril
+2. Fancy labels, nothing special Ñ mCaffeine, Plum
+3. Decent performers Ñ Dove, Chemist at Play
+4. Expensive premium (can't afford) Ñ Cetaphil, CeraVe"
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"{""mCaffeine (coffee-based)"":1}"
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price â€” anything.","Fragrance: mild, warm (e.g., vanilla)
+Texture: rich, thick, foams well with loofah
+Benefit: moisturising
+Price: modest
+Packaging: simple, minimalistic, no flashy colours"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"[""derm_recommended"",""clinical_studies"",""intense_moisture""]"
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,Most paid: _402 for the most recent purchase
+M6,Could you share which brand or product it was and if you felt it was worth the price?,"Dove body wash, shea butter and vanilla variant"
+M6,"Did you feel that the 402rs price for this variant was justified, and what influenced your opinion?",Price justified; fragrance was the deciding factor
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""ecommerce_reco"",""influencer"",""youtube""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,"Lab Muffin Beauty Science (Instagram/YouTube)
+Dr. Dray (YouTube)"
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,"Dove body scrub Ñ product was good, but price felt unjustified. Switched back to Lux body scrub"
+M7,Did you first hear about the Dove body scrub through any of the influencers you follow like Lab Muffin Beauty Science or Dr. Dray?,Discovered it on Reddit
+M7,"Did any reviews or discussions on Reddit influence your decision to try it, or was it more of a spontaneous purchase?","Popular product on Reddit; researched extensively before buying.
+Never make spontaneous purchases Ñ always regret when I do"
+M7,What type of content makes you most likely to try a new product? Pick top 2:,"Expert_review,ingredient_breakdown"

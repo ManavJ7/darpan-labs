@@ -1,0 +1,68 @@
+You are constructing a behavioral identity graph for one Indian consumer (a digital twin). This graph will be used to predict how this person responds to new product concepts, ads, and purchase scenarios in the body wash / personal care category.
+
+## Twin ID: {twin_id}
+
+## Q&A Pairs (sorted by evidence quality)
+Each pair is tagged with its source:
+- [REAL] = from actual interview (highest reliability)
+- [BRANCH] = archetype-selected branching answer (high reliability)
+- [SYNTHETIC] = ICL-generated answer (moderate reliability — consistent with profile but inferred)
+
+{qa_pairs_block}
+
+## Extraction Task
+
+Build this person's behavioral identity as a structured graph. Extract:
+
+### 1. Core Traits (25-35)
+For each trait, provide:
+- **trait_name**: Specific, actionable label. NOT generic ("price-sensitive") — instead capture the nuance ("compares-3-options-before-buying" or "pays-premium-for-proven-ingredients-only"). The trait name should predict behavior.
+- **domain**: One of the 6 behavioral domains: "Purchase Decision Mechanics", "Brand Relationship Patterns", "Social & Contextual Drivers", "Information-Seeking Behavior", "Risk & Novelty Orientation", "Channel & Format Preferences"
+- **description**: One sentence grounding this trait in their specific answers. Quote or paraphrase their actual words.
+- **confidence**: Calibrate based on evidence:
+  - 0.9-1.0: Supported by 3+ REAL answers that directly state this
+  - 0.7-0.89: Supported by 1-2 REAL + multiple SYNTHETIC answers
+  - 0.5-0.69: Inferred from SYNTHETIC answers only, but consistent pattern
+  - Below 0.5: Weak signal, single data point
+- **evidence_quotes**: 2-4 direct quotes from their answers (verbatim or near-verbatim) that prove this trait. Include the source tag [REAL/BRANCH/SYNTHETIC].
+- **predictive_value**: One sentence: "When shown [type of concept/ad], this person would likely [predicted behavior] because of this trait."
+
+### 2. Trait Connections
+Identify how traits interact within this person:
+- **supports**: Trait A reinforces Trait B (e.g., "research-oriented" supports "ingredient-label-reader")
+- **contradicts**: Trait A creates tension with Trait B (e.g., "price-sensitive" contradicts "willing-to-pay-for-premium-fragrance")
+- **causes**: Trait A is likely the root driver of Trait B (e.g., "dermatologist-recommendation-seeker" causes "clinical-claims-responsive")
+
+For each connection, explain the mechanism — HOW do these traits interact in this person's decision-making?
+
+### 3. Identity Summary
+A 2-3 sentence paragraph capturing this person's core consumer identity — the 3-4 traits that most strongly define their purchase behavior. This summary should allow someone to predict this person's response to a new body wash concept without seeing any other data.
+
+## Output Format
+Return valid JSON:
+```json
+{{
+  "twin_id": "...",
+  "identity_summary": "...",
+  "traits": [
+    {{
+      "trait_name": "...",
+      "domain": "...",
+      "description": "...",
+      "confidence": 0.85,
+      "evidence_quotes": ["[REAL] ...", "[SYNTHETIC] ..."],
+      "predictive_value": "When shown ..., this person would likely ..."
+    }}
+  ],
+  "trait_connections": [
+    {{
+      "from_trait": "...",
+      "to_trait": "...",
+      "relationship": "supports|contradicts|causes",
+      "mechanism": "..."
+    }}
+  ]
+}}
+```
+
+Be ruthlessly specific to THIS person. Every trait must be grounded in their actual answers — no generic consumer psychology.

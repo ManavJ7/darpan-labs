@@ -1,0 +1,533 @@
+[
+  {
+    "question_id": "M1_Q01",
+    "module_id": "M1",
+    "question_text": "Where do you currently live? (City and state)",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "geographic context, metro tier identification, regional influence on preferences",
+    "question_type": "demographic",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q02",
+    "module_id": "M1",
+    "question_text": "What is your current occupation or primary activity?",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "socioeconomic context, lifestyle indicator, time availability for grooming routines",
+    "question_type": "demographic",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q03",
+    "module_id": "M1",
+    "question_text": "What is your approximate monthly household income range?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "spending power, price sensitivity baseline, willingness to pay capacity",
+    "question_type": "demographic",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q04",
+    "module_id": "M1",
+    "question_text": "What is your household composition?",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "household dynamics, shared product usage, family influence on purchase decisions",
+    "question_type": "demographic",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q05",
+    "module_id": "M1",
+    "question_text": "What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "content consumption language, ad receptivity, information processing preference, regional identity",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q06",
+    "module_id": "M1",
+    "question_text": "How would you describe your personality in 3-5 words?",
+    "domain_tag": "Risk & Novelty Orientation",
+    "behavioral_signals": "self-concept, psychographic profiling, openness to experience, identity framing",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q07",
+    "module_id": "M1",
+    "question_text": "How comfortable are you trying new brands or products you haven't used before?",
+    "domain_tag": "Risk & Novelty Orientation",
+    "behavioral_signals": "experimentation willingness, comfort with unfamiliar brands, novelty seeking, risk tolerance",
+    "question_type": "rating-scale",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q08",
+    "module_id": "M1",
+    "question_text": "How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "social perception motivation, self-care vs social signaling, peer influence sensitivity, grooming motivation",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q09",
+    "module_id": "M1",
+    "question_text": "How much attention do you pay to how your skin looks and feels on a daily basis?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "category involvement level, skin awareness, personal care engagement intensity, need state identification",
+    "question_type": "rating-scale",
+    "source": "existing"
+  },
+  {
+    "question_id": "M1_Q10",
+    "module_id": "M1",
+    "question_text": "When you imagine your ideal grooming routine \u2014 not what you do now, but what you'd love \u2014 what does it look like?",
+    "domain_tag": "Risk & Novelty Orientation",
+    "behavioral_signals": "aspirational behavior, unmet needs, openness to new formulations, ideal self-concept, willingness to upgrade",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q11",
+    "module_id": "M2",
+    "question_text": "When buying any personal care product, rank these factors from most to least important:",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "purchase decision hierarchy, price vs quality trade-off, value drivers, attribute prioritization",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q12",
+    "module_id": "M2",
+    "question_text": "How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "value perception, claim sensitivity, ingredient awareness, natural vs synthetic preference, purchase trigger",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q13",
+    "module_id": "M2",
+    "question_text": "Which certifications or labels influence your purchase? Select all that apply.",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "trust cues, label literacy, certification awareness, information processing shortcuts, credibility signals",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q14",
+    "module_id": "M2",
+    "question_text": "How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "Indian vs international brand preference, brand origin bias, country-of-origin effect, cultural identity in brand choice",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q15",
+    "module_id": "M2",
+    "question_text": "What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "willingness to pay, price premium tolerance, value-driven spending, price sensitivity threshold",
+    "question_type": "rating-scale",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q16",
+    "module_id": "M2",
+    "question_text": "How loyal are you to personal care brands?",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "brand loyalty intensity, switching propensity, repeat purchase behavior, brand commitment level",
+    "question_type": "rating-scale",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q17",
+    "module_id": "M2",
+    "question_text": "How much do you trust the following sources for personal care product information? Rate each 1-5:",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "source trust hierarchy, information credibility assessment, review reliance, media trust levels",
+    "question_type": "rating-scale",
+    "source": "existing"
+  },
+  {
+    "question_id": "M2_Q18",
+    "module_id": "M2",
+    "question_text": "Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "claim preference, science vs tradition orientation, value perception, purchase trigger framing, cultural influence on choice",
+    "question_type": "scenario-based",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q19",
+    "module_id": "M3",
+    "question_text": "When your current body wash/soap runs out, what is your typical next step?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "repurchase behavior, purchase trigger timing, habitual vs deliberate buying, brand loyalty in action",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q20",
+    "module_id": "M3",
+    "question_text": "Where do you most often buy personal care products? Pick your top 3:",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "channel preference, online vs offline split, retail format choice, purchase channel hierarchy",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q21",
+    "module_id": "M3",
+    "question_text": "How much do you typically spend on a single body wash purchase?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "price range comfort, spending baseline, value perception, price anchor",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q22",
+    "module_id": "M3",
+    "question_text": "What would make you switch away from your current body wash? Pick your top 3:",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "switching triggers, dissatisfaction drivers, loyalty breaking points, competitive vulnerability",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q23",
+    "module_id": "M3",
+    "question_text": "Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?",
+    "domain_tag": "Risk & Novelty Orientation",
+    "behavioral_signals": "experimentation behavior, switch trigger recall, trial satisfaction, novelty seeking in action, post-trial evaluation",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q24",
+    "module_id": "M3",
+    "question_text": "When shopping online for personal care, what do you look at first? Pick your top 3:",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "online evaluation criteria, information hierarchy, digital shopping behavior, decision cues prioritization",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q25",
+    "module_id": "M3",
+    "question_text": "Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "quick commerce adoption, channel-driven brand substitution, convenience vs choice trade-off, impulse buying behavior",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M3_Q26",
+    "module_id": "M3",
+    "question_text": "When using quick commerce platforms like Blinkit or Zepto, do you find that the limited selection often leads you to try new brands or stick with familiar ones?",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "quick commerce brand behavior, assortment-driven switching, platform-induced trial, familiarity bias in constrained choice",
+    "question_type": "scenario-based",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q27",
+    "module_id": "M4",
+    "question_text": "How many times a day do you typically shower/bathe?",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "usage frequency, consumption rate, climate-driven behavior, hygiene habits baseline",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q28",
+    "module_id": "M4",
+    "question_text": "Walk me through your typical bathing routine step by step. What products do you use and in what order?",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "product repertoire, routine complexity, format preferences, category adjacencies, usage occasion mapping",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q29",
+    "module_id": "M4",
+    "question_text": "Could you walk me through what you do first when you start your routine and the order in which you apply each product?",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "product sequencing, routine structure, format usage patterns, habitual behavior mapping",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q30",
+    "module_id": "M4",
+    "question_text": "Could you share if there's a specific reason you choose to apply body lotion before creams in your routine?",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "product knowledge depth, routine rationale, skincare literacy, informed vs habitual behavior",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q31",
+    "module_id": "M4",
+    "question_text": "Do you currently use body wash, bar soap, or both? What drives that choice?",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "format preference, body wash vs bar soap choice drivers, product form factor preference, switching between formats",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q32",
+    "module_id": "M4",
+    "question_text": "How would you describe your relationship with bathing/grooming?",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "emotional connection to grooming, functional vs experiential orientation, self-care attitude, category involvement",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q33",
+    "module_id": "M4",
+    "question_text": "What specific skin concerns, if any, do you have? Select all that apply.",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "need state identification, problem-driven purchase triggers, skin concern awareness, benefit-seeking behavior",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M4_Q34",
+    "module_id": "M4",
+    "question_text": "Do other household members use the same body wash as you? Who decides what to buy?",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "household dynamics, shared vs individual product usage, purchase decision maker identification, family influence",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q35",
+    "module_id": "M5",
+    "question_text": "What fragrance families do you naturally gravitate toward? Pick your top 2:",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "sensory preference, fragrance attribute prioritization, taste profiling, purchase driver identification",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q36",
+    "module_id": "M5",
+    "question_text": "Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "sensory-driven loyalty, repurchase motivation, emotional brand connection, product recall strength",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q37",
+    "module_id": "M5",
+    "question_text": "What is it about the lavender lux body wash's scent that makes it stand out for you, and have you found yourself repurchasing it for that reason?",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "brand-specific loyalty driver, sensory attachment, repurchase trigger, product differentiation perception",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q38",
+    "module_id": "M5",
+    "question_text": "How long should a body wash fragrance last on your skin?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "performance expectation, quality benchmark, value perception, unmet need identification",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q39",
+    "module_id": "M5",
+    "question_text": "How important is lather/foam to your body wash experience?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "sensory quality expectation, product performance proxy, perceived efficacy cue, experience attribute importance",
+    "question_type": "rating-scale",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q40",
+    "module_id": "M5",
+    "question_text": "What texture do you prefer in a body wash?",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "format and texture preference, sensory preference, product form factor choice, formulation preference",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q41",
+    "module_id": "M5",
+    "question_text": "What is your ideal post-wash skin feeling?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "outcome expectation, benefit prioritization, satisfaction criteria, quality perception benchmark",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M5_Q42",
+    "module_id": "M5",
+    "question_text": "Do you prefer packaging that looks:",
+    "domain_tag": "Channel & Format Preferences",
+    "behavioral_signals": "packaging aesthetics preference, shelf appeal drivers, visual identity preference, design-driven choice",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q43",
+    "module_id": "M6",
+    "question_text": "What body wash brand(s) do you currently use? List all.",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "current brand repertoire, multi-brand usage, brand loyalty indicator, consideration set mapping",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q44",
+    "module_id": "M6",
+    "question_text": "What do you like MOST about your current body wash? (Top 1-2 things)",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "loyalty drivers, satisfaction attributes, brand stickiness factors, key retention reasons",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q45",
+    "module_id": "M6",
+    "question_text": "What, if anything, frustrates you or feels 'just okay' about your current body wash?",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "dissatisfaction signals, switching vulnerability, unmet needs, brand weakness identification",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q46",
+    "module_id": "M6",
+    "question_text": "What body wash brands can you name off the top of your head? List as many as you can.",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "unaided brand recall, consideration set size, brand salience, mental availability",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q47",
+    "module_id": "M6",
+    "question_text": "How would you categorize body washes in your mind? What makes one different from another?",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "mental category structure, brand differentiation perception, segmentation logic, product evaluation framework",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q48",
+    "module_id": "M6",
+    "question_text": "Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:",
+    "domain_tag": "Brand Relationship Patterns",
+    "behavioral_signals": "D2C brand awareness, trial behavior with new brands, brand experience evaluation, consideration set expansion",
+    "question_type": "rating-scale",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q49",
+    "module_id": "M6",
+    "question_text": "If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price \u2014 anything.",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "ideal product attributes, unmet needs articulation, willingness to pay for ideal, value hierarchy, aspiration mapping",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q50",
+    "module_id": "M6",
+    "question_text": "What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "claim receptivity, attention triggers, information processing cues, marketing message effectiveness",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q51",
+    "module_id": "M6",
+    "question_text": "What is the most you have ever paid for a body wash? What was it and was it worth it?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "price ceiling, willingness to pay maximum, value-for-money assessment, premium purchase justification",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q52",
+    "module_id": "M6",
+    "question_text": "What was it about that body wash that made you decide to spend that amount, and did it meet your expectations?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "premium purchase rationalization, expectation vs reality gap, value perception validation, quality-price trade-off evaluation",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M6_Q53",
+    "module_id": "M6",
+    "question_text": "What made you choose a milk-based body lotion at that price, and did it feel like it was worth the investment for you?",
+    "domain_tag": "Purchase Decision Mechanics",
+    "behavioral_signals": "ingredient-driven purchase decision, price justification, value perception for specific formulation, post-purchase satisfaction",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M7_Q54",
+    "module_id": "M7",
+    "question_text": "Where do you typically discover new personal care products? Pick your top 3:",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "discovery channels, awareness touchpoints, information source preference, product discovery mode",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M7_Q55",
+    "module_id": "M7",
+    "question_text": "Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "influencer trust, social media authority figures, peer influence mechanism, trust formation criteria",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M7_Q56",
+    "module_id": "M7",
+    "question_text": "Have you ever bought a personal care product because you saw it on social media? Describe what happened.",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "social media purchase conversion, impulse buying from social, influence-driven trial, social proof behavior",
+    "question_type": "open-ended",
+    "source": "existing"
+  },
+  {
+    "question_id": "M7_Q57",
+    "module_id": "M7",
+    "question_text": "What type of content makes you most likely to try a new product? Pick top 2:",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "content format effectiveness, persuasion pathway, information type preference, trial trigger content",
+    "question_type": "preference-ranking",
+    "source": "existing"
+  },
+  {
+    "question_id": "M7_Q58",
+    "module_id": "M7",
+    "question_text": "Do you read online reviews before buying personal care products? Where?",
+    "domain_tag": "Information-Seeking Behavior",
+    "behavioral_signals": "review reliance, research depth, pre-purchase information seeking, review platform preference",
+    "question_type": "behavioral",
+    "source": "existing"
+  },
+  {
+    "question_id": "M7_Q59",
+    "module_id": "M7",
+    "question_text": "If a friend recommends a body wash to you, how likely are you to try it vs. researching it yourself first?",
+    "domain_tag": "Social & Contextual Drivers",
+    "behavioral_signals": "peer influence strength, word-of-mouth receptivity, trust in personal recommendations vs self-research, social proof reliance",
+    "question_type": "scenario-based",
+    "source": "existing"
+  }
+]

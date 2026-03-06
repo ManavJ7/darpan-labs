@@ -1,0 +1,71 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Hyderabad, Telangana"
+M1,What is your current occupation or primary activity?,Professional_office
+M1,What is your approximate monthly household income range?,1l_2l
+M1,What is your household composition?,Shared_housing
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English,hindi"
+M1,How would you describe your personality in 3-5 words?,Professionally sorted Personally Growing
+M1,How comfortable are you trying new brands or products you haven't used before?,4
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",Both
+M1,"When you're choosing a scent, do you prioritize how it makes you feel or how you think others will react to it?",How others will react
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Regularly_care
+M2,"When buying any personal care product, rank these factors from most to least important:","[""price"",""fragrance"",""reviews"",""recommendation"",""brand"",""ingredients"",""packaging"",""expert""]"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":3,""explanation"":""Utmost important""}"
+M2,Could you share what ingredients or qualities you specifically look for that make a product feel 'natural' to you?,"1. Made from Ayurvedic herbs
+2. Separate machinery for processing each product
+3. Non-chemical raw elements
+4. Chemicals used within limits"
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Sulfate_free,organic,ayurvedic"
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"Bias towards international brands Ñ in India, getting certificates and approvals to launch products is too easy"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"{""Sustainable/eco-friendly packaging"":""10_20"",""Ayurvedic or traditional ingredients"":""20_40"",""Clinical-grade, lab-tested formulation"":""20_40"",""Cruelty-free, not tested on animals"":""0"",""Made in India"":""10_20""}"
+M2,How loyal are you to personal care brands?,Very_loyal
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""TV advertisements"":2,""Instagram or YouTube influencers"":4,""Dermatologists or skin doctors"":5,""Friends and family"":4,""Online reviews (Amazon, Nykaa)"":4,""Claims written on the product packaging"":1}"
+M3,"When your current body wash/soap runs out, what is your typical next step?",Browse_online
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""amazon"",""quick_commerce"",""nykaa""]"
+M3,How much do you typically spend on a single body wash purchase?,Under_100
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""better_smell"",""ad_resonance""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,Old one lacked strong fragrance Ñ main reason for switching. Still not satisfied after switching
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","[""star_rating"",""review_count"",""price""]"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?","Yes, use quick commerce. Doesn't limit selection"
+M3,"If a brand you liked raised its price by 30%, what would you do?",Look_alternatives
+M4,How many times a day do you typically shower/bathe?,Once
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,"1. Hair wash Ñ Shampoo: Havintha
+2. Conditioner: Herbert Essentials
+3. Body wash: Arata
+4. Face wash: Garnier Men
+5. Groin area Ñ same body wash"
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?",Use both. Bars are cheapest but less fragrance. Body wash has more fragrance Ñ drives my choice
+M4,How would you describe your relationship with bathing/grooming?,Self_care_ritual
+M4,"What specific skin concerns, if any, do you have? Select all that apply.",Body_odor
+M4,Do other household members use the same body wash as you? Who decides what to buy?,No. They use cheaper soap bars Ñ cost is their only factor
+M4,"How does your water quality affect your product choices, if at all?",Never thought of this
+M4,"Have you ever noticed any difference in how your skin feels after showering at home compared to somewhere else, like on vacation?",Yes. Mainly due to difference in water hardness
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"Floral,sweet_gourmand"
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,"Batman Rebirth from Souled Store. Purchased for scent. Didn't repurchase Ñ poor longevity, fragrance too weak. Scent was floral + men-specific mix"
+M5,How long should a body wash fragrance last on your skin?,All_day
+M5,How important is lather/foam to your body wash experience?,Nice_to_have
+M5,What texture do you prefer in a body wash?,Lightweight
+M5,What is your ideal post-wash skin feeling?,Moisturized
+M5,Do you prefer packaging that looks:,Minimalist
+M5,"If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",Bella vita longevity + Souled store Fragrance
+M6,What body wash brand(s) do you currently use? List all.,"Arata, Fiama, Pears, Dettol"
+M6,What do you like MOST about your current body wash? (Top 1-2 things),Cheapest
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",No Fragrance
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"Arata, Pears, Dettol, Dove, Fiama, Nivea, MamaEarth, Cetaphil"
+M6,How would you categorize body washes in your mind? What makes one different from another?,"Categorize first by cost, then reviews. Customer feedback differentiates products"
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,[SKIPPED]
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price â€” anything.","Fragrance: Should last entire day
+Texture: Similar to Fiama
+Packaging: Modern, not clinical/minimalist
+Price: Affordable for Indian middle class (similar to Dettol pricing)"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"[""72hr_freshness"",""ayurvedic""]"
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,Arata Ñ _250. Not worth it
+M6,Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?,"{""rating"":4,""explanation"":""""}"
+M6,"What aspect of such a formulation makes you somewhat interested, and is there anything specific you wish it could address for you?",Products claiming Indian-skin formulation are showing results. Want more fragrance
+M6,What would a body wash need to offer for you to pay 2x your current price?,"Less chemicals, more cleansing, more fragrance"
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""instagram"",""youtube"",""ecommerce_reco""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,Fit Tuber Ñ covers every aspect of product
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,"No, never"
+M7,Is there something specific about seeing products on Instagram or YouTube that makes you hesitate to purchase them directly from there?,Influencers push products forcefully for likes and views
+M7,What type of content makes you most likely to try a new product? Pick top 2:,"Ingredient_breakdown,before_after"
+M7,Do you read online reviews before buying personal care products? Where?,"Amazon,youtube,reddit"

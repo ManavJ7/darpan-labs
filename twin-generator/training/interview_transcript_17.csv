@@ -1,0 +1,60 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Pakur, Jharkhand"
+M1,What is your current occupation or primary activity?,Student
+M1,What is your approximate monthly household income range?,1l_2l
+M1,What is your household composition?,Alone
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English,hindi"
+M1,How would you describe your personality in 3-5 words?,"Easygoing, empathetic, driven by meaningful/purposeful activities"
+M1,How comfortable are you trying new brands or products you haven't used before?,5
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",Setting-dependent: don't care at home; want to be groomed and smell good when stepping out. Primarily about self-confidence
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Notice_problems
+M1,"When you imagine your ideal grooming routine — not what you do now, but what you'd love — what does it look like?",One face wash that does it all. Nothing beyond that
+M2,"When buying any personal care product, rank these factors from most to least important:","[""recommendation""]"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":4,""explanation"":""Absence of chemicals proven harmful in long-term usage""}"
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Sulfate_free,paraben_free,ph_balanced"
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"Prefer Indian brands, particularly D2C Indian brands"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"{""Sustainable/eco-friendly packaging"":""0"",""Ayurvedic or traditional ingredients"":""0"",""Clinical-grade, lab-tested formulation"":""10_20"",""Cruelty-free, not tested on animals"":""unlimited"",""Made in India"":""10_20""}"
+M2,How loyal are you to personal care brands?,Moderate_loyalty
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""TV advertisements"":1,""Instagram or YouTube influencers"":2,""Dermatologists or skin doctors"":2,""Friends and family"":4,""Online reviews (Amazon, Nykaa)"":3,""Claims written on the product packaging"":1}"
+M2,Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Why?,Slight_clinical
+M3,"When your current body wash/soap runs out, what is your typical next step?",Browse_online
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""brand_website""]"
+M3,How much do you typically spend on a single body wash purchase?,350_500
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""better_smell"",""influencer"",""friend_rec""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,Smell triggered the switch; bored of same bodywash used for 2 years. Was satisfied
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","[""price"",""review_count"",""images""]"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?",Don't use quick commerce
+M3,Is there a particular reason you prefer other shopping methods for personal care items?,Trust other shopping methods more
+M4,How many times a day do you typically shower/bathe?,Once
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,Use only bodywash
+M4,"Do you use any tools like a loofah or washcloth when applying the bodywash, or do you apply it directly with your hands?",Apply directly with hands
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?",Bodywash. Smell and convenience drive the choice
+M4,How would you describe your relationship with bathing/grooming?,Functional
+M4,"What specific skin concerns, if any, do you have? Select all that apply.","Dryness,none"
+M4,Do other household members use the same body wash as you? Who decides what to buy?,"No, they use soap. Mother is the household buying decision-maker"
+M4,"How does your water quality affect your product choices, if at all?",Water quality doesn't affect product choices
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"Floral,herbal_earthy"
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,Pears Bodywash. Familiar floral Pears scent
+M5,How long should a body wash fragrance last on your skin?,Half_day
+M5,How important is lather/foam to your body wash experience?,Dont_care
+M5,What texture do you prefer in a body wash?,Thick_cream
+M5,What is your ideal post-wash skin feeling?,Moisturized
+M5,Do you prefer packaging that looks:,Natural
+M5,"If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",Earthy fragrance with Dove-like texture
+M6,What body wash brand(s) do you currently use? List all.,"Lux, Pears, Fiama"
+M6,What do you like MOST about your current body wash? (Top 1-2 things),"Fragrance, color, and bottle design"
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",Texture
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"Lux, Dove, The Body shop, Pears, Fiama, Nivia"
+M6,How would you categorize body washes in your mind? What makes one different from another?,"Female vs Male. Female: floral, earthy smell, vibrant colors. Male: black/blue packaging, cool/mint smell"
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"{""mCaffeine (coffee-based)"":3,""Mamaearth (natural, toxin-free)"":2,""WOW Skin Science (natural)"":2,""The Man Company (men's grooming)"":3,""Minimalist (clinical, transparent bottles)"":3,""Dot & Key (colorful, K-beauty style)"":4}"
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price — anything.","Earthy fragrance, thick texture, moisturizing, easy-open packaging, ~_500 price point"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"[""intense_moisture"",""india_specific""]"
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,Max paid: _500 for a Body Shop product. Worth it
+M6,Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?,"{""rating"":4,""explanation"":""Fragrances derived from Indian flowers, spices, or common household ingredients""}"
+M6,What would a body wash need to offer for you to pay 2x your current price?,"Fragrance lasting 12+ hours, eliminating need for additional perfume"
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""instagram"",""friends_family"",""in_store""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,"Follow Dr. Aanchal Panth. She contextualizes advice for Indian skin types, climate, and product availability"
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,Bought Moxie Beauty products after Instagram ad. Liked them; became a repeat customer
+M7,What type of content makes you most likely to try a new product? Pick top 2:,"Before_after,ingredient_breakdown"
+M7,Do you read online reviews before buying personal care products? Where?,Reddit
+M7,"If a friend recommends a body wash to you, how likely are you to try it vs. researching it yourself first?",4

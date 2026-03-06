@@ -1,0 +1,1309 @@
+[
+  {
+    "participant_id": "P16",
+    "n_original": 100,
+    "n_selected": 20,
+    "twins": [
+      {
+        "twin_id": "P16_T001",
+        "participant_id": "P16",
+        "combo_id": 116,
+        "coherence_score": 1.02,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Text-Driven, Expert-Validated",
+            "answer_text": "I'd choose Ad B because detailed text from dermatologists gives me confidence in the product's benefits, and before/after photos with explanations help me understand the results better. As someone who trusts expert reviews and doctor recommendations, I need that textual validation before considering a purchase. The video might be nice, but it doesn't provide the depth I look for.",
+            "position_on_dimension": "High textual preference with emphasis on expert information",
+            "concept_test_prediction": "This twin would respond better to product concepts with detailed descriptions, clinical proofs, and ingredient lists, such as derm-recommended or India-specific formulations. Visuals alone may not sway them without substantiated textual claims.",
+            "ad_test_prediction": "More engaged with ad campaigns that feature blog-style content, detailed infographics, or expert testimonials. Video ads may be skipped unless they include captions or links to textual reviews, leading to higher conversion from text-based platforms."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Evidence-Balanced Skeptic",
+            "answer_text": "I'd need both to fully trust it. The dermatologist gives credibility to the science, but the student shows it works in real life. Alone, the doctor ad feels like a paid promotion, and the student ad lacks authority. Honestly, I'd probably search for expert reviews online before believing either ad fully.",
+            "position_on_dimension": "Moderate/context-dependent; trusts a blend",
+            "concept_test_prediction": "Concepts that combine clinical credentials with real-world proof (e.g., 'clinically proven, loved by 10,000 students') would be most effective. Standalone aspirational or overly simplistic relatable claims would be met with skepticism.",
+            "ad_test_prediction": "Hybrid ad formats\u2014like a dermatologist reviewing user-submitted results\u2014would be most persuasive. They'd scrutinize both types of ads for consistency and look for corroborating evidence (reviews, third-party ratings). Pure lifestyle aspiration or raw user-generated content alone would be insufficient to drive a decision."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T002",
+        "participant_id": "P16",
+        "combo_id": 10,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Rational Data-Driven Processor",
+            "answer_text": "I'd definitely stop for Ad B with the clinical benefits. As someone who trusts dermatologists and expert reviews, seeing clear facts and testimonials gives me confidence that the product works, especially for my skin sensitivity. Emotional stories feel fluffy and don't convince me it'll address my actual needs like body odor or freshness.",
+            "position_on_dimension": "Low emotional resonance",
+            "concept_test_prediction": "This twin would strongly prefer body wash concepts emphasizing clinical formulations, lab-tested benefits, and dermatologist endorsements. Concepts with emotional storytelling alone would have low purchase intent, unless backed by data.",
+            "ad_test_prediction": "More likely to click on ads featuring expert testimonials, before/after visuals, and factual claims. Emotional ad campaigns would have lower engagement and click-through rates, as they perceive them as less credible."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Visual-First, Authentic Engagement",
+            "answer_text": "I'd click on Ad A because seeing the body wash in action with natural visuals gives me a better sense of its texture and how it feels. Videos that aren't overly produced, like the one described, align with my preference for less flashy content and help me visualize the fresh, tingling feeling I want. I might skim the text later, but the video grabs my attention first.",
+            "position_on_dimension": "High visual preference with a focus on authenticity",
+            "concept_test_prediction": "This twin would favor product concepts with high-quality demo videos or imagery showing usage and texture, such as aquatic fragrance visuals or minimalistic packaging designs. They might overlook text-heavy claims unless paired with compelling visuals.",
+            "ad_test_prediction": "More likely to engage with Instagram reels or video ads that showcase product use authentically, leading to higher click-through rates. Text-based ads or infographics may be ignored unless they include brief, impactful visuals."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Cautious Browser",
+            "answer_text": "I'd browse their site to check the brand's claims, like if it's dermatologist-recommended or has natural ingredients. But since my current body wash is fine, I probably won't buy unless the product really stands out in benefits or reviews.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "This twin would consider new concepts but require more information, such as clinical proofs or expert endorsements, before deciding. They might save the concept for later comparison rather than acting immediately.",
+            "ad_test_prediction": "Ads would make them curious, leading to clicks for more details, but they would likely research reviews or expert opinions before purchasing, rather than buying on impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T003",
+        "participant_id": "P16",
+        "combo_id": 56,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Rational Data-Driven Processor",
+            "answer_text": "I'd definitely stop for Ad B with the clinical benefits. As someone who trusts dermatologists and expert reviews, seeing clear facts and testimonials gives me confidence that the product works, especially for my skin sensitivity. Emotional stories feel fluffy and don't convince me it'll address my actual needs like body odor or freshness.",
+            "position_on_dimension": "Low emotional resonance",
+            "concept_test_prediction": "This twin would strongly prefer body wash concepts emphasizing clinical formulations, lab-tested benefits, and dermatologist endorsements. Concepts with emotional storytelling alone would have low purchase intent, unless backed by data.",
+            "ad_test_prediction": "More likely to click on ads featuring expert testimonials, before/after visuals, and factual claims. Emotional ad campaigns would have lower engagement and click-through rates, as they perceive them as less credible."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced, Context-Sensitive Evaluator",
+            "answer_text": "I'd probably check both, but if I had to choose, I'd lean towards Ad B because the combination of before/after photos with detailed text offers both visual proof and expert validation. However, if the video in Ad A feels genuine and shows real results without being flashy, I might click on it too. Ultimately, I need visuals to see the product and text to trust it.",
+            "position_on_dimension": "Balanced, leaning towards integrated visual-textual content",
+            "concept_test_prediction": "This twin prefers product concepts that blend compelling visuals (e.g., aquatic fragrance imagery) with clear, textual benefits like clinical testing or natural claims. They might respond positively to concepts that balance aesthetics with substance, such as minimalistic medical packaging with detailed labels.",
+            "ad_test_prediction": "Likely to interact with ads that merge visual appeal with textual depth, such as carousel posts with videos and captions, or influencer content that feels authentic and informative. They may require both elements to take action, making them responsive to multi-format campaigns."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T004",
+        "participant_id": "P16",
+        "combo_id": 147,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced, Context-Sensitive Evaluator",
+            "answer_text": "I'd probably check both, but if I had to choose, I'd lean towards Ad B because the combination of before/after photos with detailed text offers both visual proof and expert validation. However, if the video in Ad A feels genuine and shows real results without being flashy, I might click on it too. Ultimately, I need visuals to see the product and text to trust it.",
+            "position_on_dimension": "Balanced, leaning towards integrated visual-textual content",
+            "concept_test_prediction": "This twin prefers product concepts that blend compelling visuals (e.g., aquatic fragrance imagery) with clear, textual benefits like clinical testing or natural claims. They might respond positively to concepts that balance aesthetics with substance, such as minimalistic medical packaging with detailed labels.",
+            "ad_test_prediction": "Likely to interact with ads that merge visual appeal with textual depth, such as carousel posts with videos and captions, or influencer content that feels authentic and informative. They may require both elements to take action, making them responsive to multi-format campaigns."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Relatable Pragmatist",
+            "answer_text": "Ad B with the student is more trustworthy. Seeing someone like me, dealing with similar skin sensitivity in a real bathroom, makes the claim feel genuine. A doctor in a clinic feels disconnected from my daily reality\u2014it's an ad. The student's experience mirrors mine, so I believe the product actually works for regular people.",
+            "position_on_dimension": "High trust in relatable content",
+            "concept_test_prediction": "Concepts highlighting practical benefits for everyday Indian routines (like hard water compatibility) and real-user testimonials would be more compelling. A 'for sensitive skin, by sensitive skin' positioning would outperform a 'luxury clinic-grade' claim.",
+            "ad_test_prediction": "Ads featuring relatable influencers or everyday people in authentic settings (e.g., a small apartment bathroom) would build stronger connection and trust. Before/after content from non-celebrities (A59) would be highly effective. Aspirational, glossy ads would be dismissed as unrealistic marketing."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Seeking Impulse Buyer",
+            "answer_text": "I'd use the coupon now. \u20b9249 for a \u20b9399 body wash is a good deal, and even with two weeks left, I can stock up. Trying a new brand isn't a big risk at this price, and if it doesn't work out, I haven't lost much.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "This twin would quickly convert on concepts with limited-time offers or flash sales, such as a 'limited edition summer variant' with a discount, without needing extensive deliberation.",
+            "ad_test_prediction": "Ads with strong, immediate calls-to-action like 'Buy now with 50% off' would lead to high click-through and purchase rates, as they act impulsively on attractive deals."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T005",
+        "participant_id": "P16",
+        "combo_id": 8,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Rational Data-Driven Processor",
+            "answer_text": "I'd definitely stop for Ad B with the clinical benefits. As someone who trusts dermatologists and expert reviews, seeing clear facts and testimonials gives me confidence that the product works, especially for my skin sensitivity. Emotional stories feel fluffy and don't convince me it'll address my actual needs like body odor or freshness.",
+            "position_on_dimension": "Low emotional resonance",
+            "concept_test_prediction": "This twin would strongly prefer body wash concepts emphasizing clinical formulations, lab-tested benefits, and dermatologist endorsements. Concepts with emotional storytelling alone would have low purchase intent, unless backed by data.",
+            "ad_test_prediction": "More likely to click on ads featuring expert testimonials, before/after visuals, and factual claims. Emotional ad campaigns would have lower engagement and click-through rates, as they perceive them as less credible."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Visual-First, Authentic Engagement",
+            "answer_text": "I'd click on Ad A because seeing the body wash in action with natural visuals gives me a better sense of its texture and how it feels. Videos that aren't overly produced, like the one described, align with my preference for less flashy content and help me visualize the fresh, tingling feeling I want. I might skim the text later, but the video grabs my attention first.",
+            "position_on_dimension": "High visual preference with a focus on authenticity",
+            "concept_test_prediction": "This twin would favor product concepts with high-quality demo videos or imagery showing usage and texture, such as aquatic fragrance visuals or minimalistic packaging designs. They might overlook text-heavy claims unless paired with compelling visuals.",
+            "ad_test_prediction": "More likely to engage with Instagram reels or video ads that showcase product use authentically, leading to higher click-through rates. Text-based ads or infographics may be ignored unless they include brief, impactful visuals."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Evidence-Balanced Skeptic",
+            "answer_text": "I'd need both to fully trust it. The dermatologist gives credibility to the science, but the student shows it works in real life. Alone, the doctor ad feels like a paid promotion, and the student ad lacks authority. Honestly, I'd probably search for expert reviews online before believing either ad fully.",
+            "position_on_dimension": "Moderate/context-dependent; trusts a blend",
+            "concept_test_prediction": "Concepts that combine clinical credentials with real-world proof (e.g., 'clinically proven, loved by 10,000 students') would be most effective. Standalone aspirational or overly simplistic relatable claims would be met with skepticism.",
+            "ad_test_prediction": "Hybrid ad formats\u2014like a dermatologist reviewing user-submitted results\u2014would be most persuasive. They'd scrutinize both types of ads for consistency and look for corroborating evidence (reviews, third-party ratings). Pure lifestyle aspiration or raw user-generated content alone would be insufficient to drive a decision."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T006",
+        "participant_id": "P16",
+        "combo_id": 85,
+        "coherence_score": 0.86,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Visual-First, Authentic Engagement",
+            "answer_text": "I'd click on Ad A because seeing the body wash in action with natural visuals gives me a better sense of its texture and how it feels. Videos that aren't overly produced, like the one described, align with my preference for less flashy content and help me visualize the fresh, tingling feeling I want. I might skim the text later, but the video grabs my attention first.",
+            "position_on_dimension": "High visual preference with a focus on authenticity",
+            "concept_test_prediction": "This twin would favor product concepts with high-quality demo videos or imagery showing usage and texture, such as aquatic fragrance visuals or minimalistic packaging designs. They might overlook text-heavy claims unless paired with compelling visuals.",
+            "ad_test_prediction": "More likely to engage with Instagram reels or video ads that showcase product use authentically, leading to higher click-through rates. Text-based ads or infographics may be ignored unless they include brief, impactful visuals."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Relatable Pragmatist",
+            "answer_text": "Ad B with the student is more trustworthy. Seeing someone like me, dealing with similar skin sensitivity in a real bathroom, makes the claim feel genuine. A doctor in a clinic feels disconnected from my daily reality\u2014it's an ad. The student's experience mirrors mine, so I believe the product actually works for regular people.",
+            "position_on_dimension": "High trust in relatable content",
+            "concept_test_prediction": "Concepts highlighting practical benefits for everyday Indian routines (like hard water compatibility) and real-user testimonials would be more compelling. A 'for sensitive skin, by sensitive skin' positioning would outperform a 'luxury clinic-grade' claim.",
+            "ad_test_prediction": "Ads featuring relatable influencers or everyday people in authentic settings (e.g., a small apartment bathroom) would build stronger connection and trust. Before/after content from non-celebrities (A59) would be highly effective. Aspirational, glossy ads would be dismissed as unrealistic marketing."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Cautious Browser",
+            "answer_text": "I'd browse their site to check the brand's claims, like if it's dermatologist-recommended or has natural ingredients. But since my current body wash is fine, I probably won't buy unless the product really stands out in benefits or reviews.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "This twin would consider new concepts but require more information, such as clinical proofs or expert endorsements, before deciding. They might save the concept for later comparison rather than acting immediately.",
+            "ad_test_prediction": "Ads would make them curious, leading to clicks for more details, but they would likely research reviews or expert opinions before purchasing, rather than buying on impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T007",
+        "participant_id": "P16",
+        "combo_id": 127,
+        "coherence_score": 0.86,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "C",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Text-Driven, Expert-Validated",
+            "answer_text": "I'd choose Ad B because detailed text from dermatologists gives me confidence in the product's benefits, and before/after photos with explanations help me understand the results better. As someone who trusts expert reviews and doctor recommendations, I need that textual validation before considering a purchase. The video might be nice, but it doesn't provide the depth I look for.",
+            "position_on_dimension": "High textual preference with emphasis on expert information",
+            "concept_test_prediction": "This twin would respond better to product concepts with detailed descriptions, clinical proofs, and ingredient lists, such as derm-recommended or India-specific formulations. Visuals alone may not sway them without substantiated textual claims.",
+            "ad_test_prediction": "More engaged with ad campaigns that feature blog-style content, detailed infographics, or expert testimonials. Video ads may be skipped unless they include captions or links to textual reviews, leading to higher conversion from text-based platforms."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "C",
+            "archetype_label": "Active Occasion-Based Chooser",
+            "answer_text": "Yes, I definitely choose differently \u2013 after a workout, I want something with a strong aquatic scent and that fresh, tingling sensation to feel rejuvenated. For social events, a luxurious, long-lasting fragrance matters more, and for travel, I prefer minimalistic packaging like Cetaphil's. I might even keep separate bottles or travel sizes for these moments.",
+            "position_on_dimension": "High context-dependence",
+            "concept_test_prediction": "Highly receptive to occasion-specific concepts (e.g., 'date night luxury' or 'travel-ready mini'), especially if they align with preferred fragrances and textures. Willing to explore multiple products and pay premiums for contextual relevance.",
+            "ad_test_prediction": "Ads shown in niche contexts (e.g., during gym app usage or on travel vlogs) would drive high engagement and conversion, as they resonate with immediate needs. More likely to try new brands based on targeted messaging."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Cautious Browser",
+            "answer_text": "I'd browse their site to check the brand's claims, like if it's dermatologist-recommended or has natural ingredients. But since my current body wash is fine, I probably won't buy unless the product really stands out in benefits or reviews.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "This twin would consider new concepts but require more information, such as clinical proofs or expert endorsements, before deciding. They might save the concept for later comparison rather than acting immediately.",
+            "ad_test_prediction": "Ads would make them curious, leading to clicks for more details, but they would likely research reviews or expert opinions before purchasing, rather than buying on impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T008",
+        "participant_id": "P16",
+        "combo_id": 119,
+        "coherence_score": 0.98,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Text-Driven, Expert-Validated",
+            "answer_text": "I'd choose Ad B because detailed text from dermatologists gives me confidence in the product's benefits, and before/after photos with explanations help me understand the results better. As someone who trusts expert reviews and doctor recommendations, I need that textual validation before considering a purchase. The video might be nice, but it doesn't provide the depth I look for.",
+            "position_on_dimension": "High textual preference with emphasis on expert information",
+            "concept_test_prediction": "This twin would respond better to product concepts with detailed descriptions, clinical proofs, and ingredient lists, such as derm-recommended or India-specific formulations. Visuals alone may not sway them without substantiated textual claims.",
+            "ad_test_prediction": "More engaged with ad campaigns that feature blog-style content, detailed infographics, or expert testimonials. Video ads may be skipped unless they include captions or links to textual reviews, leading to higher conversion from text-based platforms."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T009",
+        "participant_id": "P16",
+        "combo_id": 124,
+        "coherence_score": 0.96,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Text-Driven, Expert-Validated",
+            "answer_text": "I'd choose Ad B because detailed text from dermatologists gives me confidence in the product's benefits, and before/after photos with explanations help me understand the results better. As someone who trusts expert reviews and doctor recommendations, I need that textual validation before considering a purchase. The video might be nice, but it doesn't provide the depth I look for.",
+            "position_on_dimension": "High textual preference with emphasis on expert information",
+            "concept_test_prediction": "This twin would respond better to product concepts with detailed descriptions, clinical proofs, and ingredient lists, such as derm-recommended or India-specific formulations. Visuals alone may not sway them without substantiated textual claims.",
+            "ad_test_prediction": "More engaged with ad campaigns that feature blog-style content, detailed infographics, or expert testimonials. Video ads may be skipped unless they include captions or links to textual reviews, leading to higher conversion from text-based platforms."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Evidence-Balanced Skeptic",
+            "answer_text": "I'd need both to fully trust it. The dermatologist gives credibility to the science, but the student shows it works in real life. Alone, the doctor ad feels like a paid promotion, and the student ad lacks authority. Honestly, I'd probably search for expert reviews online before believing either ad fully.",
+            "position_on_dimension": "Moderate/context-dependent; trusts a blend",
+            "concept_test_prediction": "Concepts that combine clinical credentials with real-world proof (e.g., 'clinically proven, loved by 10,000 students') would be most effective. Standalone aspirational or overly simplistic relatable claims would be met with skepticism.",
+            "ad_test_prediction": "Hybrid ad formats\u2014like a dermatologist reviewing user-submitted results\u2014would be most persuasive. They'd scrutinize both types of ads for consistency and look for corroborating evidence (reviews, third-party ratings). Pure lifestyle aspiration or raw user-generated content alone would be insufficient to drive a decision."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Cautious Browser",
+            "answer_text": "I'd browse their site to check the brand's claims, like if it's dermatologist-recommended or has natural ingredients. But since my current body wash is fine, I probably won't buy unless the product really stands out in benefits or reviews.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "This twin would consider new concepts but require more information, such as clinical proofs or expert endorsements, before deciding. They might save the concept for later comparison rather than acting immediately.",
+            "ad_test_prediction": "Ads would make them curious, leading to clicks for more details, but they would likely research reviews or expert opinions before purchasing, rather than buying on impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T010",
+        "participant_id": "P16",
+        "combo_id": 152,
+        "coherence_score": 0.96,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced, Context-Sensitive Evaluator",
+            "answer_text": "I'd probably check both, but if I had to choose, I'd lean towards Ad B because the combination of before/after photos with detailed text offers both visual proof and expert validation. However, if the video in Ad A feels genuine and shows real results without being flashy, I might click on it too. Ultimately, I need visuals to see the product and text to trust it.",
+            "position_on_dimension": "Balanced, leaning towards integrated visual-textual content",
+            "concept_test_prediction": "This twin prefers product concepts that blend compelling visuals (e.g., aquatic fragrance imagery) with clear, textual benefits like clinical testing or natural claims. They might respond positively to concepts that balance aesthetics with substance, such as minimalistic medical packaging with detailed labels.",
+            "ad_test_prediction": "Likely to interact with ads that merge visual appeal with textual depth, such as carousel posts with videos and captions, or influencer content that feels authentic and informative. They may require both elements to take action, making them responsive to multi-format campaigns."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Evidence-Balanced Skeptic",
+            "answer_text": "I'd need both to fully trust it. The dermatologist gives credibility to the science, but the student shows it works in real life. Alone, the doctor ad feels like a paid promotion, and the student ad lacks authority. Honestly, I'd probably search for expert reviews online before believing either ad fully.",
+            "position_on_dimension": "Moderate/context-dependent; trusts a blend",
+            "concept_test_prediction": "Concepts that combine clinical credentials with real-world proof (e.g., 'clinically proven, loved by 10,000 students') would be most effective. Standalone aspirational or overly simplistic relatable claims would be met with skepticism.",
+            "ad_test_prediction": "Hybrid ad formats\u2014like a dermatologist reviewing user-submitted results\u2014would be most persuasive. They'd scrutinize both types of ads for consistency and look for corroborating evidence (reviews, third-party ratings). Pure lifestyle aspiration or raw user-generated content alone would be insufficient to drive a decision."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T011",
+        "participant_id": "P16",
+        "combo_id": 83,
+        "coherence_score": 0.94,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Visual-First, Authentic Engagement",
+            "answer_text": "I'd click on Ad A because seeing the body wash in action with natural visuals gives me a better sense of its texture and how it feels. Videos that aren't overly produced, like the one described, align with my preference for less flashy content and help me visualize the fresh, tingling feeling I want. I might skim the text later, but the video grabs my attention first.",
+            "position_on_dimension": "High visual preference with a focus on authenticity",
+            "concept_test_prediction": "This twin would favor product concepts with high-quality demo videos or imagery showing usage and texture, such as aquatic fragrance visuals or minimalistic packaging designs. They might overlook text-heavy claims unless paired with compelling visuals.",
+            "ad_test_prediction": "More likely to engage with Instagram reels or video ads that showcase product use authentically, leading to higher click-through rates. Text-based ads or infographics may be ignored unless they include brief, impactful visuals."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T012",
+        "participant_id": "P16",
+        "combo_id": 142,
+        "coherence_score": 0.94,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced, Context-Sensitive Evaluator",
+            "answer_text": "I'd probably check both, but if I had to choose, I'd lean towards Ad B because the combination of before/after photos with detailed text offers both visual proof and expert validation. However, if the video in Ad A feels genuine and shows real results without being flashy, I might click on it too. Ultimately, I need visuals to see the product and text to trust it.",
+            "position_on_dimension": "Balanced, leaning towards integrated visual-textual content",
+            "concept_test_prediction": "This twin prefers product concepts that blend compelling visuals (e.g., aquatic fragrance imagery) with clear, textual benefits like clinical testing or natural claims. They might respond positively to concepts that balance aesthetics with substance, such as minimalistic medical packaging with detailed labels.",
+            "ad_test_prediction": "Likely to interact with ads that merge visual appeal with textual depth, such as carousel posts with videos and captions, or influencer content that feels authentic and informative. They may require both elements to take action, making them responsive to multi-format campaigns."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Evidence-Balanced Skeptic",
+            "answer_text": "I'd need both to fully trust it. The dermatologist gives credibility to the science, but the student shows it works in real life. Alone, the doctor ad feels like a paid promotion, and the student ad lacks authority. Honestly, I'd probably search for expert reviews online before believing either ad fully.",
+            "position_on_dimension": "Moderate/context-dependent; trusts a blend",
+            "concept_test_prediction": "Concepts that combine clinical credentials with real-world proof (e.g., 'clinically proven, loved by 10,000 students') would be most effective. Standalone aspirational or overly simplistic relatable claims would be met with skepticism.",
+            "ad_test_prediction": "Hybrid ad formats\u2014like a dermatologist reviewing user-submitted results\u2014would be most persuasive. They'd scrutinize both types of ads for consistency and look for corroborating evidence (reviews, third-party ratings). Pure lifestyle aspiration or raw user-generated content alone would be insufficient to drive a decision."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Cautious Browser",
+            "answer_text": "I'd browse their site to check the brand's claims, like if it's dermatologist-recommended or has natural ingredients. But since my current body wash is fine, I probably won't buy unless the product really stands out in benefits or reviews.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "This twin would consider new concepts but require more information, such as clinical proofs or expert endorsements, before deciding. They might save the concept for later comparison rather than acting immediately.",
+            "ad_test_prediction": "Ads would make them curious, leading to clicks for more details, but they would likely research reviews or expert opinions before purchasing, rather than buying on impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T013",
+        "participant_id": "P16",
+        "combo_id": 140,
+        "coherence_score": 0.92,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "B",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced, Context-Sensitive Evaluator",
+            "answer_text": "I'd probably check both, but if I had to choose, I'd lean towards Ad B because the combination of before/after photos with detailed text offers both visual proof and expert validation. However, if the video in Ad A feels genuine and shows real results without being flashy, I might click on it too. Ultimately, I need visuals to see the product and text to trust it.",
+            "position_on_dimension": "Balanced, leaning towards integrated visual-textual content",
+            "concept_test_prediction": "This twin prefers product concepts that blend compelling visuals (e.g., aquatic fragrance imagery) with clear, textual benefits like clinical testing or natural claims. They might respond positively to concepts that balance aesthetics with substance, such as minimalistic medical packaging with detailed labels.",
+            "ad_test_prediction": "Likely to interact with ads that merge visual appeal with textual depth, such as carousel posts with videos and captions, or influencer content that feels authentic and informative. They may require both elements to take action, making them responsive to multi-format campaigns."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Relatable Pragmatist",
+            "answer_text": "Ad B with the student is more trustworthy. Seeing someone like me, dealing with similar skin sensitivity in a real bathroom, makes the claim feel genuine. A doctor in a clinic feels disconnected from my daily reality\u2014it's an ad. The student's experience mirrors mine, so I believe the product actually works for regular people.",
+            "position_on_dimension": "High trust in relatable content",
+            "concept_test_prediction": "Concepts highlighting practical benefits for everyday Indian routines (like hard water compatibility) and real-user testimonials would be more compelling. A 'for sensitive skin, by sensitive skin' positioning would outperform a 'luxury clinic-grade' claim.",
+            "ad_test_prediction": "Ads featuring relatable influencers or everyday people in authentic settings (e.g., a small apartment bathroom) would build stronger connection and trust. Before/after content from non-celebrities (A59) would be highly effective. Aspirational, glossy ads would be dismissed as unrealistic marketing."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T014",
+        "participant_id": "P16",
+        "combo_id": 105,
+        "coherence_score": 0.78,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Visual-First, Authentic Engagement",
+            "answer_text": "I'd click on Ad A because seeing the body wash in action with natural visuals gives me a better sense of its texture and how it feels. Videos that aren't overly produced, like the one described, align with my preference for less flashy content and help me visualize the fresh, tingling feeling I want. I might skim the text later, but the video grabs my attention first.",
+            "position_on_dimension": "High visual preference with a focus on authenticity",
+            "concept_test_prediction": "This twin would favor product concepts with high-quality demo videos or imagery showing usage and texture, such as aquatic fragrance visuals or minimalistic packaging designs. They might overlook text-heavy claims unless paired with compelling visuals.",
+            "ad_test_prediction": "More likely to engage with Instagram reels or video ads that showcase product use authentically, leading to higher click-through rates. Text-based ads or infographics may be ignored unless they include brief, impactful visuals."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "C",
+            "archetype_label": "Active Occasion-Based Chooser",
+            "answer_text": "Yes, I definitely choose differently \u2013 after a workout, I want something with a strong aquatic scent and that fresh, tingling sensation to feel rejuvenated. For social events, a luxurious, long-lasting fragrance matters more, and for travel, I prefer minimalistic packaging like Cetaphil's. I might even keep separate bottles or travel sizes for these moments.",
+            "position_on_dimension": "High context-dependence",
+            "concept_test_prediction": "Highly receptive to occasion-specific concepts (e.g., 'date night luxury' or 'travel-ready mini'), especially if they align with preferred fragrances and textures. Willing to explore multiple products and pay premiums for contextual relevance.",
+            "ad_test_prediction": "Ads shown in niche contexts (e.g., during gym app usage or on travel vlogs) would drive high engagement and conversion, as they resonate with immediate needs. More likely to try new brands based on targeted messaging."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Evidence-Balanced Skeptic",
+            "answer_text": "I'd need both to fully trust it. The dermatologist gives credibility to the science, but the student shows it works in real life. Alone, the doctor ad feels like a paid promotion, and the student ad lacks authority. Honestly, I'd probably search for expert reviews online before believing either ad fully.",
+            "position_on_dimension": "Moderate/context-dependent; trusts a blend",
+            "concept_test_prediction": "Concepts that combine clinical credentials with real-world proof (e.g., 'clinically proven, loved by 10,000 students') would be most effective. Standalone aspirational or overly simplistic relatable claims would be met with skepticism.",
+            "ad_test_prediction": "Hybrid ad formats\u2014like a dermatologist reviewing user-submitted results\u2014would be most persuasive. They'd scrutinize both types of ads for consistency and look for corroborating evidence (reviews, third-party ratings). Pure lifestyle aspiration or raw user-generated content alone would be insufficient to drive a decision."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Seeking Impulse Buyer",
+            "answer_text": "I'd use the coupon now. \u20b9249 for a \u20b9399 body wash is a good deal, and even with two weeks left, I can stock up. Trying a new brand isn't a big risk at this price, and if it doesn't work out, I haven't lost much.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "This twin would quickly convert on concepts with limited-time offers or flash sales, such as a 'limited edition summer variant' with a discount, without needing extensive deliberation.",
+            "ad_test_prediction": "Ads with strong, immediate calls-to-action like 'Buy now with 50% off' would lead to high click-through and purchase rates, as they act impulsively on attractive deals."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T015",
+        "participant_id": "P16",
+        "combo_id": 28,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Rational Data-Driven Processor",
+            "answer_text": "I'd definitely stop for Ad B with the clinical benefits. As someone who trusts dermatologists and expert reviews, seeing clear facts and testimonials gives me confidence that the product works, especially for my skin sensitivity. Emotional stories feel fluffy and don't convince me it'll address my actual needs like body odor or freshness.",
+            "position_on_dimension": "Low emotional resonance",
+            "concept_test_prediction": "This twin would strongly prefer body wash concepts emphasizing clinical formulations, lab-tested benefits, and dermatologist endorsements. Concepts with emotional storytelling alone would have low purchase intent, unless backed by data.",
+            "ad_test_prediction": "More likely to click on ads featuring expert testimonials, before/after visuals, and factual claims. Emotional ad campaigns would have lower engagement and click-through rates, as they perceive them as less credible."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Text-Driven, Expert-Validated",
+            "answer_text": "I'd choose Ad B because detailed text from dermatologists gives me confidence in the product's benefits, and before/after photos with explanations help me understand the results better. As someone who trusts expert reviews and doctor recommendations, I need that textual validation before considering a purchase. The video might be nice, but it doesn't provide the depth I look for.",
+            "position_on_dimension": "High textual preference with emphasis on expert information",
+            "concept_test_prediction": "This twin would respond better to product concepts with detailed descriptions, clinical proofs, and ingredient lists, such as derm-recommended or India-specific formulations. Visuals alone may not sway them without substantiated textual claims.",
+            "ad_test_prediction": "More engaged with ad campaigns that feature blog-style content, detailed infographics, or expert testimonials. Video ads may be skipped unless they include captions or links to textual reviews, leading to higher conversion from text-based platforms."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Cautious Browser",
+            "answer_text": "I'd browse their site to check the brand's claims, like if it's dermatologist-recommended or has natural ingredients. But since my current body wash is fine, I probably won't buy unless the product really stands out in benefits or reviews.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "This twin would consider new concepts but require more information, such as clinical proofs or expert endorsements, before deciding. They might save the concept for later comparison rather than acting immediately.",
+            "ad_test_prediction": "Ads would make them curious, leading to clicks for more details, but they would likely research reviews or expert opinions before purchasing, rather than buying on impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T016",
+        "participant_id": "P16",
+        "combo_id": 44,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Rational Data-Driven Processor",
+            "answer_text": "I'd definitely stop for Ad B with the clinical benefits. As someone who trusts dermatologists and expert reviews, seeing clear facts and testimonials gives me confidence that the product works, especially for my skin sensitivity. Emotional stories feel fluffy and don't convince me it'll address my actual needs like body odor or freshness.",
+            "position_on_dimension": "Low emotional resonance",
+            "concept_test_prediction": "This twin would strongly prefer body wash concepts emphasizing clinical formulations, lab-tested benefits, and dermatologist endorsements. Concepts with emotional storytelling alone would have low purchase intent, unless backed by data.",
+            "ad_test_prediction": "More likely to click on ads featuring expert testimonials, before/after visuals, and factual claims. Emotional ad campaigns would have lower engagement and click-through rates, as they perceive them as less credible."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Text-Driven, Expert-Validated",
+            "answer_text": "I'd choose Ad B because detailed text from dermatologists gives me confidence in the product's benefits, and before/after photos with explanations help me understand the results better. As someone who trusts expert reviews and doctor recommendations, I need that textual validation before considering a purchase. The video might be nice, but it doesn't provide the depth I look for.",
+            "position_on_dimension": "High textual preference with emphasis on expert information",
+            "concept_test_prediction": "This twin would respond better to product concepts with detailed descriptions, clinical proofs, and ingredient lists, such as derm-recommended or India-specific formulations. Visuals alone may not sway them without substantiated textual claims.",
+            "ad_test_prediction": "More engaged with ad campaigns that feature blog-style content, detailed infographics, or expert testimonials. Video ads may be skipped unless they include captions or links to textual reviews, leading to higher conversion from text-based platforms."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Evidence-Balanced Skeptic",
+            "answer_text": "I'd need both to fully trust it. The dermatologist gives credibility to the science, but the student shows it works in real life. Alone, the doctor ad feels like a paid promotion, and the student ad lacks authority. Honestly, I'd probably search for expert reviews online before believing either ad fully.",
+            "position_on_dimension": "Moderate/context-dependent; trusts a blend",
+            "concept_test_prediction": "Concepts that combine clinical credentials with real-world proof (e.g., 'clinically proven, loved by 10,000 students') would be most effective. Standalone aspirational or overly simplistic relatable claims would be met with skepticism.",
+            "ad_test_prediction": "Hybrid ad formats\u2014like a dermatologist reviewing user-submitted results\u2014would be most persuasive. They'd scrutinize both types of ads for consistency and look for corroborating evidence (reviews, third-party ratings). Pure lifestyle aspiration or raw user-generated content alone would be insufficient to drive a decision."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T017",
+        "participant_id": "P16",
+        "combo_id": 108,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Text-Driven, Expert-Validated",
+            "answer_text": "I'd choose Ad B because detailed text from dermatologists gives me confidence in the product's benefits, and before/after photos with explanations help me understand the results better. As someone who trusts expert reviews and doctor recommendations, I need that textual validation before considering a purchase. The video might be nice, but it doesn't provide the depth I look for.",
+            "position_on_dimension": "High textual preference with emphasis on expert information",
+            "concept_test_prediction": "This twin would respond better to product concepts with detailed descriptions, clinical proofs, and ingredient lists, such as derm-recommended or India-specific formulations. Visuals alone may not sway them without substantiated textual claims.",
+            "ad_test_prediction": "More engaged with ad campaigns that feature blog-style content, detailed infographics, or expert testimonials. Video ads may be skipped unless they include captions or links to textual reviews, leading to higher conversion from text-based platforms."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "A",
+            "archetype_label": "Deal-Seeking Impulse Buyer",
+            "answer_text": "I'd use the coupon now. \u20b9249 for a \u20b9399 body wash is a good deal, and even with two weeks left, I can stock up. Trying a new brand isn't a big risk at this price, and if it doesn't work out, I haven't lost much.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "This twin would quickly convert on concepts with limited-time offers or flash sales, such as a 'limited edition summer variant' with a discount, without needing extensive deliberation.",
+            "ad_test_prediction": "Ads with strong, immediate calls-to-action like 'Buy now with 50% off' would lead to high click-through and purchase rates, as they act impulsively on attractive deals."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T018",
+        "participant_id": "P16",
+        "combo_id": 145,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Balanced, Context-Sensitive Evaluator",
+            "answer_text": "I'd probably check both, but if I had to choose, I'd lean towards Ad B because the combination of before/after photos with detailed text offers both visual proof and expert validation. However, if the video in Ad A feels genuine and shows real results without being flashy, I might click on it too. Ultimately, I need visuals to see the product and text to trust it.",
+            "position_on_dimension": "Balanced, leaning towards integrated visual-textual content",
+            "concept_test_prediction": "This twin prefers product concepts that blend compelling visuals (e.g., aquatic fragrance imagery) with clear, textual benefits like clinical testing or natural claims. They might respond positively to concepts that balance aesthetics with substance, such as minimalistic medical packaging with detailed labels.",
+            "ad_test_prediction": "Likely to interact with ads that merge visual appeal with textual depth, such as carousel posts with videos and captions, or influencer content that feels authentic and informative. They may require both elements to take action, making them responsive to multi-format campaigns."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Cautious Browser",
+            "answer_text": "I'd browse their site to check the brand's claims, like if it's dermatologist-recommended or has natural ingredients. But since my current body wash is fine, I probably won't buy unless the product really stands out in benefits or reviews.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "This twin would consider new concepts but require more information, such as clinical proofs or expert endorsements, before deciding. They might save the concept for later comparison rather than acting immediately.",
+            "ad_test_prediction": "Ads would make them curious, leading to clicks for more details, but they would likely research reviews or expert opinions before purchasing, rather than buying on impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T019",
+        "participant_id": "P16",
+        "combo_id": 95,
+        "coherence_score": 0.88,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Evaluator",
+            "answer_text": "It really depends on my mood and what I need that day. Sometimes Ad A's confidence story resonates if I'm looking for a mood boost, but I also want assurance it works. So, I might watch both, but I'd lean towards an ad that mixes a bit of emotion with some proof, like showing real people results alongside expert quotes.",
+            "position_on_dimension": "Medium emotional resonance (context-dependent)",
+            "concept_test_prediction": "Would respond well to concepts that blend emotional benefits (e.g., feeling refreshed) with rational assurances like natural ingredients or pH-balanced formulas. Purely emotional or purely clinical concepts might not fully engage them.",
+            "ad_test_prediction": "Engages with ads that combine emotional storytelling with factual elements, such as influencer reviews showing personal experiences alongside data. Might share ads that feel authentic and relatable, but also check reviews before buying."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Visual-First, Authentic Engagement",
+            "answer_text": "I'd click on Ad A because seeing the body wash in action with natural visuals gives me a better sense of its texture and how it feels. Videos that aren't overly produced, like the one described, align with my preference for less flashy content and help me visualize the fresh, tingling feeling I want. I might skim the text later, but the video grabs my attention first.",
+            "position_on_dimension": "High visual preference with a focus on authenticity",
+            "concept_test_prediction": "This twin would favor product concepts with high-quality demo videos or imagery showing usage and texture, such as aquatic fragrance visuals or minimalistic packaging designs. They might overlook text-heavy claims unless paired with compelling visuals.",
+            "ad_test_prediction": "More likely to engage with Instagram reels or video ads that showcase product use authentically, leading to higher click-through rates. Text-based ads or infographics may be ignored unless they include brief, impactful visuals."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "B",
+            "archetype_label": "Context-Aware but Selective",
+            "answer_text": "For daily use, I rely on my Nivea, but if I have a heavy workout or a special event, I'd consider a variant with longer-lasting fragrance or extra freshness. I wouldn't buy multiple bottles, but I'm open to trying a clinically proven option if recommended for post-sweat care \u2013 maybe from a brand like Cetaphil for that tingly feel.",
+            "position_on_dimension": "Medium context-dependence",
+            "concept_test_prediction": "Moderately interested in concepts tailored to specific occasions, especially if backed by expert claims (e.g., 'dermatologist-recommended for post-workout'). Willing to pay a small premium for added benefits but prefers multi-purpose positioning.",
+            "ad_test_prediction": "Ads in contextually relevant settings (e.g., fitness influencers or travel blogs) could capture attention if they emphasize clinical validation or skin benefits. More likely to engage than Archetype A but less than C."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Relatable Pragmatist",
+            "answer_text": "Ad B with the student is more trustworthy. Seeing someone like me, dealing with similar skin sensitivity in a real bathroom, makes the claim feel genuine. A doctor in a clinic feels disconnected from my daily reality\u2014it's an ad. The student's experience mirrors mine, so I believe the product actually works for regular people.",
+            "position_on_dimension": "High trust in relatable content",
+            "concept_test_prediction": "Concepts highlighting practical benefits for everyday Indian routines (like hard water compatibility) and real-user testimonials would be more compelling. A 'for sensitive skin, by sensitive skin' positioning would outperform a 'luxury clinic-grade' claim.",
+            "ad_test_prediction": "Ads featuring relatable influencers or everyday people in authentic settings (e.g., a small apartment bathroom) would build stronger connection and trust. Before/after content from non-celebrities (A59) would be highly effective. Aspirational, glossy ads would be dismissed as unrealistic marketing."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      },
+      {
+        "twin_id": "P16_T020",
+        "participant_id": "P16",
+        "combo_id": 2,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional Resonance in Advertising Messaging",
+            "question_text": "Imagine you're scrolling through social media and see two ads for the same body wash. Ad A tells a heartfelt story about starting the day with confidence and freshness, using emotional visuals and music. Ad B lists clinical benefits like 'dermatologist-tested' and '24-hour odor protection' with expert testimonials. Which ad are you more likely to stop and watch, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Rational Data-Driven Processor",
+            "answer_text": "I'd definitely stop for Ad B with the clinical benefits. As someone who trusts dermatologists and expert reviews, seeing clear facts and testimonials gives me confidence that the product works, especially for my skin sensitivity. Emotional stories feel fluffy and don't convince me it'll address my actual needs like body odor or freshness.",
+            "position_on_dimension": "Low emotional resonance",
+            "concept_test_prediction": "This twin would strongly prefer body wash concepts emphasizing clinical formulations, lab-tested benefits, and dermatologist endorsements. Concepts with emotional storytelling alone would have low purchase intent, unless backed by data.",
+            "ad_test_prediction": "More likely to click on ads featuring expert testimonials, before/after visuals, and factual claims. Emotional ad campaigns would have lower engagement and click-through rates, as they perceive them as less credible."
+          },
+          {
+            "dimension_name": "Visual versus Textual Preference in Ad Consumption",
+            "question_text": "You're scrolling through Instagram and see two ads for the same new body wash. Ad A is a 15-second video showing someone using the body wash with natural, unflashy visuals and soothing music. Ad B is a carousel post with before/after photos and detailed text about dermatologist testing and ingredient lists. Which ad are you more likely to click on to learn more, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Visual-First, Authentic Engagement",
+            "answer_text": "I'd click on Ad A because seeing the body wash in action with natural visuals gives me a better sense of its texture and how it feels. Videos that aren't overly produced, like the one described, align with my preference for less flashy content and help me visualize the fresh, tingling feeling I want. I might skim the text later, but the video grabs my attention first.",
+            "position_on_dimension": "High visual preference with a focus on authenticity",
+            "concept_test_prediction": "This twin would favor product concepts with high-quality demo videos or imagery showing usage and texture, such as aquatic fragrance visuals or minimalistic packaging designs. They might overlook text-heavy claims unless paired with compelling visuals.",
+            "ad_test_prediction": "More likely to engage with Instagram reels or video ads that showcase product use authentically, leading to higher click-through rates. Text-based ads or infographics may be ignored unless they include brief, impactful visuals."
+          },
+          {
+            "dimension_name": "Contextual Purchase Triggers for Different Occasions",
+            "question_text": "Do you adjust your body wash choice based on different occasions or activities, such as workouts, social events, or travel? If so, what aspects become more important for each occasion?",
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Agnostic Daily User",
+            "answer_text": "I stick to my regular Nivea body wash for everything \u2013 whether it's a normal day or after the gym. My skin is sensitive, so I don't risk switching products based on occasions; as long as it cleans well and doesn't cause issues, it's fine. I might just pay a bit more attention to fragrance on days I have social plans, but I wouldn't buy a separate product for that.",
+            "position_on_dimension": "Low context-dependence",
+            "concept_test_prediction": "Would respond negatively to occasion-specific concepts (e.g., 'post-gym refresh') as unnecessary; prefers general, dermatologist-tested concepts with proven skin compatibility. Less willing to pay a premium for contextual benefits.",
+            "ad_test_prediction": "Generic ads highlighting daily use and skin safety would resonate best; occasion-targeted ads (e.g., during sports streaming) might be ignored or seen as irrelevant, leading to lower engagement."
+          },
+          {
+            "dimension_name": "Trust in Aspirational versus Relatable Ad Content",
+            "question_text": "You see two ads for the same new body wash. Ad A shows a dermatologist in a sleek clinic explaining its clinical ingredients and lab results. Ad B shows a college student like you in a shared apartment bathroom, talking about how it solved their skin sensitivity after trying many options. Both claim the product is 'dermatologist-tested'. Which ad feels more authentic and trustworthy to you, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Aspiration Seeker",
+            "answer_text": "Ad A with the dermatologist feels more authentic. I trust experts in proper clinical settings\u2014it matches how I found my current face wash. A student's review might be biased or not scientifically sound. The clinic background and professional explanation make the 'dermatologist-tested' claim believable.",
+            "position_on_dimension": "High trust in aspirational content",
+            "concept_test_prediction": "This twin would strongly favor body wash concepts that emphasize clinical proof, lab-tested formulations, and expert endorsements. A concept promising 'hospital-grade cleanliness' or 'dermatologist-developed' would resonate more than one focused on communal or everyday benefits.",
+            "ad_test_prediction": "Ads featuring healthcare professionals in clean, professional settings would generate higher trust and purchase intent. Celebrity or influencer ads would only work if they are positioned as 'expert influencers' (e.g., a dermatologist on social media). Relatable, user-generated-style ads would be seen as less credible."
+          },
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Deliberate Planner",
+            "answer_text": "I'd let the coupon expire. I don't need body wash now, and I prefer to buy only when necessary. For a new brand, I'd wait for proper recommendations or reviews, even if there's a deal, to avoid wasting money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would ignore or delay response to concepts with urgency elements, preferring thorough research. They would only engage if the concept is strongly backed by expert validation or proven benefits.",
+            "ad_test_prediction": "Ads with immediate calls-to-action would be ignored. They would respond better to ads that provide detailed information or links to expert reviews, taking time to decide without impulse."
+          }
+        ]
+      }
+    ]
+  }
+]

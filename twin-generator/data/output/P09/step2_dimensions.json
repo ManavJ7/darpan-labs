@@ -1,0 +1,52 @@
+[
+  {
+    "participant_id": "P09",
+    "dimensions": [
+      {
+        "dimension_id": 1,
+        "dimension_name": "Emotional appeal responsiveness versus rational fact focus",
+        "what_it_captures": "Whether the person is more influenced by emotional storytelling or logical data in marketing messages, which affects how they process ads and evaluate product benefits.",
+        "concept_test_impact": "Variation here would cause different responses to product concepts: emotionally responsive twins might prefer concepts framed around joy or confidence, while rational twins might prioritize concepts with ingredient transparency or clinical proofs.",
+        "ad_test_impact": "In ad testing, emotionally responsive twins would engage more with ads featuring narratives or mood-based visuals, while rational twins would respond better to ads with expert testimonials or factual comparisons.",
+        "what_we_can_infer": "From Q59, they prefer expert reviews and ingredient breakdowns, suggesting a rational lean, but Q8 shows they care about social impressions, which could be emotionally driven. It remains uncertain whether emotional appeals would override rational analysis.",
+        "example_variation": "Twin A (emotional) sees a body wash ad with a romantic storyline and feels compelled to buy for date nights, while Twin B (rational) sees the same ad but ignores it unless it includes dermatologist endorsements and ingredient lists."
+      },
+      {
+        "dimension_id": 2,
+        "dimension_name": "Visual aesthetic sensitivity in marketing materials",
+        "what_it_captures": "How much visual design elements in packaging, ads, and product imagery influence their perception, interest, and trust in a brand.",
+        "concept_test_impact": "Twins high on this dimension would favor product concepts with sleek, modern, or clinically clean packaging designs, while those low might prioritize functional descriptions over aesthetics.",
+        "ad_test_impact": "In ad testing, visually sensitive twins would have higher engagement with ads that use high-quality visuals, cohesive color schemes, or minimalist layouts, while less sensitive twins would focus on textual claims or reviews.",
+        "what_we_can_infer": "Q41 prefers clinical packaging, and Q24 looks at images first online, but no questions address specific aesthetic preferences for ads or how visual style affects decision-making. Uncertainty remains.",
+        "example_variation": "Twin A (high sensitivity) is drawn to a body wash concept with a minimalist, lab-inspired bottle design, while Twin B (low sensitivity) prefers a concept with detailed text on benefits despite plain packaging."
+      },
+      {
+        "dimension_id": 3,
+        "dimension_name": "Impulse purchase tendency in response to promotions",
+        "what_it_captures": "Likelihood to make unplanned purchases when exposed to product concepts or ads, especially under time pressure, discounts, or novelty cues.",
+        "concept_test_impact": "Twins with high impulse tendency would show quicker purchase intent for new concepts featuring limited-time offers or novelty features, while deliberate twins would require more research and comparison.",
+        "ad_test_impact": "In ad testing, impulse-prone twins would click more on ads with urgency triggers like 'limited stock' or 'flash sale', while deliberate twins would ignore such cues and seek more information before acting.",
+        "what_we_can_infer": "Q23 mentions an urgency-driven purchase on q-commerce, and Q19 suggests store-based decisions, but no questions measure general impulse behavior or response to promotional tactics in ads. It's uncertain.",
+        "example_variation": "Twin A (high impulse) sees a social media ad for a new body wash with a 50% discount and buys immediately, while Twin B (low impulse) sees the same ad, notes the discount, but delays to read Reddit reviews first."
+      },
+      {
+        "dimension_id": 4,
+        "dimension_name": "Social context influence on product evaluation",
+        "what_it_captures": "How the presence or anticipated opinions of others (e.g., partner, friends, social settings) shape their assessment of products and receptivity to ads.",
+        "concept_test_impact": "Twins influenced by social context might prefer product concepts that are easy to share or recommend, or those positioned for social occasions, while independent evaluators focus on personal utility.",
+        "ad_test_impact": "In ad testing, socially influenced twins would respond better to ads featuring group scenarios, peer recommendations, or social validation, while independent twins prefer ads highlighting individual benefits or solo use.",
+        "what_we_can_infer": "Q8 cares about others' perceptions, and Q61 has moderate likelihood to try friend recommendations, but no questions ask how social context during shopping or ad exposure affects decisions. Uncertainty persists.",
+        "example_variation": "Twin A (socially influenced) evaluates a body wash concept more favorably when imagining using it before a party with friends, while Twin B (independent) assesses it based solely on skin type compatibility and personal routine."
+      },
+      {
+        "dimension_id": 5,
+        "dimension_name": "Benefit prioritization spectrum: hygiene versus grooming versus wellness",
+        "what_it_captures": "Whether the person views body wash primarily for basic cleanliness, for grooming and scent enhancement, or for skin health and therapeutic wellness, affecting benefit perception in concepts and ads.",
+        "concept_test_impact": "Twins prioritizing hygiene would favor concepts emphasizing deep cleansing or hard water adaptation, grooming-focused twins would prefer fragrance longevity and luxury, and wellness-oriented twins would seek clinical or natural skin benefits.",
+        "ad_test_impact": "In ad testing, hygiene-prioritizing twins engage with ads showing freshness and cleanliness, grooming twins with ads highlighting scent and style, and wellness twins with ads featuring dermatological endorsements or ingredient efficacy.",
+        "what_we_can_infer": "Q8 mentions both self and others, Q44 likes freshness and smell, and Q10 notices skin problems, but no questions establish a clear hierarchy of benefits in decision-making. It remains ambiguous.",
+        "example_variation": "Twin A (grooming-focused) loves a body wash ad emphasizing all-day fragrance for confidence, while Twin B (wellness-focused) prefers an ad showcasing acne-fighting ingredients and clinical studies, despite identical answer profiles."
+      }
+    ]
+  }
+]

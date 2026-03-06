@@ -1,0 +1,60 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),"Ahmedabad, Gujarat"
+M1,What is your current occupation or primary activity?,Student
+M1,What is your approximate monthly household income range?,1l_2l
+M1,What is your household composition?,Joint_family
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English,hindi,marathi"
+M1,How would you describe your personality in 3-5 words?,"Ambivert, chill, people's person"
+M1,How comfortable are you trying new brands or products you haven't used before?,4
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?","Yes, obviously, grooming is more about feeling good myself and not thinking about others. But obviously, when you play sports or you are in the event where you are frequently interacting with others, so it becomes an important part to understand that how you smell to others"
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,"Grooming is primarily about feeling good myself. But when playing sports or frequently interacting with others, how I smell to them becomes important."
+M1,"When you imagine your ideal grooming routine â€” not what you do now, but what you'd love â€” what does it look like?","Ideal grooming routine would be having a face serum after bath, then applying moisturizer, then obviously using sunscreen before I get out in the sun"
+M2,"When buying any personal care product, rank these factors from most to least important:","Face serum after bath, then moisturizer, then sunscreen before going out in the sun."
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":2,""explanation"":""""}"
+M2,Is there a particular reason why you don't prioritize natural or chemical-free products when choosing personal care items?,"For me, price is one of the most important criteria. So generally, natural or chemical-free products are highly priced. And because of that perception, I would prefer items that are not related to this certification because they would offer me a better value"
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Price is one of my most important criteria. Natural or chemical-free products are generally highly priced. Because of that perception, I prefer items without this certification as they offer better value."
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"I don't have any bias if the brand is good irrespective of whether it is an Indian brand or international brand, I would go for the product"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"No bias. If the brand is good, I'll go for the product regardless of whether it's Indian or international."
+M2,How loyal are you to personal care brands?,Moderate_loyalty
+M2,How much do you trust the following sources for personal care product information? Rate each 1-5:,"{""TV advertisements"":1,""Instagram or YouTube influencers"":2,""Dermatologists or skin doctors"":3,""Friends and family"":3,""Online reviews (Amazon, Nykaa)"":4,""Claims written on the product packaging"":1}"
+M3,"When your current body wash/soap runs out, what is your typical next step?",Repurchase_same
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""brand_website"",""quick_commerce"",""amazon""]"
+M3,How much do you typically spend on a single body wash purchase?,100_200
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""influencer"",""friend_rec"",""doctor_rec""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,"I am not much using in terms of my body wash, so I was using a body wash which was expensive and then I found a body wash which was doing its job pretty and it was pretty cheaper than the previous brand which I used, so I switched"
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","I was using an expensive body wash, then found one that did the job well at a much cheaper price, so I switched."
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?",Generally when I observe that my personal care items have stocked out so I firstly open QuickCommerce and if it is very urgent then irrespective of the price I order using the QuickCommerce but if I have some buffer of 2-3 days then obviously I go to the normal ecommerce website and see that if the brand is available at a cheaper cost and generally the brands which I use are easily available on the QuickCommerce so the limited selection does not is not applicable in that respect
+M3,"If a brand you liked raised its price by 30%, what would you do?","When personal care items stock out, I first check quick commerce. If urgent, I order regardless of price. If I have 2-3 days buffer, I check regular e-commerce for cheaper pricing. The brands I use are easily available on quick commerce, so limited selection isn't an issue."
+M4,How many times a day do you typically shower/bathe?,Twice
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,"I use shampoo, body wash and face wash"
+M4,Could you share which one you typically start with when you begin your shower routine?,"Shampoo, body wash, and face wash."
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?",I use body wash because it's comfortable using that
+M4,How would you describe your relationship with bathing/grooming?,Body wash Ñ it's more comfortable to use.
+M4,"What specific skin concerns, if any, do you have? Select all that apply.","Oiliness,sensitivity,rough_texture"
+M4,Do other household members use the same body wash as you? Who decides what to buy?,No
+M4,Who usually makes the decision on which body wash to purchase in your household?,"I live alone, so it's just me"
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"I live alone, so I decide."
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,I currently use Synthol body wash because of the citrus smell and I keep using that because I love that smell
+M5,How long should a body wash fragrance last on your skin?,Currently use Cinthol body wash for its citrus smell. I keep repurchasing because I love that scent.
+M5,How important is lather/foam to your body wash experience?,Essential
+M5,What texture do you prefer in a body wash?,Lightweight
+M5,What is your ideal post-wash skin feeling?,Moisturized
+M5,Do you prefer packaging that looks:,Luxurious
+M5,"If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",A fragrance of synthoil can be merged with the texture of Fiama's body oil
+M6,What body wash brand(s) do you currently use? List all.,Cinthol's fragrance combined with Fiama's body oil texture.
+M6,What do you like MOST about your current body wash? (Top 1-2 things),Fragrance and Price
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",After wash feel
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"Minimalist, Cinthol, Fiama, Lux"
+M6,How would you categorize body washes in your mind? What makes one different from another?,After-wash feel.
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"{""Beardo (men's grooming)"":3,""Bombay Shaving Company (men's, premium)"":4,""Mamaearth (natural, toxin-free)"":2,""Dot & Key (colorful, K-beauty style)"":4}"
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price â€” anything.","I would go with the citrus or the musk fragrance texture, should be foam lightweight liquids. Then if it would be moisturizing skin properly, packaging, I don't care much about it. But I use it should be in the mid-range for me"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"[""natural"",""india_specific"",""clinical_studies""]"
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,"Citrus or musk fragrance. Foam-based, lightweight liquid texture. Moisturizing for skin. Packaging doesn't matter much. Mid-range price."
+M6,"Was that in rupees or another currency, and what brand was it?","It was Fiamma, De Wills and it was in INR"
+M6,Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?,"{""rating"":5,""explanation"":""""}"
+M7,Where do you typically discover new personal care products? Pick your top 3:,"Fiama Di Wills, in INR."
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,I don't have specific names in my mind but generally the number of followers which they have or the views which they gather which they earn on their reads is something which makes me trust them and I don't have any particular names in my mind
+M7,"Is there a particular platform, like Instagram or YouTube, where you find these follower counts and views more convincing when deciding whom to trust?","I don't see this type of content on YouTube. I mostly consume this type of content on Instagram. So, I go with the Instagram Reels and Followers"
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,"No specific names, but I trust influencers based on their follower count and the views their reels earn."
+M7,What type of content makes you most likely to try a new product? Pick top 2:,I don't consume this type of content on YouTube. Mostly on Instagram Ñ I go by Instagram Reels and follower counts.
+M7,Do you read online reviews before buying personal care products? Where?,"Yes, I bought Dot & Key and Bare Anatomy after seeing them on social media."

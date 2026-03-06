@@ -247,7 +247,7 @@ export function ConceptBoardsView({ study, stepVersion }: ConceptBoardsViewProps
                     {refined && (
                       <p className="text-sm text-white/80 mb-1">{refined}</p>
                     )}
-                    {rawInput && (
+                    {rawInput && !(isLocked && refined) && (
                       <p className={`text-sm ${refined ? "text-white/30 line-through" : "text-white/60"}`}>
                         {rawInput}
                       </p>

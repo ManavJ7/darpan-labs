@@ -1,0 +1,1309 @@
+[
+  {
+    "participant_id": "P03",
+    "n_original": 100,
+    "n_selected": 20,
+    "twins": [
+      {
+        "twin_id": "P03_T001",
+        "participant_id": "P03",
+        "combo_id": 160,
+        "coherence_score": 0.98,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Need-Based Planner",
+            "answer_text": "I'd let the coupon expire. My current body wash still has two weeks left, and I don't like buying things I don't need immediately. I prefer to stick to my routine and only purchase when I'm out, after checking reviews and comparing prices online.",
+            "position_on_dimension": "High deliberate",
+            "concept_test_prediction": "This twin would require detailed specifications, comparative data, and integration of reviews in product concepts. They might delay decisions, preferring concepts that emphasize clinical testing or ingredient transparency.",
+            "ad_test_prediction": "Ads emphasizing evidence, such as dermatologist recommendations, customer testimonials, or ingredient breakdowns, would engage this twin for longer consideration, leading to researched purchases rather than immediate clicks."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T002",
+        "participant_id": "P03",
+        "combo_id": 171,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Rationalist",
+            "answer_text": "Influencer A would influence me more. As someone who values clinical expertise and ingredient transparency, a skincare expert's opinion carries weight, especially since I trust dermatologists and look for Ayurvedic claims. The clinical body wash might offer better efficacy, and I'd verify the claims through reviews before considering.",
+            "position_on_dimension": "High on rational processing",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing clinical-grade formulations, ingredient lists, and certifications like Ayurvedic or sulfate-free. For example, a concept highlighting '72hr freshness with lab-tested results' would resonate more than emotional storytelling.",
+            "ad_test_prediction": "More likely to engage with ads featuring expert endorsements, clinical study visuals, or detailed ingredient explanations. Would click on rational ads showing before/after comparisons with data, rather than emotional social scenarios."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Mood-Dependent",
+            "answer_text": "It varies with my mood and how much time I have. If I'm not in a rush\u2014like during a lunch break or a quiet moment at home\u2014I might stop and check out an ad, especially if it has interesting claims. But if I'm swamped with work or tasks, I'll probably skip it without a second thought.",
+            "position_on_dimension": "Medium contextual sensitivity",
+            "concept_test_prediction": "This twin would show moderate engagement across concept testing environments, with slightly better responses in low-distraction settings like breaks. They'd evaluate concepts based on claims like '72hr freshness' (Q50) but might be less decisive in busy simulations.",
+            "ad_test_prediction": "Ad effectiveness would depend on timing that aligns with light-activity periods (e.g., mid-day breaks or early evenings). Campaigns need clear, quick messaging to capture attention, but context isn't a deal-breaker\u2014content quality still matters."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "A",
+            "archetype_label": "Confident Value-Seeker",
+            "answer_text": "I'd stick with my \u20b9199 body wash without any second thoughts. As someone who's professionally sorted, I trust my own judgment and prioritize practicality over social comments. Saving money is important, and if the product works well for hygiene and freshness, that's all I need.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing cost-effectiveness, reliable cleansing, and practical benefits like long-lasting fragrance or skin moisturization, with minimal focus on aspirational branding.",
+            "ad_test_prediction": "Would respond better to straightforward, functional ads highlighting product efficacy, value for money, and honest claims, rather than lifestyle or image-focused campaigns, aligning with trust in dermatologists and reviews (Q18)."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "A",
+            "archetype_label": "Skeptical Analytical Scrutinizer",
+            "answer_text": "No, I wouldn't upgrade. If the ingredients are exactly the same, the clinical testing certification just feels like a marketing gimmick to charge more. I'd stick with my regular one or look for a product with real formulation improvements, not just labels.",
+            "position_on_dimension": "High analytical, low holistic",
+            "concept_test_prediction": "This twin would critically dissect body wash concepts, focusing on ingredient transparency, comparative claims, and value-for-money, likely rejecting concepts that lack detailed substantiation or have inconsistent messaging.",
+            "ad_test_prediction": "Would respond best to ads with data-driven content, such as side-by-side comparisons, ingredient explanations, or clinical study highlights, and be skeptical of emotional or brand-focused narratives without factual backing."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T003",
+        "participant_id": "P03",
+        "combo_id": 221,
+        "coherence_score": 0.82,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "B",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "A",
+            "archetype_label": "Evening Leisure Receptive",
+            "answer_text": "I'm definitely more receptive to ads when I'm relaxing at home in the evening, after work. That's when I scroll through Instagram or YouTube for fun, and I'm in the right headspace to notice body wash ads\u2014it feels like part of my self-care ritual. During busy work hours or while commuting, I just scroll past because I'm too focused or distracted.",
+            "position_on_dimension": "High contextual sensitivity",
+            "concept_test_prediction": "In concept testing, this twin would engage more positively when simulations mimic evening leisure settings (e.g., mobile browsing at home), showing higher interest in fragrance and natural claims. In work-like contexts, they might dismiss concepts as irrelevant or distracting.",
+            "ad_test_prediction": "Ad campaigns would be most effective when targeted during evening hours on platforms like Instagram or YouTube, leading to higher click-through and purchase intent. Daytime or commute-time ads would likely be ignored, reducing campaign ROI."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "B",
+            "archetype_label": "Curious Growth-Explorer",
+            "answer_text": "I'd be curious and look up the \u20b9499 option online. Since I'm personally growing, I'm open to exploring new things that might enhance my routine. I'd check reviews on Amazon or YouTube to see if the premium features, like better ingredients or fragrance, justify the higher price, but wouldn't switch impulsively.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Interested in body wash concepts that offer innovation, such as Ayurvedic ingredients (Q13) or formulations for Indian skin (Q52), even at a moderate premium, if they promise tangible benefits aligned with personal growth.",
+            "ad_test_prediction": "Engaged by ads that educate on ingredients, show before/after results (Q59), or feature trusted experts like dermatologists (Q18), valuing informative content over purely emotional appeals."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "C",
+            "archetype_label": "Trust-Driven Holistic Evaluator",
+            "answer_text": "Yes, I'd upgrade. Clinical validation from dermatologists adds trust and assurance for my skin, even if ingredients are similar. For me, knowing it's professionally recommended makes it worth the extra \u20b9100, especially since I value expert opinions in personal care.",
+            "position_on_dimension": "High holistic, low analytical",
+            "concept_test_prediction": "Would judge body wash concepts based on cohesive branding, expert endorsements, and overall aesthetic feel, likely favoring concepts with strong narratives, modern packaging, and dermatologist approvals without deep ingredient scrutiny.",
+            "ad_test_prediction": "Would be most influenced by ads featuring dermatologist recommendations, emotional brand stories, and visually appealing content that conveys trust and quality, such as influencer collaborations with experts, without needing extensive detail."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T004",
+        "participant_id": "P03",
+        "combo_id": 169,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Rationalist",
+            "answer_text": "Influencer A would influence me more. As someone who values clinical expertise and ingredient transparency, a skincare expert's opinion carries weight, especially since I trust dermatologists and look for Ayurvedic claims. The clinical body wash might offer better efficacy, and I'd verify the claims through reviews before considering.",
+            "position_on_dimension": "High on rational processing",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing clinical-grade formulations, ingredient lists, and certifications like Ayurvedic or sulfate-free. For example, a concept highlighting '72hr freshness with lab-tested results' would resonate more than emotional storytelling.",
+            "ad_test_prediction": "More likely to engage with ads featuring expert endorsements, clinical study visuals, or detailed ingredient explanations. Would click on rational ads showing before/after comparisons with data, rather than emotional social scenarios."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "A",
+            "archetype_label": "Evening Leisure Receptive",
+            "answer_text": "I'm definitely more receptive to ads when I'm relaxing at home in the evening, after work. That's when I scroll through Instagram or YouTube for fun, and I'm in the right headspace to notice body wash ads\u2014it feels like part of my self-care ritual. During busy work hours or while commuting, I just scroll past because I'm too focused or distracted.",
+            "position_on_dimension": "High contextual sensitivity",
+            "concept_test_prediction": "In concept testing, this twin would engage more positively when simulations mimic evening leisure settings (e.g., mobile browsing at home), showing higher interest in fragrance and natural claims. In work-like contexts, they might dismiss concepts as irrelevant or distracting.",
+            "ad_test_prediction": "Ad campaigns would be most effective when targeted during evening hours on platforms like Instagram or YouTube, leading to higher click-through and purchase intent. Daytime or commute-time ads would likely be ignored, reducing campaign ROI."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T005",
+        "participant_id": "P03",
+        "combo_id": 232,
+        "coherence_score": 0.96,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Mood-Dependent",
+            "answer_text": "It varies with my mood and how much time I have. If I'm not in a rush\u2014like during a lunch break or a quiet moment at home\u2014I might stop and check out an ad, especially if it has interesting claims. But if I'm swamped with work or tasks, I'll probably skip it without a second thought.",
+            "position_on_dimension": "Medium contextual sensitivity",
+            "concept_test_prediction": "This twin would show moderate engagement across concept testing environments, with slightly better responses in low-distraction settings like breaks. They'd evaluate concepts based on claims like '72hr freshness' (Q50) but might be less decisive in busy simulations.",
+            "ad_test_prediction": "Ad effectiveness would depend on timing that aligns with light-activity periods (e.g., mid-day breaks or early evenings). Campaigns need clear, quick messaging to capture attention, but context isn't a deal-breaker\u2014content quality still matters."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T006",
+        "participant_id": "P03",
+        "combo_id": 235,
+        "coherence_score": 0.94,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "C",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "A",
+            "archetype_label": "Confident Value-Seeker",
+            "answer_text": "I'd stick with my \u20b9199 body wash without any second thoughts. As someone who's professionally sorted, I trust my own judgment and prioritize practicality over social comments. Saving money is important, and if the product works well for hygiene and freshness, that's all I need.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing cost-effectiveness, reliable cleansing, and practical benefits like long-lasting fragrance or skin moisturization, with minimal focus on aspirational branding.",
+            "ad_test_prediction": "Would respond better to straightforward, functional ads highlighting product efficacy, value for money, and honest claims, rather than lifestyle or image-focused campaigns, aligning with trust in dermatologists and reviews (Q18)."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T007",
+        "participant_id": "P03",
+        "combo_id": 94,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Need-Based Planner",
+            "answer_text": "I'd let the coupon expire. My current body wash still has two weeks left, and I don't like buying things I don't need immediately. I prefer to stick to my routine and only purchase when I'm out, after checking reviews and comparing prices online.",
+            "position_on_dimension": "High deliberate",
+            "concept_test_prediction": "This twin would require detailed specifications, comparative data, and integration of reviews in product concepts. They might delay decisions, preferring concepts that emphasize clinical testing or ingredient transparency.",
+            "ad_test_prediction": "Ads emphasizing evidence, such as dermatologist recommendations, customer testimonials, or ingredient breakdowns, would engage this twin for longer consideration, leading to researched purchases rather than immediate clicks."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Rationalist",
+            "answer_text": "Influencer A would influence me more. As someone who values clinical expertise and ingredient transparency, a skincare expert's opinion carries weight, especially since I trust dermatologists and look for Ayurvedic claims. The clinical body wash might offer better efficacy, and I'd verify the claims through reviews before considering.",
+            "position_on_dimension": "High on rational processing",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing clinical-grade formulations, ingredient lists, and certifications like Ayurvedic or sulfate-free. For example, a concept highlighting '72hr freshness with lab-tested results' would resonate more than emotional storytelling.",
+            "ad_test_prediction": "More likely to engage with ads featuring expert endorsements, clinical study visuals, or detailed ingredient explanations. Would click on rational ads showing before/after comparisons with data, rather than emotional social scenarios."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Mood-Dependent",
+            "answer_text": "It varies with my mood and how much time I have. If I'm not in a rush\u2014like during a lunch break or a quiet moment at home\u2014I might stop and check out an ad, especially if it has interesting claims. But if I'm swamped with work or tasks, I'll probably skip it without a second thought.",
+            "position_on_dimension": "Medium contextual sensitivity",
+            "concept_test_prediction": "This twin would show moderate engagement across concept testing environments, with slightly better responses in low-distraction settings like breaks. They'd evaluate concepts based on claims like '72hr freshness' (Q50) but might be less decisive in busy simulations.",
+            "ad_test_prediction": "Ad effectiveness would depend on timing that aligns with light-activity periods (e.g., mid-day breaks or early evenings). Campaigns need clear, quick messaging to capture attention, but context isn't a deal-breaker\u2014content quality still matters."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "B",
+            "archetype_label": "Curious Growth-Explorer",
+            "answer_text": "I'd be curious and look up the \u20b9499 option online. Since I'm personally growing, I'm open to exploring new things that might enhance my routine. I'd check reviews on Amazon or YouTube to see if the premium features, like better ingredients or fragrance, justify the higher price, but wouldn't switch impulsively.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Interested in body wash concepts that offer innovation, such as Ayurvedic ingredients (Q13) or formulations for Indian skin (Q52), even at a moderate premium, if they promise tangible benefits aligned with personal growth.",
+            "ad_test_prediction": "Engaged by ads that educate on ingredients, show before/after results (Q59), or feature trusted experts like dermatologists (Q18), valuing informative content over purely emotional appeals."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T008",
+        "participant_id": "P03",
+        "combo_id": 215,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "B",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Socially-Influenced Emotional",
+            "answer_text": "Influencer B would sway me more. A lifestyle creator with a large following suggests the product is popular and likely delivers on fragrance, which I prioritize for how others perceive me. The lower price is a bonus, and since I care about scent longevity and social approval, this feels like a safer bet for daily use.",
+            "position_on_dimension": "High on emotional processing",
+            "concept_test_prediction": "Would respond better to concepts centered on fragrance appeal, mood enhancement, and social confidence. For instance, a body wash positioned as 'confidence-boosting with all-day scent' would attract more than a feature-heavy concept.",
+            "ad_test_prediction": "Engages more with emotional ads depicting social acceptance, romantic appeal, or confidence boosts after use. Likely to click on influencer-driven content with lifestyle imagery rather than clinical proofs."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "C",
+            "archetype_label": "Trust-Driven Holistic Evaluator",
+            "answer_text": "Yes, I'd upgrade. Clinical validation from dermatologists adds trust and assurance for my skin, even if ingredients are similar. For me, knowing it's professionally recommended makes it worth the extra \u20b9100, especially since I value expert opinions in personal care.",
+            "position_on_dimension": "High holistic, low analytical",
+            "concept_test_prediction": "Would judge body wash concepts based on cohesive branding, expert endorsements, and overall aesthetic feel, likely favoring concepts with strong narratives, modern packaging, and dermatologist approvals without deep ingredient scrutiny.",
+            "ad_test_prediction": "Would be most influenced by ads featuring dermatologist recommendations, emotional brand stories, and visually appealing content that conveys trust and quality, such as influencer collaborations with experts, without needing extensive detail."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T009",
+        "participant_id": "P03",
+        "combo_id": 186,
+        "coherence_score": 0.92,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Rationalist",
+            "answer_text": "Influencer A would influence me more. As someone who values clinical expertise and ingredient transparency, a skincare expert's opinion carries weight, especially since I trust dermatologists and look for Ayurvedic claims. The clinical body wash might offer better efficacy, and I'd verify the claims through reviews before considering.",
+            "position_on_dimension": "High on rational processing",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing clinical-grade formulations, ingredient lists, and certifications like Ayurvedic or sulfate-free. For example, a concept highlighting '72hr freshness with lab-tested results' would resonate more than emotional storytelling.",
+            "ad_test_prediction": "More likely to engage with ads featuring expert endorsements, clinical study visuals, or detailed ingredient explanations. Would click on rational ads showing before/after comparisons with data, rather than emotional social scenarios."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "A",
+            "archetype_label": "Skeptical Analytical Scrutinizer",
+            "answer_text": "No, I wouldn't upgrade. If the ingredients are exactly the same, the clinical testing certification just feels like a marketing gimmick to charge more. I'd stick with my regular one or look for a product with real formulation improvements, not just labels.",
+            "position_on_dimension": "High analytical, low holistic",
+            "concept_test_prediction": "This twin would critically dissect body wash concepts, focusing on ingredient transparency, comparative claims, and value-for-money, likely rejecting concepts that lack detailed substantiation or have inconsistent messaging.",
+            "ad_test_prediction": "Would respond best to ads with data-driven content, such as side-by-side comparisons, ingredient explanations, or clinical study highlights, and be skeptical of emotional or brand-focused narratives without factual backing."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T010",
+        "participant_id": "P03",
+        "combo_id": 184,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Rationalist",
+            "answer_text": "Influencer A would influence me more. As someone who values clinical expertise and ingredient transparency, a skincare expert's opinion carries weight, especially since I trust dermatologists and look for Ayurvedic claims. The clinical body wash might offer better efficacy, and I'd verify the claims through reviews before considering.",
+            "position_on_dimension": "High on rational processing",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing clinical-grade formulations, ingredient lists, and certifications like Ayurvedic or sulfate-free. For example, a concept highlighting '72hr freshness with lab-tested results' would resonate more than emotional storytelling.",
+            "ad_test_prediction": "More likely to engage with ads featuring expert endorsements, clinical study visuals, or detailed ingredient explanations. Would click on rational ads showing before/after comparisons with data, rather than emotional social scenarios."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "B",
+            "archetype_label": "Curious Growth-Explorer",
+            "answer_text": "I'd be curious and look up the \u20b9499 option online. Since I'm personally growing, I'm open to exploring new things that might enhance my routine. I'd check reviews on Amazon or YouTube to see if the premium features, like better ingredients or fragrance, justify the higher price, but wouldn't switch impulsively.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Interested in body wash concepts that offer innovation, such as Ayurvedic ingredients (Q13) or formulations for Indian skin (Q52), even at a moderate premium, if they promise tangible benefits aligned with personal growth.",
+            "ad_test_prediction": "Engaged by ads that educate on ingredients, show before/after results (Q59), or feature trusted experts like dermatologists (Q18), valuing informative content over purely emotional appeals."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T011",
+        "participant_id": "P03",
+        "combo_id": 222,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "A",
+            "archetype_label": "Evening Leisure Receptive",
+            "answer_text": "I'm definitely more receptive to ads when I'm relaxing at home in the evening, after work. That's when I scroll through Instagram or YouTube for fun, and I'm in the right headspace to notice body wash ads\u2014it feels like part of my self-care ritual. During busy work hours or while commuting, I just scroll past because I'm too focused or distracted.",
+            "position_on_dimension": "High contextual sensitivity",
+            "concept_test_prediction": "In concept testing, this twin would engage more positively when simulations mimic evening leisure settings (e.g., mobile browsing at home), showing higher interest in fragrance and natural claims. In work-like contexts, they might dismiss concepts as irrelevant or distracting.",
+            "ad_test_prediction": "Ad campaigns would be most effective when targeted during evening hours on platforms like Instagram or YouTube, leading to higher click-through and purchase intent. Daytime or commute-time ads would likely be ignored, reducing campaign ROI."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "A",
+            "archetype_label": "Skeptical Analytical Scrutinizer",
+            "answer_text": "No, I wouldn't upgrade. If the ingredients are exactly the same, the clinical testing certification just feels like a marketing gimmick to charge more. I'd stick with my regular one or look for a product with real formulation improvements, not just labels.",
+            "position_on_dimension": "High analytical, low holistic",
+            "concept_test_prediction": "This twin would critically dissect body wash concepts, focusing on ingredient transparency, comparative claims, and value-for-money, likely rejecting concepts that lack detailed substantiation or have inconsistent messaging.",
+            "ad_test_prediction": "Would respond best to ads with data-driven content, such as side-by-side comparisons, ingredient explanations, or clinical study highlights, and be skeptical of emotional or brand-focused narratives without factual backing."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T012",
+        "participant_id": "P03",
+        "combo_id": 237,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "C",
+          "dim_3": "B",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "B",
+            "archetype_label": "Curious Growth-Explorer",
+            "answer_text": "I'd be curious and look up the \u20b9499 option online. Since I'm personally growing, I'm open to exploring new things that might enhance my routine. I'd check reviews on Amazon or YouTube to see if the premium features, like better ingredients or fragrance, justify the higher price, but wouldn't switch impulsively.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Interested in body wash concepts that offer innovation, such as Ayurvedic ingredients (Q13) or formulations for Indian skin (Q52), even at a moderate premium, if they promise tangible benefits aligned with personal growth.",
+            "ad_test_prediction": "Engaged by ads that educate on ingredients, show before/after results (Q59), or feature trusted experts like dermatologists (Q18), valuing informative content over purely emotional appeals."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "A",
+            "archetype_label": "Skeptical Analytical Scrutinizer",
+            "answer_text": "No, I wouldn't upgrade. If the ingredients are exactly the same, the clinical testing certification just feels like a marketing gimmick to charge more. I'd stick with my regular one or look for a product with real formulation improvements, not just labels.",
+            "position_on_dimension": "High analytical, low holistic",
+            "concept_test_prediction": "This twin would critically dissect body wash concepts, focusing on ingredient transparency, comparative claims, and value-for-money, likely rejecting concepts that lack detailed substantiation or have inconsistent messaging.",
+            "ad_test_prediction": "Would respond best to ads with data-driven content, such as side-by-side comparisons, ingredient explanations, or clinical study highlights, and be skeptical of emotional or brand-focused narratives without factual backing."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T013",
+        "participant_id": "P03",
+        "combo_id": 227,
+        "coherence_score": 0.84,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Mood-Dependent",
+            "answer_text": "It varies with my mood and how much time I have. If I'm not in a rush\u2014like during a lunch break or a quiet moment at home\u2014I might stop and check out an ad, especially if it has interesting claims. But if I'm swamped with work or tasks, I'll probably skip it without a second thought.",
+            "position_on_dimension": "Medium contextual sensitivity",
+            "concept_test_prediction": "This twin would show moderate engagement across concept testing environments, with slightly better responses in low-distraction settings like breaks. They'd evaluate concepts based on claims like '72hr freshness' (Q50) but might be less decisive in busy simulations.",
+            "ad_test_prediction": "Ad effectiveness would depend on timing that aligns with light-activity periods (e.g., mid-day breaks or early evenings). Campaigns need clear, quick messaging to capture attention, but context isn't a deal-breaker\u2014content quality still matters."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "A",
+            "archetype_label": "Confident Value-Seeker",
+            "answer_text": "I'd stick with my \u20b9199 body wash without any second thoughts. As someone who's professionally sorted, I trust my own judgment and prioritize practicality over social comments. Saving money is important, and if the product works well for hygiene and freshness, that's all I need.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing cost-effectiveness, reliable cleansing, and practical benefits like long-lasting fragrance or skin moisturization, with minimal focus on aspirational branding.",
+            "ad_test_prediction": "Would respond better to straightforward, functional ads highlighting product efficacy, value for money, and honest claims, rather than lifestyle or image-focused campaigns, aligning with trust in dermatologists and reviews (Q18)."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "C",
+            "archetype_label": "Trust-Driven Holistic Evaluator",
+            "answer_text": "Yes, I'd upgrade. Clinical validation from dermatologists adds trust and assurance for my skin, even if ingredients are similar. For me, knowing it's professionally recommended makes it worth the extra \u20b9100, especially since I value expert opinions in personal care.",
+            "position_on_dimension": "High holistic, low analytical",
+            "concept_test_prediction": "Would judge body wash concepts based on cohesive branding, expert endorsements, and overall aesthetic feel, likely favoring concepts with strong narratives, modern packaging, and dermatologist approvals without deep ingredient scrutiny.",
+            "ad_test_prediction": "Would be most influenced by ads featuring dermatologist recommendations, emotional brand stories, and visually appealing content that conveys trust and quality, such as influencer collaborations with experts, without needing extensive detail."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T014",
+        "participant_id": "P03",
+        "combo_id": 109,
+        "coherence_score": 0.7,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Need-Based Planner",
+            "answer_text": "I'd let the coupon expire. My current body wash still has two weeks left, and I don't like buying things I don't need immediately. I prefer to stick to my routine and only purchase when I'm out, after checking reviews and comparing prices online.",
+            "position_on_dimension": "High deliberate",
+            "concept_test_prediction": "This twin would require detailed specifications, comparative data, and integration of reviews in product concepts. They might delay decisions, preferring concepts that emphasize clinical testing or ingredient transparency.",
+            "ad_test_prediction": "Ads emphasizing evidence, such as dermatologist recommendations, customer testimonials, or ingredient breakdowns, would engage this twin for longer consideration, leading to researched purchases rather than immediate clicks."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Socially-Influenced Emotional",
+            "answer_text": "Influencer B would sway me more. A lifestyle creator with a large following suggests the product is popular and likely delivers on fragrance, which I prioritize for how others perceive me. The lower price is a bonus, and since I care about scent longevity and social approval, this feels like a safer bet for daily use.",
+            "position_on_dimension": "High on emotional processing",
+            "concept_test_prediction": "Would respond better to concepts centered on fragrance appeal, mood enhancement, and social confidence. For instance, a body wash positioned as 'confidence-boosting with all-day scent' would attract more than a feature-heavy concept.",
+            "ad_test_prediction": "Engages more with emotional ads depicting social acceptance, romantic appeal, or confidence boosts after use. Likely to click on influencer-driven content with lifestyle imagery rather than clinical proofs."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "A",
+            "archetype_label": "Evening Leisure Receptive",
+            "answer_text": "I'm definitely more receptive to ads when I'm relaxing at home in the evening, after work. That's when I scroll through Instagram or YouTube for fun, and I'm in the right headspace to notice body wash ads\u2014it feels like part of my self-care ritual. During busy work hours or while commuting, I just scroll past because I'm too focused or distracted.",
+            "position_on_dimension": "High contextual sensitivity",
+            "concept_test_prediction": "In concept testing, this twin would engage more positively when simulations mimic evening leisure settings (e.g., mobile browsing at home), showing higher interest in fragrance and natural claims. In work-like contexts, they might dismiss concepts as irrelevant or distracting.",
+            "ad_test_prediction": "Ad campaigns would be most effective when targeted during evening hours on platforms like Instagram or YouTube, leading to higher click-through and purchase intent. Daytime or commute-time ads would likely be ignored, reducing campaign ROI."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "A",
+            "archetype_label": "Confident Value-Seeker",
+            "answer_text": "I'd stick with my \u20b9199 body wash without any second thoughts. As someone who's professionally sorted, I trust my own judgment and prioritize practicality over social comments. Saving money is important, and if the product works well for hygiene and freshness, that's all I need.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing cost-effectiveness, reliable cleansing, and practical benefits like long-lasting fragrance or skin moisturization, with minimal focus on aspirational branding.",
+            "ad_test_prediction": "Would respond better to straightforward, functional ads highlighting product efficacy, value for money, and honest claims, rather than lifestyle or image-focused campaigns, aligning with trust in dermatologists and reviews (Q18)."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T015",
+        "participant_id": "P03",
+        "combo_id": 187,
+        "coherence_score": 0.96,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Rationalist",
+            "answer_text": "Influencer A would influence me more. As someone who values clinical expertise and ingredient transparency, a skincare expert's opinion carries weight, especially since I trust dermatologists and look for Ayurvedic claims. The clinical body wash might offer better efficacy, and I'd verify the claims through reviews before considering.",
+            "position_on_dimension": "High on rational processing",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing clinical-grade formulations, ingredient lists, and certifications like Ayurvedic or sulfate-free. For example, a concept highlighting '72hr freshness with lab-tested results' would resonate more than emotional storytelling.",
+            "ad_test_prediction": "More likely to engage with ads featuring expert endorsements, clinical study visuals, or detailed ingredient explanations. Would click on rational ads showing before/after comparisons with data, rather than emotional social scenarios."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T016",
+        "participant_id": "P03",
+        "combo_id": 223,
+        "coherence_score": 0.94,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "A",
+            "archetype_label": "Evening Leisure Receptive",
+            "answer_text": "I'm definitely more receptive to ads when I'm relaxing at home in the evening, after work. That's when I scroll through Instagram or YouTube for fun, and I'm in the right headspace to notice body wash ads\u2014it feels like part of my self-care ritual. During busy work hours or while commuting, I just scroll past because I'm too focused or distracted.",
+            "position_on_dimension": "High contextual sensitivity",
+            "concept_test_prediction": "In concept testing, this twin would engage more positively when simulations mimic evening leisure settings (e.g., mobile browsing at home), showing higher interest in fragrance and natural claims. In work-like contexts, they might dismiss concepts as irrelevant or distracting.",
+            "ad_test_prediction": "Ad campaigns would be most effective when targeted during evening hours on platforms like Instagram or YouTube, leading to higher click-through and purchase intent. Daytime or commute-time ads would likely be ignored, reducing campaign ROI."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "C",
+            "archetype_label": "Image-Conscious Professional",
+            "answer_text": "I'd probably switch to avoid being seen as using a 'budget' product. In a professional setting, maintaining a good image matters, and I want to be perceived as someone who invests in quality. Even if it costs more, a premium body wash aligns with my aspiration to be professionally sorted and personally refined.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Prefers body wash concepts positioned as premium, sophisticated, or for achievers, with claims like clinical-grade formulations (Q16) or long-lasting fragrance (Q49), even at higher prices, to match aspirational identity.",
+            "ad_test_prediction": "Resonates strongly with ads depicting success, elegance, or social acceptance, featuring influencers or settings that reflect an aspirational metro lifestyle, and emphasizing brand prestige over mere functionality."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T017",
+        "participant_id": "P03",
+        "combo_id": 238,
+        "coherence_score": 0.94,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "C",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "C",
+            "archetype_label": "Curious but Cautious Browser",
+            "answer_text": "I'd browse their website to see what they offer. If the ingredients look Ayurvedic or the reviews are solid, I might consider it, but since I don't need it now, I probably won't buy unless the fragrance claims or sustainability aspects really stand out.",
+            "position_on_dimension": "Medium, context-dependent",
+            "concept_test_prediction": "This twin would respond well to concepts that blend emotional appeals (e.g., fragrance longevity) with rational benefits (e.g., Ayurvedic certifications), requiring a mix of allure and evidence to trigger purchase.",
+            "ad_test_prediction": "Ads that combine visual appeal with detailed content, like before/after results or ingredient explanations, would resonate. They might engage with social media ads but only convert after further research on platforms like Amazon or YouTube."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "B",
+            "archetype_label": "Curious Growth-Explorer",
+            "answer_text": "I'd be curious and look up the \u20b9499 option online. Since I'm personally growing, I'm open to exploring new things that might enhance my routine. I'd check reviews on Amazon or YouTube to see if the premium features, like better ingredients or fragrance, justify the higher price, but wouldn't switch impulsively.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Interested in body wash concepts that offer innovation, such as Ayurvedic ingredients (Q13) or formulations for Indian skin (Q52), even at a moderate premium, if they promise tangible benefits aligned with personal growth.",
+            "ad_test_prediction": "Engaged by ads that educate on ingredients, show before/after results (Q59), or feature trusted experts like dermatologists (Q18), valuing informative content over purely emotional appeals."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T018",
+        "participant_id": "P03",
+        "combo_id": 100,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Need-Based Planner",
+            "answer_text": "I'd let the coupon expire. My current body wash still has two weeks left, and I don't like buying things I don't need immediately. I prefer to stick to my routine and only purchase when I'm out, after checking reviews and comparing prices online.",
+            "position_on_dimension": "High deliberate",
+            "concept_test_prediction": "This twin would require detailed specifications, comparative data, and integration of reviews in product concepts. They might delay decisions, preferring concepts that emphasize clinical testing or ingredient transparency.",
+            "ad_test_prediction": "Ads emphasizing evidence, such as dermatologist recommendations, customer testimonials, or ingredient breakdowns, would engage this twin for longer consideration, leading to researched purchases rather than immediate clicks."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Driven Rationalist",
+            "answer_text": "Influencer A would influence me more. As someone who values clinical expertise and ingredient transparency, a skincare expert's opinion carries weight, especially since I trust dermatologists and look for Ayurvedic claims. The clinical body wash might offer better efficacy, and I'd verify the claims through reviews before considering.",
+            "position_on_dimension": "High on rational processing",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing clinical-grade formulations, ingredient lists, and certifications like Ayurvedic or sulfate-free. For example, a concept highlighting '72hr freshness with lab-tested results' would resonate more than emotional storytelling.",
+            "ad_test_prediction": "More likely to engage with ads featuring expert endorsements, clinical study visuals, or detailed ingredient explanations. Would click on rational ads showing before/after comparisons with data, rather than emotional social scenarios."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "C",
+            "archetype_label": "Content-Focused Consistent",
+            "answer_text": "Honestly, the situation doesn't affect me much\u2014I'm always browsing online, so if an ad catches my eye with a good claim like ingredient breakdown or long-lasting fragrance, I'll look regardless. Whether I'm at work, home, or commuting, what matters is the ad's content, not when I see it.",
+            "position_on_dimension": "Low contextual sensitivity",
+            "concept_test_prediction": "Responses to product concepts would be consistent across different testing contexts (e.g., mobile vs desktop, leisure vs work). Engagement hinges on concept features like fragrance longevity and natural ingredients, with minimal variation due to environment.",
+            "ad_test_prediction": "Ad campaigns would yield similar engagement regardless of exposure timing or location. Effectiveness depends heavily on ad content\u2014highlighting ingredients, benefits, or deals\u2014rather than contextual placement, making broad targeting viable."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "A",
+            "archetype_label": "Confident Value-Seeker",
+            "answer_text": "I'd stick with my \u20b9199 body wash without any second thoughts. As someone who's professionally sorted, I trust my own judgment and prioritize practicality over social comments. Saving money is important, and if the product works well for hygiene and freshness, that's all I need.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing cost-effectiveness, reliable cleansing, and practical benefits like long-lasting fragrance or skin moisturization, with minimal focus on aspirational branding.",
+            "ad_test_prediction": "Would respond better to straightforward, functional ads highlighting product efficacy, value for money, and honest claims, rather than lifestyle or image-focused campaigns, aligning with trust in dermatologists and reviews (Q18)."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T019",
+        "participant_id": "P03",
+        "combo_id": 139,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Need-Based Planner",
+            "answer_text": "I'd let the coupon expire. My current body wash still has two weeks left, and I don't like buying things I don't need immediately. I prefer to stick to my routine and only purchase when I'm out, after checking reviews and comparing prices online.",
+            "position_on_dimension": "High deliberate",
+            "concept_test_prediction": "This twin would require detailed specifications, comparative data, and integration of reviews in product concepts. They might delay decisions, preferring concepts that emphasize clinical testing or ingredient transparency.",
+            "ad_test_prediction": "Ads emphasizing evidence, such as dermatologist recommendations, customer testimonials, or ingredient breakdowns, would engage this twin for longer consideration, leading to researched purchases rather than immediate clicks."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "A",
+            "archetype_label": "Evening Leisure Receptive",
+            "answer_text": "I'm definitely more receptive to ads when I'm relaxing at home in the evening, after work. That's when I scroll through Instagram or YouTube for fun, and I'm in the right headspace to notice body wash ads\u2014it feels like part of my self-care ritual. During busy work hours or while commuting, I just scroll past because I'm too focused or distracted.",
+            "position_on_dimension": "High contextual sensitivity",
+            "concept_test_prediction": "In concept testing, this twin would engage more positively when simulations mimic evening leisure settings (e.g., mobile browsing at home), showing higher interest in fragrance and natural claims. In work-like contexts, they might dismiss concepts as irrelevant or distracting.",
+            "ad_test_prediction": "Ad campaigns would be most effective when targeted during evening hours on platforms like Instagram or YouTube, leading to higher click-through and purchase intent. Daytime or commute-time ads would likely be ignored, reducing campaign ROI."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "B",
+            "archetype_label": "Curious Growth-Explorer",
+            "answer_text": "I'd be curious and look up the \u20b9499 option online. Since I'm personally growing, I'm open to exploring new things that might enhance my routine. I'd check reviews on Amazon or YouTube to see if the premium features, like better ingredients or fragrance, justify the higher price, but wouldn't switch impulsively.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Interested in body wash concepts that offer innovation, such as Ayurvedic ingredients (Q13) or formulations for Indian skin (Q52), even at a moderate premium, if they promise tangible benefits aligned with personal growth.",
+            "ad_test_prediction": "Engaged by ads that educate on ingredients, show before/after results (Q59), or feature trusted experts like dermatologists (Q18), valuing informative content over purely emotional appeals."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      },
+      {
+        "twin_id": "P03_T020",
+        "participant_id": "P03",
+        "combo_id": 145,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "C",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Impulse versus Deliberate Purchase Decision-Making",
+            "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+            "archetype_id": "B",
+            "archetype_label": "Need-Based Planner",
+            "answer_text": "I'd let the coupon expire. My current body wash still has two weeks left, and I don't like buying things I don't need immediately. I prefer to stick to my routine and only purchase when I'm out, after checking reviews and comparing prices online.",
+            "position_on_dimension": "High deliberate",
+            "concept_test_prediction": "This twin would require detailed specifications, comparative data, and integration of reviews in product concepts. They might delay decisions, preferring concepts that emphasize clinical testing or ingredient transparency.",
+            "ad_test_prediction": "Ads emphasizing evidence, such as dermatologist recommendations, customer testimonials, or ingredient breakdowns, would engage this twin for longer consideration, leading to researched purchases rather than immediate clicks."
+          },
+          {
+            "dimension_name": "Emotional versus Rational Advertising Message Processing",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Aware Balancer",
+            "answer_text": "I'd weigh both, but probably lean towards Influencer A if the clinical claims are backed by reviews or certifications. However, if the fragrant one has strong customer feedback and fits my budget better, I might choose that. It depends on what each influencer emphasizes\u2014ingredients or real-world experience.",
+            "position_on_dimension": "Moderate or context-dependent",
+            "concept_test_prediction": "Requires a blend of rational and emotional elements in concepts. Would respond well to body washes that combine Ayurvedic ingredients with fragrance longevity claims, or ads that mix clinical proofs with emotional benefits like self-care rituals.",
+            "ad_test_prediction": "Prefers ads that integrate rational arguments (e.g., ingredient highlights) with emotional storytelling (e.g., social scenarios). Might engage with content from trusted figures like Fit Tuber who cover both aspects, leading to measured responses across ad types."
+          },
+          {
+            "dimension_name": "Contextual Sensitivity to Ad Exposure Environment",
+            "question_text": "Describe how your daily activities and mood influence when you are most likely to pay attention to advertisements for body wash on social media. Are there specific times or situations when you're more receptive?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Mood-Dependent",
+            "answer_text": "It varies with my mood and how much time I have. If I'm not in a rush\u2014like during a lunch break or a quiet moment at home\u2014I might stop and check out an ad, especially if it has interesting claims. But if I'm swamped with work or tasks, I'll probably skip it without a second thought.",
+            "position_on_dimension": "Medium contextual sensitivity",
+            "concept_test_prediction": "This twin would show moderate engagement across concept testing environments, with slightly better responses in low-distraction settings like breaks. They'd evaluate concepts based on claims like '72hr freshness' (Q50) but might be less decisive in busy simulations.",
+            "ad_test_prediction": "Ad effectiveness would depend on timing that aligns with light-activity periods (e.g., mid-day breaks or early evenings). Campaigns need clear, quick messaging to capture attention, but context isn't a deal-breaker\u2014content quality still matters."
+          },
+          {
+            "dimension_name": "Self-Image Alignment with Brand Identity",
+            "question_text": "You've been using a \u20b9199 body wash for a year and are satisfied. A colleague at work casually mentions your body wash is 'the budget option' and recommends their \u20b9499 one. How does this affect your next purchase? A) I'd feel no change \u2014 I'm happy with what works B) I'd be curious and look up the \u20b9499 option C) I'd probably switch to avoid being seen as using a 'budget' product D) I'd feel annoyed at the comment but might quietly research alternatives",
+            "archetype_id": "A",
+            "archetype_label": "Confident Value-Seeker",
+            "answer_text": "I'd stick with my \u20b9199 body wash without any second thoughts. As someone who's professionally sorted, I trust my own judgment and prioritize practicality over social comments. Saving money is important, and if the product works well for hygiene and freshness, that's all I need.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would favor body wash concepts emphasizing cost-effectiveness, reliable cleansing, and practical benefits like long-lasting fragrance or skin moisturization, with minimal focus on aspirational branding.",
+            "ad_test_prediction": "Would respond better to straightforward, functional ads highlighting product efficacy, value for money, and honest claims, rather than lifestyle or image-focused campaigns, aligning with trust in dermatologists and reviews (Q18)."
+          },
+          {
+            "dimension_name": "Holistic versus Analytical Product Evaluation Style",
+            "question_text": "What if your regular \u20b9299 body wash launched a 'dermatologist-recommended' version at \u20b9399 with the same ingredients but clinical testing certification? Would you upgrade? A) Yes \u2014 clinical validation is worth \u20b9100 more B) No \u2014 same ingredients means same product, it's just marketing C) I'd need to see the clinical study results first",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evidence-Seeker",
+            "answer_text": "I'd need to see the clinical study results first. I trust dermatologists, but if the ingredients haven't changed, I want to understand what the testing actually proves. It might be worth the extra \u20b9100 if there's solid evidence of better efficacy or safety for Indian skin.",
+            "position_on_dimension": "Moderate, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts by weighing overall brand appeal and packaging against specific, evidence-based claims, potentially favoring products that offer a mix of emotional appeal and rational benefits, like Ayurvedic ingredients with clinical backing.",
+            "ad_test_prediction": "Engages with ads that blend emotional storytelling with factual highlights, such as dermatologist testimonials supported by data or before/after visuals showing tangible results, requiring a balance to drive purchase intent."
+          }
+        ]
+      }
+    ]
+  }
+]

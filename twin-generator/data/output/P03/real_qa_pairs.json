@@ -1,0 +1,308 @@
+[
+  {
+    "participant_id": "P03",
+    "source_file": "interview_transcript_3.csv",
+    "qa_pairs": [
+      {
+        "module_id": "M1",
+        "question_text": "Where do you currently live? (City and state)",
+        "answer_text": "Hyderabad, Telangana"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What is your current occupation or primary activity?",
+        "answer_text": "Professional_office"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What is your approximate monthly household income range?",
+        "answer_text": "1l_2l"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What is your household composition?",
+        "answer_text": "Shared_housing"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?",
+        "answer_text": "English,hindi"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How would you describe your personality in 3-5 words?",
+        "answer_text": "Professionally sorted Personally Growing"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How comfortable are you trying new brands or products you haven't used before?",
+        "answer_text": "4"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",
+        "answer_text": "Both"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "When you're choosing a scent, do you prioritize how it makes you feel or how you think others will react to it?",
+        "answer_text": "How others will react"
+      },
+      {
+        "module_id": "M1",
+        "question_text": "How much attention do you pay to how your skin looks and feels on a daily basis?",
+        "answer_text": "Regularly_care"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "When buying any personal care product, rank these factors from most to least important:",
+        "answer_text": "[\"price\",\"fragrance\",\"reviews\",\"recommendation\",\"brand\",\"ingredients\",\"packaging\",\"expert\"]"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?",
+        "answer_text": "{\"rating\":3,\"explanation\":\"Utmost important\"}"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "Could you share what ingredients or qualities you specifically look for that make a product feel 'natural' to you?",
+        "answer_text": "1. Made from Ayurvedic herbs\n2. Separate machinery for processing each product\n3. Non-chemical raw elements\n4. Chemicals used within limits"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "Which certifications or labels influence your purchase? Select all that apply.",
+        "answer_text": "Sulfate_free,organic,ayurvedic"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?",
+        "answer_text": "Bias towards international brands \u00d1 in India, getting certificates and approvals to launch products is too easy"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:",
+        "answer_text": "{\"Sustainable/eco-friendly packaging\":\"10_20\",\"Ayurvedic or traditional ingredients\":\"20_40\",\"Clinical-grade, lab-tested formulation\":\"20_40\",\"Cruelty-free, not tested on animals\":\"0\",\"Made in India\":\"10_20\"}"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How loyal are you to personal care brands?",
+        "answer_text": "Very_loyal"
+      },
+      {
+        "module_id": "M2",
+        "question_text": "How much do you trust the following sources for personal care product information? Rate each 1-5:",
+        "answer_text": "{\"TV advertisements\":2,\"Instagram or YouTube influencers\":4,\"Dermatologists or skin doctors\":5,\"Friends and family\":4,\"Online reviews (Amazon, Nykaa)\":4,\"Claims written on the product packaging\":1}"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "When your current body wash/soap runs out, what is your typical next step?",
+        "answer_text": "Browse_online"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "Where do you most often buy personal care products? Pick your top 3:",
+        "answer_text": "[\"amazon\",\"quick_commerce\",\"nykaa\"]"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "How much do you typically spend on a single body wash purchase?",
+        "answer_text": "Under_100"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "What would make you switch away from your current body wash? Pick your top 3:",
+        "answer_text": "[\"better_smell\",\"ad_resonance\"]"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?",
+        "answer_text": "Old one lacked strong fragrance \u00d1 main reason for switching. Still not satisfied after switching"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "When shopping online for personal care, what do you look at first? Pick your top 3:",
+        "answer_text": "[\"star_rating\",\"review_count\",\"price\"]"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?",
+        "answer_text": "Yes, use quick commerce. Doesn't limit selection"
+      },
+      {
+        "module_id": "M3",
+        "question_text": "If a brand you liked raised its price by 30%, what would you do?",
+        "answer_text": "Look_alternatives"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "How many times a day do you typically shower/bathe?",
+        "answer_text": "Once"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Walk me through your typical bathing routine step by step. What products do you use and in what order?",
+        "answer_text": "1. Hair wash \u00d1 Shampoo: Havintha\n2. Conditioner: Herbert Essentials\n3. Body wash: Arata\n4. Face wash: Garnier Men\n5. Groin area \u00d1 same body wash"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Do you currently use body wash, bar soap, or both? What drives that choice?",
+        "answer_text": "Use both. Bars are cheapest but less fragrance. Body wash has more fragrance \u00d1 drives my choice"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "How would you describe your relationship with bathing/grooming?",
+        "answer_text": "Self_care_ritual"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "What specific skin concerns, if any, do you have? Select all that apply.",
+        "answer_text": "Body_odor"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Do other household members use the same body wash as you? Who decides what to buy?",
+        "answer_text": "No. They use cheaper soap bars \u00d1 cost is their only factor"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "How does your water quality affect your product choices, if at all?",
+        "answer_text": "Never thought of this"
+      },
+      {
+        "module_id": "M4",
+        "question_text": "Have you ever noticed any difference in how your skin feels after showering at home compared to somewhere else, like on vacation?",
+        "answer_text": "Yes. Mainly due to difference in water hardness"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "What fragrance families do you naturally gravitate toward? Pick your top 2:",
+        "answer_text": "Floral,sweet_gourmand"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?",
+        "answer_text": "Batman Rebirth from Souled Store. Purchased for scent. Didn't repurchase \u00d1 poor longevity, fragrance too weak. Scent was floral + men-specific mix"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "How long should a body wash fragrance last on your skin?",
+        "answer_text": "All_day"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "How important is lather/foam to your body wash experience?",
+        "answer_text": "Nice_to_have"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "What texture do you prefer in a body wash?",
+        "answer_text": "Lightweight"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "What is your ideal post-wash skin feeling?",
+        "answer_text": "Moisturized"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "Do you prefer packaging that looks:",
+        "answer_text": "Minimalist"
+      },
+      {
+        "module_id": "M5",
+        "question_text": "If you could combine the fragrance of one product with the texture of another, what would your ideal combination be?",
+        "answer_text": "Bella vita longevity + Souled store Fragrance"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What body wash brand(s) do you currently use? List all.",
+        "answer_text": "Arata, Fiama, Pears, Dettol"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What do you like MOST about your current body wash? (Top 1-2 things)",
+        "answer_text": "Cheapest"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What, if anything, frustrates you or feels 'just okay' about your current body wash?",
+        "answer_text": "No Fragrance"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What body wash brands can you name off the top of your head? List as many as you can.",
+        "answer_text": "Arata, Pears, Dettol, Dove, Fiama, Nivea, MamaEarth, Cetaphil"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "How would you categorize body washes in your mind? What makes one different from another?",
+        "answer_text": "Categorize first by cost, then reviews. Customer feedback differentiates products"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:",
+        "answer_text": "[SKIPPED]"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price \u00e2\u0080\u0094 anything.",
+        "answer_text": "Fragrance: Should last entire day\nTexture: Similar to Fiama\nPackaging: Modern, not clinical/minimalist\nPrice: Affordable for Indian middle class (similar to Dettol pricing)"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:",
+        "answer_text": "[\"72hr_freshness\",\"ayurvedic\"]"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What is the most you have ever paid for a body wash? What was it and was it worth it?",
+        "answer_text": "Arata \u00d1 _250. Not worth it"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?",
+        "answer_text": "{\"rating\":4,\"explanation\":\"\"}"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What aspect of such a formulation makes you somewhat interested, and is there anything specific you wish it could address for you?",
+        "answer_text": "Products claiming Indian-skin formulation are showing results. Want more fragrance"
+      },
+      {
+        "module_id": "M6",
+        "question_text": "What would a body wash need to offer for you to pay 2x your current price?",
+        "answer_text": "Less chemicals, more cleansing, more fragrance"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Where do you typically discover new personal care products? Pick your top 3:",
+        "answer_text": "[\"instagram\",\"youtube\",\"ecommerce_reco\"]"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.",
+        "answer_text": "Fit Tuber \u00d1 covers every aspect of product"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Have you ever bought a personal care product because you saw it on social media? Describe what happened.",
+        "answer_text": "No, never"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Is there something specific about seeing products on Instagram or YouTube that makes you hesitate to purchase them directly from there?",
+        "answer_text": "Influencers push products forcefully for likes and views"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "What type of content makes you most likely to try a new product? Pick top 2:",
+        "answer_text": "Ingredient_breakdown,before_after"
+      },
+      {
+        "module_id": "M7",
+        "question_text": "Do you read online reviews before buying personal care products? Where?",
+        "answer_text": "Amazon,youtube,reddit"
+      }
+    ]
+  }
+]

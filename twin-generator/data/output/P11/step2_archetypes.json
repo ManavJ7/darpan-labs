@@ -1,0 +1,192 @@
+[
+  {
+    "participant_id": "P11",
+    "archetypes_per_dim": [
+      {
+        "dimension_name": "Decision-making tempo: Impulse vs deliberate triggers",
+        "selected_question": {
+          "question_id": "QN007",
+          "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+          "why_selected": "This question directly probes the speed and spontaneity of purchase decisions by forcing a ranking of triggers that vary in urgency (flash sale) vs. credibility (dermatologist) vs. social proof (friend). The ranking reveals whether this person acts quickly on limited-time deals (impulse) or requires trusted, vetted information (deliberate), which is central to the uncaptured dimension. It aligns with their trust in influencers and friends (Q54-58) and price sensitivity (Q11, Q21), making their ranking highly predictive of concept and ad reactions."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Flash sale impulsive",
+            "position_on_dimension": "High impulse, triggered by scarcity and savings",
+            "answer_text": "I'd rank them: 1) 50% off flash sale, 2) seeing it at my best friend's, 3) Bestseller tag, 4) free sample sachets, 5) dermatologist video. If there's a half-price deal on Nykaa, especially for a brand I've heard of like Plum or Minimalist, I'd grab it quickly before it sells out\u2014it's a no-brainer savings. A friend's recommendation is a close second because I trust their experience more than online reviews.",
+            "why_plausible": "Consistent with their low loyalty (Q16), comfort trying new brands (Q7 rating 3), and purchase triggers including ad resonance (Q22). Their use of quick commerce (Q20, Q25) shows comfort with rapid, app-based decisions, and price is a top factor (Q11).",
+            "concept_test_prediction": "This twin would show high immediate purchase intent for concepts with limited-time discounts or 'limited edition' packaging, even with minimal detail. They'd favor sleek, aesthetic packaging (Q59) over detailed ingredient lists, responding to scarcity cues.",
+            "ad_test_prediction": "Ads with countdown timers, flash sale banners, or 'selling fast' notifications would drive high click-through rates. Video ads showing friends using the product in casual settings (like a hostel bathroom) would also resonate, but urgency beats social proof."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Research-driven deliberate",
+            "position_on_dimension": "Low impulse, requires validation and comparison",
+            "answer_text": "My ranking: 1) dermatologist YouTube video, 2) free sample sachets, 3) best friend's bathroom, 4) Bestseller tag, 5) flash sale. I'd need to hear from a dermatologist or expert I follow, like Dr. Sheths, to trust a new product\u2014ingredients matter (Q12). A free sample lets me test it on my skin first without committing. Flash sales feel rushed; I'd worry about missing something in the fine print.",
+            "why_plausible": "Aligns with their high trust in dermatologists and influencers (Q17 rating 4), preference for clinical studies (Q51), and need for products tailored to Indian skin (Q53). Their switch to doctor-prescribed soap (Q52) indicates methodical decisions based on expert input.",
+            "concept_test_prediction": "This twin would require detailed claims like 'dermatologist-recommended' or 'clinical studies' to engage. They'd skip over flashy concepts, instead scrutinizing ingredient lists and certifications (Q13) before considering purchase, leading to slower decision times.",
+            "ad_test_prediction": "Ads featuring expert testimonials, side-by-side comparisons, or before/after visuals (Q59) would capture attention. They'd ignore urgency-driven ads; instead, they'd pause to read reviews or search for additional information, favoring long-form video content over quick reels."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Social-trusted, deal-conscious",
+            "position_on_dimension": "Medium impulse, context-dependent on trust and value",
+            "answer_text": "I'd go: 1) best friend's bathroom, 2) 50% off flash sale, 3) dermatologist video, 4) Bestseller tag, 5) free samples. If my close friend uses and recommends it, I'll probably try it next time I shop\u2014it feels reliable but not urgent. A flash sale is tempting if it's a brand I already know, like from Instagram. I like samples but they don't usually make me buy the full size unless I'm really impressed.",
+            "why_plausible": "Matches their strong reliance on friend recommendations (Q22, Q56-57) and discovery via quick commerce and Instagram (Q54). Their mood-dependent grooming (Q30) suggests variability, and they balance price sensitivity with trust in social circles, as seen in their switch to Pears after a friend's gift (Q23, Q36).",
+            "concept_test_prediction": "This twin would respond positively to concepts bundled with social proof ('Recommended by 9 out of 10 hostel mates') or mid-tier pricing with a friend-referral discount. They'd evaluate based on a mix of trusted advice and perceived value, not purely impulse or deep research.",
+            "ad_test_prediction": "Ads showing friend groups (like hostel roommates) using the product, combined with a limited-time friend discount, would be effective. They'd engage with carousel ads that mix user testimonials and a deal, but might not act immediately on standalone urgency cues."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Information processing style: Visual vs text-centric engagement",
+        "selected_question": {
+          "question_id": "QN026",
+          "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+          "why_selected": "This question directly contrasts a text-heavy, expert influencer (likely providing detailed, clinical information) with a visual-heavy, lifestyle influencer (focused on engaging, aesthetic content), probing the individual's preference for absorbing information through detailed textual analysis versus visual engagement. Given the person's trust in influencers (Q17), aesthetic content preference (Q59), and value for clinical studies (Q51), it effectively reveals their processing style in a context relevant to body wash purchases."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Visual-Lifestyle Influencer Follower",
+            "position_on_dimension": "High visual engagement",
+            "answer_text": "I'd probably go with Influencer B's recommendation. As a lifestyle creator with 2M followers, their content is usually more engaging and visual, which catches my eye since I love aesthetic stuff. The fragrant body wash at a lower price sounds appealing, especially if the ad shows it in a cool, modern way that fits my vibe.",
+            "why_plausible": "Consistent with Q59 where 'aesthetic' content is a top trigger, Q8's focus on smell and grooming for others, and Q35's preference for fresh fragrances, indicating a visual and sensory-driven approach.",
+            "concept_test_prediction": "In concept testing, this twin would prioritize high-quality imagery, vibrant packaging design, and video demonstrations of lather and fragrance, often overlooking detailed text claims unless visually integrated.",
+            "ad_test_prediction": "Video ads with minimal text and vibrant visuals (e.g., Instagram Reels showing fragrance experience) would capture higher engagement, while text-heavy ads might be ignored unless paired with striking visuals."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Text-Expertise Seeker",
+            "position_on_dimension": "Low visual engagement (text-centric)",
+            "answer_text": "Influencer A, the skincare expert, would influence me more. Even with fewer followers, their expertise means the recommendation is based on clinical knowledge, which I trust. I care about ingredients and benefits, so a clinical body wash aligns with my need for detailed information and no side effects.",
+            "why_plausible": "Aligned with Q17's high trust in dermatologists and influencers for credible info, Q51's interest in 'clinical_studies' and 'derm_recommended' claims, and Q12's emphasis on natural products with no side effects, showing a preference for text-based, factual validation.",
+            "concept_test_prediction": "This twin would focus on written benefits, ingredient lists, clinical study summaries, and detailed specifications in concept testing, often dismissing concepts with poor textual explanations even if visually appealing.",
+            "ad_test_prediction": "Blog-style ads, long-form captions with clear text explanations, or infographics detailing benefits would resonate more, boosting credibility; video ads without subtitles or detailed claims might be less effective."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Balanced Pragmatic Evaluator",
+            "position_on_dimension": "Medium visual engagement (context-dependent)",
+            "answer_text": "It's hard to choose just one\u2014I'd consider both. The price difference matters (\u20b9449 vs \u20b9249), and I'd check reviews or ask friends. If the clinical one has proven skin benefits, I might lean that way, but the fragrant one could be tempting if it smells great and has good packaging visuals.",
+            "why_plausible": "Reflects Q16's low loyalty and openness to switching, Q22's triggers like friend_rec and influencer, and pragmatic traits from Q6 (laid back) and Q3 (income below 25k), leading to a balanced, situation-dependent approach.",
+            "concept_test_prediction": "This twin would evaluate both visual and textual elements equally, weighing factors like price, practicality, and mixed cues in concept testing, resulting in a more nuanced response that varies with context.",
+            "ad_test_prediction": "Mixed-format ads combining visuals with clear text explanations (e.g., Instagram carousels with images and bullet-point benefits) would perform best, as this twin appreciates engagement and information without over-relying on either."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Advertising resonance: Aspirational lifestyle vs relatable practicality",
+        "selected_question": {
+          "question_id": "QN026",
+          "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+          "why_selected": "This question directly pits the two poles of the dimension against each other in a realistic social media scenario, which is a key discovery channel for this person (Q54, Q58). It forces a choice between an expert-driven, benefit-focused recommendation (relatable/practical) and a lifestyle-focused, mass-appeal recommendation (aspirational/social), revealing which type of message and messenger aligns with their internal decision driver."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Aspirational Lifestyle Seeker",
+            "position_on_dimension": "High on aspirational lifestyle resonance",
+            "answer_text": "Probably the lifestyle creator with 2M followers. If a product is popular and being talked about in social scenes, that grabs my attention more. A clinical review feels a bit too serious for a daily-use product like body wash, unless I had a very specific skin issue.",
+            "why_plausible": "This aligns with their emphasis on others' perception (Q8), the social context of their Givenchy purchase (night outings, Q37), and their tendency to discover brands like Man Matters/Minimalist via social media (Q58). Their brand recall includes 'Forest Essentials' and premium experiences (Q47), showing aspirational leanings.",
+            "concept_test_prediction": "This twin would respond more favorably to concepts emphasizing exotic ingredients (e.g., 'Moroccan argan oil'), luxury aesthetics, or benefits tied to social confidence ('makes you the center of attention'). A moderate price point is acceptable if the concept feels premium and socially desirable.",
+            "ad_test_prediction": "Ads featuring nightlife, stylish models in aspirational settings (parties, travel), or high-production-value visuals would drive higher engagement and purchase intent. Influencer ads from popular lifestyle creators would be more effective than expert testimonials."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Relatable Practicality Prioritizer",
+            "position_on_dimension": "High on relatable practicality resonance",
+            "answer_text": "Definitely the skincare expert. I trust someone who knows ingredients and skin science more for something that touches my skin every day. The lifestyle creator might just be promoting it; the expert's recommendation feels more genuine and result-oriented, even if it costs more.",
+            "why_plausible": "This is consistent with their high trust in dermatologists (Q17), preference for clinical studies and derm-recommended claims (Q51), and their focus on skin benefits and gentleness (Q44, Q48). Their switch from Nivea to Pears due to skin harshness (Q23) shows a practical, problem-solving mindset.",
+            "concept_test_prediction": "This twin would prefer concepts focused on solving specific, relatable problems (hard water, body odor, dryness), transparency about ingredients, and proven benefits. Fancy packaging or exotic claims would be viewed with skepticism unless backed by solid evidence.",
+            "ad_test_prediction": "Ads demonstrating real-world usage (gym, home, office), featuring relatable people, or explaining product benefits in a clear, educational manner would resonate more. Testimonials from experts or before/after comparisons (Q59) would be highly effective."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Context-Dependent Balancer",
+            "position_on_dimension": "Moderate/context-dependent; balances both",
+            "answer_text": "It depends on my immediate need. If my skin is acting up or I'm looking for a specific solution, I'd lean towards the expert. But if I'm just browsing for something new and fun, the lifestyle creator's pick seems more appealing, especially if the fragrance sounds great. I'd probably check reviews for both.",
+            "why_plausible": "This reflects their 'mood-dependent' relationship with grooming (Q30), their mix of aspirational (Givenchy for nights) and practical (Pears for daily gentleness) behaviors, and their low brand loyalty (Q16) which allows for switching based on context. Their ideal body wash description (Q50) includes both long-lasting fragrance (aspirational) and moisturization/cleansing (practical).",
+            "concept_test_prediction": "This twin's response would vary based on the concept's framing. A concept blending both\u2014e.g., 'award-winning fragrance with 24hr moisturization'\u2014would appeal broadly. They'd need a clear value proposition that satisfies both the desire for sensory pleasure and tangible skin benefits.",
+            "ad_test_prediction": "Hybrid ad campaigns work best\u2014showing the product in both an aspirational setting (like a date night prep) and a practical one (post-gym refresh) within the same narrative. They'd respond well to influencer collaborations where a credible expert approves a lifestyle-forward product."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Contextual receptivity: Occasion-based vs consistent preference",
+        "selected_question": {
+          "question_id": "QN017",
+          "question_text": "Your body wash brand launches a 'limited edition summer variant' with cooling menthol at \u20b9349 (regular variant is \u20b9299). It's April and peak summer is approaching. Do you: A) Buy the summer variant \u2014 \u20b950 more for seasonal relevance is fine B) Stick with the regular \u2014 I don't pay extra for seasonal gimmicks C) Buy both to compare",
+          "why_selected": "This question probes willingness to pay for a context-specific (seasonal) product variant, directly relating to contextual receptivity. Given the person's mood-dependent bathing (Q30), occasion-based fragrance choice for night outings (Q37), and use of body wash for swim/gym sessions (Q29), their response reveals how much they value products tailored to specific contexts, predicting differential reactions to occasion-based concepts and ads."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Occasion-Sensitive Enthusiast",
+            "position_on_dimension": "High",
+            "answer_text": "I'd buy the summer variant. Living in Ahmedabad, the heat is intense, and a cooling menthol body wash would be refreshing after my sports or gym sessions. The extra \u20b950 is worth it for that seasonal comfort and freshness.",
+            "why_plausible": "Consistent with their sportsperson identity, mood-dependent bathing, and attention to post-wash skin feeling; they value context-specific benefits like cooling after physical activity.",
+            "concept_test_prediction": "Highly receptive to occasion-specific body wash concepts (e.g., 'post-workout refresh' or 'evening elegance'), showing significantly higher purchase intent for specialized products that match specific contexts.",
+            "ad_test_prediction": "More engaged with ads shown in contextually relevant moments (e.g., during sports streams for gym body wash), leading to higher click-through rates and conversion for occasion-targeted campaigns."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Context-Curious Experimenter",
+            "position_on_dimension": "Medium",
+            "answer_text": "I might buy both to compare. I'm curious if the cooling menthol is better for summer, and since I'm not too loyal to brands, trying new things fits my routine. It depends on my mood, but having options is nice.",
+            "why_plausible": "Aligns with their low loyalty (Q16), moderate openness to trying new brands (Q7), and mood-dependent nature; they show exploratory behavior without full commitment to context-specific products.",
+            "concept_test_prediction": "Moderately receptive to occasion-specific concepts; may consider them if benefits are clear, but also values versatility, leading to mixed responses depending on how well the concept balances specialization with everyday use.",
+            "ad_test_prediction": "Responds to both context-specific and general ads; contextual ads might pique interest, but they also engage with benefit-focused messaging, showing moderate lift in engagement compared to occasion-agnostic twins."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Consistent Pragmatist",
+            "position_on_dimension": "Low",
+            "answer_text": "I'd stick with the regular one. My current body wash cleanses and moisturizes well, so I don't see the need for a seasonal version. I prefer consistency, and the extra cost isn't justified when my routine works fine.",
+            "why_plausible": "Reflects their laid-back, calm personality (Q6) and price sensitivity with a below \u20b925k income (Q3); while mood-dependent, they prioritize core benefits over context-specific features when costs increase.",
+            "concept_test_prediction": "Prefers all-in-one solutions; shows lower interest in occasion-specific body wash concepts, evaluating them based on year-round suitability and core benefits like moisturization, leading to lower purchase intent for specialized products.",
+            "ad_test_prediction": "Less responsive to contextually targeted ads; prefers ads highlighting universal benefits and year-round suitability, with similar engagement regardless of ad context, focusing on practical claims like dermatologist recommendations."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Risk perception in trial: High need for assurance vs low-risk tolerance",
+        "selected_question": {
+          "question_id": "QN030",
+          "question_text": "A new body wash brand offers a 'satisfaction guarantee' \u2014 if you don't like it within 15 days, full refund, no questions asked. It's priced at \u20b9449, which is \u20b9150 more than your usual. Does the guarantee change your willingness to try it? A) Yes \u2014 the guarantee removes my risk, I'll try it B) No \u2014 returning products is too much hassle regardless of guarantee C) Maybe \u2014 I'd read the fine print first before trusting it",
+          "why_selected": "This question directly tests how a satisfaction guarantee affects willingness to try a new, higher-priced product, probing risk perception and need for assurance. Given the person's profile of valuing safety (natural products for no side effects, Q12) and trusting experts (dermatologists, Q17), it can reveal their threshold for risk mitigation in trial scenarios, which is core to the uncaptured dimension."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Cautious Verifier",
+            "position_on_dimension": "High need for assurance",
+            "answer_text": "I'd consider it because the guarantee sounds good, but \u20b9449 is more than I usually spend. I'd need to read the fine print carefully and check online reviews to see if the return process is really hassle-free. Only if I'm sure about the brand's credibility and the guarantee's ease would I try it.",
+            "why_plausible": "Consistent with their preference for natural products to avoid side effects (Q12), high trust in dermatologists (Q17), and tendency to research before purchasing (e.g., researching Givenchy perfume, Q37), indicating caution and need for multiple assurances.",
+            "concept_test_prediction": "This twin would respond best to body wash concepts that include money-back guarantees, free sample sachets, or clear clinical certifications. Concepts without such assurances would be met with skepticism, especially if priced premium.",
+            "ad_test_prediction": "Ads featuring dermatologist testimonials, detailed safety data, or explicit 'risk-free trial' promises would significantly increase purchase intent. Aesthetic or hype-based ads without these elements would be less effective."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Assurance-Enabled Explorer",
+            "position_on_dimension": "Moderate need for assurance",
+            "answer_text": "Yes, the guarantee does make me more willing to try it. Since it removes the financial risk, I'm open to experimenting, especially if the brand has good ingredients or claims I've heard about from friends or influencers. The price is a bit high, but for a risk-free shot, I might go for it.",
+            "why_plausible": "Aligned with their moderate comfort trying new brands (3/5, Q7), influence from friends and influencers (Q22, Q54), and past trials of new brands like Man Matters via social media (Q58), showing openness with some assurance.",
+            "concept_test_prediction": "Concepts with strong assurances like guarantees or free trials would appeal, but they might also consider concepts with good social proof or innovative benefits. Premium pricing would be acceptable if backed by credible endorsements.",
+            "ad_test_prediction": "Ads that blend assurances with engaging content, such as influencer endorsements or before-after visuals, would be most effective. Pure guarantee-focused ads work, but they also respond to community hype and aesthetic appeal."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Hassle-Averse Pragmatist",
+            "position_on_dimension": "Low need for assurance (due to hassle avoidance)",
+            "answer_text": "No, I probably wouldn't bother with the guarantee. Returning products is always a hassle, and I'd rather not deal with the extra steps. I'd stick to my current body wash or try something new only if it comes highly recommended and is easy to buy without complications.",
+            "why_plausible": "Fits their laid-back personality (Q6), preference for convenience from quick commerce (Q25), and low loyalty (Q16), indicating a preference for simplicity and avoiding perceived hassles over seeking assurances.",
+            "concept_test_prediction": "Concepts emphasizing ease of use, trusted brand names, and seamless experiences would resonate more. Guarantees or free samples might be seen as unnecessary complications, and premium pricing without clear convenience would be off-putting.",
+            "ad_test_prediction": "Ads focusing on convenience, quick delivery, trusted brand heritage, or straightforward benefits would be preferred. Ads highlighting guarantees or complex claims might be ignored due to perceived hassle, favoring social proof or minimalist messaging."
+          }
+        ]
+      }
+    ]
+  }
+]

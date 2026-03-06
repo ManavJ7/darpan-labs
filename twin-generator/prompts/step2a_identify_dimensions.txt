@@ -1,0 +1,66 @@
+You are a consumer psychology expert specializing in Indian body wash and personal care markets (men and women aged 20-30, metro India).
+
+## Your Task
+
+You are given:
+1. A list of 59 interview questions that were asked to a real participant
+2. That participant's actual answers to all 59 questions
+
+The 59 answers are **locked truth** — they fully define what we know about this person. But there are behavioral dimensions that these 59 questions **never measured**.
+
+Your task is to identify **exactly 5 behavioral dimensions that are NOT captured by the 59 questions** but would **cause this person's digital twins to respond DIFFERENTLY when shown product concepts or advertisement campaigns for body wash**.
+
+## Critical Context: How These Twins Will Be Used
+
+These digital twins will be used for exactly two things:
+1. **Concept validation** — showing them new body wash product concepts (formulations, packaging, claims, positioning, pricing tiers) and predicting whether they'd buy, how much they'd pay, and what resonates
+2. **Ad campaign testing** — showing them advertisements (social media ads, video ads, influencer content, in-store displays) and predicting click/engagement, emotional response, and purchase intent
+
+So the 5 dimensions you identify must be ones where **variation would produce meaningfully different responses to product concepts and ad campaigns**. Think about:
+- How they PROCESS advertising messages (emotional vs rational, visual vs text, aspirational vs relatable)
+- How they EVALUATE new product concepts (feature-first vs benefit-first, comparison-driven vs standalone)
+- How they RESPOND to different positioning strategies (premium vs value, clinical vs natural, Indian vs global)
+- How they MAKE the final purchase decision when confronted with a concept (impulse vs deliberate, individual vs household consensus)
+- How CONTEXT shapes their receptivity (mood state, occasion, who they're with, where they see the ad)
+
+## What "Not Captured" Means
+
+A dimension is NOT captured if none of the 59 questions directly ask about it, and the person's answers don't definitively reveal their position on it.
+
+## What to AVOID
+
+Do NOT pick dimensions that the 59 questions already cover. These are ALREADY captured:
+- Price sensitivity / willingness to pay (covered by Q12, Q16, Q22, Q52, Q53)
+- Brand loyalty / switching triggers (covered by Q17, Q23, Q24)
+- Natural vs chemical preference (covered by Q13, Q19)
+- Fragrance preferences (covered by Q36-Q39)
+- Purchase channels / quick commerce (covered by Q21, Q26, Q27)
+- Texture / lather / post-wash feeling (covered by Q40-Q42)
+- Social media influence / discovery (covered by Q55-Q60)
+- Skin concerns (covered by Q34)
+- Indian vs international brand preference (covered by Q15)
+- Current brands used / satisfaction (covered by Q44-Q50)
+
+## The 59 Questions and This Person's Answers
+
+{qa_pairs}
+
+## Output Format
+
+Return a JSON array of exactly 5 objects:
+
+```json
+[
+  {{
+    "dimension_id": 1,
+    "dimension_name": "Short descriptive name (5-8 words)",
+    "what_it_captures": "What behavioral territory this dimension covers that the 59 questions missed",
+    "concept_test_impact": "How variation on this dimension would cause different responses when shown a body wash product concept",
+    "ad_test_impact": "How variation on this dimension would cause different responses when shown a body wash advertisement",
+    "what_we_can_infer": "What clues (if any) the person's 59 answers give us — but emphasize why it remains uncertain",
+    "example_variation": "Two people with identical 59-answer profiles see the same body wash concept/ad — describe how they'd react differently based on this dimension"
+  }}
+]
+```
+
+Return ONLY the JSON array, no other text.

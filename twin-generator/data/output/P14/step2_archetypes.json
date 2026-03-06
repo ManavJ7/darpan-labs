@@ -1,0 +1,192 @@
+[
+  {
+    "participant_id": "P14",
+    "archetypes_per_dim": [
+      {
+        "dimension_name": "Emotional vs Rational Advertising Processing Style",
+        "selected_question": {
+          "question_id": "QN026",
+          "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+          "why_selected": "This question directly forces a choice between a rational, expert-led appeal (clinical, expensive, low-follower expert) and an emotional, popular appeal (fragrant, affordable, high-follower lifestyle creator). The person's profile shows high trust in experts/dermatologists (A17, A18) but also mood dependence (A30) and appreciation for fragrance (A36, A44, A53). This question cuts to the core of whether their trust in clinical validation overrides emotional/social appeal in an ad context, predicting how they process different influencer marketing styles."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Rational Clinical Trust Seeker",
+            "position_on_dimension": "High Rational",
+            "answer_text": "Influencer A, the skincare expert, without a second thought. A lifestyle creator's opinion on a body wash is just noise\u2014they're not qualified. The clinical body wash recommendation carries weight because it comes from someone with proper credentials, even if the price is higher. I'd look up the clinical studies the expert mentioned before considering it.",
+            "why_plausible": "Consistent with their strong preference for clinical over traditional (A18), high trust in dermatologists (A17 rating 5), prioritization of ingredients and expert reviews (A11, A59), and willingness to pay unlimited premium for clinical-grade formulations (A15).",
+            "concept_test_prediction": "Will respond positively only to concepts emphasizing clinical proof, dermatologist recommendations, and ingredient breakdowns. A concept focusing on 'mood-boosting fragrance' or 'confidence glow' will be dismissed as unsubstantiated marketing fluff.",
+            "ad_test_prediction": "Will engage only with ads featuring expert testimonials (dermatologists, chemists), data visualizations of clinical results, and clear ingredient call-outs. High-follower influencer ads will be ignored or distrusted. Click-through driven by phrases like 'clinically proven' or 'dermatologist-tested'."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Emotional & Mood-Responsive Evaluator",
+            "position_on_dimension": "High Emotional",
+            "answer_text": "I'd be more curious about the fragrant body wash from the lifestyle creator. A clinical recommendation is good, but a \u20b9449 body wash is outside my usual spend. The lifestyle creator probably showcases the experience and how the fragrance makes you feel, which aligns with my mood-dependent routine. I'd watch their review to see the sensory appeal and daily use context before looking up the expert's pick.",
+            "why_plausible": "Plausible given their mood-dependent relationship with grooming (A30), the importance of fragrance in their ideal product (A49), and their history of choosing Dove primarily for its fragrance (A53). Their careful planning (A6) doesn't preclude being swayed by an appealing sensory or emotional narrative.",
+            "concept_test_prediction": "Will be drawn to concepts that paint a vivid sensory or emotional picture (e.g., 'a shower that feels like a spa escape', 'fragrance that lingers and uplifts your mood'). Pure clinical claims will feel sterile and unappealing unless paired with an emotional benefit.",
+            "ad_test_prediction": "Will respond better to ads with aspirational visuals, storytelling about daily rituals, and influencer content showing authentic enjoyment. Rational proof points are secondary to how the ad makes them *feel*. More likely to remember and share emotionally resonant video ads."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Contextual Hybrid - Rational Gatekeeper",
+            "position_on_dimension": "Mixed, Rational-Leaning with Emotional Appreciation",
+            "answer_text": "I'd watch both reviews, but the expert's opinion would form my baseline for safety and efficacy. However, if the expert's pick seems too expensive or has a clinical scent I dislike, I'd seriously consider the lifestyle creator's fragrant recommendation\u2014but only after verifying its ingredients and looking for any red flags in the comments. The final decision is a balance: rational for trust, emotional for daily enjoyment.",
+            "why_plausible": "Best reflects their nuanced profile: trusts experts heavily but also values fragrance and has a mood-dependent side. Their product choice hierarchy (A47) shows they categorize 'decent performers' like Dove, which blend mild efficacy with pleasant fragrance. They are a 'careful planner' (A6) who researches extensively (A58) but also has specific fragrance loves (A36).",
+            "concept_test_prediction": "Will respond best to hybrid concepts that lead with a rational, trust-building claim (e.g., 'dermatologist-tested for sensitive skin') and then layer on an emotional/sensory benefit ('with a comforting vanilla scent that makes bathing a ritual'). Needs both pillars to feel convinced and excited.",
+            "ad_test_prediction": "Will engage with ads that start with a credible, expert-led hook (e.g., a dermatologist's 10-second intro) and then transition to emotional, lifestyle-focused visuals of the product in use. Skeptical of purely emotional ads but finds purely clinical ads forgettable. Needs a rational reason to pay attention and an emotional reason to care."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Visual Aesthetic Preference in Marketing Content",
+        "selected_question": {
+          "question_id": "generated",
+          "question_text": "Imagine you are scrolling through your social media feed and see two different advertisements for a new body wash. The first ad (Ad A) has vibrant, colorful visuals with artistic product shots and people enjoying outdoor activities. The second ad (Ad B) has a clean, minimalistic design focusing on the product bottle, with text highlighting key ingredients, dermatologist recommendations, and clinical study results. Which ad are you more likely to stop and look at, and what would make you consider trying the product based on the ad?",
+          "why_selected": "This question directly contrasts visually rich and minimalistic/clinical aesthetics in marketing content, which is core to the dimension. Given this person's preference for clinical packaging and trust in expert sources, their response will reveal whether visual style in ads influences their attention and consideration, predicting reactions to body wash concepts and campaigns."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Trusts Clinical Clarity",
+            "position_on_dimension": "Strong preference for minimalistic/clinical visuals",
+            "answer_text": "I would immediately stop for Ad B. The clean design with ingredient lists and dermatologist endorsements aligns with what I trust, as I always look for clinical proof and expert reviews before considering a product. Vibrant visuals in Ad A feel distracting and less credible, especially since I don't follow influencers and prefer factual information.",
+            "why_plausible": "Consistent with their high trust in dermatologists (Q17), preference for clinical packaging (Q41), and value for ingredients and expert reviews (Q11, Q59), reflecting their introverted and careful planning nature.",
+            "concept_test_prediction": "This twin would favor body wash concepts presented with minimalistic, evidence-based visuals, perceiving them as trustworthy and high-quality. Concepts with artistic or lifestyle-focused imagery might be dismissed as gimmicky, reducing interest.",
+            "ad_test_prediction": "Ads using clinical layouts, highlighting dermatologist endorsements and ingredients, would yield higher click-through and engagement. Social media ads with vibrant colors or influencer content would likely be ignored, aligning with their distrust of such sources."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Seeks Balanced Presentation",
+            "position_on_dimension": "Moderate, context-dependent preference",
+            "answer_text": "Ad A might catch my eye initially due to the vibrant colors, but I'd quickly shift to Ad B for the detailed clinical information I rely on. However, if Ad A subtly included some dermatologist-backed claims, I could be intrigued. Ultimately, I need to see proof like ingredients and studies before seriously considering a purchase.",
+            "why_plausible": "Reflects their careful planning (Q6) and balance between enjoying sensory aspects like fragrance (Q35, Q36) and prioritizing substantive information (Q11), showing a nuanced approach to grooming decisions.",
+            "concept_test_prediction": "This twin would respond best to concepts that blend appealing visuals with clear, factual information. They might be open to aesthetically pleasing concepts if backed by clinical evidence, but skeptical of overly flashy presentations without substance.",
+            "ad_test_prediction": "Ads that combine attractive imagery with concise clinical claims, such as those featuring dermatologist logos or ingredient highlights, would perform well. They might engage with visually rich ads if trust signals are present, but prefer ads that balance style and information."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Appreciates Visual Appeal",
+            "position_on_dimension": "High preference for visually rich content",
+            "answer_text": "I find Ad A very appealing because the artistic shots and vibrant colors make the product look inviting and enjoyable. Even though I usually rely on clinical information, a well-designed ad like this could pique my interest, and I might then look up reviews or ingredients online to verify claims before considering a try.",
+            "why_plausible": "Despite their clinical leanings, they appreciate sensory experiences like sweet gourmand and floral fragrances (Q35) and enjoy mild, layered scents (Q36), suggesting a personal aesthetic appreciation that could extend to visual marketing in a metro Indian context.",
+            "concept_test_prediction": "This twin would be more attracted to body wash concepts with high-quality, artistic visuals and lifestyle imagery, perceiving them as premium and enjoyable. They might show higher interest even if clinical details are less prominent, but would still seek verification post-exposure.",
+            "ad_test_prediction": "Visually rich ads, especially on platforms like Instagram with engaging videos or beautiful product shots, would capture their attention and increase brand recall. They might click on such ads more frequently, though they would later cross-check information, reflecting their careful planning habit."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Aspirational versus Relatable Messaging Resonance",
+        "selected_question": {
+          "question_id": "generated",
+          "question_text": "Imagine you see two advertisements for the same body wash. Ad A features a model in a high-end spa setting, emphasizing luxury and self-pampering. Ad B shows a regular person in a home bathroom, highlighting practical daily use and skin benefits. Which ad would make you more likely to consider the product, and why?",
+          "why_selected": "This question directly probes the individual's resonance with aspirational versus relatable messaging by contrasting luxury and everyday scenarios, which aligns with the dimension's focus on predicting reactions to ad campaigns and product concepts. Given the profile's emphasis on practicality, clinical validation, and self-focused grooming, their choice will reveal underlying preferences for messaging style."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Practical Relatability Seeker",
+            "position_on_dimension": "Low (strong preference for relatable messaging)",
+            "answer_text": "Ad B would definitely resonate more with me. I'm not swayed by fancy settings; I care about how a product actually performs in my daily routine, like after a long day at work. The home bathroom ad feels honest and focused on real benefits, which matches my careful approach to choosing products based on ingredients and reviews.",
+            "why_plausible": "Consistent with being introverted, a careful planner, and valuing grooming for self-feeling over others' perception (Q8). Trusts dermatologists and clinical claims (Q17, Q18), and prefers practical, research-backed products (Q12, Q59).",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts emphasizing moisturization, clinical studies, and dermatologist recommendations, but reject luxury positioning as gimmicky. Willing to pay for efficacy, not premium branding.",
+            "ad_test_prediction": "Ads featuring relatable scenarios, expert reviews, and clear ingredient breakdowns would increase purchase intent. Aspirational ads with models and spa settings would be ignored or seen as unauthentic."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Benefit Evaluator",
+            "position_on_dimension": "Medium (context-dependent, values both but leans practical)",
+            "answer_text": "I might find Ad A visually appealing, but Ad B would ultimately convince me more. While the spa setting is nice, I need to see tangible benefits and how it fits into my meticulous routine. If Ad A also highlighted clinical proofs or ingredient lists, I could consider it, but relatability ensures it's not just marketing fluff.",
+            "why_plausible": "Reflects their careful planning and loyalty (Q16), but openness to quality upgrades (Q15 for clinical-grade). Values both aesthetics (Q41 clinical packaging) and substance, as seen in their detailed grooming routine (Q10) and preference for expert reviews (Q59).",
+            "concept_test_prediction": "Open to premium body wash concepts if backed by clinical validation and practical benefits, but skeptical of pure luxury claims. Might consider higher-priced options with proven results.",
+            "ad_test_prediction": "Ads that blend aspirational visuals with relatable benefits, such as showing luxury but emphasizing skin health and expert endorsements, would be most effective. Purely aspirational or purely mundane ads would have moderate impact."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Subtle Aspiration for Self-Care",
+            "position_on_dimension": "High (leans towards aspirational messaging for personal indulgence)",
+            "answer_text": "Ad A would catch my attention more because it makes the bathing experience feel special and indulgent, which I appreciate even as an introvert. While I prioritize clinical benefits, seeing a product in a luxurious setting adds an emotional layer to my routine, making it more enjoyable without needing external validation.",
+            "why_plausible": "Plausible given their income (1-2 lakhs, Q3) and detailed self-care routine (Q10), suggesting hidden aspirations for quality and indulgence. Values fragrance (Q44) and is willing to pay for clinical-grade products (Q15), indicating a blend of practicality and desire for enhanced experience.",
+            "concept_test_prediction": "Drawn to body wash concepts with premium fragrances, sleek packaging, and claims of luxury or pampering, especially if clinically backed. More likely to upgrade to higher-priced variants for perceived quality.",
+            "ad_test_prediction": "Aspirational ads featuring serene, spa-like visuals and emphasis on self-pampering would inspire emotional connection and purchase intent. Relatable ads might be seen as too basic, unless they strongly highlight clinical benefits."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Urgency and Scarcity Response in Promotions",
+        "selected_question": {
+          "question_id": "QN036",
+          "question_text": "A body wash brand you've never tried sends you a \u20b9150 discount coupon valid for 48 hours on their website. Their body wash costs \u20b9399 (so you'd pay \u20b9249). Your current body wash still has about 2 weeks of use left. Do you: A) Use the coupon now \u2014 great deal, I'll stock up B) Let it expire \u2014 I don't need body wash right now C) Browse their site but probably won't buy unless something really stands out",
+          "why_selected": "This question directly probes reaction to a time-limited offer (48-hour coupon) when the product isn't immediately needed, which is core to urgency and scarcity response. It forces a decision that reveals whether this meticulous planner can be swayed by promotional tactics, predicting behavior in flash sales or limited-time ad campaigns."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Resistant to Urgency Tactics",
+            "position_on_dimension": "low",
+            "answer_text": "I'd let the coupon expire without a second thought. I have enough body wash for two weeks, and I never make purchases on impulse\u2014it always leads to regret. Even with a discount, trying an untested brand feels risky without thorough research into ingredients and clinical backing, so I'll stick to my trusted Dove until I actually need to repurchase.",
+            "why_plausible": "Consistent with their careful planning (Q6), avoidance of spontaneous purchases (Q58), loyalty to trusted brands (Q16), and preference for research-backed products (Q12, Q18).",
+            "concept_test_prediction": "For a limited edition body wash concept, this twin would ignore scarcity claims and evaluate solely based on ingredients, clinical studies, and reviews; unlikely to buy unless it perfectly matches their criteria, leading to low conversion rates.",
+            "ad_test_prediction": "An ad with a countdown timer or 'limited stock' message would be perceived as pushy and ignored; they would close the ad immediately without engagement, resulting in zero clicks or purchases."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Cautiously Considerate Evaluator",
+            "position_on_dimension": "medium",
+            "answer_text": "I'd browse their website quickly to check if the product has dermatologist recommendations or clinical studies mentioned. If it aligns with my standards for research-backed ingredients, I might use the coupon, but only if I'm convinced after a brief review. Otherwise, I'll let it expire and wait until my current body wash runs out to make a planned purchase.",
+            "why_plausible": "Reflects their trust in expert sources (Q17, Q55), openness to quality if proven (Q14, Q18), and methodical approach\u2014they research before buying (Q58) but are price-conscious (Q15, Q53).",
+            "concept_test_prediction": "Might consider a limited edition body wash if it emphasizes clinical validation or unique benefits, but would compare it with regular options; could buy if convinced, but scarcity alone won't drive purchase, leading to moderate interest.",
+            "ad_test_prediction": "An urgency-based ad with expert endorsements (e.g., dermatologist-approved) might capture attention, but they would still research before clicking 'buy,' potentially missing the time-limited offer, resulting in delayed or conditional conversions."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Opportunistic but Methodical Planner",
+            "position_on_dimension": "high",
+            "answer_text": "Since it's a good discount and I value saving money, I'd quickly look up the ingredients and online reviews. If it seems decent\u2014maybe has pH-balanced or dermatologist-tested claims\u2014I might buy it to stock up, even though I don't need it right away. But I'd only do this if the brand appears reputable and doesn't compromise on my core requirements.",
+            "why_plausible": "Aligns with their willingness to pay for value (Q15, Q53), interest in certifications like dermatologist-tested (Q13), and meticulous nature\u2014they'd still do quick checks (Q24) but are open to deals if they fit their criteria.",
+            "concept_test_prediction": "Likely to be attracted to limited edition or flash sale concepts if they promise clinical benefits or unique fragrances; might make an impulse buy if the deal is compelling, leading to higher conversion rates during promotions.",
+            "ad_test_prediction": "Urgency ads with countdown timers and scarcity messages could trigger immediate action if the ad highlights clinical proof or trusted certifications; they might click and purchase quickly, especially if the price is justified, resulting in high engagement and sales."
+          }
+        ]
+      },
+      {
+        "dimension_name": "Cultural and Local Context Engagement in Ads",
+        "selected_question": {
+          "question_id": "generated",
+          "question_text": "Imagine you see two ads for the same body wash. Ad A uses a global, minimalist style with English narration and focuses on clinical ingredients and dermatologist approval. Ad B features a local Indian setting, uses Hindi music, and shows the product being used in a traditional bathing ritual while highlighting Ayurvedic ingredients. Which ad would make you more interested in the product, and why?",
+          "why_selected": "This question directly probes sensitivity to cultural versus clinical elements in advertising, forcing a choice that reveals preference for local context or global neutrality. Given the person's ambivalence towards Indian brands and trust in clinical validation, their answer will predict reactions to ad campaigns and product concepts with cultural references, which is core to this dimension."
+        },
+        "archetypes": [
+          {
+            "archetype_id": "A",
+            "archetype_label": "Clinical Purist",
+            "position_on_dimension": "Low cultural engagement",
+            "answer_text": "I'd definitely prefer Ad A because the clinical focus and dermatologist approval align with what I trust most. The cultural elements in Ad B feel unnecessary and might distract from the actual benefits\u2014I care about ingredients and proof, not decorative storytelling. As a careful planner, I'd only consider products backed by solid research, so Ad A is more convincing and reliable for my needs.",
+            "why_plausible": "Consistent with their high trust in dermatologists (Q17), strong preference for clinical over traditional (Q18), and top claims like 'derm_recommended' and 'clinical_studies' (Q50). Their introverted and careful nature means they prioritize evidence over emotional appeals.",
+            "concept_test_prediction": "For a body wash concept emphasizing Ayurvedic traditions or local ingredients, this twin would be skeptical and demand clinical validation. They'd prefer concepts highlighting lab-tested formulations, intense moisture, and expert recommendations, likely rejecting those relying solely on cultural narratives.",
+            "ad_test_prediction": "Ads with cultural references, local language, or traditional settings would be less engaging and perceived as gimmicky. They'd respond better to ads featuring dermatologists, ingredient breakdowns, and clinical proofs, with higher likelihood of clicking through or considering purchase."
+          },
+          {
+            "archetype_id": "B",
+            "archetype_label": "Balanced Skeptic",
+            "position_on_dimension": "Medium cultural engagement",
+            "answer_text": "Ad B could be interesting if the Ayurvedic ingredients are clinically proven, but I'd be cautious. I don't mind cultural elements if they feel authentic and not forced, but Ad A is safer because it directly addresses my trust in science. I might watch Ad B out of curiosity, but I'd still research reviews and ingredients extensively before considering a purchase\u2014cultural flair alone isn't enough.",
+            "why_plausible": "Reflects their openness to Indian products if quality is high (Q14), willingness to pay a premium for Ayurvedic ingredients (Q15), and careful planning style (Q6). Their mixed trust in sources (Q17) and preference for expert reviews (Q59) support a balanced, evidence-based approach.",
+            "concept_test_prediction": "Might be open to body wash concepts that blend traditional Indian ingredients with clinical claims, but would require clear proof and reviews. Could consider concepts like 'Ayurvedic herbs with dermatologist testing,' but would compare against pure clinical options before deciding.",
+            "ad_test_prediction": "Ads with cultural context could capture attention if paired with expert endorsements or clinical data, but might not significantly boost engagement. They'd prefer ads that mix relatable local settings with factual information, leading to moderate interaction but heavy post-ad research."
+          },
+          {
+            "archetype_id": "C",
+            "archetype_label": "Context-Appreciative Planner",
+            "position_on_dimension": "High cultural engagement",
+            "answer_text": "Ad B would catch my attention more because the local setting and traditional references feel relatable and authentic, especially living in Bengaluru. I appreciate when products embrace Indian culture respectfully, but I'd still check for clinical studies and ingredient lists\u2014cultural resonance makes the ad more memorable, though my final decision depends on thorough research. It's a nice touch that could make me explore further.",
+            "why_plausible": "Plausible given their consumption of English content but Indian residency (Q1), inclusion of Ayurvedic certifications as influential (Q13), and preference for natural, plant-based products (Q12). Their detailed grooming routine (Q10) suggests appreciation for holistic care, which could extend to cultural elements in ads.",
+            "concept_test_prediction": "More likely to favor body wash concepts incorporating Indian ingredients or traditions, perceiving them as authentic and trustworthy. Might be willing to pay a slight premium for cultural alignment, especially if combined with moisturizing benefits and mild fragrances as per their ideal (Q49).",
+            "ad_test_prediction": "Ads with local language, music, or family settings would enhance connection and brand perception, making them more likely to engage, share, or recall the ad. However, due to their careful nature, they'd still verify claims before purchasing, leading to higher ad recall but measured conversion."
+          }
+        ]
+      }
+    ]
+  }
+]

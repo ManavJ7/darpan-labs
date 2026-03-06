@@ -1,0 +1,1309 @@
+[
+  {
+    "participant_id": "P15",
+    "n_original": 100,
+    "n_selected": 20,
+    "twins": [
+      {
+        "twin_id": "P15_T001",
+        "participant_id": "P15",
+        "combo_id": 0,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Relatable-Content Seeker",
+            "answer_text": "I'd engage more with Ad B showing the student in the hostel bathroom. It feels genuine and relevant to my daily life as a student in Ahmedabad, and the focus on effective cleansing aligns with my practical needs and budget. Seeing someone like me makes the ad more trustworthy and useful.",
+            "position_on_dimension": "Prefers relatable advertising content",
+            "concept_test_prediction": "This twin would respond better to body wash concepts positioned as value-oriented, everyday essentials with claims like clinical studies or dermatologist recommendations (Q50). Premium or luxury concepts might be perceived as unnecessary or overpriced.",
+            "ad_test_prediction": "Ads depicting ordinary daily routines, student life, or practical demonstrations would engage this twin more, leading to higher click-through and purchase intent. Celebrity-endorsed or high-end lifestyle ads might be ignored or seen as unrelatable, reducing ad effectiveness."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "A",
+            "archetype_label": "Consistent Engager",
+            "answer_text": "I'd engage similarly in both situations\u2014if the ad looks interesting, I'll click or watch it, regardless of context. During study breaks, I might be a bit distracted, but since I'm easygoing, I'd still check it out if it catches my eye. At home, I'm equally open, so no big difference.",
+            "position_on_dimension": "Low context-dependency",
+            "concept_test_prediction": "This twin would evaluate body wash concepts consistently, whether shown during busy or leisure times, focusing on product merits like price and recommendations (Q11) without context skewing perceptions.",
+            "ad_test_prediction": "Ad campaigns would receive similar engagement levels across contexts; attention depends on ad quality and trusted elements like expert reviews (Q60), not on timing or device."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T002",
+        "participant_id": "P15",
+        "combo_id": 121,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Aspirational Dreamer",
+            "answer_text": "I'd be drawn to Ad A with the celebrity at the luxury party. It makes the product feel special and desirable, which appeals to me for social gatherings where I want to smell good and make an impression. Even as a student, I enjoy aspirational content that inspires me to feel more confident and upgraded.",
+            "position_on_dimension": "Prefers aspirational advertising content",
+            "concept_test_prediction": "This twin would be more receptive to premium body wash concepts with exclusive fragrances or luxury positioning, even at higher prices if clinically proven (Q54). Value-oriented concepts might be seen as basic or less appealing.",
+            "ad_test_prediction": "Ads featuring glamorous settings, celebrities, or idealized lifestyles would capture their attention and desire, leading to higher engagement and brand aspiration. Relatable ads might be perceived as boring or low-effort, reducing ad recall."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "answer_text": "I'd consider both influencers, but it depends on my current needs. If my skin feels dry, I might lean towards Influencer A's clinical pick, but the fragrant option from Influencer B is cheaper and popular, so it could be a good deal. I'd probably check reviews and compare before deciding, balancing expert advice with value.",
+            "position_on_dimension": "Moderate trust in both, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts based on a balance of expert endorsements, price, and personal needs. Might be open to both expert and celebrity concepts if they offer good value and relevance, such as formulations for Indian skin.",
+            "ad_test_prediction": "Ads with either endorser could be effective if they highlight tangible benefits like foaming well or non-drying skin, and price points. Response would depend on ad clarity and alignment with their practical priorities."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "B",
+            "archetype_label": "Relaxed Receptivity",
+            "answer_text": "I'm more likely to engage when I'm relaxed at home\u2014I can properly watch and consider the ad. During study time, my mind is on exams, so I'd probably skip it unless it really stands out. But if the ad has a good offer or expert backing, it might still grab my attention even when I'm busy.",
+            "position_on_dimension": "Medium context-dependency",
+            "concept_test_prediction": "Concepts viewed during relaxed times would get more positive evaluation and consideration of benefits like skin health (Q54), while during stress, they might be dismissed unless clinically proven (Q50).",
+            "ad_test_prediction": "Ads seen at home on TV or during casual scrolling would have higher click-through and recall, especially if featuring discounts or expert reviews (Q60). Mobile ads during commute or study breaks might be ignored or quickly skipped."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T003",
+        "participant_id": "P15",
+        "combo_id": 107,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Engager",
+            "answer_text": "It depends on my mood and what I need at the time. Sometimes Ad A is inspiring and fun, especially if I'm planning for a social event. Other times, Ad B is more useful for my daily routine. I appreciate both if the message is clear and honest, like the content I trust from Splainer on Reddit.",
+            "position_on_dimension": "Neutral or context-dependent",
+            "concept_test_prediction": "This twin's response would vary based on the concept's alignment with immediate needs or desires; they might consider both premium and value concepts depending on factors like season, occasion, or skin concerns (Q33).",
+            "ad_test_prediction": "Engagement with ads would depend on context, such as timing or targeting; both aspirational and relatable ads could work if they match current interests, leading to mixed but adaptable responses in campaign testing."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Social-Proof Oriented",
+            "answer_text": "Influencer B would influence me more. With 2 million followers, there's strong social proof, and the lower price fits my budget. I often trust popular recommendations from lifestyle creators because they're relatable and affordable, similar to how I bought from Reddit based on positive comments.",
+            "position_on_dimension": "High trust in celebrity/popular endorsements, low in expert endorsements",
+            "concept_test_prediction": "Would be more attracted to body wash concepts endorsed by celebrities or popular influencers, especially those highlighting trendiness, fragrance, and social appeal. Expert concepts might be perceived as less engaging unless coupled with social validation.",
+            "ad_test_prediction": "Ads featuring celebrities using the product in relatable scenarios would enhance desirability and social validation, leading to higher engagement and purchase intent. Expert ads might be ignored unless they include popular endorsements or discounts."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T004",
+        "participant_id": "P15",
+        "combo_id": 110,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Relatable-Content Seeker",
+            "answer_text": "I'd engage more with Ad B showing the student in the hostel bathroom. It feels genuine and relevant to my daily life as a student in Ahmedabad, and the focus on effective cleansing aligns with my practical needs and budget. Seeing someone like me makes the ad more trustworthy and useful.",
+            "position_on_dimension": "Prefers relatable advertising content",
+            "concept_test_prediction": "This twin would respond better to body wash concepts positioned as value-oriented, everyday essentials with claims like clinical studies or dermatologist recommendations (Q50). Premium or luxury concepts might be perceived as unnecessary or overpriced.",
+            "ad_test_prediction": "Ads depicting ordinary daily routines, student life, or practical demonstrations would engage this twin more, leading to higher click-through and purchase intent. Celebrity-endorsed or high-end lifestyle ads might be ignored or seen as unrelatable, reducing ad effectiveness."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T005",
+        "participant_id": "P15",
+        "combo_id": 22,
+        "coherence_score": 0.95,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "B",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Engager",
+            "answer_text": "It depends on my mood and what I need at the time. Sometimes Ad A is inspiring and fun, especially if I'm planning for a social event. Other times, Ad B is more useful for my daily routine. I appreciate both if the message is clear and honest, like the content I trust from Splainer on Reddit.",
+            "position_on_dimension": "Neutral or context-dependent",
+            "concept_test_prediction": "This twin's response would vary based on the concept's alignment with immediate needs or desires; they might consider both premium and value concepts depending on factors like season, occasion, or skin concerns (Q33).",
+            "ad_test_prediction": "Engagement with ads would depend on context, such as timing or targeting; both aspirational and relatable ads could work if they match current interests, leading to mixed but adaptable responses in campaign testing."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "answer_text": "I'd consider both influencers, but it depends on my current needs. If my skin feels dry, I might lean towards Influencer A's clinical pick, but the fragrant option from Influencer B is cheaper and popular, so it could be a good deal. I'd probably check reviews and compare before deciding, balancing expert advice with value.",
+            "position_on_dimension": "Moderate trust in both, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts based on a balance of expert endorsements, price, and personal needs. Might be open to both expert and celebrity concepts if they offer good value and relevance, such as formulations for Indian skin.",
+            "ad_test_prediction": "Ads with either endorser could be effective if they highlight tangible benefits like foaming well or non-drying skin, and price points. Response would depend on ad clarity and alignment with their practical priorities."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "B",
+            "archetype_label": "Relaxed Receptivity",
+            "answer_text": "I'm more likely to engage when I'm relaxed at home\u2014I can properly watch and consider the ad. During study time, my mind is on exams, so I'd probably skip it unless it really stands out. But if the ad has a good offer or expert backing, it might still grab my attention even when I'm busy.",
+            "position_on_dimension": "Medium context-dependency",
+            "concept_test_prediction": "Concepts viewed during relaxed times would get more positive evaluation and consideration of benefits like skin health (Q54), while during stress, they might be dismissed unless clinically proven (Q50).",
+            "ad_test_prediction": "Ads seen at home on TV or during casual scrolling would have higher click-through and recall, especially if featuring discounts or expert reviews (Q60). Mobile ads during commute or study breaks might be ignored or quickly skipped."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T006",
+        "participant_id": "P15",
+        "combo_id": 223,
+        "coherence_score": 0.8,
+        "choices": {
+          "dim_0": "C",
+          "dim_1": "C",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "C",
+            "archetype_label": "Social-Sensory Seeker",
+            "answer_text": "For me: 1) Seeing it in my best friend's bathroom \u2013 personal recommendations feel most genuine and trustworthy. 2) Bestseller tag \u2013 popularity suggests it's likely enjoyable and safe. 3) 50% off sale \u2013 a nice bonus, but not why I'd initially try something new. 4) Free sample \u2013 handy for a quick trial. 5) Dermatologist's recommendation \u2013 experts are fine, but I rely more on real-life experiences and mood.",
+            "position_on_dimension": "high emotional",
+            "concept_test_prediction": "During concept validation, this twin would be drawn to scent stories, mood-enhancing benefits, and sensory descriptions, showing less interest in purely rational claims.",
+            "ad_test_prediction": "For ad campaigns, they would prefer content with evocative imagery, personal narratives, and sensory appeals, such as influencer stories or vibrant visuals, over data-heavy ads."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "C",
+            "archetype_label": "Immediate Experience-Chaser",
+            "answer_text": "I'd buy the \u20b9429 one right away. The sample felt great, and since I liked it instantly, why overthink? It's worth paying extra for a better experience, and I can adjust my budget elsewhere.",
+            "position_on_dimension": "High",
+            "concept_test_prediction": "Highly attracted to body wash concepts with appealing fragrances, attractive packaging, or instant claims (e.g., 'refreshing on first use'). Might buy based on sensory or visual appeal without deep research.",
+            "ad_test_prediction": "Very responsive to ads with scarcity triggers (e.g., 'limited stock'), flash sales, or engaging visuals (like demo videos). Would likely make unplanned purchases from social media ads or in-store displays without hesitation."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Relatable-Content Seeker",
+            "answer_text": "I'd engage more with Ad B showing the student in the hostel bathroom. It feels genuine and relevant to my daily life as a student in Ahmedabad, and the focus on effective cleansing aligns with my practical needs and budget. Seeing someone like me makes the ad more trustworthy and useful.",
+            "position_on_dimension": "Prefers relatable advertising content",
+            "concept_test_prediction": "This twin would respond better to body wash concepts positioned as value-oriented, everyday essentials with claims like clinical studies or dermatologist recommendations (Q50). Premium or luxury concepts might be perceived as unnecessary or overpriced.",
+            "ad_test_prediction": "Ads depicting ordinary daily routines, student life, or practical demonstrations would engage this twin more, leading to higher click-through and purchase intent. Celebrity-endorsed or high-end lifestyle ads might be ignored or seen as unrelatable, reducing ad effectiveness."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Social-Proof Oriented",
+            "answer_text": "Influencer B would influence me more. With 2 million followers, there's strong social proof, and the lower price fits my budget. I often trust popular recommendations from lifestyle creators because they're relatable and affordable, similar to how I bought from Reddit based on positive comments.",
+            "position_on_dimension": "High trust in celebrity/popular endorsements, low in expert endorsements",
+            "concept_test_prediction": "Would be more attracted to body wash concepts endorsed by celebrities or popular influencers, especially those highlighting trendiness, fragrance, and social appeal. Expert concepts might be perceived as less engaging unless coupled with social validation.",
+            "ad_test_prediction": "Ads featuring celebrities using the product in relatable scenarios would enhance desirability and social validation, leading to higher engagement and purchase intent. Expert ads might be ignored unless they include popular endorsements or discounts."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "B",
+            "archetype_label": "Relaxed Receptivity",
+            "answer_text": "I'm more likely to engage when I'm relaxed at home\u2014I can properly watch and consider the ad. During study time, my mind is on exams, so I'd probably skip it unless it really stands out. But if the ad has a good offer or expert backing, it might still grab my attention even when I'm busy.",
+            "position_on_dimension": "Medium context-dependency",
+            "concept_test_prediction": "Concepts viewed during relaxed times would get more positive evaluation and consideration of benefits like skin health (Q54), while during stress, they might be dismissed unless clinically proven (Q50).",
+            "ad_test_prediction": "Ads seen at home on TV or during casual scrolling would have higher click-through and recall, especially if featuring discounts or expert reviews (Q60). Mobile ads during commute or study breaks might be ignored or quickly skipped."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T007",
+        "participant_id": "P15",
+        "combo_id": 86,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "A",
+          "dim_3": "B",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Relatable-Content Seeker",
+            "answer_text": "I'd engage more with Ad B showing the student in the hostel bathroom. It feels genuine and relevant to my daily life as a student in Ahmedabad, and the focus on effective cleansing aligns with my practical needs and budget. Seeing someone like me makes the ad more trustworthy and useful.",
+            "position_on_dimension": "Prefers relatable advertising content",
+            "concept_test_prediction": "This twin would respond better to body wash concepts positioned as value-oriented, everyday essentials with claims like clinical studies or dermatologist recommendations (Q50). Premium or luxury concepts might be perceived as unnecessary or overpriced.",
+            "ad_test_prediction": "Ads depicting ordinary daily routines, student life, or practical demonstrations would engage this twin more, leading to higher click-through and purchase intent. Celebrity-endorsed or high-end lifestyle ads might be ignored or seen as unrelatable, reducing ad effectiveness."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "answer_text": "I'd consider both influencers, but it depends on my current needs. If my skin feels dry, I might lean towards Influencer A's clinical pick, but the fragrant option from Influencer B is cheaper and popular, so it could be a good deal. I'd probably check reviews and compare before deciding, balancing expert advice with value.",
+            "position_on_dimension": "Moderate trust in both, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts based on a balance of expert endorsements, price, and personal needs. Might be open to both expert and celebrity concepts if they offer good value and relevance, such as formulations for Indian skin.",
+            "ad_test_prediction": "Ads with either endorser could be effective if they highlight tangible benefits like foaming well or non-drying skin, and price points. Response would depend on ad clarity and alignment with their practical priorities."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T008",
+        "participant_id": "P15",
+        "combo_id": 125,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "B",
+          "dim_3": "C",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Aspirational Dreamer",
+            "answer_text": "I'd be drawn to Ad A with the celebrity at the luxury party. It makes the product feel special and desirable, which appeals to me for social gatherings where I want to smell good and make an impression. Even as a student, I enjoy aspirational content that inspires me to feel more confident and upgraded.",
+            "position_on_dimension": "Prefers aspirational advertising content",
+            "concept_test_prediction": "This twin would be more receptive to premium body wash concepts with exclusive fragrances or luxury positioning, even at higher prices if clinically proven (Q54). Value-oriented concepts might be seen as basic or less appealing.",
+            "ad_test_prediction": "Ads featuring glamorous settings, celebrities, or idealized lifestyles would capture their attention and desire, leading to higher engagement and brand aspiration. Relatable ads might be perceived as boring or low-effort, reducing ad recall."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Social-Proof Oriented",
+            "answer_text": "Influencer B would influence me more. With 2 million followers, there's strong social proof, and the lower price fits my budget. I often trust popular recommendations from lifestyle creators because they're relatable and affordable, similar to how I bought from Reddit based on positive comments.",
+            "position_on_dimension": "High trust in celebrity/popular endorsements, low in expert endorsements",
+            "concept_test_prediction": "Would be more attracted to body wash concepts endorsed by celebrities or popular influencers, especially those highlighting trendiness, fragrance, and social appeal. Expert concepts might be perceived as less engaging unless coupled with social validation.",
+            "ad_test_prediction": "Ads featuring celebrities using the product in relatable scenarios would enhance desirability and social validation, leading to higher engagement and purchase intent. Expert ads might be ignored unless they include popular endorsements or discounts."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T009",
+        "participant_id": "P15",
+        "combo_id": 131,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "C",
+          "dim_3": "B",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Engager",
+            "answer_text": "It depends on my mood and what I need at the time. Sometimes Ad A is inspiring and fun, especially if I'm planning for a social event. Other times, Ad B is more useful for my daily routine. I appreciate both if the message is clear and honest, like the content I trust from Splainer on Reddit.",
+            "position_on_dimension": "Neutral or context-dependent",
+            "concept_test_prediction": "This twin's response would vary based on the concept's alignment with immediate needs or desires; they might consider both premium and value concepts depending on factors like season, occasion, or skin concerns (Q33).",
+            "ad_test_prediction": "Engagement with ads would depend on context, such as timing or targeting; both aspirational and relatable ads could work if they match current interests, leading to mixed but adaptable responses in campaign testing."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "answer_text": "I'd consider both influencers, but it depends on my current needs. If my skin feels dry, I might lean towards Influencer A's clinical pick, but the fragrant option from Influencer B is cheaper and popular, so it could be a good deal. I'd probably check reviews and compare before deciding, balancing expert advice with value.",
+            "position_on_dimension": "Moderate trust in both, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts based on a balance of expert endorsements, price, and personal needs. Might be open to both expert and celebrity concepts if they offer good value and relevance, such as formulations for Indian skin.",
+            "ad_test_prediction": "Ads with either endorser could be effective if they highlight tangible benefits like foaming well or non-drying skin, and price points. Response would depend on ad clarity and alignment with their practical priorities."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T010",
+        "participant_id": "P15",
+        "combo_id": 10,
+        "coherence_score": 0.95,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Aspirational Dreamer",
+            "answer_text": "I'd be drawn to Ad A with the celebrity at the luxury party. It makes the product feel special and desirable, which appeals to me for social gatherings where I want to smell good and make an impression. Even as a student, I enjoy aspirational content that inspires me to feel more confident and upgraded.",
+            "position_on_dimension": "Prefers aspirational advertising content",
+            "concept_test_prediction": "This twin would be more receptive to premium body wash concepts with exclusive fragrances or luxury positioning, even at higher prices if clinically proven (Q54). Value-oriented concepts might be seen as basic or less appealing.",
+            "ad_test_prediction": "Ads featuring glamorous settings, celebrities, or idealized lifestyles would capture their attention and desire, leading to higher engagement and brand aspiration. Relatable ads might be perceived as boring or low-effort, reducing ad recall."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "B",
+            "archetype_label": "Relaxed Receptivity",
+            "answer_text": "I'm more likely to engage when I'm relaxed at home\u2014I can properly watch and consider the ad. During study time, my mind is on exams, so I'd probably skip it unless it really stands out. But if the ad has a good offer or expert backing, it might still grab my attention even when I'm busy.",
+            "position_on_dimension": "Medium context-dependency",
+            "concept_test_prediction": "Concepts viewed during relaxed times would get more positive evaluation and consideration of benefits like skin health (Q54), while during stress, they might be dismissed unless clinically proven (Q50).",
+            "ad_test_prediction": "Ads seen at home on TV or during casual scrolling would have higher click-through and recall, especially if featuring discounts or expert reviews (Q60). Mobile ads during commute or study breaks might be ignored or quickly skipped."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T011",
+        "participant_id": "P15",
+        "combo_id": 12,
+        "coherence_score": 0.95,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Aspirational Dreamer",
+            "answer_text": "I'd be drawn to Ad A with the celebrity at the luxury party. It makes the product feel special and desirable, which appeals to me for social gatherings where I want to smell good and make an impression. Even as a student, I enjoy aspirational content that inspires me to feel more confident and upgraded.",
+            "position_on_dimension": "Prefers aspirational advertising content",
+            "concept_test_prediction": "This twin would be more receptive to premium body wash concepts with exclusive fragrances or luxury positioning, even at higher prices if clinically proven (Q54). Value-oriented concepts might be seen as basic or less appealing.",
+            "ad_test_prediction": "Ads featuring glamorous settings, celebrities, or idealized lifestyles would capture their attention and desire, leading to higher engagement and brand aspiration. Relatable ads might be perceived as boring or low-effort, reducing ad recall."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "answer_text": "I'd consider both influencers, but it depends on my current needs. If my skin feels dry, I might lean towards Influencer A's clinical pick, but the fragrant option from Influencer B is cheaper and popular, so it could be a good deal. I'd probably check reviews and compare before deciding, balancing expert advice with value.",
+            "position_on_dimension": "Moderate trust in both, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts based on a balance of expert endorsements, price, and personal needs. Might be open to both expert and celebrity concepts if they offer good value and relevance, such as formulations for Indian skin.",
+            "ad_test_prediction": "Ads with either endorser could be effective if they highlight tangible benefits like foaming well or non-drying skin, and price points. Response would depend on ad clarity and alignment with their practical priorities."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "A",
+            "archetype_label": "Consistent Engager",
+            "answer_text": "I'd engage similarly in both situations\u2014if the ad looks interesting, I'll click or watch it, regardless of context. During study breaks, I might be a bit distracted, but since I'm easygoing, I'd still check it out if it catches my eye. At home, I'm equally open, so no big difference.",
+            "position_on_dimension": "Low context-dependency",
+            "concept_test_prediction": "This twin would evaluate body wash concepts consistently, whether shown during busy or leisure times, focusing on product merits like price and recommendations (Q11) without context skewing perceptions.",
+            "ad_test_prediction": "Ad campaigns would receive similar engagement levels across contexts; attention depends on ad quality and trusted elements like expert reviews (Q60), not on timing or device."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T012",
+        "participant_id": "P15",
+        "combo_id": 20,
+        "coherence_score": 0.95,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Engager",
+            "answer_text": "It depends on my mood and what I need at the time. Sometimes Ad A is inspiring and fun, especially if I'm planning for a social event. Other times, Ad B is more useful for my daily routine. I appreciate both if the message is clear and honest, like the content I trust from Splainer on Reddit.",
+            "position_on_dimension": "Neutral or context-dependent",
+            "concept_test_prediction": "This twin's response would vary based on the concept's alignment with immediate needs or desires; they might consider both premium and value concepts depending on factors like season, occasion, or skin concerns (Q33).",
+            "ad_test_prediction": "Engagement with ads would depend on context, such as timing or targeting; both aspirational and relatable ads could work if they match current interests, leading to mixed but adaptable responses in campaign testing."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T013",
+        "participant_id": "P15",
+        "combo_id": 45,
+        "coherence_score": 0.925,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "C",
+          "dim_3": "A",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Engager",
+            "answer_text": "It depends on my mood and what I need at the time. Sometimes Ad A is inspiring and fun, especially if I'm planning for a social event. Other times, Ad B is more useful for my daily routine. I appreciate both if the message is clear and honest, like the content I trust from Splainer on Reddit.",
+            "position_on_dimension": "Neutral or context-dependent",
+            "concept_test_prediction": "This twin's response would vary based on the concept's alignment with immediate needs or desires; they might consider both premium and value concepts depending on factors like season, occasion, or skin concerns (Q33).",
+            "ad_test_prediction": "Engagement with ads would depend on context, such as timing or targeting; both aspirational and relatable ads could work if they match current interests, leading to mixed but adaptable responses in campaign testing."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "A",
+            "archetype_label": "Consistent Engager",
+            "answer_text": "I'd engage similarly in both situations\u2014if the ad looks interesting, I'll click or watch it, regardless of context. During study breaks, I might be a bit distracted, but since I'm easygoing, I'd still check it out if it catches my eye. At home, I'm equally open, so no big difference.",
+            "position_on_dimension": "Low context-dependency",
+            "concept_test_prediction": "This twin would evaluate body wash concepts consistently, whether shown during busy or leisure times, focusing on product merits like price and recommendations (Q11) without context skewing perceptions.",
+            "ad_test_prediction": "Ad campaigns would receive similar engagement levels across contexts; attention depends on ad quality and trusted elements like expert reviews (Q60), not on timing or device."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T014",
+        "participant_id": "P15",
+        "combo_id": 28,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Relatable-Content Seeker",
+            "answer_text": "I'd engage more with Ad B showing the student in the hostel bathroom. It feels genuine and relevant to my daily life as a student in Ahmedabad, and the focus on effective cleansing aligns with my practical needs and budget. Seeing someone like me makes the ad more trustworthy and useful.",
+            "position_on_dimension": "Prefers relatable advertising content",
+            "concept_test_prediction": "This twin would respond better to body wash concepts positioned as value-oriented, everyday essentials with claims like clinical studies or dermatologist recommendations (Q50). Premium or luxury concepts might be perceived as unnecessary or overpriced.",
+            "ad_test_prediction": "Ads depicting ordinary daily routines, student life, or practical demonstrations would engage this twin more, leading to higher click-through and purchase intent. Celebrity-endorsed or high-end lifestyle ads might be ignored or seen as unrelatable, reducing ad effectiveness."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "B",
+            "archetype_label": "Relaxed Receptivity",
+            "answer_text": "I'm more likely to engage when I'm relaxed at home\u2014I can properly watch and consider the ad. During study time, my mind is on exams, so I'd probably skip it unless it really stands out. But if the ad has a good offer or expert backing, it might still grab my attention even when I'm busy.",
+            "position_on_dimension": "Medium context-dependency",
+            "concept_test_prediction": "Concepts viewed during relaxed times would get more positive evaluation and consideration of benefits like skin health (Q54), while during stress, they might be dismissed unless clinically proven (Q50).",
+            "ad_test_prediction": "Ads seen at home on TV or during casual scrolling would have higher click-through and recall, especially if featuring discounts or expert reviews (Q60). Mobile ads during commute or study breaks might be ignored or quickly skipped."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T015",
+        "participant_id": "P15",
+        "combo_id": 30,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "B",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Relatable-Content Seeker",
+            "answer_text": "I'd engage more with Ad B showing the student in the hostel bathroom. It feels genuine and relevant to my daily life as a student in Ahmedabad, and the focus on effective cleansing aligns with my practical needs and budget. Seeing someone like me makes the ad more trustworthy and useful.",
+            "position_on_dimension": "Prefers relatable advertising content",
+            "concept_test_prediction": "This twin would respond better to body wash concepts positioned as value-oriented, everyday essentials with claims like clinical studies or dermatologist recommendations (Q50). Premium or luxury concepts might be perceived as unnecessary or overpriced.",
+            "ad_test_prediction": "Ads depicting ordinary daily routines, student life, or practical demonstrations would engage this twin more, leading to higher click-through and purchase intent. Celebrity-endorsed or high-end lifestyle ads might be ignored or seen as unrelatable, reducing ad effectiveness."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "answer_text": "I'd consider both influencers, but it depends on my current needs. If my skin feels dry, I might lean towards Influencer A's clinical pick, but the fragrant option from Influencer B is cheaper and popular, so it could be a good deal. I'd probably check reviews and compare before deciding, balancing expert advice with value.",
+            "position_on_dimension": "Moderate trust in both, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts based on a balance of expert endorsements, price, and personal needs. Might be open to both expert and celebrity concepts if they offer good value and relevance, such as formulations for Indian skin.",
+            "ad_test_prediction": "Ads with either endorser could be effective if they highlight tangible benefits like foaming well or non-drying skin, and price points. Response would depend on ad clarity and alignment with their practical priorities."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "A",
+            "archetype_label": "Consistent Engager",
+            "answer_text": "I'd engage similarly in both situations\u2014if the ad looks interesting, I'll click or watch it, regardless of context. During study breaks, I might be a bit distracted, but since I'm easygoing, I'd still check it out if it catches my eye. At home, I'm equally open, so no big difference.",
+            "position_on_dimension": "Low context-dependency",
+            "concept_test_prediction": "This twin would evaluate body wash concepts consistently, whether shown during busy or leisure times, focusing on product merits like price and recommendations (Q11) without context skewing perceptions.",
+            "ad_test_prediction": "Ad campaigns would receive similar engagement levels across contexts; attention depends on ad quality and trusted elements like expert reviews (Q60), not on timing or device."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T016",
+        "participant_id": "P15",
+        "combo_id": 92,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "A",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Aspirational Dreamer",
+            "answer_text": "I'd be drawn to Ad A with the celebrity at the luxury party. It makes the product feel special and desirable, which appeals to me for social gatherings where I want to smell good and make an impression. Even as a student, I enjoy aspirational content that inspires me to feel more confident and upgraded.",
+            "position_on_dimension": "Prefers aspirational advertising content",
+            "concept_test_prediction": "This twin would be more receptive to premium body wash concepts with exclusive fragrances or luxury positioning, even at higher prices if clinically proven (Q54). Value-oriented concepts might be seen as basic or less appealing.",
+            "ad_test_prediction": "Ads featuring glamorous settings, celebrities, or idealized lifestyles would capture their attention and desire, leading to higher engagement and brand aspiration. Relatable ads might be perceived as boring or low-effort, reducing ad recall."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T017",
+        "participant_id": "P15",
+        "combo_id": 115,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "A",
+          "dim_3": "C",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "A",
+            "archetype_label": "Relatable-Content Seeker",
+            "answer_text": "I'd engage more with Ad B showing the student in the hostel bathroom. It feels genuine and relevant to my daily life as a student in Ahmedabad, and the focus on effective cleansing aligns with my practical needs and budget. Seeing someone like me makes the ad more trustworthy and useful.",
+            "position_on_dimension": "Prefers relatable advertising content",
+            "concept_test_prediction": "This twin would respond better to body wash concepts positioned as value-oriented, everyday essentials with claims like clinical studies or dermatologist recommendations (Q50). Premium or luxury concepts might be perceived as unnecessary or overpriced.",
+            "ad_test_prediction": "Ads depicting ordinary daily routines, student life, or practical demonstrations would engage this twin more, leading to higher click-through and purchase intent. Celebrity-endorsed or high-end lifestyle ads might be ignored or seen as unrelatable, reducing ad effectiveness."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "C",
+            "archetype_label": "Social-Proof Oriented",
+            "answer_text": "Influencer B would influence me more. With 2 million followers, there's strong social proof, and the lower price fits my budget. I often trust popular recommendations from lifestyle creators because they're relatable and affordable, similar to how I bought from Reddit based on positive comments.",
+            "position_on_dimension": "High trust in celebrity/popular endorsements, low in expert endorsements",
+            "concept_test_prediction": "Would be more attracted to body wash concepts endorsed by celebrities or popular influencers, especially those highlighting trendiness, fragrance, and social appeal. Expert concepts might be perceived as less engaging unless coupled with social validation.",
+            "ad_test_prediction": "Ads featuring celebrities using the product in relatable scenarios would enhance desirability and social validation, leading to higher engagement and purchase intent. Expert ads might be ignored unless they include popular endorsements or discounts."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "B",
+            "archetype_label": "Relaxed Receptivity",
+            "answer_text": "I'm more likely to engage when I'm relaxed at home\u2014I can properly watch and consider the ad. During study time, my mind is on exams, so I'd probably skip it unless it really stands out. But if the ad has a good offer or expert backing, it might still grab my attention even when I'm busy.",
+            "position_on_dimension": "Medium context-dependency",
+            "concept_test_prediction": "Concepts viewed during relaxed times would get more positive evaluation and consideration of benefits like skin health (Q54), while during stress, they might be dismissed unless clinically proven (Q50).",
+            "ad_test_prediction": "Ads seen at home on TV or during casual scrolling would have higher click-through and recall, especially if featuring discounts or expert reviews (Q60). Mobile ads during commute or study breaks might be ignored or quickly skipped."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T018",
+        "participant_id": "P15",
+        "combo_id": 127,
+        "coherence_score": 0.9,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "B",
+          "dim_2": "C",
+          "dim_3": "A",
+          "dim_4": "B"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "B",
+            "archetype_label": "Occasional Treat-Seeker",
+            "answer_text": "I might buy both\u2014the \u20b9429 as a treat since I enjoyed the sample, and my regular as backup. It's a bit of a splurge, but if the variant really stood out, I can justify it occasionally, especially for a change.",
+            "position_on_dimension": "Medium",
+            "concept_test_prediction": "Open to premium or novel concepts if they offer sensory appeal or trusted endorsements, but might hesitate if prices are too high. Could be swayed by combo deals or limited editions with added benefits.",
+            "ad_test_prediction": "Moderately responsive to ads with social proof (e.g., influencer reviews) or time-limited offers, but would likely research further before buying. Ads that blend enjoyment with value (like discounts on first purchase) might trigger action."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Engager",
+            "answer_text": "It depends on my mood and what I need at the time. Sometimes Ad A is inspiring and fun, especially if I'm planning for a social event. Other times, Ad B is more useful for my daily routine. I appreciate both if the message is clear and honest, like the content I trust from Splainer on Reddit.",
+            "position_on_dimension": "Neutral or context-dependent",
+            "concept_test_prediction": "This twin's response would vary based on the concept's alignment with immediate needs or desires; they might consider both premium and value concepts depending on factors like season, occasion, or skin concerns (Q33).",
+            "ad_test_prediction": "Engagement with ads would depend on context, such as timing or targeting; both aspirational and relatable ads could work if they match current interests, leading to mixed but adaptable responses in campaign testing."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "B",
+            "archetype_label": "Relaxed Receptivity",
+            "answer_text": "I'm more likely to engage when I'm relaxed at home\u2014I can properly watch and consider the ad. During study time, my mind is on exams, so I'd probably skip it unless it really stands out. But if the ad has a good offer or expert backing, it might still grab my attention even when I'm busy.",
+            "position_on_dimension": "Medium context-dependency",
+            "concept_test_prediction": "Concepts viewed during relaxed times would get more positive evaluation and consideration of benefits like skin health (Q54), while during stress, they might be dismissed unless clinically proven (Q50).",
+            "ad_test_prediction": "Ads seen at home on TV or during casual scrolling would have higher click-through and recall, especially if featuring discounts or expert reviews (Q60). Mobile ads during commute or study breaks might be ignored or quickly skipped."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T019",
+        "participant_id": "P15",
+        "combo_id": 18,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "A",
+          "dim_1": "A",
+          "dim_2": "C",
+          "dim_3": "A",
+          "dim_4": "A"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "A",
+            "archetype_label": "Data-Driven Pragmatist",
+            "answer_text": "I'd rank them: 1) 50% off flash sale \u2013 saving money is always a smart move, especially as a student. 2) Dermatologist's recommendation \u2013 I trust expert advice from credible sources like Splainer. 3) Free sample sachets \u2013 practical for trying without full commitment. 4) Bestseller tag \u2013 social proof is okay but not a key driver. 5) Seeing at friend's \u2013 nice to know, but I prefer data over anecdotes.",
+            "position_on_dimension": "high rational",
+            "concept_test_prediction": "In concept tests, this twin would prioritize clinically proven benefits and cost-effectiveness, showing skepticism towards unsubstantiated claims and emotional appeals.",
+            "ad_test_prediction": "For ad campaigns, they would engage more with ads featuring data, expert testimonials, and clear rational benefits, while ignoring overly emotional or sensory-driven content."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Engager",
+            "answer_text": "It depends on my mood and what I need at the time. Sometimes Ad A is inspiring and fun, especially if I'm planning for a social event. Other times, Ad B is more useful for my daily routine. I appreciate both if the message is clear and honest, like the content I trust from Splainer on Reddit.",
+            "position_on_dimension": "Neutral or context-dependent",
+            "concept_test_prediction": "This twin's response would vary based on the concept's alignment with immediate needs or desires; they might consider both premium and value concepts depending on factors like season, occasion, or skin concerns (Q33).",
+            "ad_test_prediction": "Engagement with ads would depend on context, such as timing or targeting; both aspirational and relatable ads could work if they match current interests, leading to mixed but adaptable responses in campaign testing."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "A",
+            "archetype_label": "Expert-Trusting Skeptic",
+            "answer_text": "I'd be more influenced by Influencer A. As someone who trusts skincare expertise, I value recommendations from professionals for clinical benefits, even if it costs more. It aligns with my preference for derm-recommended products and expert reviews, so I'd likely consider the clinical body wash first.",
+            "position_on_dimension": "High trust in expert endorsements, low in celebrity endorsements",
+            "concept_test_prediction": "This twin would respond positively to body wash concepts endorsed by dermatologists or experts, emphasizing clinical studies and skin health benefits. They would be skeptical of celebrity-endorsed concepts unless backed by expert validation.",
+            "ad_test_prediction": "Ads featuring experts citing clinical studies would build high credibility and increase purchase intent. Celebrity ads would be less effective unless combined with expert testimonials, as seen in their trust for journalistic sources."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "A",
+            "archetype_label": "Consistent Engager",
+            "answer_text": "I'd engage similarly in both situations\u2014if the ad looks interesting, I'll click or watch it, regardless of context. During study breaks, I might be a bit distracted, but since I'm easygoing, I'd still check it out if it catches my eye. At home, I'm equally open, so no big difference.",
+            "position_on_dimension": "Low context-dependency",
+            "concept_test_prediction": "This twin would evaluate body wash concepts consistently, whether shown during busy or leisure times, focusing on product merits like price and recommendations (Q11) without context skewing perceptions.",
+            "ad_test_prediction": "Ad campaigns would receive similar engagement levels across contexts; attention depends on ad quality and trusted elements like expert reviews (Q60), not on timing or device."
+          }
+        ]
+      },
+      {
+        "twin_id": "P15_T020",
+        "participant_id": "P15",
+        "combo_id": 95,
+        "coherence_score": 1.0,
+        "choices": {
+          "dim_0": "B",
+          "dim_1": "A",
+          "dim_2": "B",
+          "dim_3": "B",
+          "dim_4": "C"
+        },
+        "branch_answers": [
+          {
+            "dimension_name": "Emotional versus rational decision-making style",
+            "question_text": "Rank these five purchase triggers from most to least likely to make you buy a body wash you haven't tried before: 1) 50% off flash sale on Nykaa 2) A dermatologist's recommendation in a YouTube video 3) Seeing it in your best friend's bathroom 4) Free sample sachets received with another order 5) A 'Bestseller' tag on Amazon India",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Evaluator",
+            "answer_text": "I'd say: 1) Dermatologist's recommendation \u2013 expert validation matters for skin health. 2) 50% off sale \u2013 a good deal, but I won't compromise on quality. 3) Seeing it in my best friend's bathroom \u2013 personal trust adds credibility. 4) Bestseller tag \u2013 indicates reliability from many users. 5) Free sample \u2013 convenient, but not a strong trigger on its own.",
+            "position_on_dimension": "balanced",
+            "concept_test_prediction": "When shown product concepts, this twin would weigh both emotional elements like fragrance and rational aspects like clinical proof, needing balanced messaging to appeal.",
+            "ad_test_prediction": "In ad testing, they would respond to campaigns that combine expert endorsements with relatable user stories or sensory descriptions, preferring a mix of rational and emotional cues."
+          },
+          {
+            "dimension_name": "Tendency for impulse purchasing behavior",
+            "question_text": "You walk into a BigBasket BBNow dark store pickup point and see a body wash brand offering free samples of three variants. You try all three and like one that costs \u20b9429 \u2014 more than you usually spend. The store also has your regular \u20b9229 body wash. What do you walk out with? A) The \u20b9429 one I just sampled \u2014 the trial convinced me B) My regular \u20b9229 \u2014 sampling was fun but not enough to change my spend C) Both \u2014 the \u20b9429 as a treat and my regular as backup",
+            "archetype_id": "A",
+            "archetype_label": "Deliberative Budget-Sticker",
+            "answer_text": "I'd go with my regular \u20b9229 body wash. Sampling was nice, but I'm not convinced to spend almost double when my current one works fine and fits my budget. I'd rather stick to what I know and save the extra money.",
+            "position_on_dimension": "Low",
+            "concept_test_prediction": "This twin would likely reject premium body wash concepts unless they offer clear, clinically proven benefits at a reasonable price. They'd prioritize cost-effectiveness and proven ingredients over novelty or packaging.",
+            "ad_test_prediction": "Ads with flash sales or urgency triggers would be ignored; they'd respond better to ads highlighting expert reviews, clinical studies, or long-term value, aligning with their trust in journalistic sources (Q57)."
+          },
+          {
+            "dimension_name": "Preference for aspirational versus relatable advertising content",
+            "question_text": "You're scrolling through Instagram and see two ads for body washes. Ad A shows a celebrity at a luxury party, highlighting an exclusive fragrance. Ad B shows a student like you in a hostel bathroom, talking about effective cleansing for daily use. Which ad are you more likely to engage with, and why?",
+            "archetype_id": "B",
+            "archetype_label": "Aspirational Dreamer",
+            "answer_text": "I'd be drawn to Ad A with the celebrity at the luxury party. It makes the product feel special and desirable, which appeals to me for social gatherings where I want to smell good and make an impression. Even as a student, I enjoy aspirational content that inspires me to feel more confident and upgraded.",
+            "position_on_dimension": "Prefers aspirational advertising content",
+            "concept_test_prediction": "This twin would be more receptive to premium body wash concepts with exclusive fragrances or luxury positioning, even at higher prices if clinically proven (Q54). Value-oriented concepts might be seen as basic or less appealing.",
+            "ad_test_prediction": "Ads featuring glamorous settings, celebrities, or idealized lifestyles would capture their attention and desire, leading to higher engagement and brand aspiration. Relatable ads might be perceived as boring or low-effort, reducing ad recall."
+          },
+          {
+            "dimension_name": "Credibility attributed to celebrity versus expert endorsements",
+            "question_text": "You see two influencers you follow reviewing body washes on the same day. Influencer A (skincare expert, 50K followers) recommends a \u20b9449 clinical body wash. Influencer B (lifestyle creator, 2M followers) recommends a \u20b9249 fragrant body wash. Who influences your purchase more?",
+            "archetype_id": "B",
+            "archetype_label": "Balanced Practical Buyer",
+            "answer_text": "I'd consider both influencers, but it depends on my current needs. If my skin feels dry, I might lean towards Influencer A's clinical pick, but the fragrant option from Influencer B is cheaper and popular, so it could be a good deal. I'd probably check reviews and compare before deciding, balancing expert advice with value.",
+            "position_on_dimension": "Moderate trust in both, context-dependent",
+            "concept_test_prediction": "Would evaluate concepts based on a balance of expert endorsements, price, and personal needs. Might be open to both expert and celebrity concepts if they offer good value and relevance, such as formulations for Indian skin.",
+            "ad_test_prediction": "Ads with either endorser could be effective if they highlight tangible benefits like foaming well or non-drying skin, and price points. Response would depend on ad clarity and alignment with their practical priorities."
+          },
+          {
+            "dimension_name": "Context-dependent receptivity to marketing messages",
+            "question_text": "You're studying for an important exam and see an Instagram ad for a new body wash. Later, you're relaxing at home after dinner and see the same ad on YouTube. How does your likelihood of engaging with the ad (e.g., clicking, watching fully) change between these two contexts?",
+            "archetype_id": "C",
+            "archetype_label": "Context-Sensitive Skipper",
+            "answer_text": "It's completely different! When I'm studying, ads are just distractions\u2014I'd scroll past without a second thought. At home, I'm in a better mood to explore, so I'd likely click on the YouTube ad, especially if it highlights something like a dermatologist recommendation or a good deal. Context totally drives my engagement.",
+            "position_on_dimension": "High context-dependency",
+            "concept_test_prediction": "Concepts must be presented during leisure times to be effective; if shown during busy periods, they will be negatively perceived or ignored, even with strong claims like clinical studies (Q50).",
+            "ad_test_prediction": "Ad campaigns need to be timed for relaxed contexts (e.g., evening social media or weekend TV) to achieve engagement; ads during study or commute on mobile will be skipped, reducing campaign effectiveness for this twin."
+          }
+        ]
+      }
+    ]
+  }
+]

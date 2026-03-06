@@ -1,0 +1,52 @@
+[
+  {
+    "participant_id": "P11",
+    "dimensions": [
+      {
+        "dimension_id": 1,
+        "dimension_name": "Decision-making tempo: Impulse vs deliberate triggers",
+        "what_it_captures": "The speed and spontaneity of purchase decisions when confronted with new product concepts or advertisements, beyond general comfort with new brands.",
+        "concept_test_impact": "Impulse-oriented digital twins would show higher immediate purchase intent for visually striking or limited-time concepts, while deliberate twins would require more detailed information, comparisons, and time before committing.",
+        "ad_test_impact": "Ads with urgency cues (e.g., flash sales, countdown timers) would engage impulse twins more, increasing click-through rates; deliberate twins would respond better to ads emphasizing thorough reviews, expert endorsements, or side-by-side comparisons.",
+        "what_we_can_infer": "From Q7 (comfort level 3) and Q19 (typically repurchases same), the person appears cautiously open but not explicitly impulsive; decision speed remains uncertain as no questions measure reaction time or spontaneity in purchase contexts.",
+        "example_variation": "When shown the same body wash concept with sleek packaging, Twin A (impulse) immediately adds to cart after a quick scan; Twin B (deliberate) pauses, researches online reviews and ingredient lists, and decides after a day."
+      },
+      {
+        "dimension_id": 2,
+        "dimension_name": "Information processing style: Visual vs text-centric engagement",
+        "what_it_captures": "Preference for absorbing product information through visual media (images, videos) versus textual descriptions (claims, ingredients), affecting how concepts and ads are evaluated.",
+        "concept_test_impact": "Visual-centric twins would prioritize concepts with high-quality imagery, packaging design, and video demonstrations, while text-centric twins would focus on written benefits, clinical studies, and detailed specifications.",
+        "ad_test_impact": "Video ads or Instagram carousels with minimal text would capture visual twins' attention more, boosting engagement; text-centric twins would prefer blog-style ads, long-form captions, or infographics with clear text explanations.",
+        "what_we_can_infer": "Q59 indicates preference for aesthetic content, suggesting a visual lean, but no questions directly probe processing style for all information types, leaving it unclear if this extends to rational decision-making.",
+        "example_variation": "For a body wash ad, Twin A (visual) is captivated by a vibrant video showing lather and fragrance; Twin B (text) ignores the video and reads the detailed claims about moisturizing properties before engaging."
+      },
+      {
+        "dimension_id": 3,
+        "dimension_name": "Advertising resonance: Aspirational lifestyle vs relatable practicality",
+        "what_it_captures": "Whether advertising messages that depict aspirational, luxury lifestyles or relatable, everyday scenarios are more effective in driving engagement and purchase intent.",
+        "concept_test_impact": "Aspirational positioning (e.g., premium, exotic ingredients) would increase perceived value and desire for twins seeking status enhancement; relatable positioning (e.g., practical benefits for daily use) would enhance trust and practicality for twins focused on functionality.",
+        "ad_test_impact": "Ads featuring celebrities, nightlife, or exotic locations would resonate more with aspirational twins, boosting emotional response; ads showing ordinary people in gym or home settings would appeal more to relatable twins, increasing perceived relevance.",
+        "what_we_can_infer": "Q8 (cares about others' perception) and Q37 (chose Givenchy for night outings) hint at aspirational tendencies, but Q50 (wants moderate price) suggests practicality, creating uncertainty without direct questions on ad resonance type.",
+        "example_variation": "Twin A (aspirational) sees an ad with a model at a party and feels inspired to buy for social appeal; Twin B (relatable) sees an ad demonstrating post-workout freshness and relates it to their gym routine."
+      },
+      {
+        "dimension_id": 4,
+        "dimension_name": "Contextual receptivity: Occasion-based vs consistent preference",
+        "what_it_captures": "How product preferences or ad effectiveness vary based on context such as mood, occasion (e.g., gym, evening out), or social environment, beyond general mood dependence in bathing.",
+        "concept_test_impact": "Concepts tailored for specific occasions (e.g., energizing morning wash, relaxing evening formula) would resonate differently; occasion-sensitive twins might show higher intent for specialized products, while consistent twins prefer all-in-one solutions.",
+        "ad_test_impact": "Ads shown in contextually relevant moments (e.g., during sports streaming for gym-goers) would increase engagement for occasion-sensitive twins; consistent twins would respond similarly regardless of context, focusing on core benefits.",
+        "what_we_can_infer": "Q30 (mood-dependent bathing) and Q37 (chose scent for night outings) suggest context matters for fragrance, but no questions measure how context affects general product evaluation or ad response, leaving it speculative.",
+        "example_variation": "When shown a body wash concept for 'evening freshness', Twin A (occasion-sensitive) is highly receptive after a long day, while Twin B (consistent) evaluates it based on year-round suitability, showing lower interest."
+      },
+      {
+        "dimension_id": 5,
+        "dimension_name": "Risk perception in trial: High need for assurance vs low-risk tolerance",
+        "what_it_captures": "The level of perceived risk (e.g., skin irritation, financial waste) when trying new products, and the need for assurances like trials, guarantees, or strong endorsements to mitigate that risk.",
+        "concept_test_impact": "High risk-averse twins would respond better to concepts offering free samples, money-back guarantees, or clear safety certifications; low-risk twins might try based on novelty or trendiness without extra assurances.",
+        "ad_test_impact": "Ads highlighting dermatologist testimonials, clinical trials, or 'risk-free' promises would reduce perceived risk and increase purchase intent for risk-averse twins; low-risk twins might engage more with ads focusing on innovation or community hype.",
+        "what_we_can_infer": "Q12 (prefers natural for no side effects) and Q17 (trusts dermatologists) indicate some risk concern, but no questions directly measure risk tolerance or need for assurances in trial scenarios, making it uncertain.",
+        "example_variation": "Twin A (high risk-averse) sees an ad and only considers buying after checking for a money-back guarantee; Twin B (low-risk) purchases immediately after seeing influencer praise, without further verification."
+      }
+    ]
+  }
+]

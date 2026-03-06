@@ -1,0 +1,52 @@
+[
+  {
+    "participant_id": "P13",
+    "dimensions": [
+      {
+        "dimension_id": 1,
+        "dimension_name": "Emotional vs Rational Advertising Response",
+        "what_it_captures": "Whether the individual processes ads through emotional triggers or logical evaluation of claims.",
+        "concept_test_impact": "Emotional responders favor concepts highlighting feel-good benefits; rational responders prefer detailed ingredient and efficacy data.",
+        "ad_test_impact": "Emotional ads with mood-driven narratives yield higher engagement for emotional processors; fact-based ads perform better for rational processors.",
+        "what_we_can_infer": "From Q6 'emotional' and Q13 ingredient-focused, mixed signals; thus, position on this dimension remains uncertain.",
+        "example_variation": "Twin A (emotional) clicks an ad showing joyful bathing; Twin B (rational) engages with an ad listing clinical trial results."
+      },
+      {
+        "dimension_id": 2,
+        "dimension_name": "Visual vs Textual Content Consumption Preference",
+        "what_it_captures": "Preference for absorbing information through visual media versus written text in product communications.",
+        "concept_test_impact": "Visual-preferring twins respond better to concept images and videos; text-preferring twins engage more with written descriptions and specs.",
+        "ad_test_impact": "Video and image-heavy ads capture visual twins' attention; carousel ads with text details appeal to textual twins.",
+        "what_we_can_infer": "Q59 mentions celebrity and expert review content, but format unspecified; no clear indication of preference.",
+        "example_variation": "For an Instagram ad, Twin A watches the full video; Twin B scrolls past but reads the caption thoroughly."
+      },
+      {
+        "dimension_id": 3,
+        "dimension_name": "Aspirational Lifestyle vs Relatable Everyday Appeal",
+        "what_it_captures": "Degree to which the individual identifies with and is motivated by aspirational messaging versus relatable, practical scenarios.",
+        "concept_test_impact": "Aspirational twins are drawn to premium, luxury concepts; relatable twins prefer value-oriented, daily-use positioning.",
+        "ad_test_impact": "Ads depicting idealised self-care routines resonate with aspirational twins; ads showing common grooming challenges appeal to relatable twins.",
+        "what_we_can_infer": "Q6 'exploratory' might indicate aspirational leanings, but Q10's practical routine suggests relatability; uncertainty remains.",
+        "example_variation": "An ad featuring a spa-like experience: Twin A feels inspired and considers purchase; Twin B finds it unrealistic and disengages."
+      },
+      {
+        "dimension_id": 4,
+        "dimension_name": "Impulse Purchase Tendency vs Deliberative Decision-Making",
+        "what_it_captures": "Propensity to make spontaneous purchase decisions when encountering product concepts or ads versus requiring careful consideration.",
+        "concept_test_impact": "Impulsive twins show higher immediate purchase intent; deliberative twins need more time and information before deciding.",
+        "ad_test_impact": "Time-sensitive offers and 'buy now' prompts trigger impulsive twins; deliberative twins respond better to detailed comparisons and reviews.",
+        "what_we_can_infer": "Q6 'impulsive' suggests high impulse, but brand loyalty (Q17) indicates consistency, making ad-context behavior uncertain.",
+        "example_variation": "A limited-time discount ad: Twin A clicks and buys immediately; Twin B bookmarks for later research."
+      },
+      {
+        "dimension_id": 5,
+        "dimension_name": "Context-Dependent Receptivity to Marketing Stimuli",
+        "what_it_captures": "How external factors like mood, environment, and social context influence the individual's engagement with ads and product concepts.",
+        "concept_test_impact": "Concepts presented during positive moods or relaxed states receive higher ratings; stressful contexts lower receptivity.",
+        "ad_test_impact": "Ads seen in leisure settings (e.g., at home) garner more attention than those in busy contexts (e.g., commuting).",
+        "what_we_can_infer": "No questions address context effects; water quality influence (Q34) on products hints at environmental sensitivity, but not for ads.",
+        "example_variation": "The same ad viewed while stressed: Twin A ignores it; when viewed while relaxed, Twin A engages and considers purchase."
+      }
+    ]
+  }
+]

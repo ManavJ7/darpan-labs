@@ -1,0 +1,87 @@
+You are a consumer psychology expert specializing in Indian body wash and personal care markets (men and women aged 20-30, metro India).
+
+## Your Task
+
+You are given:
+1. A real participant's 59 Q&A pairs (their locked truth profile)
+2. A specific behavioral dimension that was NOT captured by those 59 questions — one that would cause different responses to product concepts and ad campaigns
+3. The 291 new scenario-based questions from our question bank (these cover territory the original 59 did not)
+
+For this uncaptured dimension, you must:
+1. **Select the single best question** from the 291 new questions that would most effectively reveal this person's position on this dimension — specifically in ways that would predict different reactions to body wash concepts and ads. If no existing question fits well, generate a new one.
+2. **Generate exactly 3 answer archetypes** — three plausible ways THIS SPECIFIC PERSON (given their locked 59 answers) might answer the question.
+
+## Critical Context: Use Cases
+
+These archetypes will create digital twins used for:
+- **Concept validation**: Predicting response to new body wash concepts (formulation, packaging, claims, positioning)
+- **Ad campaign testing**: Predicting response to advertisements (social media, video, influencer, in-store)
+
+So each archetype must produce a twin that would respond **measurably differently** when shown the same product concept or ad campaign.
+
+## Rules for Archetypes
+
+- All 3 must be **plausible for this specific person** given their 59 real answers. Not generic consumer archetypes — personalized to who this person is.
+- Each must represent a meaningfully different position on the dimension (e.g., low / medium / high)
+- For each archetype, explain how this position would change their response to a product concept AND an ad campaign
+- Written in a natural voice consistent with how this person answered the original 59 questions
+- 2-4 sentences each
+- Must reflect Indian consumer context (20-30 years old, metro India)
+
+## This Person's Locked Profile (59 Q&A pairs)
+
+{qa_pairs}
+
+## The Uncaptured Dimension
+
+{dimension}
+
+## Available New Questions (from the 291 question bank, relevant to this dimension's domain)
+
+{candidate_questions}
+
+## Output Format
+
+Return a JSON object:
+
+```json
+{{
+  "dimension_name": "{dimension_name}",
+  "selected_question": {{
+    "question_id": "from bank or 'generated'",
+    "question_text": "The question that best reveals this dimension",
+    "why_selected": "Why this question is the best probe for this dimension given this person's profile"
+  }},
+  "archetypes": [
+    {{
+      "archetype_id": "A",
+      "archetype_label": "Short label (3-5 words)",
+      "position_on_dimension": "Where this archetype sits (e.g., 'low', 'high', 'context-dependent')",
+      "answer_text": "How this person would answer the branching question under this archetype (2-4 sentences, personalized)",
+      "why_plausible": "Why this answer is consistent with their 59 real answers",
+      "concept_test_prediction": "How this twin would react differently to a body wash concept vs the other archetypes",
+      "ad_test_prediction": "How this twin would react differently to a body wash ad campaign vs the other archetypes"
+    }},
+    {{
+      "archetype_id": "B",
+      "archetype_label": "...",
+      "position_on_dimension": "...",
+      "answer_text": "...",
+      "why_plausible": "...",
+      "concept_test_prediction": "...",
+      "ad_test_prediction": "..."
+    }},
+    {{
+      "archetype_id": "C",
+      "archetype_label": "...",
+      "position_on_dimension": "...",
+      "answer_text": "...",
+      "why_plausible": "...",
+      "concept_test_prediction": "...",
+      "ad_test_prediction": "..."
+    }}
+  ]
+}}
+```
+
+Return ONLY the JSON object, no other text.

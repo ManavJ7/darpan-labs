@@ -1,0 +1,331 @@
+[
+  {
+    "id": "purchase_intent",
+    "display_name": "Purchase Intent",
+    "category": "core_kpi",
+    "description": "Measures likelihood to purchase the product/service at a given price point",
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "price_sensitivity", "portfolio_optimization", "ad_creative_testing", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Definitely would buy"},
+        {"value": 4, "label": "Probably would buy"},
+        {"value": 3, "label": "Might or might not buy"},
+        {"value": 2, "label": "Probably would not buy"},
+        {"value": 1, "label": "Definitely would not buy"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "purchase_frequency",
+    "display_name": "Purchase Frequency",
+    "category": "core_kpi",
+    "description": "Measures expected frequency of purchase if product were available",
+    "applicable_study_types": ["concept_testing", "price_sensitivity", "portfolio_optimization", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Once a week or more"},
+        {"value": 4, "label": "2-3 times a month"},
+        {"value": 3, "label": "Once a month"},
+        {"value": 2, "label": "Once every 2-3 months"},
+        {"value": 1, "label": "Less than once every 3 months"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "willingness_to_pay",
+    "display_name": "Willingness to Pay",
+    "category": "core_kpi",
+    "description": "Measures price sensitivity and perceived value",
+    "applicable_study_types": ["concept_testing", "price_sensitivity", "portfolio_optimization", "category_entry"],
+    "default_scale": {
+      "type": "open_numeric",
+      "options": [
+        {"value": "too_cheap", "label": "At what price would you consider it too cheap?"},
+        {"value": "bargain", "label": "At what price would you consider it a bargain?"},
+        {"value": "expensive", "label": "At what price would you consider it expensive?"},
+        {"value": "too_expensive", "label": "At what price would you consider it too expensive?"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "uniqueness",
+    "display_name": "Uniqueness",
+    "category": "core_kpi",
+    "description": "Measures perceived differentiation from existing products",
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "portfolio_optimization", "ad_creative_testing", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely unique"},
+        {"value": 4, "label": "Very unique"},
+        {"value": 3, "label": "Somewhat unique"},
+        {"value": 2, "label": "Not very unique"},
+        {"value": 1, "label": "Not at all unique"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "differentiation_vs_comp",
+    "display_name": "Differentiation vs. Competition",
+    "category": "core_kpi",
+    "description": "Measures perceived superiority over competitive offerings",
+    "applicable_study_types": ["concept_testing", "brand_positioning", "portfolio_optimization", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Much better than alternatives"},
+        {"value": 4, "label": "Somewhat better"},
+        {"value": 3, "label": "About the same"},
+        {"value": 2, "label": "Somewhat worse"},
+        {"value": 1, "label": "Much worse than alternatives"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "overall_appeal",
+    "display_name": "Overall Appeal",
+    "category": "core_kpi",
+    "description": "Measures overall attractiveness of the concept",
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "ad_creative_testing", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely appealing"},
+        {"value": 4, "label": "Very appealing"},
+        {"value": 3, "label": "Somewhat appealing"},
+        {"value": 2, "label": "Not very appealing"},
+        {"value": 1, "label": "Not at all appealing"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "relevance",
+    "display_name": "Relevance",
+    "category": "core_kpi",
+    "description": "Measures personal relevance and need fit",
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "ad_creative_testing", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely relevant to me"},
+        {"value": 4, "label": "Very relevant"},
+        {"value": 3, "label": "Somewhat relevant"},
+        {"value": 2, "label": "Not very relevant"},
+        {"value": 1, "label": "Not at all relevant"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "believability",
+    "display_name": "Believability",
+    "category": "core_kpi",
+    "description": "Measures credibility of the concept claims",
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely believable"},
+        {"value": 4, "label": "Very believable"},
+        {"value": 3, "label": "Somewhat believable"},
+        {"value": 2, "label": "Not very believable"},
+        {"value": 1, "label": "Not at all believable"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "brand_fit",
+    "display_name": "Brand Fit",
+    "category": "diagnostic",
+    "description": "Measures how well the concept fits with the brand image",
+    "applicable_study_types": ["concept_testing", "brand_positioning", "ad_creative_testing", "portfolio_optimization"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Fits perfectly with the brand"},
+        {"value": 4, "label": "Fits well"},
+        {"value": 3, "label": "Fits somewhat"},
+        {"value": 2, "label": "Does not fit well"},
+        {"value": 1, "label": "Does not fit at all"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "value_for_money",
+    "display_name": "Value for Money",
+    "category": "core_kpi",
+    "description": "Measures perceived value relative to price",
+    "applicable_study_types": ["concept_testing", "price_sensitivity", "portfolio_optimization", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Excellent value for money"},
+        {"value": 4, "label": "Good value"},
+        {"value": 3, "label": "Fair value"},
+        {"value": 2, "label": "Poor value"},
+        {"value": 1, "label": "Very poor value"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "price_sensitivity",
+    "display_name": "Price Sensitivity",
+    "category": "diagnostic",
+    "description": "Measures impact of price changes on purchase decisions",
+    "applicable_study_types": ["price_sensitivity", "concept_testing", "portfolio_optimization"],
+    "default_scale": {
+      "type": "van_westendorp",
+      "options": [
+        {"value": "too_cheap", "label": "Too cheap — quality concern"},
+        {"value": "cheap", "label": "Bargain price"},
+        {"value": "expensive", "label": "Getting expensive"},
+        {"value": "too_expensive", "label": "Too expensive — would not buy"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "likes_dislikes",
+    "display_name": "Likes & Dislikes",
+    "category": "diagnostic",
+    "description": "Open-ended exploration of positive and negative reactions",
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "ad_creative_testing", "category_entry"],
+    "default_scale": {
+      "type": "open_text",
+      "options": [
+        {"value": "likes", "label": "What do you like most about this concept?"},
+        {"value": "dislikes", "label": "What do you dislike or would change?"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "improvement_suggestions",
+    "display_name": "Improvement Suggestions",
+    "category": "diagnostic",
+    "description": "Open-ended suggestions for concept improvement",
+    "applicable_study_types": ["concept_testing", "claims_optimization", "category_entry"],
+    "default_scale": {
+      "type": "open_text",
+      "options": [
+        {"value": "improvements", "label": "What improvements would make you more likely to buy?"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "source_of_volume",
+    "display_name": "Source of Volume",
+    "category": "competitive",
+    "description": "Identifies which brands/products would lose share to this concept",
+    "applicable_study_types": ["concept_testing", "brand_positioning", "portfolio_optimization", "category_entry"],
+    "default_scale": {
+      "type": "multi_select",
+      "options": [
+        {"value": "switch_from", "label": "Which of these brands would you buy less of?"},
+        {"value": "new_usage", "label": "Would this be an additional purchase?"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "aided_awareness",
+    "display_name": "Aided Awareness",
+    "category": "competitive",
+    "description": "Measures brand recognition when prompted",
+    "applicable_study_types": ["brand_positioning", "ad_creative_testing", "customer_segmentation"],
+    "default_scale": {
+      "type": "single_select",
+      "options": [
+        {"value": 1, "label": "Yes, I am aware of this brand"},
+        {"value": 0, "label": "No, I am not aware"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "brand_consideration",
+    "display_name": "Brand Consideration",
+    "category": "competitive",
+    "description": "Measures likelihood to consider the brand for future purchase",
+    "applicable_study_types": ["brand_positioning", "ad_creative_testing", "customer_segmentation"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Definitely would consider"},
+        {"value": 4, "label": "Probably would consider"},
+        {"value": 3, "label": "Might or might not consider"},
+        {"value": 2, "label": "Probably would not consider"},
+        {"value": 1, "label": "Definitely would not consider"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "net_promoter_score",
+    "display_name": "Net Promoter Score (NPS)",
+    "category": "diagnostic",
+    "description": "Measures likelihood to recommend on a 0-10 scale",
+    "applicable_study_types": ["concept_testing", "brand_positioning", "customer_segmentation"],
+    "default_scale": {
+      "type": "nps_11",
+      "options": [
+        {"value": 10, "label": "10 — Extremely likely to recommend"},
+        {"value": 9, "label": "9"},
+        {"value": 8, "label": "8"},
+        {"value": 7, "label": "7"},
+        {"value": 6, "label": "6"},
+        {"value": 5, "label": "5 — Neutral"},
+        {"value": 4, "label": "4"},
+        {"value": 3, "label": "3"},
+        {"value": 2, "label": "2"},
+        {"value": 1, "label": "1"},
+        {"value": 0, "label": "0 — Not at all likely"}
+      ]
+    },
+    "benchmark_available": true
+  },
+  {
+    "id": "usage_frequency",
+    "display_name": "Usage Frequency",
+    "category": "behavioral",
+    "description": "Measures current category usage frequency for segmentation",
+    "applicable_study_types": ["customer_segmentation", "brand_positioning", "category_entry"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Daily"},
+        {"value": 4, "label": "Several times a week"},
+        {"value": 3, "label": "Once a week"},
+        {"value": 2, "label": "2-3 times a month"},
+        {"value": 1, "label": "Once a month or less"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "brand_last_purchased",
+    "display_name": "Brand Last Purchased",
+    "category": "behavioral",
+    "description": "Identifies the most recently purchased brand in the category",
+    "applicable_study_types": ["customer_segmentation", "brand_positioning", "portfolio_optimization", "category_entry"],
+    "default_scale": {
+      "type": "single_select",
+      "options": [
+        {"value": "brand_list", "label": "Which brand did you purchase most recently?"}
+      ]
+    },
+    "benchmark_available": false
+  }
+]

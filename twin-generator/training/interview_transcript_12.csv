@@ -1,0 +1,60 @@
+module_id,question_text,answer_text
+M1,Where do you currently live? (City and state),Ahmedabad
+M1,What is your current occupation or primary activity?,Student
+M1,What is your approximate monthly household income range?,Above_2l
+M1,What is your household composition?,Nuclear_kids
+M1,"What languages do you primarily consume content in? And for product ads and personal care content, do you prefer the same language or a different one?","English,hindi"
+M1,How would you describe your personality in 3-5 words?,Passionate. collaborative. curious
+M1,How comfortable are you trying new brands or products you haven't used before?,5
+M1,"How much do you care about how you smell to others throughout the day? Is grooming more about feeling good yourself, or about how others perceive you, or both?",Mix of good smell and grooming; want to feel good about myself
+M1,How much attention do you pay to how your skin looks and feels on a daily basis?,Regularly_care
+M1,"When you imagine your ideal grooming routine â€” not what you do now, but what you'd love â€” what does it look like?","Light, easy routineÑone or two products, morning and night"
+M2,"When buying any personal care product, rank these factors from most to least important:","[""fragrance"",""ingredients"",""brand"",""reviews"",""price"",""expert"",""recommendation"",""packaging""]"
+M2,How important is it to you that a product is 'natural' or 'chemical-free'? And what does 'natural' mean to you in your own words?,"{""rating"":5,""explanation"":""Better ingredients and high quality raw materials, that ensure ease of use""}"
+M2,"When you think about 'better ingredients', do you associate them more with being natural or free of chemicals, and why is that important to you?",Free of chemicals; avoid laboratory interventions
+M2,Could you share why avoiding laboratory interventions is important to you when it comes to personal care products?,Prefer organic and natural products
+M2,Which certifications or labels influence your purchase? Select all that apply.,"Dermatologist_tested,ayurvedic,cruelty_free,organic,sulfate_free"
+M2,How do you feel about Indian personal care brands vs. international brands? Do you have a preference or bias?,"Prefer local, high-quality Indian brands; ingredient quality matters most"
+M2,What is the maximum premium (%) you would pay for a product that aligns with your values? Rate each separately:,"{""Sustainable/eco-friendly packaging"":""20_40"",""Ayurvedic or traditional ingredients"":""40_60"",""Clinical-grade, lab-tested formulation"":""10_20"",""Cruelty-free, not tested on animals"":""40_60"",""Made in India"":""10_20""}"
+M2,How loyal are you to personal care brands?,Low_loyalty
+M3,"When your current body wash/soap runs out, what is your typical next step?",Browse_online
+M3,Where do you most often buy personal care products? Pick your top 3:,"[""quick_commerce"",""pharmacy"",""nykaa""]"
+M3,How much do you typically spend on a single body wash purchase?,Above_500
+M3,What would make you switch away from your current body wash? Pick your top 3:,"[""better_smell"",""friend_rec"",""free_sample""]"
+M3,Describe the last time you tried a completely new body wash brand. What triggered the switch? Were you satisfied?,BBW; tried new scentÑenjoy the lush shower experience
+M3,"When shopping online for personal care, what do you look at first? Pick your top 3:","[""ingredients"",""review_count"",""price""]"
+M3,"Do you use quick commerce (Blinkit, Zepto, Swiggy Instamart) for personal care? If yes, does the limited selection change what you buy?",Strongly
+M3,Could you share a specific instance where the limited selection on quick commerce influenced your choice in personal care products?,"Switched to PlumÑpushed on Blinkit repeatedly, plus received a free sample"
+M4,How many times a day do you typically shower/bathe?,Twice
+M4,Walk me through your typical bathing routine step by step. What products do you use and in what order?,Full body rinse _ shower gel + loofah scrub _ wet hair + shampoo _ rinse off _ conditioner _ face wash _ final cleanse
+M4,"Do you currently use body wash, bar soap, or both? What drives that choice?",Both; keep options available. Bar soap when in a hurry
+M4,How would you describe your relationship with bathing/grooming?,Mood_dependent
+M4,"What specific skin concerns, if any, do you have? Select all that apply.","Dryness,sensitivity,body_odor"
+M4,Do other household members use the same body wash as you? Who decides what to buy?,"No sharing; live alone, decide for myself"
+M4,"How does your water quality affect your product choices, if at all?","Yes, hard water affects product choices"
+M4,"Has your bathing routine changed in the last 2 years? If so, how and why?","Yes, adopted dual routine: fast and slow self-care routes"
+M5,What fragrance families do you naturally gravitate toward? Pick your top 2:,"Sweet_gourmand,herbal_earthy"
+M5,Name a specific product whose fragrance you loved. Did you repurchase it because of the scent? What made that fragrance special to you?,Vanilla Vibes Deodorant Roll On by Plum BodyLovin
+M5,"Was it the vanilla scent that made you choose to repurchase it, or was there something else about the fragrance that stood out for you?",Vanilla strongly; long-lasting impact
+M5,How long should a body wash fragrance last on your skin?,All_day
+M5,How important is lather/foam to your body wash experience?,Nice_to_have
+M5,What texture do you prefer in a body wash?,Exfoliating
+M5,What is your ideal post-wash skin feeling?,Moisturized
+M5,Do you prefer packaging that looks:,Natural
+M6,What body wash brand(s) do you currently use? List all.,"BBW Strawberry Poundcake, ThinkSkin, Plum Niacinamide"
+M6,What do you like MOST about your current body wash? (Top 1-2 things),THE SMELL
+M6,"What, if anything, frustrates you or feels 'just okay' about your current body wash?",Could lather more; needs exfoliating feature
+M6,What body wash brands can you name off the top of your head? List as many as you can.,"BBW, ThinkSkin, Plum, Palmolive, Forest Essentials, KIEHLs"
+M6,How would you categorize body washes in your mind? What makes one different from another?,Smell and feel
+M6,Have you tried any of these newer/D2C body wash brands? Rate your experience for any you've used:,"{""mCaffeine (coffee-based)"":2,""Plum (green, fruity, vegan)"":4,""Beardo (men's grooming)"":1,""Mamaearth (natural, toxin-free)"":4,""Minimalist (clinical, transparent bottles)"":4,""Dot & Key (colorful, K-beauty style)"":2,""St. Botanica (Ayurvedic-modern mix)"":4}"
+M6,"If you could design your PERFECT body wash from scratch, describe it. Think about fragrance, texture, benefit, packaging, price â€” anything.","Earthy-sweet vanilla with wet mud and rain notes; dark brownish, muddy look; exfoliating; thick gooey consistency"
+M6,What claims or product descriptions on a body wash would make you stop and read more? Pick top 3:,"[""charcoal_detox"",""ayurvedic"",""shea_vitamin_e""]"
+M6,What is the most you have ever paid for a body wash? What was it and was it worth it?,Don't remember exact amount; Kiehl's or BBW
+M6,"Thinking back, was there a particular feature or benefit from Kiehl's or BBW that made you feel it was worth the price?",Good smell and lather feel
+M6,Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions?,"{""rating"":5,""explanation"":""For my unique skin needs with urban dust and sunlight exposure""}"
+M7,Where do you typically discover new personal care products? Pick your top 3:,"[""in_store"",""quick_commerce""]"
+M7,Who do you follow or trust in the personal care space on social media? Name specific ones and what makes you trust them.,Don't use social media
+M7,"When you're in-store or using quick commerce, do you rely on any specific sources or people for advice or recommendations on personal care products?",Just YouTube reviews
+M7,Have you ever bought a personal care product because you saw it on social media? Describe what happened.,Nope
+M7,"Have you ever watched a YouTube review that convinced you to purchase a product, and if so, what was it about the review that made you decide to buy?",Intended feel or look of the product
+M7,Was there a particular moment or feature in the YouTube review that made you feel confident about the product's feel or look?,"Post unboxing, before and after use"

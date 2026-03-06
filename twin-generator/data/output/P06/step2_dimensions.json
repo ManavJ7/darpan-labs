@@ -1,0 +1,52 @@
+[
+  {
+    "participant_id": "P06",
+    "dimensions": [
+      {
+        "dimension_id": 1,
+        "dimension_name": "Speed and spontaneity in buying decisions",
+        "what_it_captures": "Whether purchase decisions are made quickly on impulse or after careful consideration and research, affecting timing and triggers for buying.",
+        "concept_test_impact": "Impulsive individuals might respond positively to limited-time offers, eye-catching packaging, or novel claims without deep research, while deliberate ones might require detailed information, comparisons, and reviews before interest.",
+        "ad_test_impact": "Impulsive might engage with flashy ads featuring urgency cues (e.g., 'limited stock') and immediate calls-to-action, while deliberate might prefer informative ads with data, expert endorsements, or side-by-side comparisons.",
+        "what_we_can_infer": "From Q7 (high comfort trying new) and Q27 (decides before opening app), there's some pre-planning but no clear indication of decision speed; Q20 (browses online when runs out) suggests exploration but not if purchase is immediate or delayed.",
+        "example_variation": "Twin A (impulsive) sees a body wash ad with 'Buy now, exclusive launch!' and immediately clicks to purchase based on vibrant visuals. Twin B (deliberate) sees the same ad, skips it, and later spends time reading ingredient lists and reviews before considering a purchase."
+      },
+      {
+        "dimension_id": 2,
+        "dimension_name": "Preference for emotional storytelling over logical claims",
+        "what_it_captures": "Whether they are more swayed by emotional narratives, sensory experiences, and personal connections in marketing or by rational, benefit-driven messages and factual data.",
+        "concept_test_impact": "Emotionally-driven individuals might prefer product concepts emphasizing sensory pleasure, mood enhancement, or aspirational benefits, while rationally-driven ones might focus on ingredient transparency, certifications, and clinical proofs.",
+        "ad_test_impact": "Emotional ads with relatable stories, evocative music, or aspirational imagery might elicit higher engagement and purchase intent from one, while rational ads with clear comparisons, expert testimonials, or data visualizations might resonate more with the other.",
+        "what_we_can_infer": "Q11 ranks ingredients high (rational), and Q61 mentions relatable experience (emotional), but no question directly assesses preference; Q19's strong Ayurvedic preference could be emotionally tied to tradition or rationally based on perceived natural benefits.",
+        "example_variation": "Twin A (emotional) responds to a product concept ad showing a person enjoying a calming bath with soothing sounds, emphasizing self-care. Twin B (rational) responds to the same concept but prefers an ad highlighting pH-balanced formulation and dermatologist testing results."
+      },
+      {
+        "dimension_id": 3,
+        "dimension_name": "Dominance of visual cues over written information",
+        "what_it_captures": "How much they rely on visual elements (e.g., packaging design, video content, imagery) versus textual details (e.g., descriptions, claims, ingredients) when processing product information or ads.",
+        "concept_test_impact": "Visually-oriented individuals might judge product concepts heavily based on aesthetic packaging, color schemes, or visual demonstrations, while text-oriented ones might prioritize reading all claims, instructions, and ingredient lists before evaluation.",
+        "ad_test_impact": "Visually-oriented might engage more with video ads, Instagram reels, or image-heavy social media posts, while text-oriented might prefer blog reviews, detailed captions, or text-based advertisements with comprehensive information.",
+        "what_we_can_infer": "Q43 prefers natural-looking packaging (visual), and Q62 likes unboxing content (visual) and expert reviews (could be text or video), but no question asks about their inherent preference for visual vs. textual processing.",
+        "example_variation": "Twin A (visual) sees a body wash concept with minimalist, elegant packaging and buys it primarily for the design. Twin B (textual) ignores the packaging, reads the entire product description and ingredient panel online before deciding."
+      },
+      {
+        "dimension_id": 4,
+        "dimension_name": "Alignment with aspirational lifestyles or relatable scenarios",
+        "what_it_captures": "Whether they are more motivated by marketing that depicts ideal, aspirational images (e.g., luxury, perfection) or by realistic, relatable situations (e.g., everyday challenges, authentic experiences).",
+        "concept_test_impact": "Aspirational individuals might prefer product concepts positioned as premium, exclusive, or trend-setting, while relatable ones might favor concepts emphasizing practicality, value, and solutions for common daily issues.",
+        "ad_test_impact": "Aspirational ads featuring models in exotic locations or sophisticated settings might attract one group, while relatable ads showing ordinary people in familiar environments (e.g., home, gym) might appeal more to the other.",
+        "what_we_can_infer": "Q10 mentions ideal grooming routine with ambience (aspirational), and Q61 likes relatable experience on Instagram, but no dimension directly measures this preference; Q31's self-care ritual could lean either way.",
+        "example_variation": "Twin A (aspirational) loves an ad campaign showing a celebrity using the body wash in a luxurious spa, inspiring a desire for upgrade. Twin B (relatable) prefers an ad featuring a student like them discussing how the body wash fits into a busy routine."
+      },
+      {
+        "dimension_id": 5,
+        "dimension_name": "Influence of immediate context on marketing receptivity",
+        "what_it_captures": "How their current mood, environment, social setting, or temporal factors (e.g., time of day, occasion) affect their engagement with ads and evaluation of product concepts.",
+        "concept_test_impact": "In a relaxed or positive mood, they might be more open to innovative or premium concepts; in a stressed or hurried state, they might prefer familiar, quick solutions or ignore new offerings.",
+        "ad_test_impact": "Seeing an ad while leisurely scrolling social media might lead to higher click-through and emotional connection, whereas seeing it during a busy work period might result in dismissal or negative perception.",
+        "what_we_can_infer": "Q31 describes bathing as a self-care ritual, hinting that mood might enhance the experience, but no question explores how context shapes ad responses or purchase decisions in real-time.",
+        "example_variation": "Twin A sees a body wash ad while feeling stressed after exams and ignores it as irrelevant. Twin B sees the same ad while relaxing on a weekend, finds it appealing, and explores the product page."
+      }
+    ]
+  }
+]
