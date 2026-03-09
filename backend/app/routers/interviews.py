@@ -347,10 +347,10 @@ async def start_single_module(
             detail=str(e),
         )
     except Exception as e:
-        logger.error(f"Failed to start module: {e}", exc_info=True)
+        logger.error(f"Failed to start module: {e}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to start module: {e}",
+            detail="Failed to start module",
         )
 
 
