@@ -32,11 +32,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import chromadb
 import networkx as nx
-from networkx.readwrite import json_graph
 
 from config.settings import (
-    CHROMA_PERSIST_DIR,
-    CHROMA_COLLECTION_NAME,
     VECTOR_TOP_K,
     LLM_QUERY_MODEL,
     LLM_MAX_TOKENS_QUERY,
@@ -49,7 +46,6 @@ from scripts.step4_vector_index import (
     get_client,
     get_collection,
     query_twin as vector_query_twin,
-    EMBEDDING_FUNCTION,
 )
 from scripts.step4_kg_build import load_graph
 

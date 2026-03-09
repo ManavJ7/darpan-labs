@@ -13,16 +13,12 @@ import litellm
 from config.settings import (
     LLM_MODEL,
     LLM_TEMPERATURE,
-    LLM_MAX_CONCURRENT,
     API_KEY_POOL,
     DEEPSEEK_KEY_POOL,
     OPENAI_KEY_POOL,
 )
 
 logger = logging.getLogger(__name__)
-
-# Semaphore to cap concurrent LLM calls (legacy / default)
-_semaphore = asyncio.Semaphore(LLM_MAX_CONCURRENT)
 
 
 class APIKeyPool:
@@ -170,9 +166,8 @@ async def call_llm(
     async with sem:
         for attempt in range(max_retries):
             try:
-                effective = model or LLM_MODEL
                 kwargs = dict(
-                    model=effective,
+                    model=effective_model,
                     messages=messages,
                     max_tokens=max_tokens,
                     temperature=temperature if temperature is not None else LLM_TEMPERATURE,
