@@ -5,19 +5,10 @@
 :root {
   --bg-primary: #0A0A0A;
   --bg-secondary: #111111;
-  --bg-elevated: #1A1A1A;
-  --border-default: #2A2A2A;
   --border-accent: #333333;
   --text-primary: #FFFFFF;
-  --text-secondary: #A0A0A0;
-  --text-muted: #666666;
   --accent-lime: #C8FF00;
   --accent-lime-dim: #9ACC00;
-  --accent-cyan: #00D4FF;
-  --accent-cyan-dim: #00A8CC;
-  --success: #00FF88;
-  --warning: #FFB800;
-  --error: #FF4444;
 }
 
 * {

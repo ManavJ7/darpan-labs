@@ -31,7 +31,6 @@ const config: Config = {
       },
       boxShadow: {
         "glow-lime": "0 0 20px rgba(200, 255, 0, 0.3)",
-        "glow-cyan": "0 0 20px rgba(0, 212, 255, 0.3)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
