@@ -33,10 +33,10 @@ from config.settings import (
     V_BRANCH,
     TARGET_TWINS_PER_PERSON,
     LLM_MAX_TOKENS_PRUNING,
-    PROMPTS_DIR,
     LLM_REASONING_MODEL,
 )
 from scripts.llm_utils import call_llm
+from scripts.data_utils import load_prompt, format_qa, count_dimension_diffs
 
 logging.basicConfig(
     level=logging.INFO,
@@ -69,19 +69,6 @@ def load_question_bank() -> list[dict]:
     return data
 
 
-def load_prompt(filename: str) -> str:
-    path = PROMPTS_DIR / filename
-    with open(path) as f:
-        return f.read()
-
-
-def format_qa(qa_pairs: list[dict]) -> str:
-    lines = []
-    for i, qa in enumerate(qa_pairs, 1):
-        lines.append(f"Q{i}: {qa['question_text']}")
-        lines.append(f"A{i}: {qa['answer_text']}")
-        lines.append("")
-    return "\n".join(lines)
 
 
 # ---------------------------------------------------------------------------
@@ -363,7 +350,7 @@ def _select_diverse_subset(ranked_combos: list[dict], target: int) -> list[dict]
 
         for idx, candidate in enumerate(remaining):
             min_diff = min(
-                _count_dimension_diffs(candidate["choices"], sel["choices"])
+                count_dimension_diffs(candidate["choices"], sel["choices"])
                 for sel in selected
             )
             # Combined: coherence * 0.6 + diversity * 0.4
@@ -377,13 +364,6 @@ def _select_diverse_subset(ranked_combos: list[dict], target: int) -> list[dict]
 
     return selected
 
-
-def _count_dimension_diffs(choices_a: dict, choices_b: dict) -> int:
-    diffs = 0
-    for key in choices_a:
-        if choices_a.get(key) != choices_b.get(key):
-            diffs += 1
-    return diffs
 
 
 # ---------------------------------------------------------------------------

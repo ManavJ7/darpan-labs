@@ -31,8 +31,8 @@ class ProfileUpdateRequest(BaseModel):
     age: int = Field(..., ge=13, le=120)
 
 
-class ProfileResponse(BaseModel):
-    """Full user profile response."""
+class UserProfile(BaseModel):
+    """User profile info returned by /auth/me and /auth/profile."""
 
     user_id: str
     email: str
@@ -43,13 +43,6 @@ class ProfileResponse(BaseModel):
     is_admin: bool
 
 
-class UserInfo(BaseModel):
-    """Minimal user info for /auth/me."""
-
-    user_id: str
-    email: str
-    display_name: str
-    sex: str | None
-    age: int | None
-    profile_completed: bool
-    is_admin: bool
+# Backwards-compatible aliases
+ProfileResponse = UserProfile
+UserInfo = UserProfile

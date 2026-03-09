@@ -10,8 +10,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config.settings import OUTPUT_DIR, INPUT_DIR, Q_TOTAL_BANK, PROMPTS_DIR, LLM_MAX_TOKENS_PRUNING
+from config.settings import OUTPUT_DIR, INPUT_DIR, Q_TOTAL_BANK, LLM_MAX_TOKENS_PRUNING
 from scripts.llm_utils import call_llm
+from scripts.data_utils import load_prompt
 from scripts.step1_question_bank import DOMAINS
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -20,10 +21,6 @@ logger = logging.getLogger("backfill")
 TARGET_PER_DOMAIN = Q_TOTAL_BANK // len(DOMAINS)  # 58
 TARGET_REMAINDER = Q_TOTAL_BANK % len(DOMAINS)     # 2
 
-
-def load_prompt(filename: str) -> str:
-    with open(PROMPTS_DIR / filename) as f:
-        return f.read()
 
 
 async def backfill():

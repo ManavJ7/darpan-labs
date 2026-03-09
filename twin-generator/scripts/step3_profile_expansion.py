@@ -30,7 +30,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (
     INPUT_DIR,
     OUTPUT_DIR,
-    PROMPTS_DIR,
     TARGET_TWINS_STEP3,
     STEP3_BATCH_SIZE,
     LLM_MAX_TOKENS_STEP3,
@@ -39,6 +38,7 @@ from config.settings import (
     LLM_GENERATION_MODEL,
 )
 from scripts.llm_utils import call_llm
+from scripts.data_utils import load_prompt, format_questions_block, count_dimension_diffs
 
 logging.basicConfig(
     level=logging.INFO,
@@ -75,18 +75,11 @@ def load_question_bank() -> list[dict]:
         return json.load(f)
 
 
-def load_prompt(filename: str) -> str:
-    path = PROMPTS_DIR / filename
-    with open(path) as f:
-        return f.read()
 
 
 # ---------------------------------------------------------------------------
 # Pre-step: Prune 100 → 20 twins using coherence + diversity
 # ---------------------------------------------------------------------------
-
-def _count_dimension_diffs(choices_a: dict, choices_b: dict) -> int:
-    return sum(1 for k in choices_a if choices_a.get(k) != choices_b.get(k))
 
 
 def select_diverse_subset(twins: list[dict], target: int) -> list[dict]:
@@ -109,7 +102,7 @@ def select_diverse_subset(twins: list[dict], target: int) -> list[dict]:
 
         for idx, candidate in enumerate(remaining):
             min_diff = min(
-                _count_dimension_diffs(candidate["choices"], sel["choices"])
+                count_dimension_diffs(candidate["choices"], sel["choices"])
                 for sel in selected
             )
             combined = candidate["coherence_score"] * 0.6 + (min_diff / Q_BRANCH) * 0.4
@@ -187,12 +180,6 @@ def get_unanswered_questions(
     return unanswered
 
 
-def format_questions_block(questions: list[dict]) -> str:
-    """Format a batch of questions for the prompt."""
-    lines = []
-    for i, q in enumerate(questions, 1):
-        lines.append(f"{i}. [{q['question_id']}] {q['question_text']}")
-    return "\n".join(lines)
 
 
 # ---------------------------------------------------------------------------

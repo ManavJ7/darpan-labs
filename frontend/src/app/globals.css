@@ -73,12 +73,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-
-  .glow-lime {
-    box-shadow: 0 0 20px rgba(200, 255, 0, 0.3);
-  }
-
-  .glow-cyan {
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-  }
 }

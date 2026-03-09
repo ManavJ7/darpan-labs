@@ -33,9 +33,9 @@ from config.settings import (
     Q_REAL_PER_PERSON,
     LLM_MAX_TOKENS_BRANCHING,
     LLM_MAX_TOKENS_PRUNING,
-    PROMPTS_DIR,
 )
 from scripts.llm_utils import call_llm
+from scripts.data_utils import load_prompt
 
 logging.basicConfig(
     level=logging.INFO,
@@ -77,12 +77,6 @@ TARGET_PER_DOMAIN = Q_TOTAL_BANK // len(DOMAINS)  # 58
 # Remainder goes to first domain
 TARGET_REMAINDER = Q_TOTAL_BANK % len(DOMAINS)     # 2
 
-
-def load_prompt(filename: str) -> str:
-    """Load a prompt template from the prompts/ directory."""
-    path = PROMPTS_DIR / filename
-    with open(path) as f:
-        return f.read()
 
 
 # ---------------------------------------------------------------------------
