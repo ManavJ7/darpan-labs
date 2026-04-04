@@ -1,0 +1,381 @@
+{
+  "P12_T001": {
+    "twin_id": "P12_T001",
+    "identity_summary": "This person is a fragrance-first, ingredient-conscious experimenter who prioritizes smell above all else but demands transparency about what goes on their skin. They actively seek new products through free samples and friend recommendations, showing high comfort with novelty but requiring sensory validation before committing to purchases. Their low brand loyalty combines with a preference for Indian D2C brands that offer natural ingredients and detailed formulations.",
+    "traits": [
+      {
+        "trait_name": "fragrance-primacy-decision-driver",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Places fragrance as the #1 factor in body wash selection, ranking it first among all purchase factors and stating smell is non-negotiable.",
+        "confidence": 0.95,
+        "evidence_quotes": [
+          "[REAL] When buying any personal care product, rank these factors: ['fragrance','ingredients','brand','reviews','price','expert','recommendation','packaging']",
+          "[REAL] What do you like MOST about your current body wash? THE SMELL",
+          "[SYNTHETIC] Not try it \u2014 fragrance is non-negotiable in body wash. Smell is my top priority when choosing body wash."
+        ],
+        "predictive_value": "When shown a new body wash concept, this person would likely focus immediately on scent description and would reject any unscented options regardless of other benefits."
+      },
+      {
+        "trait_name": "ingredient-transparency-seeker",
+        "domain": "Information-Seeking Behavior",
+        "description": "Consistently prioritizes checking ingredient lists and understanding formulations, preferring natural/chemical-free products with clear sourcing.",
+        "confidence": 0.92,
+        "evidence_quotes": [
+          "[REAL] How important is it to you that a product is 'natural' or 'chemical-free'? Rating: 5, 'Better ingredients and high quality raw materials'",
+          "[REAL] When shopping online for personal care, what do you look at first? ['ingredients','review_count','price']",
+          "[SYNTHETIC] Checking ingredient list: 40 points, Reading online reviews: 30 points"
+        ],
+        "predictive_value": "When shown a body wash ad, this person would likely immediately look for ingredient lists and would be drawn to products that prominently display natural/organic certifications."
+      },
+      {
+        "trait_name": "sample-triggered-switcher",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Free samples are the primary trigger for trying new brands, as evidenced by discovering Plum through Blinkit samples and ranking free samples as top purchase trigger.",
+        "confidence": 0.88,
+        "evidence_quotes": [
+          "[REAL] Switched to Plum\u2014pushed on Blinkit repeatedly, plus received a free sample",
+          "[REAL] What would make you switch away from your current body wash? ['better_smell','friend_rec','free_sample']",
+          "[SYNTHETIC] Free sample sachets 2) A dermatologist's recommendation in YouTube video 3) Seeing it in best friend's bathroom"
+        ],
+        "predictive_value": "When offered a free sample of a new body wash, this person would likely try it immediately and potentially switch brands if the fragrance and feel impress them."
+      },
+      {
+        "trait_name": "high-novelty-comfort-experimenter",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Rates comfort with trying new brands as 5/5 and demonstrates consistent willingness to experiment with unknown products and innovative formulations.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] How comfortable are you trying new brands or products you haven't used before? 5",
+          "[SYNTHETIC] Order the solid bar immediately to try. The sustainability angle appeals to me, and I'm always willing to try innovative formats",
+          "[SYNTHETIC] Intrigued, would Google it and probably order. I'm curious about new ingredients and willing to try innovative products"
+        ],
+        "predictive_value": "When shown an innovative body wash concept with unique ingredients or formats, this person would likely be among the first to try it, driven by curiosity rather than caution."
+      },
+      {
+        "trait_name": "low-brand-loyalty-variety-seeker",
+        "domain": "Brand Relationship Patterns",
+        "description": "Explicitly states low brand loyalty and currently uses multiple different brands simultaneously, preferring to keep options available.",
+        "confidence": 0.9,
+        "evidence_quotes": [
+          "[REAL] How loyal are you to personal care brands? Low_loyalty",
+          "[REAL] What body wash brand(s) do you currently use? BBW Strawberry Poundcake, ThinkSkin, Plum Niacinamide",
+          "[REAL] Do you currently use body wash, bar soap, or both? Both; keep options available"
+        ],
+        "predictive_value": "When shown loyalty programs or subscription offers, this person would likely decline in favor of maintaining flexibility to switch between brands based on mood and preference."
+      },
+      {
+        "trait_name": "indian-brand-preference-advocate",
+        "domain": "Brand Relationship Patterns",
+        "description": "Explicitly prefers local, high-quality Indian brands and is willing to pay premiums for Made in India products, especially D2C brands.",
+        "confidence": 0.87,
+        "evidence_quotes": [
+          "[REAL] How do you feel about Indian personal care brands vs. international brands? Prefer local, high-quality Indian brands; ingredient quality matters most",
+          "[SYNTHETIC] New-age Indian D2C brands: 4 points, Ayurvedic/natural brands: 3 points, Legacy Indian brands: 2 points",
+          "[REAL] What is the maximum premium (%) you would pay for Made in India? 10_20"
+        ],
+        "predictive_value": "When choosing between an Indian D2C brand and an international brand at similar price points, this person would likely choose the Indian option, especially if it emphasizes natural ingredients."
+      },
+      {
+        "trait_name": "review-count-reliability-prioritizer",
+        "domain": "Information-Seeking Behavior",
+        "description": "Consistently prioritizes products with high review counts over high ratings with few reviews, seeking validation through volume of feedback.",
+        "confidence": 0.83,
+        "evidence_quotes": [
+          "[REAL] When shopping online for personal care, what do you look at first? ['ingredients','review_count','price']",
+          "[SYNTHETIC] Brand A with 4.2 stars and 15,000 reviews. The large review count gives me more confidence",
+          "[SYNTHETIC] My regular body wash with 15,000+ reviews. I rely on review count when shopping online"
+        ],
+        "predictive_value": "When comparing two similar body wash products online, this person would likely choose the one with more reviews even if it has a slightly lower star rating."
+      },
+      {
+        "trait_name": "youtube-review-dependency",
+        "domain": "Information-Seeking Behavior",
+        "description": "Relies specifically on YouTube reviews for product decisions, trusting video demonstrations of before/after use over other content formats.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] When you're in-store or using quick commerce, do you rely on any specific sources? Just YouTube reviews",
+          "[REAL] Was there a particular moment in the YouTube review that made you feel confident? Post unboxing, before and after use",
+          "[SYNTHETIC] The 15-minute deep dive with ingredients and pH testing. I value detailed analysis over quick opinions"
+        ],
+        "predictive_value": "When researching a new body wash, this person would likely search for detailed YouTube reviews showing actual usage and results rather than reading text reviews or brand descriptions."
+      },
+      {
+        "trait_name": "vanilla-earthy-scent-gravitator",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Shows strong preference for specific fragrance families, particularly vanilla and earthy scents, with detailed ideal scent descriptions.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] What fragrance families do you naturally gravitate toward? Sweet_gourmand,herbal_earthy",
+          "[REAL] Name a specific product whose fragrance you loved: Vanilla Vibes Deodorant Roll On by Plum BodyLovin",
+          "[REAL] If you could design your PERFECT body wash: Earthy-sweet vanilla with wet mud and rain notes"
+        ],
+        "predictive_value": "When shown body wash options, this person would likely be immediately drawn to products featuring vanilla, earthy, or gourmand scent descriptions and would likely purchase based on these fragrance cues alone."
+      },
+      {
+        "trait_name": "exfoliating-texture-preference",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Specifically prefers exfoliating textures in body wash and identifies lack of exfoliating features as a frustration with current products.",
+        "confidence": 0.78,
+        "evidence_quotes": [
+          "[REAL] What texture do you prefer in a body wash? Exfoliating",
+          "[REAL] What, if anything, frustrates you about your current body wash? Could lather more; needs exfoliating feature",
+          "[SYNTHETIC] Free loofah. I use a loofah in my scrubbing routine anyway"
+        ],
+        "predictive_value": "When shown body wash concepts, this person would likely be attracted to products that emphasize exfoliating properties, scrubbing beads, or textured formulations."
+      },
+      {
+        "trait_name": "quick-commerce-discovery-channel",
+        "domain": "Channel & Format Preferences",
+        "description": "Uses quick commerce platforms like Blinkit as primary discovery and purchase channel, influenced by their product recommendations and curation.",
+        "confidence": 0.82,
+        "evidence_quotes": [
+          "[REAL] Where do you most often buy personal care products? ['quick_commerce','pharmacy','nykaa']",
+          "[REAL] Do you use quick commerce for personal care? Strongly",
+          "[REAL] Switched to Plum\u2014pushed on Blinkit repeatedly, plus received a free sample"
+        ],
+        "predictive_value": "When a new body wash launches on quick commerce platforms with prominent placement, this person would likely notice and try it, especially if offered with samples or recommendations."
+      },
+      {
+        "trait_name": "browse-before-buy-researcher",
+        "domain": "Information-Seeking Behavior",
+        "description": "Always browses online when current products run out rather than making impulse purchases, preferring to research before buying.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] When your current body wash runs out, what is your typical next step? Browse_online",
+          "[SYNTHETIC] Still compare options online. The video is nice but I need to check ingredients, reviews, and prices",
+          "[SYNTHETIC] Leave without buying and research at home. I always browse online before purchasing"
+        ],
+        "predictive_value": "When running low on body wash, this person would likely spend time comparing options online rather than grabbing the first available product, even in urgent situations."
+      },
+      {
+        "trait_name": "premium-price-acceptor",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Typically spends above \u20b9500 on body wash and is willing to pay premiums for quality ingredients and certifications.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] How much do you typically spend on a single body wash purchase? Above_500",
+          "[REAL] What is the maximum premium (%) you would pay for Ayurvedic ingredients? 40_60",
+          "[REAL] What is the maximum premium (%) you would pay for Cruelty-free? 40_60"
+        ],
+        "predictive_value": "When shown premium body wash options with natural or certified ingredients, this person would likely consider the higher price point justified if the formulation and fragrance meet their standards."
+      },
+      {
+        "trait_name": "friend-recommendation-responsive",
+        "domain": "Social & Contextual Drivers",
+        "description": "Friend recommendations rank as one of top three switching triggers and carry significant weight in purchase decisions.",
+        "confidence": 0.83,
+        "evidence_quotes": [
+          "[REAL] What would make you switch away from your current body wash? ['better_smell','friend_rec','free_sample']",
+          "[SYNTHETIC] My close friend's recommendation. Friend recommendations are one of my top three triggers",
+          "[SYNTHETIC] E) A close friend swears by it: 4 points, A) A dermatologist recommends it: 3 points"
+        ],
+        "predictive_value": "When a close friend enthusiastically recommends a body wash, this person would likely try it even if it's outside their usual price range or brand preferences."
+      },
+      {
+        "trait_name": "ayurvedic-certification-valuer",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Specifically values Ayurvedic certifications and traditional ingredients, willing to pay significant premiums for authentic formulations.",
+        "confidence": 0.78,
+        "evidence_quotes": [
+          "[REAL] Which certifications influence your purchase? Dermatologist_tested,ayurvedic,cruelty_free,organic,sulfate_free",
+          "[REAL] What is the maximum premium (%) you would pay for Ayurvedic ingredients? 40_60",
+          "[SYNTHETIC] AYUSH Ministry certification mark on packaging. I value Ayurvedic products"
+        ],
+        "predictive_value": "When shown body wash products with prominent Ayurvedic certifications or traditional ingredient stories, this person would likely be willing to pay premium prices and prioritize these over conventional formulations."
+      },
+      {
+        "trait_name": "dual-routine-mood-dependent",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Has developed both fast and slow self-care routines and describes bathing relationship as mood-dependent, preferring to have options available.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[REAL] How would you describe your relationship with bathing/grooming? Mood_dependent",
+          "[REAL] Has your bathing routine changed in the last 2 years? Yes, adopted dual routine: fast and slow self-care routes",
+          "[REAL] Do you currently use body wash, bar soap, or both? Both; keep options available. Bar soap when in a hurry"
+        ],
+        "predictive_value": "When shown body wash concepts, this person would likely be interested in products that offer versatility or quick-use benefits alongside luxurious experiences, allowing them to match product to mood."
+      },
+      {
+        "trait_name": "hard-water-formulation-conscious",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Specifically considers water quality in product choices and shows interest in formulations designed for Indian skin and hard water conditions.",
+        "confidence": 0.72,
+        "evidence_quotes": [
+          "[REAL] How does your water quality affect your product choices? Yes, hard water affects product choices",
+          "[REAL] Would you be interested in a body wash specifically formulated for Indian skin types and hard water? Rating: 5, 'For my unique skin needs with urban dust and sunlight exposure'"
+        ],
+        "predictive_value": "When shown body wash products that specifically mention hard water compatibility or Indian climate formulations, this person would likely show strong interest and willingness to try them."
+      },
+      {
+        "trait_name": "sensitive-skin-concern-driven",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Has specific skin concerns including dryness and sensitivity that influence product choices and switching decisions.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] What specific skin concerns do you have? Dryness,sensitivity,body_odor",
+          "[REAL] What is your ideal post-wash skin feeling? Moisturized",
+          "[SYNTHETIC] Stop using it immediately and go back to my old body wash. I have sensitive skin concerns"
+        ],
+        "predictive_value": "When shown body wash concepts emphasizing moisturizing or sensitive skin benefits, this person would likely prioritize these claims and be willing to switch from current products for better skin compatibility."
+      },
+      {
+        "trait_name": "all-day-fragrance-expectation",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Expects body wash fragrance to last all day and considers long-lasting scent impact as a key product benefit.",
+        "confidence": 0.77,
+        "evidence_quotes": [
+          "[REAL] How long should a body wash fragrance last on your skin? All_day",
+          "[REAL] Was it the vanilla scent that made you choose to repurchase? Vanilla strongly; long-lasting impact",
+          "[SYNTHETIC] Rush-buy a new fragrant body wash specifically for the event. Fragrance lasting all day is important"
+        ],
+        "predictive_value": "When evaluating body wash options, this person would likely prioritize products that specifically claim long-lasting fragrance or all-day scent benefits over those focused on cleansing alone."
+      },
+      {
+        "trait_name": "anti-subscription-flexibility-preferrer",
+        "domain": "Channel & Format Preferences",
+        "description": "Consistently rejects subscription models in favor of maintaining flexibility to browse and switch products when desired.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[SYNTHETIC] Option A: \u20b9349 one-time purchase. I prefer flexibility and don't want to commit to auto-delivery schedules",
+          "[SYNTHETIC] Don't subscribe \u2014 I like the freedom to switch brands anytime. With my low brand loyalty",
+          "[SYNTHETIC] Blinkit reorder system. Like the flexibility to order when I actually run low rather than fixed schedules"
+        ],
+        "predictive_value": "When offered subscription deals or auto-delivery options for body wash, this person would likely decline even with significant discounts, preferring to maintain purchase flexibility."
+      },
+      {
+        "trait_name": "natural-packaging-aesthetic-preferrer",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Prefers natural-looking packaging over premium or minimalist designs, aligning with ingredient preferences.",
+        "confidence": 0.7,
+        "evidence_quotes": [
+          "[REAL] Do you prefer packaging that looks: Natural",
+          "[REAL] If you could design your PERFECT body wash: dark brownish, muddy look; exfoliating; thick gooey consistency",
+          "[SYNTHETIC] The basic plastic bottle at \u20b9249. Identical ingredients mean the packaging premium isn't worth \u20b9150"
+        ],
+        "predictive_value": "When comparing body wash options, this person would likely be drawn to products with earthy, natural-looking packaging over sleek or luxury designs, especially if the natural aesthetic suggests ingredient authenticity."
+      },
+      {
+        "trait_name": "clinical-claims-skeptical-validator",
+        "domain": "Information-Seeking Behavior",
+        "description": "Shows skepticism toward clinical claims without proof and prefers to research and validate marketing assertions independently.",
+        "confidence": 0.73,
+        "evidence_quotes": [
+          "[SYNTHETIC] I'd need to see the clinical study results first. Since I care about ingredient quality",
+          "[SYNTHETIC] The second body wash with the detailed blog post. I prefer transparency about ingredients and formulations",
+          "[SYNTHETIC] Research the claim yourself before deciding. I prefer verifying information myself"
+        ],
+        "predictive_value": "When shown body wash ads with clinical claims or dermatologist recommendations, this person would likely seek additional validation and proof rather than accepting the claims at face value."
+      },
+      {
+        "trait_name": "immediate-availability-prioritizer",
+        "domain": "Channel & Format Preferences",
+        "description": "Prefers immediate product availability and quick delivery over waiting for better deals or researching extensively when urgently needed.",
+        "confidence": 0.72,
+        "evidence_quotes": [
+          "[SYNTHETIC] Order from Blinkit \u2014 can't wait till tomorrow without body wash",
+          "[SYNTHETIC] Pick from Zepto's limited range for instant delivery. Their curation usually includes good options anyway",
+          "[SYNTHETIC] Bar soap as backup, Zepto 10-min delivery. I keep bar soap for quick situations"
+        ],
+        "predictive_value": "When running out of body wash, this person would likely choose immediate availability through quick commerce over waiting for better prices or more options, showing urgency in maintaining their routine."
+      },
+      {
+        "trait_name": "social-media-disengaged-researcher",
+        "domain": "Information-Seeking Behavior",
+        "description": "Explicitly states not using social media and consistently dismisses social media influences in favor of direct research and reviews.",
+        "confidence": 0.88,
+        "evidence_quotes": [
+          "[REAL] Who do you follow or trust in the personal care space on social media? Don't use social media",
+          "[REAL] Have you ever bought a personal care product because you saw it on social media? Nope",
+          "[SYNTHETIC] Neither really influences me since I don't use social media. I'd rely on YouTube reviews instead"
+        ],
+        "predictive_value": "When exposed to social media marketing or influencer recommendations for body wash, this person would likely ignore these channels entirely and seek product information through YouTube reviews or direct research instead."
+      },
+      {
+        "trait_name": "value-over-convenience-calculator",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Consistently chooses better value deals even when it requires waiting or extra effort, showing price-conscious decision making.",
+        "confidence": 0.74,
+        "evidence_quotes": [
+          "[SYNTHETIC] Order from Amazon at \u20b9199 and use bar soap for 5 days. \u20b9100 savings is worth the wait",
+          "[SYNTHETIC] Wait for Flipkart delivery. 40% off is significant savings, and I can use my current body wash for a few more days",
+          "[SYNTHETIC] Buy the combo to save money. I'll use both eventually and \u20b9149 savings is significant"
+        ],
+        "predictive_value": "When presented with body wash deals requiring patience or bulk buying, this person would likely choose the better value option even if it means temporary inconvenience or delayed gratification."
+      }
+    ],
+    "trait_connections": [
+      {
+        "from_trait": "fragrance-primacy-decision-driver",
+        "to_trait": "vanilla-earthy-scent-gravitator",
+        "relationship": "supports",
+        "mechanism": "Since fragrance is the #1 decision factor, having specific scent preferences (vanilla-earthy) creates a clear filter for product selection, making this person predictably drawn to specific fragrance families."
+      },
+      {
+        "from_trait": "ingredient-transparency-seeker",
+        "to_trait": "ayurvedic-certification-valuer",
+        "relationship": "supports",
+        "mechanism": "The desire for ingredient transparency naturally leads to valuing certifications like Ayurvedic that provide clear ingredient sourcing and traditional formulation validation."
+      },
+      {
+        "from_trait": "high-novelty-comfort-experimenter",
+        "to_trait": "sample-triggered-switcher",
+        "relationship": "supports",
+        "mechanism": "High comfort with new products makes free samples an effective trigger because there's no risk hesitation - the person is already predisposed to try new things."
+      },
+      {
+        "from_trait": "low-brand-loyalty-variety-seeker",
+        "to_trait": "anti-subscription-flexibility-preferrer",
+        "relationship": "causes",
+        "mechanism": "The fundamental desire for variety and switching between brands makes subscription models feel restrictive, as they lock the person into repeated purchases of the same product."
+      },
+      {
+        "from_trait": "review-count-reliability-prioritizer",
+        "to_trait": "browse-before-buy-researcher",
+        "relationship": "supports",
+        "mechanism": "Needing high review counts for confidence requires browsing and comparing multiple options online to find products with sufficient review volume before making purchase decisions."
+      },
+      {
+        "from_trait": "social-media-disengaged-researcher",
+        "to_trait": "youtube-review-dependency",
+        "relationship": "causes",
+        "mechanism": "Avoiding social media platforms channels research needs toward YouTube as the primary video content source for product reviews and demonstrations."
+      },
+      {
+        "from_trait": "sensitive-skin-concern-driven",
+        "to_trait": "ingredient-transparency-seeker",
+        "relationship": "causes",
+        "mechanism": "Having specific skin sensitivities creates a need to understand exactly what ingredients are in products to avoid reactions and choose suitable formulations."
+      },
+      {
+        "from_trait": "fragrance-primacy-decision-driver",
+        "to_trait": "all-day-fragrance-expectation",
+        "relationship": "supports",
+        "mechanism": "If fragrance is the most important factor, then the duration and lasting power of that fragrance becomes a critical performance metric for product satisfaction."
+      },
+      {
+        "from_trait": "indian-brand-preference-advocate",
+        "to_trait": "hard-water-formulation-conscious",
+        "relationship": "supports",
+        "mechanism": "Preferring Indian brands aligns with wanting formulations designed for Indian conditions like hard water, as local brands are more likely to address these specific environmental factors."
+      },
+      {
+        "from_trait": "premium-price-acceptor",
+        "to_trait": "value-over-convenience-calculator",
+        "relationship": "contradicts",
+        "mechanism": "While willing to pay high prices for quality products, this person also seeks deals and savings, creating tension between premium product desires and value-seeking behavior."
+      },
+      {
+        "from_trait": "quick-commerce-discovery-channel",
+        "to_trait": "immediate-availability-prioritizer",
+        "relationship": "supports",
+        "mechanism": "Using quick commerce as a primary channel reinforces the expectation of immediate availability, making this person less tolerant of waiting for products when needed."
+      },
+      {
+        "from_trait": "dual-routine-mood-dependent",
+        "to_trait": "low-brand-loyalty-variety-seeker",
+        "relationship": "supports",
+        "mechanism": "Having different routines for different moods requires having multiple product options available, which naturally leads to using various brands rather than sticking to one."
+      }
+    ]
+  }
+}

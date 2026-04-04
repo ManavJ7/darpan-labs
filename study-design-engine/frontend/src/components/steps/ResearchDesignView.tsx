@@ -179,7 +179,7 @@ export function ResearchDesignView({
                       <td className="py-2 pr-4 text-white/60">{seg.range}</td>
                       <td className="py-2 pr-4 text-right font-mono text-white/60">
                         {typeof seg.target_pct === "number"
-                          ? `${(seg.target_pct * 100).toFixed(0)}%`
+                          ? `${seg.target_pct <= 1 ? (seg.target_pct * 100).toFixed(0) : seg.target_pct}%`
                           : seg.target_pct}
                       </td>
                       <td className="py-2 text-right font-mono">{seg.target_n}</td>

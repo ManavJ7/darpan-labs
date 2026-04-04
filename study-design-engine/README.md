@@ -18,7 +18,7 @@ Each step follows: **AI generates → Human reviews → Human edits → Human lo
 
 ```bash
 cd study-design-engine
-docker-compose -f docker-compose.sde.yml up
+docker-compose up
 ```
 
 ### Local Development

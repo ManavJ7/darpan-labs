@@ -162,7 +162,37 @@ export default function StudyWizardPage() {
               }}
             />
           )}
-          {activeStep === 2 && (
+          {activeStep === 2 && showConceptCountInput && (
+            <div className="flex flex-col items-center justify-center gap-4 py-20">
+              <p className="text-sm text-white/60">How many concepts do you want to generate?</p>
+              <input
+                type="number"
+                min={1}
+                max={10}
+                value={conceptCount}
+                onChange={(e) => setConceptCount(Math.max(1, parseInt(e.target.value) || 1))}
+                className="w-24 px-4 py-3 bg-darpan-bg border border-darpan-border rounded-lg text-white text-center text-lg font-mono focus:outline-none focus:border-darpan-lime/50"
+              />
+              <div className="flex gap-3">
+                <button
+                  onClick={() => {
+                    setShowConceptCountInput(false);
+                    generateConcepts(conceptCount).then(() => toast.success("Concept boards generated"));
+                  }}
+                  className="px-6 py-2 bg-darpan-lime text-black text-sm font-semibold rounded-lg hover:bg-darpan-lime-dim transition-colors"
+                >
+                  Generate
+                </button>
+                <button
+                  onClick={() => setShowConceptCountInput(false)}
+                  className="px-4 py-2 text-sm text-white/50 hover:text-white transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          )}
+          {activeStep === 2 && !showConceptCountInput && (
             <ConceptBoardsView
               study={study}
               stepVersion={stepVersions[2] || null}
@@ -185,36 +215,6 @@ export default function StudyWizardPage() {
               study={study}
               stepVersion={stepVersions[4] || null}
             />
-          )}
-
-          {/* Concept count input (shown before Step 2 generation) */}
-          {showConceptCountInput && activeStep === 2 && (
-            <div className="flex items-center justify-center gap-3 py-8">
-              <label className="text-sm text-white/60">Number of concepts to generate:</label>
-              <input
-                type="number"
-                min={1}
-                max={10}
-                value={conceptCount}
-                onChange={(e) => setConceptCount(Math.max(1, parseInt(e.target.value) || 1))}
-                className="w-20 px-3 py-2 bg-darpan-bg border border-darpan-border rounded-lg text-white text-center font-mono focus:outline-none focus:border-darpan-lime/50"
-              />
-              <button
-                onClick={() => {
-                  setShowConceptCountInput(false);
-                  generateConcepts(conceptCount).then(() => toast.success("Concept boards generated"));
-                }}
-                className="px-4 py-2 bg-darpan-lime text-black text-sm font-semibold rounded-lg hover:bg-darpan-lime-dim transition-colors"
-              >
-                Generate
-              </button>
-              <button
-                onClick={() => setShowConceptCountInput(false)}
-                className="px-3 py-2 text-sm text-white/50 hover:text-white transition-colors"
-              >
-                Cancel
-              </button>
-            </div>
           )}
 
           {/* Empty state when step has no data and no component renders its own empty state */}

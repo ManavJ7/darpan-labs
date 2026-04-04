@@ -1,0 +1,75 @@
+{
+  "median_twin": {
+    "pairs": [],
+    "aggregate": {
+      "overall_mae": null,
+      "overall_accuracy": null,
+      "overall_exact": null,
+      "overall_quality": { "mae": "Poor", "accuracy": "Poor", "exact": "Poor" },
+      "by_participant": {},
+      "by_concept": {},
+      "by_metric": {},
+      "matrix": []
+    },
+    "metadata": {
+      "n_pairs": 0,
+      "n_concepts": 0,
+      "metrics_used": [],
+      "metric_labels": {},
+      "thresholds": {
+        "mae": { "good": 0.5, "acceptable": 1.0 },
+        "accuracy": { "good": 0.8, "acceptable": 0.6 },
+        "exact": { "good": 0.5, "acceptable": 0.3 }
+      }
+    }
+  },
+  "average_twin": {
+    "pairs": [],
+    "aggregate": {
+      "overall_mae": null,
+      "overall_accuracy": null,
+      "overall_exact": null,
+      "overall_quality": { "mae": "Poor", "accuracy": "Poor", "exact": "Poor" },
+      "by_participant": {},
+      "by_concept": {},
+      "by_metric": {},
+      "matrix": []
+    },
+    "metadata": {
+      "n_pairs": 0,
+      "n_concepts": 0,
+      "metrics_used": [],
+      "metric_labels": {},
+      "thresholds": {
+        "mae": { "good": 0.5, "acceptable": 1.0 },
+        "accuracy": { "good": 0.8, "acceptable": 0.6 },
+        "exact": { "good": 0.5, "acceptable": 0.3 }
+      }
+    }
+  },
+  "best_match": {
+    "pairs": [],
+    "aggregate": {
+      "overall_mae": null,
+      "overall_accuracy": null,
+      "overall_exact": null,
+      "overall_quality": { "mae": "Poor", "accuracy": "Poor", "exact": "Poor" },
+      "by_participant": {},
+      "by_concept": {},
+      "by_metric": {},
+      "matrix": []
+    },
+    "twin_selection_summary": [],
+    "metadata": {
+      "n_pairs": 0,
+      "n_concepts": 0,
+      "metrics_used": [],
+      "metric_labels": {},
+      "thresholds": {
+        "mae": { "good": 0.5, "acceptable": 1.0 },
+        "accuracy": { "good": 0.8, "acceptable": 0.6 },
+        "exact": { "good": 0.5, "acceptable": 0.3 }
+      }
+    }
+  }
+}

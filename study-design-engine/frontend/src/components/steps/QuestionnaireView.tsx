@@ -45,10 +45,14 @@ interface QuestionnaireViewProps {
 // ── Helpers ──────────────────────────────────────────────────────────
 
 /** Section IDs that are always pre-concept (shown once before any concept). */
-const PRE_CONCEPT_IDS = new Set(["S1_screening", "S2_category_context"]);
+const PRE_CONCEPT_IDS = new Set([
+  "S1_screening", "S2_category_context", "S1_category_screening",
+]);
 
 /** Section IDs that are always post-concept (shown once after all concepts). */
-const POST_CONCEPT_IDS = new Set(["S8_demographics"]);
+const POST_CONCEPT_IDS = new Set([
+  "S8_demographics", "S7_comparative_pricing",
+]);
 
 /**
  * Detect whether a section's questions reference "this product / concept"
@@ -88,18 +92,21 @@ function classifySections(sections: QuestionnaireSection[], numConcepts: number)
   const conceptGroups: ConceptGroup[] = [];
   const postConcept: QuestionnaireSection[] = [];
 
-  // Detect new per-concept format (S3_concept_1, S3_concept_2, …)
-  const hasNewFormat = sections.some(
-    (s) => /^S3_concept_\d+$/.test(s.section_id)
+  // Detect per-concept format: sections with IDs like S2_concept_1, S3_concept_2, etc.
+  const conceptSectionRegex = /^S\d+_concept_(\d+)$/;
+  const hasPerConceptSections = sections.some(
+    (s) => conceptSectionRegex.test(s.section_id)
   );
 
-  if (hasNewFormat) {
+  if (hasPerConceptSections) {
     for (const s of sections) {
+      const conceptMatch = s.section_id.match(conceptSectionRegex);
       if (PRE_CONCEPT_IDS.has(s.section_id)) {
         preConcept.push(s);
-      } else if (/^S3_concept_\d+$/.test(s.section_id)) {
-        const match = s.section_id.match(/S3_concept_(\d+)/);
-        const idx = match ? parseInt(match[1], 10) - 1 : conceptGroups.length;
+      } else if (POST_CONCEPT_IDS.has(s.section_id)) {
+        postConcept.push(s);
+      } else if (conceptMatch) {
+        const idx = parseInt(conceptMatch[1], 10) - 1;
         conceptGroups.push({
           conceptIndex: idx,
           sections: [{ ...s, _virtualConceptIndex: idx }],

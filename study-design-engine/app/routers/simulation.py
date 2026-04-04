@@ -1,20 +1,23 @@
 """
 Simulation endpoints: serve questionnaire payload for twin simulation,
-store and retrieve simulation results.
+store and retrieve simulation results, manage twin-based simulations.
 """
 import csv
 import io
 import uuid
+from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
-from sqlalchemy import select
+from pydantic import BaseModel
+from sqlalchemy import and_, select
 from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.orm import selectinload
 
 from app.config import settings
 from app.database import get_session
 from app.models.study import Study, StepVersion
-from app.models.simulation import SimulationRun
+from app.models.twin import DigitalTwin, Participant, PipelineJob, TwinSimulationRun, ValidationReport
 from app.schemas.simulation import (
     SimulationPayload,
     SimulationQuestion,
@@ -245,3 +248,462 @@ async def export_simulation_results(
 
     # Default: JSON
     return data
+
+
+# ===========================================================================
+# Twin-based simulation endpoints
+# ===========================================================================
+
+class AvailableTwinResponse(BaseModel):
+    twin_id: str
+    twin_external_id: str
+    participant_external_id: str
+    participant_name: str | None
+    mode: str
+    coherence_score: float | None
+    status: str
+
+
+class SimulateTwinsRequest(BaseModel):
+    twin_ids: list[str]  # UUIDs as strings
+    inference_mode: str = "combined"
+
+
+class SimulationJobItem(BaseModel):
+    job_id: str
+    twin_id: str
+    twin_external_id: str
+    simulation_id: str
+    status: str  # pending, already_completed, already_running
+
+
+class SimulateTwinsResponse(BaseModel):
+    jobs: list[SimulationJobItem]
+
+
+class TwinSimulationResultResponse(BaseModel):
+    simulation_id: str
+    twin_id: str
+    twin_external_id: str
+    inference_mode: str
+    status: str
+    responses: list | None
+    summary_stats: dict | None
+    created_at: str
+    completed_at: str | None
+
+
+@router.get("/available-twins", response_model=list[AvailableTwinResponse])
+async def get_available_twins(
+    study_id: uuid.UUID,
+    db: AsyncSession = Depends(get_session),
+):
+    """List all digital twins available for simulation (status='ready')."""
+    # Verify study exists and is ready for simulation
+    result = await db.execute(select(Study).where(Study.id == study_id))
+    study = result.scalar_one_or_none()
+    if not study:
+        raise HTTPException(status_code=404, detail="Study not found")
+    if study.status not in ("step_4_locked", "complete"):
+        raise HTTPException(
+            status_code=400,
+            detail=f"Study must be locked or complete. Current status: {study.status}",
+        )
+
+    # Get all ready twins with participant info
+    twin_result = await db.execute(
+        select(DigitalTwin)
+        .where(DigitalTwin.status == "ready")
+        .options(selectinload(DigitalTwin.participant))
+        .order_by(DigitalTwin.twin_external_id)
+    )
+    twins = twin_result.scalars().all()
+
+    return [
+        AvailableTwinResponse(
+            twin_id=str(t.id),
+            twin_external_id=t.twin_external_id,
+            participant_external_id=t.participant.external_id,
+            participant_name=t.participant.display_name,
+            mode=t.mode,
+            coherence_score=t.coherence_score,
+            status=t.status,
+        )
+        for t in twins
+    ]
+
+
+@router.post(
+    "/simulate",
+    response_model=SimulateTwinsResponse,
+    status_code=202,
+)
+async def simulate_twins(
+    study_id: uuid.UUID,
+    request: SimulateTwinsRequest,
+    db: AsyncSession = Depends(get_session),
+):
+    """Trigger simulation for selected twins using the study's locked questionnaire."""
+    # Verify study and get locked questionnaire
+    result = await db.execute(select(Study).where(Study.id == study_id))
+    study = result.scalar_one_or_none()
+    if not study:
+        raise HTTPException(status_code=404, detail="Study not found")
+    if study.status not in ("step_4_locked", "complete"):
+        raise HTTPException(status_code=400, detail="Study must be locked or complete")
+
+    # Get locked questionnaire
+    q_result = await db.execute(
+        select(StepVersion)
+        .where(StepVersion.study_id == study_id, StepVersion.step == 4, StepVersion.status == "locked")
+        .order_by(StepVersion.version.desc())
+        .limit(1)
+    )
+    q_version = q_result.scalar_one_or_none()
+    if not q_version:
+        raise HTTPException(status_code=400, detail="No locked questionnaire found")
+
+    # Extract questions in flat format for the twin-generator
+    content = q_version.content
+    questions = []
+    for section in content.get("sections", []):
+        for q in section.get("questions", []):
+            q_text = q.get("question_text", {})
+            questions.append({
+                "question_id": q["question_id"],
+                "question_text": q_text.get("en", str(q_text)) if isinstance(q_text, dict) else str(q_text),
+                "question_type": q.get("question_type", "open_text"),
+                "section": section.get("section_id", ""),
+                "scale": q.get("scale"),
+                "options": q.get("options"),
+                "matrix_items": q.get("matrix_items"),
+                "show_if": q.get("show_if"),
+                "required": q.get("required", True),
+                "position_in_section": q.get("position_in_section", 0),
+            })
+
+    # Get concepts
+    concepts = []
+    c_result = await db.execute(
+        select(StepVersion)
+        .where(StepVersion.study_id == study_id, StepVersion.step == 2, StepVersion.status == "locked")
+        .order_by(StepVersion.version.desc())
+        .limit(1)
+    )
+    c_version = c_result.scalar_one_or_none()
+    if c_version and c_version.content:
+        for c in c_version.content.get("concepts", []):
+            comp = c.get("components", {})
+            ct = _extract_concept_text(comp, c.get("concept_index", 0))
+            concepts.append(ct.model_dump())
+
+    questionnaire_snapshot = {"questions": questions, "concepts": concepts}
+
+    # Process each twin
+    jobs = []
+    for twin_id_str in request.twin_ids:
+        twin_uuid = uuid.UUID(twin_id_str)
+        twin = await db.get(DigitalTwin, twin_uuid)
+        if not twin:
+            raise HTTPException(status_code=404, detail=f"Twin {twin_id_str} not found")
+        if twin.status != "ready":
+            raise HTTPException(status_code=400, detail=f"Twin {twin.twin_external_id} is not ready (status: {twin.status})")
+
+        # Check for existing completed simulation for same twin + study
+        existing_sim = await db.execute(
+            select(TwinSimulationRun).where(
+                and_(
+                    TwinSimulationRun.twin_id == twin_uuid,
+                    TwinSimulationRun.study_id == study_id,
+                    TwinSimulationRun.status == "completed",
+                )
+            ).order_by(TwinSimulationRun.created_at.desc()).limit(1)
+        )
+        existing = existing_sim.scalar_one_or_none()
+        if existing:
+            jobs.append(SimulationJobItem(
+                job_id="existing",
+                twin_id=str(twin.id),
+                twin_external_id=twin.twin_external_id,
+                simulation_id=str(existing.id),
+                status="already_completed",
+            ))
+            continue
+
+        # Check for in-progress job
+        active_result = await db.execute(
+            select(PipelineJob).where(
+                and_(
+                    PipelineJob.job_type == "run_simulation",
+                    PipelineJob.study_id == study_id,
+                    PipelineJob.status.in_(["pending", "running"]),
+                )
+            )
+        )
+        active_jobs = active_result.scalars().all()
+        found_active = False
+        for aj in active_jobs:
+            sim_check = await db.execute(
+                select(TwinSimulationRun).where(
+                    and_(TwinSimulationRun.job_id == aj.id, TwinSimulationRun.twin_id == twin_uuid)
+                )
+            )
+            if sim_check.scalar_one_or_none():
+                jobs.append(SimulationJobItem(
+                    job_id=str(aj.id),
+                    twin_id=str(twin.id),
+                    twin_external_id=twin.twin_external_id,
+                    simulation_id="in_progress",
+                    status="already_running",
+                ))
+                found_active = True
+                break
+        if found_active:
+            continue
+
+        # Create job and simulation run
+        job = PipelineJob(
+            job_type="run_simulation",
+            study_id=study_id,
+            config={"inference_mode": request.inference_mode},
+        )
+        db.add(job)
+        await db.flush()
+
+        sim_run = TwinSimulationRun(
+            job_id=job.id,
+            twin_id=twin_uuid,
+            study_id=study_id,
+            questionnaire_snapshot=questionnaire_snapshot,
+            inference_mode=request.inference_mode,
+        )
+        db.add(sim_run)
+        await db.flush()
+
+        jobs.append(SimulationJobItem(
+            job_id=str(job.id),
+            twin_id=str(twin.id),
+            twin_external_id=twin.twin_external_id,
+            simulation_id=str(sim_run.id),
+            status="pending",
+        ))
+
+    await db.commit()
+
+    # Dispatch Celery tasks for pending jobs
+    from app.celery_app import celery_app as celery
+    for item in jobs:
+        if item.status == "pending":
+            celery.send_task(
+                "twin.run_simulation",
+                args=[item.job_id, item.simulation_id],
+            )
+
+    return SimulateTwinsResponse(jobs=jobs)
+
+
+@router.get("/twin-simulation-results", response_model=list[TwinSimulationResultResponse])
+async def list_twin_simulation_results(
+    study_id: uuid.UUID,
+    db: AsyncSession = Depends(get_session),
+):
+    """List all twin simulation results for a study."""
+    result = await db.execute(
+        select(TwinSimulationRun)
+        .where(TwinSimulationRun.study_id == study_id)
+        .options(selectinload(TwinSimulationRun.twin))
+        .order_by(TwinSimulationRun.created_at.desc())
+    )
+    runs = result.scalars().all()
+
+    return [
+        TwinSimulationResultResponse(
+            simulation_id=str(r.id),
+            twin_id=str(r.twin_id),
+            twin_external_id=r.twin.twin_external_id if r.twin else "unknown",
+            inference_mode=r.inference_mode,
+            status=r.status,
+            responses=r.responses,
+            summary_stats=r.summary_stats,
+            created_at=r.created_at.isoformat(),
+            completed_at=r.completed_at.isoformat() if r.completed_at else None,
+        )
+        for r in runs
+    ]
+
+
+# ===========================================================================
+# Validation Report endpoints
+# ===========================================================================
+
+class ValidationReportRequest(BaseModel):
+    mode: str = "synthesis"  # "comparison" (real vs twin) or "synthesis" (twin-only)
+
+
+class ValidationReportResponse(BaseModel):
+    report_id: str
+    job_id: str
+    mode: str
+    status: str
+    status_url: str
+
+
+class ValidationReportDetail(BaseModel):
+    report_id: str
+    study_id: str
+    mode: str
+    status: str
+    twin_count: int | None
+    real_count: int | None
+    report_data: dict | None
+    created_at: str
+    completed_at: str | None
+
+
+@router.post(
+    "/validation-report",
+    response_model=ValidationReportResponse,
+    status_code=202,
+)
+async def create_validation_report(
+    study_id: uuid.UUID,
+    request: ValidationReportRequest,
+    db: AsyncSession = Depends(get_session),
+):
+    """Generate a validation report from twin simulation results.
+
+    Modes:
+    - "synthesis": Analyze twin responses only (aggregate stats, T2B, composites, etc.)
+    - "comparison": Compare twin responses against real participant M8 interview data
+    """
+    result = await db.execute(select(Study).where(Study.id == study_id))
+    study = result.scalar_one_or_none()
+    if not study:
+        raise HTTPException(status_code=404, detail="Study not found")
+
+    # Check that completed simulations exist
+    sim_result = await db.execute(
+        select(TwinSimulationRun).where(
+            and_(
+                TwinSimulationRun.study_id == study_id,
+                TwinSimulationRun.status == "completed",
+            )
+        )
+    )
+    completed_sims = sim_result.scalars().all()
+    if not completed_sims:
+        raise HTTPException(
+            status_code=400,
+            detail="No completed twin simulations found. Run simulations first.",
+        )
+
+    # Check for existing pending/running report
+    existing_result = await db.execute(
+        select(ValidationReport).where(
+            and_(
+                ValidationReport.study_id == study_id,
+                ValidationReport.mode == request.mode,
+                ValidationReport.status.in_(["pending", "running"]),
+            )
+        )
+    )
+    existing = existing_result.scalar_one_or_none()
+    if existing:
+        raise HTTPException(
+            status_code=409,
+            detail=f"Validation report already in progress (report {existing.id})",
+        )
+
+    # Create job and report
+    job = PipelineJob(
+        job_type="run_validation",
+        study_id=study_id,
+        config={"mode": request.mode},
+    )
+    db.add(job)
+    await db.flush()
+
+    report = ValidationReport(
+        study_id=study_id,
+        job_id=job.id,
+        mode=request.mode,
+    )
+    db.add(report)
+    await db.flush()
+    await db.commit()
+
+    # Dispatch Celery task
+    from app.celery_app import celery_app as celery
+    celery.send_task(
+        "twin.run_validation_report",
+        args=[str(job.id), str(report.id)],
+    )
+
+    return ValidationReportResponse(
+        report_id=str(report.id),
+        job_id=str(job.id),
+        mode=request.mode,
+        status="pending",
+        status_url=f"/api/v1/studies/{study_id}/validation-report/{report.id}",
+    )
+
+
+@router.get("/validation-report/{report_id}", response_model=ValidationReportDetail)
+async def get_validation_report(
+    study_id: uuid.UUID,
+    report_id: uuid.UUID,
+    db: AsyncSession = Depends(get_session),
+):
+    """Get a validation report by ID."""
+    result = await db.execute(
+        select(ValidationReport).where(
+            and_(
+                ValidationReport.id == report_id,
+                ValidationReport.study_id == study_id,
+            )
+        )
+    )
+    report = result.scalar_one_or_none()
+    if not report:
+        raise HTTPException(status_code=404, detail="Validation report not found")
+
+    return ValidationReportDetail(
+        report_id=str(report.id),
+        study_id=str(report.study_id),
+        mode=report.mode,
+        status=report.status,
+        twin_count=report.twin_count,
+        real_count=report.real_count,
+        report_data=report.report_data,
+        created_at=report.created_at.isoformat(),
+        completed_at=report.completed_at.isoformat() if report.completed_at else None,
+    )
+
+
+@router.get("/validation-reports", response_model=list[ValidationReportDetail])
+async def list_validation_reports(
+    study_id: uuid.UUID,
+    db: AsyncSession = Depends(get_session),
+):
+    """List all validation reports for a study."""
+    result = await db.execute(
+        select(ValidationReport)
+        .where(ValidationReport.study_id == study_id)
+        .order_by(ValidationReport.created_at.desc())
+    )
+    reports = result.scalars().all()
+
+    return [
+        ValidationReportDetail(
+            report_id=str(r.id),
+            study_id=str(r.study_id),
+            mode=r.mode,
+            status=r.status,
+            twin_count=r.twin_count,
+            real_count=r.real_count,
+            report_data=r.report_data,
+            created_at=r.created_at.isoformat(),
+            completed_at=r.completed_at.isoformat() if r.completed_at else None,
+        )
+        for r in reports
+    ]

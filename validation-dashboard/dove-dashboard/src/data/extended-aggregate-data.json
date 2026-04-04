@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "study": "Extended Aggregate - No Data Loaded",
+    "concepts_tested": 0,
+    "real_n": 0,
+    "twin_n": 0,
+    "concept_names": [],
+    "concept_short_names": []
+  },
+  "concepts": [],
+  "real": {
+    "n": 0,
+    "t2b": {},
+    "composites": {},
+    "friedman": { "statistic": null, "p_value": null, "n": 0, "significant": false },
+    "wilcoxon": [],
+    "tiers": {},
+    "mixedModel": { "concept_var_pct": 0, "position_var_pct": 0, "respondent_var_pct": 0, "verdict": "N/A" },
+    "turf": { "individual_reach": {}, "best_2": { "concepts": [], "reach_pct": 0, "reach_n": 0 }, "best_3": { "concepts": [], "reach_pct": 0, "reach_n": 0 } },
+    "barriers": {},
+    "directRanking": {},
+    "priceData": { "price_pi": { "t2b": null, "mean": null, "n": 0 }, "wtp": { "mean": null, "median": null, "min": null, "max": null, "n": 0 } },
+    "screeningContext": { "frequencies": {}, "satisfaction": {}, "top_brands": {}, "n": 0 },
+    "themes": {}
+  },
+  "twin": {
+    "n": 0,
+    "t2b": {},
+    "composites": {},
+    "friedman": { "statistic": null, "p_value": null, "n": 0, "significant": false },
+    "wilcoxon": [],
+    "tiers": {},
+    "mixedModel": { "concept_var_pct": 0, "position_var_pct": 0, "respondent_var_pct": 0, "verdict": "N/A" },
+    "turf": { "individual_reach": {}, "best_2": { "concepts": [], "reach_pct": 0, "reach_n": 0 }, "best_3": { "concepts": [], "reach_pct": 0, "reach_n": 0 } },
+    "barriers": {},
+    "directRanking": {},
+    "priceData": { "price_pi": { "t2b": null, "mean": null, "n": 0 }, "wtp": { "mean": null, "median": null, "min": null, "max": null, "n": 0 } },
+    "screeningContext": { "frequencies": {}, "satisfaction": {}, "top_brands": {}, "n": 0 },
+    "themes": {}
+  },
+  "agreement": {
+    "level": "Divergent",
+    "description": "No data loaded yet",
+    "real_tier1": [],
+    "twin_tier1": [],
+    "real_top": "",
+    "twin_top": ""
+  }
+}

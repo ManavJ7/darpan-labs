@@ -9,6 +9,8 @@ from tenacity import retry, stop_after_attempt, retry_if_exception_type
 from app.config import settings
 
 # litellm reads API keys from os.environ, not from pydantic settings
+if settings.OPENAI_API_KEY and not os.environ.get("OPENAI_API_KEY"):
+    os.environ["OPENAI_API_KEY"] = settings.OPENAI_API_KEY
 if settings.ANTHROPIC_API_KEY and not os.environ.get("ANTHROPIC_API_KEY"):
     os.environ["ANTHROPIC_API_KEY"] = settings.ANTHROPIC_API_KEY
 
@@ -119,7 +121,7 @@ class LLMClient:
             model=use_model,
             messages=[{"role": "user", "content": prompt}],
             temperature=use_temp,
-            max_tokens=max_tokens,
+            max_completion_tokens=max_tokens,
         )
         latency = time.time() - start_time
 

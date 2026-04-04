@@ -1,0 +1,1148 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "node_type": "Domain",
+      "label": "Risk & Novelty Orientation",
+      "id": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Brand Relationship Patterns",
+      "id": "domain:Brand Relationship Patterns"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Channel & Format Preferences",
+      "id": "domain:Channel & Format Preferences"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Purchase Decision Mechanics",
+      "id": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Social & Contextual Drivers",
+      "id": "domain:Social & Contextual Drivers"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Information-Seeking Behavior",
+      "id": "domain:Information-Seeking Behavior"
+    },
+    {
+      "node_type": "Twin",
+      "label": "P01_T001",
+      "identity_summary": "This person is an ingredients-first researcher who prioritizes expert opinion and clinical validation over brand loyalty or marketing claims. They're highly comfortable experimenting with new products but make decisions based on dermatologist recommendations and ingredient analysis rather than social proof or pricing. Their purchase behavior is driven by unplanned needs (heavy Blinkit usage) but backed by thorough research once they identify something worth trying.",
+      "id": "P01_T001"
+    },
+    {
+      "node_type": "Trait",
+      "label": "expert-opinion-prioritizer",
+      "twin_id": "P01_T001",
+      "description": "Ranks dermatologists as 5/5 trust and expert opinion as most important factor when buying personal care products.",
+      "confidence": 0.95,
+      "evidence_quotes": [
+        "[REAL] Expert opinion > Ingredients > Brand > Price > Fragrance > Packaging > Recommendation > Reviews",
+        "[REAL] Trust ratings \u2014 Dermatologists: 5, Friends/family: 4, Instagram/YouTube influencers: 3, TV ads: 2",
+        "[SYNTHETIC] A) Switch to Cetaphil immediately \u2014 expert advice matters most",
+        "[SYNTHETIC] Dermatologist's recommendation: 4 points, A close friend swears by it: 3 points"
+      ],
+      "predictive_value": "When shown a body wash with dermatologist endorsement, this person would likely prioritize it over cheaper alternatives because expert credibility trumps all other factors.",
+      "id": "trait:P01_T001:expert-opinion-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "ingredients-first-evaluator",
+      "twin_id": "P01_T001",
+      "description": "Consistently prioritizes ingredient lists and clinical formulations over brand names, packaging, or marketing claims.",
+      "confidence": 0.92,
+      "evidence_quotes": [
+        "[REAL] When shopping online for personal care, what do you look at first? Ingredients, Price, Images",
+        "[REAL] Only willing to pay premium for lab-tested, clinical-grade products",
+        "[SYNTHETIC] Reading ingredient lists: 10 minutes, Watching video reviews: 5 minutes",
+        "[SYNTHETIC] (B) The cutting-edge ingredients. I prioritize clinical-grade formulations"
+      ],
+      "predictive_value": "When shown a body wash ad, this person would likely skip the marketing copy and go straight to the ingredient list to evaluate clinical benefits.",
+      "id": "trait:P01_T001:ingredients-first-evaluator"
+    },
+    {
+      "node_type": "Trait",
+      "label": "low-brand-loyalty-experimenter",
+      "twin_id": "P01_T001",
+      "description": "Explicitly states low brand loyalty and consistently chooses to try new products over sticking with familiar ones.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[REAL] How loyal are you to personal care brands? Low brand loyalty",
+        "[REAL] How comfortable are you trying new brands or products you haven't used before? 5/5 \u2014 very comfortable",
+        "[SYNTHETIC] With low brand loyalty, I'd easily switch when my usual brand increases prices significantly",
+        "[SYNTHETIC] C) Different brands each time. I have low brand loyalty and regularly try new options"
+      ],
+      "predictive_value": "When shown multiple body wash options, this person would likely choose the unfamiliar brand with better ingredients over their current brand, even without reviews.",
+      "id": "trait:P01_T001:low-brand-loyalty-experimenter"
+    },
+    {
+      "node_type": "Trait",
+      "label": "unplanned-quick-commerce-dependent",
+      "twin_id": "P01_T001",
+      "description": "Heavily relies on quick commerce apps like Blinkit because purchases are unplanned - realizes product is empty right before bathing.",
+      "confidence": 0.88,
+      "evidence_quotes": [
+        "[REAL] Uses quick commerce heavily because purchases are unplanned \u2014 realizes product is empty right before bathing and orders on Blinkit",
+        "[REAL] Where do you most often buy personal care products? Quick commerce, Pharmacy, Brand website",
+        "[SYNTHETIC] Buy on Blinkit at \u20b9299. I rely heavily on quick commerce for unplanned purchases",
+        "[SYNTHETIC] Order from Blinkit and get limited selection in 15 minutes"
+      ],
+      "predictive_value": "When this person runs out of body wash, they would likely order immediately from Blinkit rather than plan ahead or visit stores, even if options are limited.",
+      "id": "trait:P01_T001:unplanned-quick-commerce-dependent"
+    },
+    {
+      "node_type": "Trait",
+      "label": "clinical-claims-responsive",
+      "twin_id": "P01_T001",
+      "description": "Willing to pay 10-20% premium specifically for clinical-grade formulations and lab-tested products, but 0% for other claims.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] Clinical-grade formulation: 10\u201320% | Cruelty-free: 0% | Made in India: 0%. Only willing to pay premium for lab-tested, clinical-grade products",
+        "[REAL] Which certifications or labels influence your purchase? Dermatologist tested, Organic, Paraben-free, Sulfate-free",
+        "[SYNTHETIC] Would pay 2x if body wash replaces face wash + shampoo, or eliminates need for perfume or lotion. Must use natural ingredients with chemical-level effectiveness"
+      ],
+      "predictive_value": "When shown a body wash with 'clinically tested' claims, this person would likely pay a premium, but would ignore sustainability or 'natural' marketing without clinical backing.",
+      "id": "trait:P01_T001:clinical-claims-responsive"
+    },
+    {
+      "node_type": "Trait",
+      "label": "small-scale-brand-preferrer",
+      "twin_id": "P01_T001",
+      "description": "Explicitly prefers small-scale brands over large corporations, finding them less harmful, more consumer-focused, and more responsive to feedback.",
+      "confidence": 0.82,
+      "evidence_quotes": [
+        "[REAL] Prefers small-scale brands over large corporations \u2014 finds them less harmful, more consumer-focused, and more responsive to feedback",
+        "[REAL] Drawn to newer brands doing innovative work in personal care",
+        "[SYNTHETIC] New-age Indian D2C brands: 4 points, International premium brands: 3 points",
+        "[SYNTHETIC] I prefer small-scale brands and appreciate transparency about ingredients and sourcing"
+      ],
+      "predictive_value": "When shown a new D2C brand versus an established MNC, this person would likely choose the D2C option if ingredients and expert validation are comparable.",
+      "id": "trait:P01_T001:small-scale-brand-preferrer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "fragrance-secondary-prioritizer",
+      "twin_id": "P01_T001",
+      "description": "Cares about smelling good for confidence but doesn't prioritize fragrance in purchase decisions or pay premiums for scent alone.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[REAL] Loved Bath & Body Works bourbon fragrance but didn't repurchase \u2014 doesn't prioritize fragrance",
+        "[REAL] Expert opinion > Ingredients > Brand > Price > Fragrance > Packaging",
+        "[SYNTHETIC] Wouldn't pay double just for the dispensing experience. I care more about the product itself",
+        "[SYNTHETIC] I don't prioritize fragrance enough to wait a week for it"
+      ],
+      "predictive_value": "When shown a premium fragrant body wash, this person would likely choose a cheaper option with better ingredients over expensive fragrance-focused marketing.",
+      "id": "trait:P01_T001:fragrance-secondary-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "skin-health-focused",
+      "twin_id": "P01_T001",
+      "description": "Regularly cares about skin appearance and feel, with specific concerns about oiliness and acne that drive product choices.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] How much attention do you pay to how your skin looks and feels on a daily basis? Regularly cares about skin",
+        "[REAL] What specific skin concerns, if any, do you have? Oiliness, Acne",
+        "[REAL] Prioritizes long-term skin health over short-term gains",
+        "[SYNTHETIC] Since I regularly care about my skin and prioritize how it feels, I wouldn't continue with something that's making it dry"
+      ],
+      "predictive_value": "When shown body wash options, this person would likely choose formulations targeting oily, acne-prone skin over general moisturizing or anti-aging claims.",
+      "id": "trait:P01_T001:skin-health-focused"
+    },
+    {
+      "node_type": "Trait",
+      "label": "price-comparison-researcher",
+      "twin_id": "P01_T001",
+      "description": "Consistently browses online for options and compares prices across platforms before making purchase decisions.",
+      "confidence": 0.78,
+      "evidence_quotes": [
+        "[REAL] When your current body wash/soap runs out, what is your typical next step? Browses online for options",
+        "[SYNTHETIC] Check if it's cheaper elsewhere now. The 5% off is nice but I always compare prices across platforms",
+        "[SYNTHETIC] I always browse online for options when my current product runs out",
+        "[SYNTHETIC] Would make me more likely to browse and compare prices before purchasing"
+      ],
+      "predictive_value": "When considering a new body wash, this person would likely check multiple platforms and compare prices before purchasing, even for urgent needs.",
+      "id": "trait:P01_T001:price-comparison-researcher"
+    },
+    {
+      "node_type": "Trait",
+      "label": "marketing-skeptical-validator",
+      "twin_id": "P01_T001",
+      "description": "Distrusts brand advertising and packaging claims, preferring to validate information through independent research and expert sources.",
+      "confidence": 0.82,
+      "evidence_quotes": [
+        "[REAL] Trust ratings \u2014 TV ads: 2, Product packaging claims: 1",
+        "[REAL] Heavy marketing campaigns make me skeptical, especially since I trust dermatologists over ads",
+        "[SYNTHETIC] I'd want to verify the greenwashing allegations myself since I care about ingredient transparency",
+        "[SYNTHETIC] Fake positive reviews are obvious - I always look for the critical ones to understand real issues"
+      ],
+      "predictive_value": "When shown heavily advertised body wash campaigns, this person would likely become more skeptical and seek independent validation rather than being persuaded by the marketing.",
+      "id": "trait:P01_T001:marketing-skeptical-validator"
+    },
+    {
+      "node_type": "Trait",
+      "label": "convenience-over-savings-prioritizer",
+      "twin_id": "P01_T001",
+      "description": "Consistently chooses immediate availability and convenience over discounts or savings, especially for urgent needs.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SYNTHETIC] Buy on Blinkit at \u20b9299. I rely heavily on quick commerce for unplanned purchases and need it immediately. The \u20b9100 saving isn't worth waiting 5 days",
+        "[SYNTHETIC] Buy it on Nykaa right now. The convenience of immediate ordering outweighs saving \u20b950",
+        "[SYNTHETIC] Zepto at full price. I typically need body wash urgently when I realize I'm out",
+        "[SYNTHETIC] Amazon at \u20b9319. Free Prime delivery is convenient, and \u20b920 extra is worth avoiding the trip"
+      ],
+      "predictive_value": "When offered a choice between waiting for a discount or paying full price for immediate delivery, this person would likely choose immediate availability.",
+      "id": "trait:P01_T001:convenience-over-savings-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "innovation-attracted-early-adopter",
+      "twin_id": "P01_T001",
+      "description": "Drawn to innovative formulations and new product concepts, willing to be among first to try experimental or cutting-edge products.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[REAL] Drawn to newer brands doing innovative work in personal care",
+        "[SYNTHETIC] Order it immediately \u2014 being part of an exclusive test batch is exciting and you want to shape what gets launched",
+        "[SYNTHETIC] Start trying body wash oils now to be ahead of the trend",
+        "[SYNTHETIC] The innovation interests me, but I'd want to test the convenience factor before committing"
+      ],
+      "predictive_value": "When shown a body wash with innovative ingredients or format, this person would likely be among the first to try it, especially if there's clinical backing for the innovation.",
+      "id": "trait:P01_T001:innovation-attracted-early-adopter"
+    },
+    {
+      "node_type": "Trait",
+      "label": "functional-over-aesthetic-chooser",
+      "twin_id": "P01_T001",
+      "description": "Prefers minimalist packaging and won't pay premiums for aesthetic appeal, designer collaborations, or packaging upgrades.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] Do you prefer packaging that looks: Minimalist",
+        "[SYNTHETIC] Skip it \u2014 I'm paying for the product, not the bottle. I prefer minimalist packaging",
+        "[SYNTHETIC] The \u20b9249 basic bottle. I prefer minimalist packaging but won't pay \u20b9150 extra just for aesthetics",
+        "[SYNTHETIC] Skip it \u2014 I'm paying for the formula, not the packaging"
+      ],
+      "predictive_value": "When shown premium packaging options, this person would likely choose the basic version and allocate saved money toward better formulation or ingredients.",
+      "id": "trait:P01_T001:functional-over-aesthetic-chooser"
+    },
+    {
+      "node_type": "Trait",
+      "label": "established-platform-preferrer",
+      "twin_id": "P01_T001",
+      "description": "Strongly prefers buying from established platforms like Amazon, Nykaa, and Blinkit over brand websites or alternative channels.",
+      "confidence": 0.78,
+      "evidence_quotes": [
+        "[SYNTHETIC] I prefer buying from established platforms like Amazon or Nykaa rather than unknown brand websites",
+        "[SYNTHETIC] Wait until they're available on a mainstream platform. I prefer the security and convenience of established platforms",
+        "[SYNTHETIC] Not order \u2014 I need a proper website or Amazon listing to trust a brand",
+        "[SYNTHETIC] Amazon link. Familiar platform, reliable delivery, and easier returns"
+      ],
+      "predictive_value": "When a new brand is only available on their own website, this person would likely wait until it appears on Amazon or Nykaa rather than purchase directly.",
+      "id": "trait:P01_T001:established-platform-preferrer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "peer-review-over-mass-rating-truster",
+      "twin_id": "P01_T001",
+      "description": "Trusts detailed reviews from fewer people and community discussions more than high-volume ratings or influencer endorsements.",
+      "confidence": 0.72,
+      "evidence_quotes": [
+        "[SYNTHETIC] Order immediately \u2014 community recommendations are gold. Reddit discussions feel more authentic than marketing",
+        "[SYNTHETIC] The one with 180 ratings but 4.8 stars. I prefer quality over quantity in reviews",
+        "[SYNTHETIC] The Reddit thread with before/after photos influences me more. Real user experience with visual proof beats corporate clinical claims",
+        "[SYNTHETIC] Fake positive reviews are obvious - I always look for the critical ones"
+      ],
+      "predictive_value": "When evaluating body wash options, this person would likely trust a detailed Reddit discussion with photos over thousands of generic positive reviews.",
+      "id": "trait:P01_T001:peer-review-over-mass-rating-truster"
+    },
+    {
+      "node_type": "Trait",
+      "label": "subscription-averse-flexibility-seeker",
+      "twin_id": "P01_T001",
+      "description": "Consistently avoids subscription models and auto-delivery, preferring flexibility to switch products and make decisions when needed.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SYNTHETIC] Option A: \u20b9349 one-time purchase. I prefer flexibility to switch brands and don't want to be locked into subscriptions",
+        "[SYNTHETIC] Don't subscribe \u2014 I like the freedom to switch brands anytime. With my low brand loyalty and tendency to try new products",
+        "[SYNTHETIC] Neither \u2014 I don't want a body wash subscription. I prefer browsing and choosing based on my current needs",
+        "[SYNTHETIC] Amazon subscription with 5% off and easy cancellation. Flexibility matters more than the extra discount"
+      ],
+      "predictive_value": "When offered subscription discounts for body wash, this person would likely decline in favor of maintaining purchase flexibility, even at higher per-unit cost.",
+      "id": "trait:P01_T001:subscription-averse-flexibility-seeker"
+    },
+    {
+      "node_type": "Trait",
+      "label": "social-validation-independent",
+      "twin_id": "P01_T001",
+      "description": "Makes personal care decisions independently of social pressure, peer opinions, or what others might think about product choices.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SYNTHETIC] Laugh it off \u2014 I don't care what they think about my body wash. I use what works for me",
+        "[SYNTHETIC] Feel no pressure \u2014 my choice works for me. I don't make purchase decisions based on what others might think",
+        "[SYNTHETIC] Not affect my feelings about the brand at all. My product choices are based on ingredients and effectiveness",
+        "[SYNTHETIC] Personal care is individual preference, I wouldn't interfere with someone else's routine"
+      ],
+      "predictive_value": "When peers comment on or judge this person's body wash choice, they would likely continue using their preferred product without feeling pressure to change.",
+      "id": "trait:P01_T001:social-validation-independent"
+    },
+    {
+      "node_type": "Trait",
+      "label": "immediate-need-driven-purchaser",
+      "twin_id": "P01_T001",
+      "description": "Purchase timing is driven by running out of product rather than planned restocking, leading to urgent buying decisions.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] Uses quick commerce heavily because purchases are unplanned \u2014 realizes product is empty right before bathing",
+        "[SYNTHETIC] Order from Blinkit and get limited selection in 15 minutes. I often realize I'm out of body wash right before bathing",
+        "[SYNTHETIC] Most likely: (a) Order on Zepto, I use quick commerce heavily for exactly these situations",
+        "[SYNTHETIC] Helpful and convenient. I often forget to reorder until I'm out, so predictive reminders would be useful"
+      ],
+      "predictive_value": "When this person's body wash runs out, they would likely make an immediate purchase decision from available options rather than waiting to research the perfect choice.",
+      "id": "trait:P01_T001:immediate-need-driven-purchaser"
+    },
+    {
+      "node_type": "Trait",
+      "label": "ayurvedic-claims-dismissive",
+      "twin_id": "P01_T001",
+      "description": "Shows no willingness to pay premium for Ayurvedic ingredients and consistently chooses clinical formulations over traditional claims.",
+      "confidence": 0.78,
+      "evidence_quotes": [
+        "[REAL] Ayurvedic ingredients: 0% premium willingness",
+        "[SYNTHETIC] The Instagram ad body wash at \u20b9399. The \u20b9120 Patanjali doesn't align with my preferences",
+        "[SYNTHETIC] Skip the video and just try the product. I don't prioritize Ayurvedic ingredients",
+        "[SYNTHETIC] Ayurvedic/natural brands: 0 points"
+      ],
+      "predictive_value": "When shown Ayurvedic body wash options, this person would likely skip them in favor of clinically-formulated alternatives, regardless of traditional ingredient claims.",
+      "id": "trait:P01_T001:ayurvedic-claims-dismissive"
+    },
+    {
+      "node_type": "Trait",
+      "label": "risk-tolerant-with-guarantees",
+      "twin_id": "P01_T001",
+      "description": "Willing to try unknown products and brands, especially when risk is minimized through guarantees or return policies.",
+      "confidence": 0.72,
+      "evidence_quotes": [
+        "[SYNTHETIC] Yes \u2014 the guarantee removes my risk, I'll try it. I'm very comfortable trying new brands",
+        "[SYNTHETIC] Completely remove your hesitation to try them. This guarantee eliminates all risk",
+        "[SYNTHETIC] Absolutely \u2014 free is free and I might discover something great. I'm very comfortable trying new products",
+        "[SYNTHETIC] The \u20b9429 one I just sampled \u2014 the trial convinced me. I'm very comfortable trying new brands"
+      ],
+      "predictive_value": "When offered satisfaction guarantees or free trials, this person would likely try premium or unknown body wash brands they would otherwise skip due to price or unfamiliarity.",
+      "id": "trait:P01_T001:risk-tolerant-with-guarantees"
+    },
+    {
+      "node_type": "Trait",
+      "label": "ingredient-education-seeker",
+      "twin_id": "P01_T001",
+      "description": "Actively researches and wants to understand what ingredients do rather than just accepting marketing claims or avoiding certain components.",
+      "confidence": 0.7,
+      "evidence_quotes": [
+        "[SYNTHETIC] Research more deeply before deciding. I'd want to understand why it's considered harsh and what the alternatives offer",
+        "[SYNTHETIC] Research the ingredient to understand the distinction. I'd want to know if Sodium C14-16 Olefin Sulfonate is actually a sulphate variant",
+        "[SYNTHETIC] Research what 'fragrance' typically includes. Since I care about ingredients and long-term skin health",
+        "[SYNTHETIC] Complete ingredient list with explanations in simple language. Understanding what I'm putting on my skin matters most"
+      ],
+      "predictive_value": "When encountering unfamiliar ingredients in body wash, this person would likely research their benefits and safety rather than avoiding them or accepting marketing explanations.",
+      "id": "trait:P01_T001:ingredient-education-seeker"
+    },
+    {
+      "node_type": "Trait",
+      "label": "multi-platform-price-optimizer",
+      "twin_id": "P01_T001",
+      "description": "Regularly compares prices across different platforms and channels to find the best value, but prioritizes convenience for urgent needs.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SYNTHETIC] Check if it's cheaper elsewhere now. I always compare prices across platforms before buying",
+        "[SYNTHETIC] Would make me more likely to browse and compare prices before purchasing instead of buying immediately",
+        "[SYNTHETIC] I always browse online for options when my current product runs out",
+        "[SYNTHETIC] Quick commerce \u20b9300 (primary channel for unplanned purchases), Amazon \u20b9100 (research and compare)"
+      ],
+      "predictive_value": "When considering a body wash purchase, this person would likely check prices on Blinkit, Amazon, and Nykaa before deciding, unless they need it immediately.",
+      "id": "trait:P01_T001:multi-platform-price-optimizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "premium-justification-demanding",
+      "twin_id": "P01_T001",
+      "description": "Willing to pay higher prices only when clear functional benefits are demonstrated, not for brand prestige or marketing positioning.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[REAL] Only willing to pay premium for lab-tested, clinical-grade products",
+        "[SYNTHETIC] If I'm not blown away, it's not worth double the price. I only pay premiums for clinical-grade products with clear benefits",
+        "[SYNTHETIC] \u20b9200 extra for customization and name printing isn't worth it. I prefer minimalist packaging",
+        "[SYNTHETIC] I wouldn't pay \u20b9200 extra just for 'Imported from Korea' labeling"
+      ],
+      "predictive_value": "When shown premium body wash options, this person would likely choose them only if they offer clear functional advantages like clinical testing or specific skin benefits.",
+      "id": "trait:P01_T001:premium-justification-demanding"
+    },
+    {
+      "node_type": "Trait",
+      "label": "transparency-appreciating-but-performance-prioritizing",
+      "twin_id": "P01_T001",
+      "description": "Values brand transparency and ingredient sourcing information but ultimately makes decisions based on product performance.",
+      "confidence": 0.68,
+      "evidence_quotes": [
+        "[SYNTHETIC] Make you trust the brand more but you'd still need to like the product itself. Transparency is nice but the actual product performance matters most",
+        "[SYNTHETIC] More loyal \u2014 I feel connected to the person behind the brand. I prefer small-scale brands and appreciate transparency",
+        "[SYNTHETIC] Not bother me \u2014 I'm paying for the formulation, not the factory. What matters is the specific formulation, ingredients, and how it performs",
+        "[SYNTHETIC] Save the post for reference. Educational content about certifications is useful for future purchases"
+      ],
+      "predictive_value": "When shown transparent brand communications about sourcing and ingredients, this person would likely appreciate the information but still base their purchase on how well the product works for their skin.",
+      "id": "trait:P01_T001:transparency-appreciating-but-performance-prioritizing"
+    },
+    {
+      "node_type": "Trait",
+      "label": "demands-clinical-validation-before-premium-purchase",
+      "twin_id": "P01_T001",
+      "description": "Consistently requires clinical testing data, dermatologist validation, and scientific proof before committing to higher-priced products.",
+      "confidence": 0.95,
+      "evidence_quotes": [
+        "[SURVEY] I'd want to see the complete ingredient breakdown of the micellar formula and independent dermatologist testing results to validate the 60-second effectiveness claim",
+        "[SURVEY] I'd want detailed information about the lipid-lock technology ingredients and clinical studies proving the 12-hour moisturization claim",
+        "[SURVEY] I'd want detailed information about the AI analysis accuracy, the specific active ingredients used for different skin concerns, and independent dermatologist validation"
+      ],
+      "predictive_value": "When shown a premium body wash concept, this person would likely request clinical studies and ingredient transparency before considering purchase, regardless of brand reputation.",
+      "id": "trait:P01_T001:demands-clinical-validation-before-premium-purchase"
+    },
+    {
+      "node_type": "Trait",
+      "label": "technology-innovation-enthusiast-with-skepticism",
+      "twin_id": "P01_T001",
+      "description": "Highly attracted to advanced technologies like AI analysis and micellar formulations but demands scientific methodology transparency.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[SURVEY] The AI skin analysis technology and custom formulation based on different body areas - this addresses my core need for targeted solutions",
+        "[SURVEY] The micellar cleansing technology from Dove's face care range - I trust clinical formulations and the proven technology aspect",
+        "[SURVEY] I'd want to see the scientific methodology behind the fragrance quiz algorithm and how the 200+ compounds are selected"
+      ],
+      "predictive_value": "When shown technology-driven concepts, this person would likely show high initial interest but require detailed technical specifications and methodology explanations before purchasing.",
+      "id": "trait:P01_T001:technology-innovation-enthusiast-with-skepticism"
+    },
+    {
+      "node_type": "Trait",
+      "label": "ingredient-transparency-prioritizer",
+      "twin_id": "P01_T001",
+      "description": "Explicitly seeks complete ingredient breakdowns and formulation details as a prerequisite for product evaluation.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[SURVEY] Better ingredient transparency with clinical testing data and formulations that target specific skin concerns",
+        "[SURVEY] I'd want to see the complete ingredient breakdown of the micellar formula",
+        "[SURVEY] I'd want detailed information about the lipid-lock technology ingredients"
+      ],
+      "predictive_value": "When evaluating body wash products, this person would likely prioritize brands that provide comprehensive ingredient lists and formulation explanations over those with vague marketing claims.",
+      "id": "trait:P01_T001:ingredient-transparency-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "functional-efficiency-over-experience",
+      "twin_id": "P01_T001",
+      "description": "Values time-saving functionality and proven effectiveness over sensory experiences or ritualistic aspects.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[SURVEY] The advanced lipid-lock technology and the fact that it eliminates the need for separate body lotion - I appreciate functional innovation that simplifies my routine",
+        "[SURVEY] I'd prefer more focus on the clinical stress-reduction benefits and less on the ritual aspect - the science behind the ingredients matters more to me than the experience positioning"
+      ],
+      "predictive_value": "When shown experiential or ritual-focused concepts, this person would likely be less interested unless clear functional benefits and time-saving aspects are emphasized.",
+      "id": "trait:P01_T001:functional-efficiency-over-experience"
+    },
+    {
+      "node_type": "Trait",
+      "label": "targeted-skin-concern-solution-seeker",
+      "twin_id": "P01_T001",
+      "description": "Specifically seeks products that address oily, acne-prone skin with targeted formulations rather than generic solutions.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[SURVEY] formulations that target specific skin concerns like oiliness and acne without compromising on effectiveness",
+        "[SURVEY] this addresses my core need for targeted solutions for oily, acne-prone skin with clinical backing rather than generic one-size-fits-all products"
+      ],
+      "predictive_value": "When shown generic body wash concepts, this person would likely show low interest unless specific benefits for oily/acne-prone skin are highlighted with clinical backing.",
+      "id": "trait:P01_T001:targeted-skin-concern-solution-seeker"
+    },
+    {
+      "node_type": "Trait",
+      "label": "premium-price-acceptance-with-justification",
+      "twin_id": "P01_T001",
+      "description": "Willing to pay premium prices but only when scientific backing and ingredient transparency justify the cost.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SURVEY] Price might be too high (concern for Dove 60-Second Body Spray)",
+        "[SURVEY] I need transparency about the data-driven matching process to justify the \u20b9799 premium price",
+        "[SURVEY] What would you expect to pay for your most preferred concept? 449"
+      ],
+      "predictive_value": "When shown premium-priced concepts, this person would likely require detailed justification of the price through scientific benefits and ingredient quality before purchasing.",
+      "id": "trait:P01_T001:premium-price-acceptance-with-justification"
+    },
+    {
+      "node_type": "Trait",
+      "label": "data-driven-personalization-responsive",
+      "twin_id": "P01_T001",
+      "description": "Attracted to personalized products based on data analysis and algorithms, but requires transparency in the methodology.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SURVEY] The personalized fragrance quiz and custom formulation from 200+ compounds - I'm drawn to the innovative, data-driven approach",
+        "[SURVEY] The AI skin analysis technology and custom formulation based on different body areas",
+        "[SURVEY] I'd want to see the scientific methodology behind the fragrance quiz algorithm"
+      ],
+      "predictive_value": "When shown personalization concepts, this person would likely be highly interested if the data methodology is transparent and scientifically sound.",
+      "id": "trait:P01_T001:data-driven-personalization-responsive"
+    },
+    {
+      "node_type": "Trait",
+      "label": "brand-agnostic-multi-user",
+      "twin_id": "P01_T001",
+      "description": "Uses multiple brands simultaneously without strong loyalty, focusing on product performance over brand identity.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SURVEY] Which brands have you used in the past 3 months? Dove, Pears, The Body Shop, Other brand",
+        "[SURVEY] Overall, how satisfied are you with the body wash you currently use most often? Somewhat satisfied"
+      ],
+      "predictive_value": "When shown new brand concepts, this person would likely evaluate based on product merits rather than brand loyalty, making them open to switching for better formulations.",
+      "id": "trait:P01_T001:brand-agnostic-multi-user"
+    },
+    {
+      "node_type": "Trait",
+      "label": "routine-simplification-seeker",
+      "twin_id": "P01_T001",
+      "description": "Values products that consolidate multiple steps or eliminate the need for additional products in their routine.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SURVEY] eliminates the need for separate body lotion - I appreciate functional innovation that simplifies my routine",
+        "[SURVEY] How likely would the Dove Skip be to save you time in your routine? 4",
+        "[SURVEY] How likely would the Dove 60-Second Body Spray be to save you time in your routine? 4"
+      ],
+      "predictive_value": "When shown multi-benefit or time-saving concepts, this person would likely show high interest and willingness to pay premium for routine consolidation.",
+      "id": "trait:P01_T001:routine-simplification-seeker"
+    },
+    {
+      "node_type": "Trait",
+      "label": "scientific-claims-over-marketing-fluff",
+      "twin_id": "P01_T001",
+      "description": "Prefers clinical evidence and scientific backing over emotional or experiential marketing messages.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[SURVEY] The clinical backing of chamomile and lavender oils being shown to reduce stress hormones - I value products with scientifically proven benefits rather than just aromatherapy claims",
+        "[SURVEY] the science behind the ingredients matters more to me than the experience positioning"
+      ],
+      "predictive_value": "When shown marketing-heavy concepts with emotional appeals, this person would likely be less responsive unless scientific benefits are prominently featured.",
+      "id": "trait:P01_T001:scientific-claims-over-marketing-fluff"
+    },
+    {
+      "node_type": "Trait",
+      "label": "subscription-model-open-with-conditions",
+      "twin_id": "P01_T001",
+      "description": "Willing to consider subscription models but requires validation of product effectiveness and customization accuracy first.",
+      "confidence": 0.7,
+      "evidence_quotes": [
+        "[SURVEY] independent dermatologist validation of the custom formulations before committing to the subscription model",
+        "[SURVEY] Dove Skin ID rated 5/5 for most appealing despite subscription model"
+      ],
+      "predictive_value": "When shown subscription-based concepts, this person would likely require trial periods or strong guarantees before committing to ongoing purchases.",
+      "id": "trait:P01_T001:subscription-model-open-with-conditions"
+    },
+    {
+      "node_type": "Trait",
+      "label": "cleansing-effectiveness-prioritizer",
+      "twin_id": "P01_T001",
+      "description": "Rates cleansing effectiveness as the most important factor when choosing body wash products.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[SURVEY] How important are each of these factors when choosing a body wash? Cleansing effectiveness: 5"
+      ],
+      "predictive_value": "When evaluating body wash concepts, this person would likely prioritize products that emphasize superior cleansing technology and effectiveness over fragrance or moisturizing benefits.",
+      "id": "trait:P01_T001:cleansing-effectiveness-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "innovation-uniqueness-valued",
+      "twin_id": "P01_T001",
+      "description": "Consistently rates innovation and uniqueness as important factors and responds positively to novel product concepts.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[SURVEY] Innovation / uniqueness: 4 (importance rating)",
+        "[SURVEY] How unique is Dove Skin ID? Extremely unique",
+        "[SURVEY] Old-fashioned-Innovative ratings: Dove Skin ID: 5, Dove 60-Second Body Spray: 5"
+      ],
+      "predictive_value": "When shown incremental product improvements, this person would likely show less interest compared to breakthrough innovations or novel technologies.",
+      "id": "trait:P01_T001:innovation-uniqueness-valued"
+    },
+    {
+      "node_type": "Trait",
+      "label": "moderate-fragrance-importance",
+      "twin_id": "P01_T001",
+      "description": "Views fragrance as moderately important but not a primary decision driver compared to functional benefits.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SURVEY] Fragrance / scent quality: 3 (importance rating)",
+        "[SURVEY] The personalized fragrance quiz and custom formulation from 200+ compounds - I'm drawn to the innovative, data-driven approach"
+      ],
+      "predictive_value": "When shown fragrance-focused concepts, this person would likely be interested in the technology behind scent customization rather than the sensory experience itself.",
+      "id": "trait:P01_T001:moderate-fragrance-importance"
+    },
+    {
+      "node_type": "Trait",
+      "label": "current-product-satisfaction-gap",
+      "twin_id": "P01_T001",
+      "description": "Only somewhat satisfied with current products, indicating openness to switching for better alternatives.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SURVEY] Overall, how satisfied are you with the body wash you currently use most often? Somewhat satisfied",
+        "[SURVEY] Happy with current product (listed as concern for multiple concepts)"
+      ],
+      "predictive_value": "When shown superior alternatives with clear benefits, this person would likely be willing to switch from their current products despite some satisfaction.",
+      "id": "trait:P01_T001:current-product-satisfaction-gap"
+    }
+  ],
+  "links": [
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.95,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:expert-opinion-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.92,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:ingredients-first-evaluator"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:low-brand-loyalty-experimenter"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.88,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:unplanned-quick-commerce-dependent"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:clinical-claims-responsive"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.82,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:small-scale-brand-preferrer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:fragrance-secondary-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:skin-health-focused"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.78,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:price-comparison-researcher"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.82,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:marketing-skeptical-validator"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:convenience-over-savings-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:innovation-attracted-early-adopter"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:functional-over-aesthetic-chooser"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.78,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:established-platform-preferrer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.72,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:peer-review-over-mass-rating-truster"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:subscription-averse-flexibility-seeker"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:social-validation-independent"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:immediate-need-driven-purchaser"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.78,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:ayurvedic-claims-dismissive"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.72,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:risk-tolerant-with-guarantees"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.7,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:ingredient-education-seeker"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:multi-platform-price-optimizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:premium-justification-demanding"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.68,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:transparency-appreciating-but-performance-prioritizing"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.95,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:demands-clinical-validation-before-premium-purchase"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:technology-innovation-enthusiast-with-skepticism"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:ingredient-transparency-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:functional-efficiency-over-experience"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:targeted-skin-concern-solution-seeker"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:premium-price-acceptance-with-justification"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:data-driven-personalization-responsive"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:brand-agnostic-multi-user"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:routine-simplification-seeker"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:scientific-claims-over-marketing-fluff"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.7,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:subscription-model-open-with-conditions"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:cleansing-effectiveness-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:innovation-uniqueness-valued"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:moderate-fragrance-importance"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P01_T001",
+      "target": "trait:P01_T001:current-product-satisfaction-gap"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:expert-opinion-prioritizer",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "High trust in dermatologists (5/5) directly drives willingness to pay 10-20% premium for clinical-grade formulations, as expert validation justifies the cost.",
+      "source": "trait:P01_T001:expert-opinion-prioritizer",
+      "target": "trait:P01_T001:clinical-claims-responsive"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "High trust in dermatologists and clinical validation makes traditional Ayurvedic claims without scientific backing less credible and worth 0% premium.",
+      "source": "trait:P01_T001:expert-opinion-prioritizer",
+      "target": "trait:P01_T001:ayurvedic-claims-dismissive"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:ingredients-first-evaluator",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Focus on ingredient analysis makes them distrust packaging claims and advertising, preferring to validate information through independent research.",
+      "source": "trait:P01_T001:ingredients-first-evaluator",
+      "target": "trait:P01_T001:marketing-skeptical-validator"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:low-brand-loyalty-experimenter",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Low brand loyalty creates need for flexibility to switch products, making subscription models incompatible with their experimental approach.",
+      "source": "trait:P01_T001:low-brand-loyalty-experimenter",
+      "target": "trait:P01_T001:subscription-averse-flexibility-seeker"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:unplanned-quick-commerce-dependent",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Unplanned purchase pattern creates urgency that makes immediate availability more valuable than waiting for discounts or better prices.",
+      "source": "trait:P01_T001:unplanned-quick-commerce-dependent",
+      "target": "trait:P01_T001:convenience-over-savings-prioritizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:clinical-claims-responsive",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:small-scale-brand-preferrer",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Preference for small-scale brands aligns with attraction to innovative formulations, as smaller brands are often more experimental and cutting-edge.",
+      "source": "trait:P01_T001:small-scale-brand-preferrer",
+      "target": "trait:P01_T001:innovation-attracted-early-adopter"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:fragrance-secondary-prioritizer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:skin-health-focused",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Specific skin concerns (oily, acne-prone) create clear functional needs that justify paying premiums for targeted solutions.",
+      "source": "trait:P01_T001:skin-health-focused",
+      "target": "trait:P01_T001:premium-justification-demanding"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:price-comparison-researcher",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Habit of browsing online for options drives systematic comparison across multiple platforms to find best value before purchasing.",
+      "source": "trait:P01_T001:price-comparison-researcher",
+      "target": "trait:P01_T001:multi-platform-price-optimizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:marketing-skeptical-validator",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:convenience-over-savings-prioritizer",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:innovation-attracted-early-adopter",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:functional-over-aesthetic-chooser",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Focus on functional benefits over aesthetics extends to prioritizing ingredients and skin benefits over fragrance appeal or scent marketing.",
+      "source": "trait:P01_T001:functional-over-aesthetic-chooser",
+      "target": "trait:P01_T001:fragrance-secondary-prioritizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:established-platform-preferrer",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:peer-review-over-mass-rating-truster",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:subscription-averse-flexibility-seeker",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:social-validation-independent",
+      "target": "domain:Social & Contextual Drivers"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Independence from peer opinions creates reliance on personal research and ingredient understanding rather than following social trends or recommendations.",
+      "source": "trait:P01_T001:social-validation-independent",
+      "target": "trait:P01_T001:ingredient-education-seeker"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:immediate-need-driven-purchaser",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Urgent purchase needs require reliable, fast platforms like Blinkit and Amazon rather than experimenting with unknown brand websites.",
+      "source": "trait:P01_T001:immediate-need-driven-purchaser",
+      "target": "trait:P01_T001:established-platform-preferrer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:ayurvedic-claims-dismissive",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:risk-tolerant-with-guarantees",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Comfort with trying new products when risk is minimized enables early adoption of innovative formulations and experimental brands.",
+      "source": "trait:P01_T001:risk-tolerant-with-guarantees",
+      "target": "trait:P01_T001:innovation-attracted-early-adopter"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:ingredient-education-seeker",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:multi-platform-price-optimizer",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:premium-justification-demanding",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:transparency-appreciating-but-performance-prioritizing",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:demands-clinical-validation-before-premium-purchase",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "The need for clinical validation drives the demand for complete ingredient transparency as part of the evidence-gathering process before making premium purchases.",
+      "source": "trait:P01_T001:demands-clinical-validation-before-premium-purchase",
+      "target": "trait:P01_T001:ingredient-transparency-prioritizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:technology-innovation-enthusiast-with-skepticism",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Interest in advanced technologies creates the need for scientific validation to overcome skepticism about whether the innovation actually works as claimed.",
+      "source": "trait:P01_T001:technology-innovation-enthusiast-with-skepticism",
+      "target": "trait:P01_T001:demands-clinical-validation-before-premium-purchase"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:ingredient-transparency-prioritizer",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:functional-efficiency-over-experience",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Valuing functional benefits naturally leads to seeking products that consolidate steps and simplify routines rather than adding complexity.",
+      "source": "trait:P01_T001:functional-efficiency-over-experience",
+      "target": "trait:P01_T001:routine-simplification-seeker"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:targeted-skin-concern-solution-seeker",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Having specific skin concerns (oily, acne-prone) makes this person prioritize proven scientific benefits over general marketing messages that don't address their particular needs.",
+      "source": "trait:P01_T001:targeted-skin-concern-solution-seeker",
+      "target": "trait:P01_T001:scientific-claims-over-marketing-fluff"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:premium-price-acceptance-with-justification",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:data-driven-personalization-responsive",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:brand-agnostic-multi-user",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Not being loyal to specific brands makes this person evaluate products purely on merit, requiring clear justification for premium pricing rather than paying for brand prestige.",
+      "source": "trait:P01_T001:brand-agnostic-multi-user",
+      "target": "trait:P01_T001:premium-price-acceptance-with-justification"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:routine-simplification-seeker",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:scientific-claims-over-marketing-fluff",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:subscription-model-open-with-conditions",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:cleansing-effectiveness-prioritizer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "contradicts",
+      "mechanism": "Prioritizing cleansing effectiveness as the top factor creates tension with fragrance importance, leading to fragrance being viewed as secondary to functional performance.",
+      "source": "trait:P01_T001:cleansing-effectiveness-prioritizer",
+      "target": "trait:P01_T001:moderate-fragrance-importance"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:innovation-uniqueness-valued",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:moderate-fragrance-importance",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P01_T001:current-product-satisfaction-gap",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Being only somewhat satisfied with current products drives interest in innovative alternatives that might better meet their needs.",
+      "source": "trait:P01_T001:current-product-satisfaction-gap",
+      "target": "trait:P01_T001:innovation-uniqueness-valued"
+    }
+  ]
+}

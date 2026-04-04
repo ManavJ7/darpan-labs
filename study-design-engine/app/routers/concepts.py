@@ -7,7 +7,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.auth import get_current_user
 from app.database import get_session
+from app.models.user import User
 from app.schemas.concept import (
     ComparabilityCheckResponse,
     ConceptRefineResponse,
@@ -35,10 +37,6 @@ class UpdateConceptRequest(BaseModel):
 
 class ApproveConceptRequest(BaseModel):
     approved_components: dict
-
-
-class LockRequest(BaseModel):
-    user_id: str
 
 
 # ---------------------------------------------------------------------------
@@ -177,12 +175,12 @@ async def render_image(
 @router.post("/steps/2/lock")
 async def lock_concepts(
     study_id: uuid.UUID,
-    body: LockRequest,
     db: AsyncSession = Depends(get_session),
     service: ConceptBoardService = Depends(get_concept_service),
+    current_user: User = Depends(get_current_user),
 ):
     """Lock step 2 after all concepts are approved."""
     try:
-        return await service.lock_concepts(study_id, body.user_id, db)
+        return await service.lock_concepts(study_id, str(current_user.id), db)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc))

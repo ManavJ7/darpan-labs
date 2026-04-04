@@ -6,7 +6,9 @@ from typing import Optional
 from fastapi import APIRouter, Body, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.auth import get_current_user
 from app.database import get_session
+from app.models.user import User
 from app.llm.client import get_llm_client, LLMClient
 from app.schemas.study import StepVersionResponse
 from app.services.prompt_service import get_prompt_service, PromptService
@@ -64,12 +66,12 @@ async def edit_brief(
 )
 async def lock_brief(
     study_id: uuid.UUID,
-    user_id: str = Body(..., embed=True),
     db: AsyncSession = Depends(get_session),
     service: StudyBriefService = Depends(_get_brief_service),
+    current_user: User = Depends(get_current_user),
 ):
     """Lock Step 1, preventing further edits.
 
     The study must be in 'step_1_review' status.
     """
-    return await service.lock_brief(study_id, user_id, db)
+    return await service.lock_brief(study_id, str(current_user.id), db)

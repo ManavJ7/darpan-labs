@@ -1,0 +1,394 @@
+{
+  "P05_T001": {
+    "twin_id": "P05_T001",
+    "identity_summary": "This person is a deeply brand-loyal consumer who has used Dove since childhood and prioritizes ingredients above all else when making personal care decisions. They are price-conscious within their \u20b9200-350 range but will pay for proven formulations, relying heavily on friends/family recommendations and online reviews rather than marketing claims or influencer content.",
+    "traits": [
+      {
+        "trait_name": "childhood-brand-loyalty-anchor",
+        "domain": "Brand Relationship Patterns",
+        "description": "Has used Dove since childhood and views it as the gold standard, creating extremely high switching barriers.",
+        "confidence": 0.95,
+        "evidence_quotes": [
+          "[REAL] Been using since childhood",
+          "[REAL] Dove only",
+          "[SYNTHETIC] I've been using Dove since childhood and trust established brands that have worked for me consistently",
+          "[SYNTHETIC] Dove has worked well for me since childhood and I trust it for family members too"
+        ],
+        "predictive_value": "When shown a new body wash concept, this person would likely compare it unfavorably to Dove and require overwhelming evidence to consider switching."
+      },
+      {
+        "trait_name": "ingredients-first-decision-maker",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Ranks ingredients as the most important factor when buying personal care and actively reads ingredient lists.",
+        "confidence": 0.95,
+        "evidence_quotes": [
+          "[REAL] ingredients ranked first in purchase factors",
+          "[REAL] natural means it free of all toxics that will have carcinogenic effect on my face, body or skin",
+          "[SYNTHETIC] Ingredients are most important to me, followed by price and brand",
+          "[SYNTHETIC] Since ingredients are my top priority when buying personal care products"
+        ],
+        "predictive_value": "When shown a body wash ad, this person would likely ignore marketing claims and immediately look for detailed ingredient information before considering purchase."
+      },
+      {
+        "trait_name": "price-ceiling-enforcer",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Has a strict spending range of \u20b9200-350 for body wash and actively looks for alternatives when prices exceed this.",
+        "confidence": 0.9,
+        "evidence_quotes": [
+          "[REAL] 200_350 typical spend",
+          "[REAL] Price is high (frustration with current body wash)",
+          "[SYNTHETIC] \u20b9549 vs \u20b9249 is too big a price difference",
+          "[SYNTHETIC] \u20b9450 is expensive and I'm price-sensitive"
+        ],
+        "predictive_value": "When shown a premium body wash concept above \u20b9400, this person would likely reject it immediately regardless of benefits and look for cheaper alternatives."
+      },
+      {
+        "trait_name": "friends-family-trust-prioritizer",
+        "domain": "Social & Contextual Drivers",
+        "description": "Rates friends and family as 4/5 for trustworthiness while rating dermatologists only 2/5, showing strong preference for personal recommendations.",
+        "confidence": 0.95,
+        "evidence_quotes": [
+          "[REAL] Friends and family: 4, Dermatologists or skin doctors: 2",
+          "[REAL] mostly friends and family (for product discovery)",
+          "[SYNTHETIC] I trust friends and family recommendations highly",
+          "[SYNTHETIC] Friends and family recommendations are what I trust most"
+        ],
+        "predictive_value": "When shown expert endorsements versus friend recommendations, this person would likely choose the friend-recommended product even if the expert option has better credentials."
+      },
+      {
+        "trait_name": "review-volume-validator",
+        "domain": "Information-Seeking Behavior",
+        "description": "Trusts products with thousands of reviews over those with fewer but higher ratings, preferring volume of feedback.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] Online reviews (Amazon, Nykaa): 4 trust rating",
+          "[SYNTHETIC] More reviews give me confidence in the rating authenticity",
+          "[SYNTHETIC] Brand A with 4.2 stars and 15,000 reviews. More reviews give me confidence",
+          "[SYNTHETIC] I trust online reviews highly and 12,000 reviews gives me much more confidence than just 85 reviews"
+        ],
+        "predictive_value": "When shown two similar products, this person would likely choose the one with more reviews even if it has a slightly lower average rating."
+      },
+      {
+        "trait_name": "gentle-formulation-seeker",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Specifically values lightweight, mild formulations that can be used on face, driven by dry skin concerns.",
+        "confidence": 0.9,
+        "evidence_quotes": [
+          "[REAL] Lightweight, can use on face, cleans effectively, mild",
+          "[REAL] Dryness (skin concern)",
+          "[REAL] Moisturized (ideal post-wash feeling)",
+          "[SYNTHETIC] I need something that's gentle and moisturizing for my dry skin"
+        ],
+        "predictive_value": "When shown a body wash concept emphasizing deep cleansing or exfoliation, this person would likely be concerned about harshness and prefer gentler alternatives."
+      },
+      {
+        "trait_name": "convenience-over-novelty",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Prefers simple, proven products over innovative formats or complex routines, describing themselves as 'slightly lazy'.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] Fun-loving, happy, slightly lazy",
+          "[REAL] Only body wash \u2014 easy to use",
+          "[SYNTHETIC] I prefer convenience and described my personality as slightly lazy",
+          "[SYNTHETIC] Hard pass \u2014 too much effort for a shower product"
+        ],
+        "predictive_value": "When shown an innovative body wash format requiring extra steps, this person would likely reject it in favor of traditional squeeze bottles."
+      },
+      {
+        "trait_name": "platform-loyalty-maintainer",
+        "domain": "Channel & Format Preferences",
+        "description": "Strongly prefers shopping on Amazon, Nykaa, and quick commerce platforms, avoiding brand websites or unfamiliar channels.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] amazon, quick_commerce, nykaa (top 3 purchase channels)",
+          "[SYNTHETIC] I only shop on my trusted platforms",
+          "[SYNTHETIC] I prefer shopping on platforms I trust with good return policies",
+          "[SYNTHETIC] Wait until they're available on Amazon or Nykaa"
+        ],
+        "predictive_value": "When shown a new product available only on the brand's website, this person would likely wait until it appears on Amazon or Nykaa before purchasing."
+      },
+      {
+        "trait_name": "repurchase-same-loyalist",
+        "domain": "Brand Relationship Patterns",
+        "description": "Consistently repurchases the exact same product when running out, showing extreme purchase consistency.",
+        "confidence": 0.9,
+        "evidence_quotes": [
+          "[REAL] Repurchase_same (when current body wash runs out)",
+          "[REAL] Very_loyal (brand loyalty rating)",
+          "[SYNTHETIC] All the same brand and variant",
+          "[SYNTHETIC] I always repurchase the same Dove body wash every time"
+        ],
+        "predictive_value": "When shown variety or seasonal limited editions, this person would likely stick with their regular variant rather than experimenting."
+      },
+      {
+        "trait_name": "chemical-free-prioritizer",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Rates natural/chemical-free as 5/5 importance and specifically seeks paraben-free, sulfate-free formulations.",
+        "confidence": 0.9,
+        "evidence_quotes": [
+          "[REAL] rating: 5 for natural importance",
+          "[REAL] Paraben_free, ph_balanced, sulfate_free, cruelty_free (important certifications)",
+          "[SYNTHETIC] I care about ingredients and want chemical-free products",
+          "[SYNTHETIC] Since I care about ingredients and chemical-free products"
+        ],
+        "predictive_value": "When shown a body wash with prominent natural/chemical-free claims, this person would likely be highly interested and investigate the ingredient list thoroughly."
+      },
+      {
+        "trait_name": "indian-brand-preference-holder",
+        "domain": "Brand Relationship Patterns",
+        "description": "Explicitly prefers Indian brands over international ones, viewing them as appropriately priced with better credibility.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] Indian personal care brands are performing well \u2014 appropriately priced, easy to access and restock. Don't enjoy international brands as they lack credibility",
+          "[SYNTHETIC] I prefer Indian brands and think they're appropriately priced. International brands lack credibility for me",
+          "[SYNTHETIC] Made in India at \u20b9249. I prefer Indian brands and don't trust international ones"
+        ],
+        "predictive_value": "When shown an imported premium brand versus an Indian alternative, this person would likely choose the Indian option even if the imported one has better reviews."
+      },
+      {
+        "trait_name": "sample-before-commitment",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Strongly prefers trying products through free samples or mini sizes before committing to full bottles.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] doctor_rec, free_sample (what would make switch brands)",
+          "[SYNTHETIC] Free samples remove my risk of trying something new",
+          "[SYNTHETIC] \u20b910 is nothing to lose and I can properly test",
+          "[SYNTHETIC] Get a \u20b999 mini size from Nykaa first"
+        ],
+        "predictive_value": "When shown a new product launch, this person would likely wait for sample opportunities rather than purchasing full-size immediately."
+      },
+      {
+        "trait_name": "fragrance-duration-expecter",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Expects body wash fragrance to last all day and specifically prefers floral and ocean/aquatic scents.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] All_day (how long fragrance should last)",
+          "[REAL] Floral, ocean_aquatic (preferred fragrance families)",
+          "[REAL] Refreshing, not sweet, fresh, long-lasting (about Nike perfume)",
+          "[SYNTHETIC] I prefer floral and ocean scents specifically"
+        ],
+        "predictive_value": "When shown a body wash with weak or short-lasting fragrance, this person would likely be disappointed and look for alternatives with stronger scent projection."
+      },
+      {
+        "trait_name": "multi-platform-researcher",
+        "domain": "Information-Seeking Behavior",
+        "description": "Actively researches products across Reddit, YouTube, Amazon, and Nykaa before making purchase decisions.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] Reddit, youtube, amazon, nykaa (where reads reviews)",
+          "[SYNTHETIC] I use multiple sources like Reddit, YouTube, and Nykaa for reviews",
+          "[SYNTHETIC] I always check reviews before buying anything",
+          "[SYNTHETIC] I need to see reviews and ingredients before trying anything new"
+        ],
+        "predictive_value": "When shown a new product, this person would likely spend significant time researching across multiple platforms before making any purchase decision."
+      },
+      {
+        "trait_name": "honest-reviewer-seeker",
+        "domain": "Information-Seeking Behavior",
+        "description": "Specifically trusts reviewers who seem genuine and not influenced by PR, like Ankush Bahuguna.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] Honest, genuine, uses few products so clearly not PR, very honest reviews (about Ankush Bahuguna)",
+          "[SYNTHETIC] I trust honest reviews over brand marketing",
+          "[SYNTHETIC] Reddit users give honest reviews without PR influence",
+          "[SYNTHETIC] The independent chemist - they have no financial motive"
+        ],
+        "predictive_value": "When shown influencer content, this person would likely be more influenced by creators who demonstrate genuine product use rather than those with obvious brand partnerships."
+      },
+      {
+        "trait_name": "bulk-purchase-avoider",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Prefers buying only what's needed immediately rather than stocking up, even when deals are available.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[SYNTHETIC] I only buy what I need right now and prefer not to stock up",
+          "[SYNTHETIC] I don't want to store extra products or pay upfront for items I won't use immediately",
+          "[SYNTHETIC] Skip it \u2014 I don't want to commit to 10 bottles of something I haven't tried",
+          "[SYNTHETIC] I prefer buying when I need it"
+        ],
+        "predictive_value": "When shown bulk purchase deals or subscription offers, this person would likely decline in favor of individual purchases as needed."
+      },
+      {
+        "trait_name": "premium-no-pay-without-proof",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Willing to pay \u20b9350-400 maximum but only for products with proven benefits, not for packaging or marketing.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] \u20b9350-400, yes worth it (most ever paid)",
+          "[SYNTHETIC] \u20b9150 extra for packaging doesn't make sense",
+          "[SYNTHETIC] Skip it - I'm paying for the product, not the bottle",
+          "[SYNTHETIC] I focus on ingredients and product quality, not fancy packaging"
+        ],
+        "predictive_value": "When shown premium packaging or designer collaborations, this person would likely ignore the aesthetic appeal and focus solely on ingredient value."
+      },
+      {
+        "trait_name": "quick-commerce-convenience-user",
+        "domain": "Channel & Format Preferences",
+        "description": "Regularly uses Blinkit/Zepto for urgent restocking but switches to Amazon/Nykaa when selection is limited.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] Yes, use quick commerce. If limited selection, look on Amazon or Nykaa",
+          "[SYNTHETIC] Quick commerce is perfect for these emergencies",
+          "[SYNTHETIC] Order on Zepto for 10-min delivery",
+          "[SYNTHETIC] I use quick commerce regularly"
+        ],
+        "predictive_value": "When running out of body wash urgently, this person would likely use quick commerce first but maintain loyalty to their preferred platforms for planned purchases."
+      },
+      {
+        "trait_name": "face-safe-formulation-seeker",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Specifically values body washes gentle enough to use on face, seeing this as a key differentiator.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] Apply body wash all over including face (gentle enough)",
+          "[REAL] Lightweight, can use on face, cleans effectively, mild",
+          "[SYNTHETIC] I can use it on my face too, which soap can't provide",
+          "[SYNTHETIC] Dove is gentle enough for my face so it can handle color removal too"
+        ],
+        "predictive_value": "When shown body wash concepts emphasizing face-safe formulations, this person would likely be highly interested as this aligns with their usage pattern."
+      },
+      {
+        "trait_name": "social-validation-appreciator",
+        "domain": "Social & Contextual Drivers",
+        "description": "Values when others notice and compliment their scent, seeing this as validation of product choice.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[REAL] Body odour is very important. Grooming is about both feeling good about myself and how others perceive me",
+          "[SYNTHETIC] Getting positive feedback about how I smell is important to me",
+          "[SYNTHETIC] I'd definitely repurchase the same product \u2014 the compliment reinforces my choice",
+          "[SYNTHETIC] Body odour is very important to me and how others perceive me matters"
+        ],
+        "predictive_value": "When shown body wash concepts emphasizing long-lasting fragrance or social appeal, this person would likely be interested in the social validation aspect."
+      },
+      {
+        "trait_name": "subscription-flexibility-demander",
+        "domain": "Channel & Format Preferences",
+        "description": "Prefers subscription models that allow easy cancellation over those with better discounts but less flexibility.",
+        "confidence": 0.7,
+        "evidence_quotes": [
+          "[SYNTHETIC] I prefer the flexibility to cancel anytime since I'm very particular about my personal care products",
+          "[SYNTHETIC] Amazon subscription with 5% off. I prefer the flexibility to cancel anytime",
+          "[SYNTHETIC] I don't like subscriptions and prefer buying when I need it",
+          "[SYNTHETIC] I don't like being locked into subscriptions"
+        ],
+        "predictive_value": "When shown subscription offers, this person would likely choose options with easy cancellation over those with higher discounts but restrictive terms."
+      },
+      {
+        "trait_name": "clinical-validation-appreciator",
+        "domain": "Information-Seeking Behavior",
+        "description": "Values dermatologist recommendations and clinical testing, willing to pay premium for scientifically backed products.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[SYNTHETIC] Clinical validation is worth \u20b9100 more. I care about ingredients and scientific backing",
+          "[SYNTHETIC] Yes \u2014 clinical validation is worth \u20b9100 more",
+          "[SYNTHETIC] I want detailed ingredient analysis and comparisons since that's what matters most",
+          "[SYNTHETIC] Dermatologist recommendation would justify the premium for me"
+        ],
+        "predictive_value": "When shown clinically tested formulations with dermatologist backing, this person would likely be willing to pay a moderate premium for the scientific credibility."
+      },
+      {
+        "trait_name": "trend-immunity-maintainer",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Actively ignores trending products and social media hype, preferring to stick with proven choices.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[SYNTHETIC] I don't get swayed by trending products",
+          "[SYNTHETIC] I don't care about trends \u2014 you'll use whatever works for your skin",
+          "[SYNTHETIC] Celebrity endorsements don't influence my body wash choices",
+          "[SYNTHETIC] I don't make decisions based on future trends"
+        ],
+        "predictive_value": "When shown trending or viral body wash concepts, this person would likely be skeptical and stick with their established routine rather than experimenting."
+      },
+      {
+        "trait_name": "negative-review-prioritizer",
+        "domain": "Information-Seeking Behavior",
+        "description": "Specifically seeks out 1-2 star reviews to understand potential problems before making purchase decisions.",
+        "confidence": 0.7,
+        "evidence_quotes": [
+          "[SYNTHETIC] I always look for the 1-2 star reviews to see what actual problems people faced",
+          "[SYNTHETIC] Scroll to find negative/critical reviews specifically",
+          "[SYNTHETIC] I'd want to see what the app found problematic and decide based on actual facts",
+          "[SYNTHETIC] Real user experiences matter more than brand claims"
+        ],
+        "predictive_value": "When researching new products, this person would likely spend significant time reading negative reviews to identify potential issues before considering purchase."
+      },
+      {
+        "trait_name": "immediate-cash-over-credits",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Prefers direct price reductions over cashback, loyalty points, or store credits that require future use.",
+        "confidence": 0.7,
+        "evidence_quotes": [
+          "[SYNTHETIC] Direct price reduction appeals most to me",
+          "[SYNTHETIC] I prefer immediate, straightforward rewards over loyalty points",
+          "[SYNTHETIC] The \u20b940 savings is more valuable to me than a freebie I won't use",
+          "[SYNTHETIC] \u20b9100 cashback. I only need one bottle and don't want to store extra products"
+        ],
+        "predictive_value": "When shown promotional offers, this person would likely choose immediate discounts over loyalty programs or future benefits."
+      }
+    ],
+    "trait_connections": [
+      {
+        "from_trait": "childhood-brand-loyalty-anchor",
+        "to_trait": "repurchase-same-loyalist",
+        "relationship": "causes",
+        "mechanism": "Deep emotional connection to Dove from childhood creates automatic repurchasing behavior without consideration of alternatives."
+      },
+      {
+        "from_trait": "ingredients-first-decision-maker",
+        "to_trait": "chemical-free-prioritizer",
+        "relationship": "supports",
+        "mechanism": "Focus on ingredients naturally leads to seeking formulations without harmful chemicals like parabens and sulfates."
+      },
+      {
+        "from_trait": "price-ceiling-enforcer",
+        "to_trait": "premium-no-pay-without-proof",
+        "relationship": "supports",
+        "mechanism": "Strict budget constraints make them highly selective about when premium pricing is justified by actual benefits."
+      },
+      {
+        "from_trait": "friends-family-trust-prioritizer",
+        "to_trait": "honest-reviewer-seeker",
+        "relationship": "supports",
+        "mechanism": "Preference for personal trust over authority extends to seeking reviewers who seem genuine rather than commercially motivated."
+      },
+      {
+        "from_trait": "convenience-over-novelty",
+        "to_trait": "trend-immunity-maintainer",
+        "relationship": "supports",
+        "mechanism": "Preference for simple, proven solutions makes them naturally resistant to trendy innovations that add complexity."
+      },
+      {
+        "from_trait": "sample-before-commitment",
+        "to_trait": "bulk-purchase-avoider",
+        "relationship": "supports",
+        "mechanism": "Risk-averse approach to new products extends to avoiding large quantity purchases until products are proven."
+      },
+      {
+        "from_trait": "multi-platform-researcher",
+        "to_trait": "negative-review-prioritizer",
+        "relationship": "supports",
+        "mechanism": "Thorough research approach includes specifically seeking out critical feedback to understand potential problems."
+      },
+      {
+        "from_trait": "childhood-brand-loyalty-anchor",
+        "to_trait": "indian-brand-preference-holder",
+        "relationship": "contradicts",
+        "mechanism": "Deep loyalty to international brand Dove conflicts with stated preference for Indian brands, showing loyalty trumps nationalism."
+      },
+      {
+        "from_trait": "social-validation-appreciator",
+        "to_trait": "fragrance-duration-expecter",
+        "relationship": "causes",
+        "mechanism": "Desire for others to notice and appreciate their scent drives requirement for long-lasting fragrance performance."
+      },
+      {
+        "from_trait": "gentle-formulation-seeker",
+        "to_trait": "face-safe-formulation-seeker",
+        "relationship": "supports",
+        "mechanism": "Need for mild products due to dry skin naturally leads to valuing formulations gentle enough for facial use."
+      }
+    ]
+  }
+}

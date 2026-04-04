@@ -1,0 +1,407 @@
+{
+  "P16_T001": {
+    "twin_id": "P16_T001",
+    "identity_summary": "A research-driven consumer who prioritizes dermatologist recommendations and clinical validation due to sensitive skin concerns, while maintaining a bias toward international brands. Despite moderate brand loyalty to Nivea, they actively seek expert opinions and detailed reviews before trying new products, balancing their preference for proven formulations with cautious experimentation through samples or guarantees.",
+    "traits": [
+      {
+        "trait_name": "dermatologist-validation-seeker",
+        "domain": "Information-Seeking Behavior",
+        "description": "Consistently prioritizes dermatologist recommendations and clinical claims over other sources when evaluating body wash products.",
+        "confidence": 0.95,
+        "evidence_quotes": [
+          "[REAL] Dermatologists or skin doctors: 5 (highest trust rating)",
+          "[REAL] Switched to a dermat-recommended face wash. Close friends urged the switch. Very satisfied",
+          "[SYNTHETIC] The dermatologist's recommendation. Given my trust in expert opinions and preference for clinical validation",
+          "[SYNTHETIC] Dermatologist's Instagram post: 4 points, Amazon India reviews: 3 points"
+        ],
+        "predictive_value": "When shown a body wash with dermatologist endorsement, this person would likely prioritize it over celebrity-endorsed or influencer-recommended products because they trust medical expertise above all other sources."
+      },
+      {
+        "trait_name": "sensitive-skin-driven-caution",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Makes product choices primarily based on skin sensitivity concerns, having switched from bar soaps due to harsh reactions.",
+        "confidence": 0.92,
+        "evidence_quotes": [
+          "[REAL] Skin reacted harshly to bar soaps; using body wash for 10+ years",
+          "[REAL] Sensitivity, body_odor (selected skin concerns)",
+          "[SYNTHETIC] My skin is sensitive so what works for them might not work for me",
+          "[SYNTHETIC] Can't risk unknown ingredients on sensitive skin, even if it works for my roommate"
+        ],
+        "predictive_value": "When shown a new body wash concept, this person would likely focus first on ingredient safety and skin compatibility rather than fragrance or packaging appeal because their skin sensitivity drives product selection."
+      },
+      {
+        "trait_name": "international-brand-bias",
+        "domain": "Brand Relationship Patterns",
+        "description": "Shows clear preference for international brands over Indian brands, trusting their formulations and quality more.",
+        "confidence": 0.88,
+        "evidence_quotes": [
+          "[REAL] Bias towards international brands",
+          "[REAL] More likely to trust an international brand that develops such a product (for Indian conditions)",
+          "[SYNTHETIC] The 'Imported from Korea' at \u20b9449. My bias towards international brands would make me choose this",
+          "[SYNTHETIC] International premium brands: 4, Pharmacy/dermat brands: 3, New-age Indian D2C brands: 2"
+        ],
+        "predictive_value": "When shown two identical body wash formulations, this person would likely choose the international brand even at a premium price because they associate international brands with superior quality and formulation."
+      },
+      {
+        "trait_name": "review-dependent-decision-maker",
+        "domain": "Information-Seeking Behavior",
+        "description": "Consistently checks online reviews and ratings before trying new products, preferring high review counts for reliability.",
+        "confidence": 0.9,
+        "evidence_quotes": [
+          "[REAL] Online reviews (Amazon, Nykaa): 4 (high trust rating)",
+          "[REAL] star_rating, brand_name, review_count (top 3 things looked at when shopping online)",
+          "[SYNTHETIC] The one with 2,400 ratings and 4.1 average. The larger sample size gives me more reliable data",
+          "[SYNTHETIC] I need to see actual user feedback before trying anything new"
+        ],
+        "predictive_value": "When shown a new body wash launch, this person would likely wait until it accumulates substantial reviews rather than being an early adopter because they rely on social proof for validation."
+      },
+      {
+        "trait_name": "fragrance-importance-prioritizer",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Places high importance on fragrance selection and lasting scent, caring significantly about how they smell to others.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] Care a lot. Mix of both (about how they smell to others)",
+          "[REAL] fragrance ranked high in purchase factors",
+          "[REAL] Fragrance is just okay (frustration with current body wash)",
+          "[SYNTHETIC] Fragrance is important to me - I need strong skin benefits to give that up"
+        ],
+        "predictive_value": "When shown a body wash advertisement emphasizing long-lasting fragrance, this person would likely be highly engaged because scent appeal is a key decision driver for them."
+      },
+      {
+        "trait_name": "moderate-loyalty-with-switching-triggers",
+        "domain": "Brand Relationship Patterns",
+        "description": "Shows moderate brand loyalty to Nivea but willing to switch based on doctor recommendations, ads, or skin problems.",
+        "confidence": 0.82,
+        "evidence_quotes": [
+          "[REAL] Moderate_loyalty (brand loyalty rating)",
+          "[REAL] doctor_rec, ad_resonance, skin_problem (top switching triggers)",
+          "[REAL] Repurchase_same (typical next step when body wash runs out)",
+          "[SYNTHETIC] My moderate brand loyalty means I might want to try alternatives"
+        ],
+        "predictive_value": "When shown a compelling advertisement for a new body wash while currently satisfied with their brand, this person would likely consider switching because advertising resonance is one of their key switching triggers."
+      },
+      {
+        "trait_name": "clinical-packaging-preference",
+        "domain": "Channel & Format Preferences",
+        "description": "Prefers minimalistic, medical-looking packaging over flashy or traditional designs.",
+        "confidence": 0.78,
+        "evidence_quotes": [
+          "[REAL] Clinical (packaging preference)",
+          "[REAL] Packaging: Minimalistic, medical (ideal body wash description)",
+          "[SYNTHETIC] I prefer clinical packaging and the \u20b9150 difference is acceptable for better presentation",
+          "[SYNTHETIC] I prefer clinically-proven formulations and trust ingredients like niacinamide"
+        ],
+        "predictive_value": "When shown body wash concepts with different packaging styles, this person would likely gravitate toward clean, medical-looking designs because they associate clinical presentation with product efficacy."
+      },
+      {
+        "trait_name": "quick-commerce-dependent",
+        "domain": "Channel & Format Preferences",
+        "description": "Relies primarily on quick commerce platforms like Blinkit/Zepto for personal care purchases, looking for specific known products.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] quick_commerce (top purchase channel)",
+          "[REAL] Only look for specific products I use; able to get them from these platforms",
+          "[SYNTHETIC] I only use quick commerce for personal care and look for specific products I already use",
+          "[SYNTHETIC] I prefer the convenience of quick commerce and need products that work for my skin"
+        ],
+        "predictive_value": "When shown a new body wash concept, this person would likely want to see it available on quick commerce platforms before considering purchase because that's their primary shopping channel."
+      },
+      {
+        "trait_name": "price-range-anchored-350-500",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Has a specific spending comfort zone of \u20b9350-500 for body wash, willing to pay for quality within this range.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] 350_500 (typical spending on body wash)",
+          "[REAL] Price: \u20b9300-500 (ideal body wash description)",
+          "[SYNTHETIC] This matches my usual spending range of \u20b9350-500",
+          "[SYNTHETIC] \u20b9249 for a \u20b9399 product is significant savings, and body wash doesn't expire quickly"
+        ],
+        "predictive_value": "When shown body wash options at different price points, this person would likely focus on the \u20b9350-500 range as their sweet spot, viewing anything significantly below as potentially inferior and anything above as requiring strong justification."
+      },
+      {
+        "trait_name": "ingredient-awareness-without-expertise",
+        "domain": "Information-Seeking Behavior",
+        "description": "Shows interest in ingredients and clinical claims but lacks deep technical knowledge, relying on expert interpretation.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[REAL] Less chemicals, greener packaging, doctor recommended (natural product definition)",
+          "[REAL] Dermatologist_tested, organic, ph_balanced (influential certifications)",
+          "[SYNTHETIC] I know the basic harmful ingredients to avoid but don't understand the full chemistry",
+          "[SYNTHETIC] I'd want to understand from trusted sources before trying something new on my sensitive skin"
+        ],
+        "predictive_value": "When shown a body wash with complex ingredient claims, this person would likely seek expert validation rather than trying to evaluate the ingredients themselves because they recognize their knowledge limitations."
+      },
+      {
+        "trait_name": "sample-testing-preference",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Strongly prefers trying products through samples or small sizes before committing to full purchases, especially for sensitive skin.",
+        "confidence": 0.83,
+        "evidence_quotes": [
+          "[SYNTHETIC] The 50ml trial for \u20b999 with credit option. Given my sensitivity issues, testing first is worth the higher per-ml cost",
+          "[SYNTHETIC] Get a free sample sachet at a store first. Given my skin sensitivity, I need to test before committing",
+          "[SYNTHETIC] Buy the sachet to try \u2014 perfect low-risk trial. \u20b910 is nothing to test if I like it",
+          "[SYNTHETIC] I'd support my friend but need to test it first given my skin sensitivity"
+        ],
+        "predictive_value": "When shown a new premium body wash concept, this person would likely be most interested if sample sizes or trial options are available because they need to test compatibility before investing in full sizes."
+      },
+      {
+        "trait_name": "functional-grooming-approach",
+        "domain": "Social & Contextual Drivers",
+        "description": "Views bathing and grooming as functional rather than indulgent, focusing on effectiveness over experience.",
+        "confidence": 0.72,
+        "evidence_quotes": [
+          "[REAL] Functional (relationship with bathing/grooming)",
+          "[REAL] Once (daily shower frequency - practical approach)",
+          "[SYNTHETIC] I want my functional routine to stay simple and convenient",
+          "[SYNTHETIC] My relationship with brands is functional rather than emotional"
+        ],
+        "predictive_value": "When shown body wash concepts emphasizing luxury experience or self-care rituals, this person would likely be less engaged than with concepts focusing on practical benefits and effectiveness."
+      },
+      {
+        "trait_name": "aquatic-fresh-scent-preference",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Specifically gravitates toward ocean/aquatic fragrances and fresh, manly scents over floral or sweet options.",
+        "confidence": 0.78,
+        "evidence_quotes": [
+          "[REAL] Ocean_aquatic (fragrance preference)",
+          "[REAL] Nivea men's. Liked the scent \u2014 manly and fresh",
+          "[REAL] Fragrance: Aquatic, fresh (ideal body wash description)",
+          "[SYNTHETIC] The gel formula with familiar floral scent vs earthy vetiver - I prefer sticking to scents I know work"
+        ],
+        "predictive_value": "When shown body wash concepts with different fragrance profiles, this person would likely be most attracted to aquatic, oceanic, or fresh scent descriptions because these align with their established preferences."
+      },
+      {
+        "trait_name": "convenience-over-savings-prioritizer",
+        "domain": "Channel & Format Preferences",
+        "description": "Consistently chooses convenience and immediate availability over price savings or deals.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[SYNTHETIC] Buy it on Nykaa right now. \u20b950 isn't worth the time and effort to drive to DMart",
+          "[SYNTHETIC] Full price on Zepto. I don't plan purchases far in advance and prefer getting what I need immediately",
+          "[SYNTHETIC] Order from Amazon and get my preferred brand tomorrow. I prefer getting exactly what I want",
+          "[SYNTHETIC] I prefer the convenience and reliability of quick commerce over switching to brand websites"
+        ],
+        "predictive_value": "When shown promotional offers requiring extra effort or waiting time, this person would likely choose the more convenient option even at higher cost because they prioritize immediate access over savings."
+      },
+      {
+        "trait_name": "anti-subscription-flexibility-seeker",
+        "domain": "Channel & Format Preferences",
+        "description": "Prefers one-time purchases over subscriptions, valuing flexibility to switch or skip purchases.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[SYNTHETIC] I prefer the flexibility of buying when I need it rather than committing to a subscription",
+          "[SYNTHETIC] I don't subscribe \u2014 I like the freedom to switch brands anytime",
+          "[SYNTHETIC] I prefer the flexibility of ordering when I actually need it rather than committing to a fixed schedule",
+          "[SYNTHETIC] I prefer flexibility in purchasing and don't want to be locked into subscriptions"
+        ],
+        "predictive_value": "When shown subscription-based body wash offers, this person would likely decline even with significant discounts because they value purchasing flexibility over cost savings."
+      },
+      {
+        "trait_name": "established-platform-trust",
+        "domain": "Channel & Format Preferences",
+        "description": "Shows strong preference for familiar platforms like Amazon/Nykaa over brand websites or new channels.",
+        "confidence": 0.82,
+        "evidence_quotes": [
+          "[SYNTHETIC] I prefer shopping on platforms I trust rather than unknown websites",
+          "[SYNTHETIC] Wait until they're available on Amazon or Nykaa. I prefer established platforms",
+          "[SYNTHETIC] More familiar with their return policy and delivery system, plus I trust their customer service",
+          "[SYNTHETIC] WhatsApp-only feels too informal for a \u20b9399 purchase from an unknown brand"
+        ],
+        "predictive_value": "When shown a new body wash brand available only through their own website, this person would likely wait until it appears on mainstream platforms because they trust established e-commerce channels more."
+      },
+      {
+        "trait_name": "negative-review-prioritizer",
+        "domain": "Information-Seeking Behavior",
+        "description": "Actively seeks out critical and negative reviews to understand potential problems before purchasing.",
+        "confidence": 0.77,
+        "evidence_quotes": [
+          "[SYNTHETIC] I always look for the 2-3 star reviews to understand real problems before trusting the positive ones",
+          "[SYNTHETIC] Scroll to find negative/critical reviews specifically",
+          "[SYNTHETIC] I'd want a broader sample of experiences before deciding, especially given my sensitive skin concerns",
+          "[SYNTHETIC] I'd want to hear from people with actual skin conditions, not brand responses"
+        ],
+        "predictive_value": "When evaluating a new body wash online, this person would likely spend significant time reading negative reviews and complaints to identify potential issues rather than focusing on positive testimonials."
+      },
+      {
+        "trait_name": "expert-content-over-influencer-marketing",
+        "domain": "Information-Seeking Behavior",
+        "description": "Prefers detailed, scientific content from experts over lifestyle influencer recommendations or entertainment-focused reviews.",
+        "confidence": 0.85,
+        "evidence_quotes": [
+          "[REAL] Instagram or YouTube influencers: 3 vs Dermatologists or skin doctors: 5",
+          "[SYNTHETIC] The 15-minute deep dive with ingredient analysis and pH testing. I prefer thorough, scientific reviews",
+          "[SYNTHETIC] Influencer A with detailed ingredient analysis. Expert recommendations with scientific backing matter more",
+          "[SYNTHETIC] I prefer transparency and specific information about how ingredients work rather than vague clinical claims"
+        ],
+        "predictive_value": "When shown body wash marketing content, this person would likely engage more with detailed ingredient breakdowns and scientific explanations than with lifestyle-focused influencer posts or entertainment-style reviews."
+      },
+      {
+        "trait_name": "repurchase-same-loyalty-pattern",
+        "domain": "Brand Relationship Patterns",
+        "description": "Typically repurchases the same product when running out, showing habitual loyalty unless triggered to switch.",
+        "confidence": 0.8,
+        "evidence_quotes": [
+          "[REAL] Repurchase_same (typical next step when body wash runs out)",
+          "[REAL] been using that brand since (after dermatologist switch)",
+          "[SYNTHETIC] All the same brand and variant. I typically repurchase the same Nivea body wash",
+          "[SYNTHETIC] I repurchase the same products anyway, so having a reminder when I'm likely running low saves me effort"
+        ],
+        "predictive_value": "When their current body wash runs out, this person would likely automatically reorder the same product unless there's a specific trigger (like a doctor recommendation or skin problem) prompting them to reconsider."
+      },
+      {
+        "trait_name": "clinical-claims-responsive",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Shows strong positive response to clinical testing claims, dermatologist recommendations, and medical positioning.",
+        "confidence": 0.83,
+        "evidence_quotes": [
+          "[REAL] Slight_clinical (preference for clinically proven vs traditional/Ayurvedic)",
+          "[REAL] derm_recommended, natural, india_specific (top appealing claims)",
+          "[SYNTHETIC] I prefer clinically-proven formulations and trust ingredients like niacinamide and ceramides",
+          "[SYNTHETIC] Having expert medical advice addressing common concerns would be most valuable"
+        ],
+        "predictive_value": "When shown body wash concepts with clinical testing claims or dermatologist endorsements, this person would likely show high interest and willingness to pay premium prices because medical validation strongly influences their decisions."
+      },
+      {
+        "trait_name": "texture-preference-lightweight",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Prefers lightweight body wash textures over thick or creamy formulations, wanting fresh post-wash feeling.",
+        "confidence": 0.7,
+        "evidence_quotes": [
+          "[REAL] Lightweight (texture preference)",
+          "[REAL] Fresh_tingling (ideal post-wash skin feeling)",
+          "[REAL] Texture: Semi-thick (Cetaphil-like) but also mentions lightweight preference",
+          "[SYNTHETIC] I prefer sticking to textures and scents I know work rather than experimenting"
+        ],
+        "predictive_value": "When shown body wash concepts emphasizing rich, creamy textures, this person would likely be less interested than concepts promoting lightweight, refreshing formulations that leave skin feeling fresh."
+      },
+      {
+        "trait_name": "brand-switching-through-advertising",
+        "domain": "Social & Contextual Drivers",
+        "description": "Identifies advertising resonance as a key trigger for switching brands, showing susceptibility to compelling ads.",
+        "confidence": 0.75,
+        "evidence_quotes": [
+          "[REAL] ad_resonance (one of top 3 switching triggers)",
+          "[REAL] Persistent ads when already thinking about switching",
+          "[SYNTHETIC] A \u20b975 discount could make me try a competitor, especially if it's within my budget range",
+          "[SYNTHETIC] The discount is tempting enough to try something new"
+        ],
+        "predictive_value": "When exposed to well-targeted advertising for body wash alternatives, this person would likely be influenced to try new products, especially if the ads appear when they're already somewhat dissatisfied with their current choice."
+      },
+      {
+        "trait_name": "premium-justification-seeker",
+        "domain": "Purchase Decision Mechanics",
+        "description": "Willing to pay premium prices but requires clear justification through benefits, not just branding or packaging.",
+        "confidence": 0.78,
+        "evidence_quotes": [
+          "[REAL] \u20b91500. New international brand, someone recommended. Not worth it; never bought again",
+          "[SYNTHETIC] Double the price needs to deliver a significantly better experience",
+          "[SYNTHETIC] If it works well for my sensitive skin and I liked it, the extra cost is justified",
+          "[SYNTHETIC] The \u20b9250 extra for customization and name printing doesn't provide functional benefits that justify the cost"
+        ],
+        "predictive_value": "When shown premium body wash concepts, this person would likely evaluate them based on functional benefits and skin compatibility rather than brand prestige, requiring clear value demonstration to justify higher prices."
+      },
+      {
+        "trait_name": "social-validation-awareness",
+        "domain": "Social & Contextual Drivers",
+        "description": "Cares about how others perceive their choices and responds positively to compliments about fragrance or product selection.",
+        "confidence": 0.73,
+        "evidence_quotes": [
+          "[REAL] Care a lot. Mix of both (feeling good yourself vs how others perceive you)",
+          "[SYNTHETIC] I care about how others perceive me, so I'd research the alternative even if I don't immediately switch",
+          "[SYNTHETIC] External validation about fragrance matters to me since I care how I smell to others",
+          "[SYNTHETIC] I'd definitely repurchase the same product \u2014 the compliment reinforces my choice"
+        ],
+        "predictive_value": "When shown body wash concepts emphasizing social appeal or long-lasting fragrance that others notice, this person would likely be attracted because they value how their grooming choices are perceived by others."
+      },
+      {
+        "trait_name": "research-before-commitment",
+        "domain": "Risk & Novelty Orientation",
+        "description": "Consistently researches products thoroughly before trying them, especially for unfamiliar brands or ingredients.",
+        "confidence": 0.88,
+        "evidence_quotes": [
+          "[SYNTHETIC] I always check reviews before trying new brands, especially when I can't return it easily",
+          "[SYNTHETIC] I need to check reviews and ratings before making decisions",
+          "[SYNTHETIC] I'd want to verify the information before making any changes to products that work for my skin",
+          "[SYNTHETIC] I'd want to understand the actual risk level and see if SLS is causing any issues"
+        ],
+        "predictive_value": "When introduced to a new body wash concept, this person would likely spend considerable time researching ingredients, reading reviews, and seeking expert opinions before making a purchase decision, especially for unfamiliar formulations."
+      }
+    ],
+    "trait_connections": [
+      {
+        "from_trait": "sensitive-skin-driven-caution",
+        "to_trait": "dermatologist-validation-seeker",
+        "relationship": "causes",
+        "mechanism": "Having sensitive skin that reacted harshly to bar soaps creates a need for medical expertise to validate product safety, making dermatologist recommendations the most trusted source for product decisions."
+      },
+      {
+        "from_trait": "dermatologist-validation-seeker",
+        "to_trait": "clinical-claims-responsive",
+        "relationship": "supports",
+        "mechanism": "Trust in dermatologists naturally extends to preference for clinically tested products and medical positioning, as both represent scientific validation over marketing claims."
+      },
+      {
+        "from_trait": "sensitive-skin-driven-caution",
+        "to_trait": "sample-testing-preference",
+        "relationship": "causes",
+        "mechanism": "Skin sensitivity creates risk aversion that drives the need to test products in small quantities before committing to full-size purchases to avoid adverse reactions."
+      },
+      {
+        "from_trait": "review-dependent-decision-maker",
+        "to_trait": "negative-review-prioritizer",
+        "relationship": "supports",
+        "mechanism": "Heavy reliance on reviews naturally leads to focusing on negative feedback to identify potential problems, especially important for someone with sensitive skin concerns."
+      },
+      {
+        "from_trait": "international-brand-bias",
+        "to_trait": "premium-justification-seeker",
+        "relationship": "supports",
+        "mechanism": "Bias toward international brands creates willingness to pay premium prices, but past disappointment with expensive international products has created a need for clear value justification."
+      },
+      {
+        "from_trait": "functional-grooming-approach",
+        "to_trait": "convenience-over-savings-prioritizer",
+        "relationship": "supports",
+        "mechanism": "Viewing grooming as functional rather than experiential makes efficiency and convenience more important than finding deals or exploring new options."
+      },
+      {
+        "from_trait": "moderate-loyalty-with-switching-triggers",
+        "to_trait": "brand-switching-through-advertising",
+        "relationship": "supports",
+        "mechanism": "Moderate rather than strong loyalty creates openness to switching when compelling advertising appears, especially when combined with existing mild dissatisfaction."
+      },
+      {
+        "from_trait": "quick-commerce-dependent",
+        "to_trait": "established-platform-trust",
+        "relationship": "supports",
+        "mechanism": "Reliance on quick commerce platforms reinforces preference for familiar, trusted channels over new or brand-specific purchasing options."
+      },
+      {
+        "from_trait": "ingredient-awareness-without-expertise",
+        "to_trait": "expert-content-over-influencer-marketing",
+        "relationship": "causes",
+        "mechanism": "Recognizing limitations in ingredient knowledge creates preference for expert interpretation and scientific content over lifestyle-focused influencer recommendations."
+      },
+      {
+        "from_trait": "social-validation-awareness",
+        "to_trait": "fragrance-importance-prioritizer",
+        "relationship": "supports",
+        "mechanism": "Caring about how others perceive them makes fragrance selection crucial since scent is how others experience their grooming choices throughout the day."
+      },
+      {
+        "from_trait": "research-before-commitment",
+        "to_trait": "anti-subscription-flexibility-seeker",
+        "relationship": "supports",
+        "mechanism": "Thorough research habits create desire for flexibility to switch products based on new information, making subscriptions feel restrictive rather than convenient."
+      },
+      {
+        "from_trait": "clinical-packaging-preference",
+        "to_trait": "clinical-claims-responsive",
+        "relationship": "supports",
+        "mechanism": "Preference for medical-looking packaging aligns with responsiveness to clinical claims, both reflecting trust in scientific/medical positioning over lifestyle branding."
+      }
+    ]
+  }
+}

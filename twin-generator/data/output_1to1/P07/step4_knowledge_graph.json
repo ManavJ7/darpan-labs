@@ -1,0 +1,1208 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "node_type": "Domain",
+      "label": "Risk & Novelty Orientation",
+      "id": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Brand Relationship Patterns",
+      "id": "domain:Brand Relationship Patterns"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Channel & Format Preferences",
+      "id": "domain:Channel & Format Preferences"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Purchase Decision Mechanics",
+      "id": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Social & Contextual Drivers",
+      "id": "domain:Social & Contextual Drivers"
+    },
+    {
+      "node_type": "Domain",
+      "label": "Information-Seeking Behavior",
+      "id": "domain:Information-Seeking Behavior"
+    },
+    {
+      "node_type": "Twin",
+      "label": "P07_T001",
+      "identity_summary": "A price-conscious student who prioritizes solving dry skin problems through research-backed products, relying heavily on friend recommendations and detailed online reviews while maintaining convenience through quick commerce. Despite being open to trying new brands, they require substantial validation before switching from products that work for their specific skin concerns.",
+      "id": "P07_T001"
+    },
+    {
+      "node_type": "Trait",
+      "label": "dry-skin-problem-solver-first",
+      "twin_id": "P07_T001",
+      "description": "Consistently prioritizes moisturizing and hydrating properties above all other product benefits due to ongoing dry skin issues.",
+      "confidence": 0.95,
+      "evidence_quotes": [
+        "[REAL] Moisturizing and hydration are inadequate\u2014skin feels dry after use. Has granular texture that exfoliates roughly, making skin rough post-bath. Need to apply moisturizer afterward.",
+        "[REAL] Was using Nivea; switched to Dove because Nivea left dry patches and dried skin, requiring heavy moisturizer. Dove solved the dryness partially but not fully.",
+        "[SYNTHETIC] A) Stop using it immediately and go back to your old body wash. Dry skin is already my main concern, so anything making it worse needs to be discontinued immediately.",
+        "[SYNTHETIC] The \u20b9429 one I just sampled \u2014 the trial convinced me. If it solves my dryness problem better than my regular one, the extra cost is worth it."
+      ],
+      "predictive_value": "When shown a new body wash concept, this person would likely focus first on moisturizing claims and ingredients that address dryness, dismissing products that don't explicitly solve this problem.",
+      "id": "trait:P07_T001:dry-skin-problem-solver-first"
+    },
+    {
+      "node_type": "Trait",
+      "label": "friend-family-recommendation-prioritizer",
+      "twin_id": "P07_T001",
+      "description": "Places highest trust in personal recommendations from friends and family, rating them 5/5 compared to other information sources.",
+      "confidence": 0.92,
+      "evidence_quotes": [
+        "[REAL] How much do you trust the following sources for personal care product information? Friends and family: 5",
+        "[SYNTHETIC] My close friend's recommendation. I trust friends and family most for personal care advice, much more than any social media content.",
+        "[SYNTHETIC] C) Your mother's recommendation: 5 points, D) Amazon India reviews: 3 points, B) Reddit thread: 2 points",
+        "[SYNTHETIC] B) I'd trust my friend more \u2014 they know my preferences better."
+      ],
+      "predictive_value": "When shown marketing content, this person would likely dismiss it in favor of asking friends for their actual experiences with the product, making peer testimonials more effective than celebrity endorsements.",
+      "id": "trait:P07_T001:friend-family-recommendation-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "price-conscious-student-budget-optimizer",
+      "twin_id": "P07_T001",
+      "description": "Consistently prioritizes price as the top purchase factor, spending in the \u20b9200-350 range and actively seeking value propositions.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[REAL] When buying any personal care product, rank these factors from most to least important: price, brand, recommendation",
+        "[REAL] How much do you typically spend on a single body wash purchase? 200_350",
+        "[SYNTHETIC] Price/deal: 35 points, Past experience: 30 points, Specific skin benefit: 20 points",
+        "[SYNTHETIC] Made in India at \u20b9249. I have no preference between Indian and international brands - I go with value proposition. Same product at \u20b9200 less is an easy choice."
+      ],
+      "predictive_value": "When shown premium-positioned products, this person would likely immediately check the price and seek cheaper alternatives that deliver similar benefits rather than paying for brand prestige.",
+      "id": "trait:P07_T001:price-conscious-student-budget-optimizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "quick-commerce-dependency-for-convenience",
+      "twin_id": "P07_T001",
+      "description": "Relies on quick commerce as first instinct when needing body wash, prioritizing 15-minute delivery over selection variety.",
+      "confidence": 0.88,
+      "evidence_quotes": [
+        "[REAL] Yes, limited selection definitely impacts purchases. When out of body wash or personal care products, my first instinct is to open Blinkit. If the product isn't available there, 99% chance I won't buy it.",
+        "[SYNTHETIC] Buy from Blinkit at \u20b9299. When I'm almost out of body wash, my first instinct is to open Blinkit. The convenience matters more than saving \u20b9100 when I need it immediately.",
+        "[SYNTHETIC] Order from Blinkit and get whatever's available in 15 minutes. When I'm out of body wash, I need it immediately.",
+        "[SYNTHETIC] Quick commerce (Blinkit/Zepto). It's already my first instinct when I run out of body wash, and the convenience of 15-minute delivery outweighs the limited selection."
+      ],
+      "predictive_value": "When shown a new product concept, this person would likely only consider it if it's available on quick commerce platforms, dismissing brands that require special ordering or aren't in their immediate delivery ecosystem.",
+      "id": "trait:P07_T001:quick-commerce-dependency-for-convenience"
+    },
+    {
+      "node_type": "Trait",
+      "label": "research-validation-before-new-purchases",
+      "twin_id": "P07_T001",
+      "description": "Systematically researches products through multiple sources, particularly Reddit and Amazon reviews, before trying anything new.",
+      "confidence": 0.87,
+      "evidence_quotes": [
+        "[REAL] Do you read online reviews before buying personal care products? Where? Reddit, amazon, nykaa, google",
+        "[SYNTHETIC] C) Research the claim yourself before deciding. I don't trust social media content blindly - I'd want to verify the greenwashing allegations myself.",
+        "[SYNTHETIC] A) Order immediately \u2014 community recommendations are gold. Reddit users provide honest reviews without brand bias. If 8/10 people love it, that's stronger validation than celebrity endorsements.",
+        "[SYNTHETIC] After it gets listed on Amazon/Nykaa with 100+ reviews. I need substantial user feedback before trying new D2C brands, especially for products that go on my skin."
+      ],
+      "predictive_value": "When shown a new brand launch, this person would likely wait for substantial online reviews to accumulate before purchasing, making early-stage marketing less effective than building authentic review volume.",
+      "id": "trait:P07_T001:research-validation-before-new-purchases"
+    },
+    {
+      "node_type": "Trait",
+      "label": "anti-social-media-marketing-skeptic",
+      "twin_id": "P07_T001",
+      "description": "Actively distrusts social media influencers and advertisements, rating them 1/5 for trustworthiness in personal care decisions.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] How much do you trust the following sources for personal care product information? TV advertisements: 1, Instagram or YouTube influencers: 1",
+        "[REAL] Never bought a product from social media. Don't trust the platform for personal care\u2014too many fake influencers and fake product promotions on Instagram.",
+        "[SYNTHETIC] Neither influences me much since I don't trust influencers for personal care. I'd research both products myself on Reddit and Amazon reviews before deciding.",
+        "[SYNTHETIC] (d) Ignore and continue scrolling. I don't trust social media for personal care purchases."
+      ],
+      "predictive_value": "When shown influencer-driven campaigns or social media ads, this person would likely actively avoid the promoted products, making traditional digital marketing counterproductive for reaching them.",
+      "id": "trait:P07_T001:anti-social-media-marketing-skeptic"
+    },
+    {
+      "node_type": "Trait",
+      "label": "comfortable-new-brand-experimenter",
+      "twin_id": "P07_T001",
+      "description": "Rates comfort with trying new brands as 4/5, actively switching between different brands like Nivea, Dove, Man Matters, and Minimalist.",
+      "confidence": 0.83,
+      "evidence_quotes": [
+        "[REAL] How comfortable are you trying new brands or products you haven't used before? 4",
+        "[REAL] What body wash brand(s) do you currently use? List all. Nivea, Dove, Man Matters, Minimalist",
+        "[SYNTHETIC] I'd pick Brand B at \u20b9199. Better ingredients at a lower price is exactly the value proposition I look for. I'm comfortable trying new brands, and the ingredient list matters more than brand recognition for me.",
+        "[SYNTHETIC] C) Different brands each time. I've switched between Nivea, Dove, Man Matters, and Minimalist recently."
+      ],
+      "predictive_value": "When shown a new brand with clear value proposition, this person would likely be willing to try it immediately if the price and benefits align, making them receptive to challenger brands over established ones.",
+      "id": "trait:P07_T001:comfortable-new-brand-experimenter"
+    },
+    {
+      "node_type": "Trait",
+      "label": "moderate-brand-loyalty-with-switching-triggers",
+      "twin_id": "P07_T001",
+      "description": "Shows moderate loyalty to brands but will switch for better smell, skin problems, or friend recommendations.",
+      "confidence": 0.82,
+      "evidence_quotes": [
+        "[REAL] How loyal are you to personal care brands? Moderate_loyalty",
+        "[REAL] What would make you switch away from your current body wash? Pick your top 3: better_smell, skin_problem, friend_rec",
+        "[REAL] If a brand you liked raised its price by 30%, what would you do? Look_alternatives",
+        "[SYNTHETIC] B) Try the D2C brand your friend recommended. \u20b980 increase is significant, and friend recommendations carry high trust value for me."
+      ],
+      "predictive_value": "When shown competitive products, this person would likely switch if the new option offers better fragrance, solves skin issues more effectively, or comes recommended by trusted sources, making loyalty-based retention strategies less effective.",
+      "id": "trait:P07_T001:moderate-brand-loyalty-with-switching-triggers"
+    },
+    {
+      "node_type": "Trait",
+      "label": "oceanic-fresh-fragrance-preference",
+      "twin_id": "P07_T001",
+      "description": "Specifically gravitates toward ocean/aquatic fragrances and wants energizing, wake-me-up scents that last half a day.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[REAL] What fragrance families do you naturally gravitate toward? Pick your top 2: Ocean_aquatic, woody_musky",
+        "[REAL] Love a perfume with fresh oceanic fragrance\u2014it lasted in my mind long. Haven't repurchased yet (not finished), but definitely will. Special because it gave a fresh oceanic vibe.",
+        "[REAL] If you could design your PERFECT body wash from scratch: Fragrance: fresh oceanic, energizing/wake-me-up",
+        "[REAL] Combine my oceanic perfume fragrance with my body wash texture\u2014a subtle, not overpowering oceanic scent in a body wash would be ideal."
+      ],
+      "predictive_value": "When shown fragrance options, this person would likely be immediately drawn to ocean/aquatic scents and dismiss floral or heavy fragrances, making scent positioning critical for product appeal.",
+      "id": "trait:P07_T001:oceanic-fresh-fragrance-preference"
+    },
+    {
+      "node_type": "Trait",
+      "label": "clinical-evidence-over-traditional-claims",
+      "twin_id": "P07_T001",
+      "description": "Prefers clinically proven products over Ayurvedic or traditional wisdom, trusting scientific evidence and dermatologist recommendations.",
+      "confidence": 0.78,
+      "evidence_quotes": [
+        "[REAL] Would you prefer a product that is 'clinically proven' or one that is 'inspired by traditional/Ayurvedic wisdom'? Slight_clinical",
+        "[REAL] How much do you trust the following sources for personal care product information? Dermatologists or skin doctors: 4",
+        "[SYNTHETIC] The clinical claims matter more. While fermented ingredients sound interesting, I prefer products with proven effectiveness for my skin concerns over traditional wisdom alone.",
+        "[SYNTHETIC] B) The brand - they have actual test data. Scientific evidence and test reports are more credible than individual opinions, even from experts."
+      ],
+      "predictive_value": "When shown traditional vs. clinical positioning, this person would likely choose the clinically-backed option and respond well to dermatologist endorsements while dismissing Ayurvedic heritage claims.",
+      "id": "trait:P07_T001:clinical-evidence-over-traditional-claims"
+    },
+    {
+      "node_type": "Trait",
+      "label": "essential-lather-texture-requirements",
+      "twin_id": "P07_T001",
+      "description": "Considers lather and foam essential to the body wash experience, preferring lightweight textures with good foaming properties.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[REAL] How important is lather/foam to your body wash experience? Essential",
+        "[REAL] What texture do you prefer in a body wash? Lightweight",
+        "[REAL] What is your ideal post-wash skin feeling? Moisturized",
+        "[SYNTHETIC] 2, 4, 1, 3 - Effectiveness and travel size matter most for gym use."
+      ],
+      "predictive_value": "When shown product demonstrations, this person would likely focus on lather quality and texture feel, dismissing products that don't foam well or feel too heavy on the skin.",
+      "id": "trait:P07_T001:essential-lather-texture-requirements"
+    },
+    {
+      "node_type": "Trait",
+      "label": "hygiene-over-convenience-prioritizer",
+      "twin_id": "P07_T001",
+      "description": "Exclusively uses body wash over bar soap for hygiene reasons, never compromising on this preference.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[REAL] Do you currently use body wash, bar soap, or both? What drives that choice? Body wash\u2014more hygienic than bar soap.",
+        "[REAL] Do you ever use bar soap, or is it exclusively body wash for you? Exclusively body wash.",
+        "[SYNTHETIC] (a) Order on Zepto, (c) Borrow from flatmate, (d) Buy during lunch break, (b) Use bar soap. I exclusively use body wash, never bar soap.",
+        "[SYNTHETIC] B) Order a body wash on Blinkit/Zepto for quick delivery. I exclusively use body wash and find it more hygienic than bar soap."
+      ],
+      "predictive_value": "When shown soap alternatives or hybrid products, this person would likely reject them entirely, making body wash format non-negotiable and soap-to-body-wash conversion messaging irrelevant.",
+      "id": "trait:P07_T001:hygiene-over-convenience-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "values-driven-but-not-premium-paying",
+      "twin_id": "P07_T001",
+      "description": "Describes self as values-driven but unwilling to pay premiums for sustainability, cruelty-free, or ethical claims.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] How would you describe your personality in 3-5 words? Values-driven, cheerful, happy, hardworking.",
+        "[REAL] What is the maximum premium (%) you would pay for a product that aligns with your values? Sustainable/eco-friendly packaging: 0, Ayurvedic or traditional ingredients: 0, Clinical-grade, lab-tested formulation: 0, Cruelty-free, not tested on animals: 0, Made in India: 0",
+        "[SYNTHETIC] C) \u20b90 \u2014 these claims don't influence what I'm willing to pay. I'm not willing to pay premium for sustainability or social impact.",
+        "[SYNTHETIC] A) Stick with my current brand \u2014 the improved formula is what matters, and I separate products from politics."
+      ],
+      "predictive_value": "When shown values-based marketing or premium ethical positioning, this person would likely ignore these claims entirely and focus purely on functional benefits and price, making cause marketing ineffective.",
+      "id": "trait:P07_T001:values-driven-but-not-premium-paying"
+    },
+    {
+      "node_type": "Trait",
+      "label": "packaging-indifferent-function-focused",
+      "twin_id": "P07_T001",
+      "description": "Consistently states that packaging doesn't matter and won't pay extra for aesthetic or designer packaging.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[REAL] If you could design your PERFECT body wash from scratch: Packaging/price: don't care\u2014willing to pay premium if it delivers value.",
+        "[SYNTHETIC] The basic plastic bottle at \u20b9249. Packaging doesn't matter to me - I care about value for money. If the ingredients and fragrance are identical, I'll save the \u20b9150.",
+        "[SYNTHETIC] B) Skip it - I'm paying for the product, not the bottle. \u20b9150 extra for just packaging doesn't add any value to my routine.",
+        "[SYNTHETIC] B) Skip it \u2014 I'm paying for the formula, not the packaging."
+      ],
+      "predictive_value": "When shown premium packaging or limited edition designs, this person would likely dismiss them as unnecessary costs and choose the basic packaging option, making aesthetic marketing investments counterproductive.",
+      "id": "trait:P07_T001:packaging-indifferent-function-focused"
+    },
+    {
+      "node_type": "Trait",
+      "label": "hard-water-formulation-seeker",
+      "twin_id": "P07_T001",
+      "description": "Specifically interested in products formulated for Indian skin and hard water conditions, rating this interest as 5/5.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] How does your water quality affect your product choices, if at all? Water quality affects my product choices significantly.",
+        "[REAL] Would you be interested in a body wash specifically formulated for Indian skin types and hard water conditions? rating: 5",
+        "[REAL] What aspect of such a formulation would you be most curious about, like ingredients or effectiveness? Most curious about effectiveness\u2014for Indian skin and hard water, the body wash should be sufficiently hydrating and moisturizing.",
+        "[SYNTHETIC] The second product with the detailed blog post. Actual information about ingredients and how they work is more valuable than empty clinical claims without proof."
+      ],
+      "predictive_value": "When shown India-specific formulation claims, this person would likely be highly interested and prioritize products that explicitly address hard water and local skin conditions over generic international formulations.",
+      "id": "trait:P07_T001:hard-water-formulation-seeker"
+    },
+    {
+      "node_type": "Trait",
+      "label": "repurchase-same-default-behavior",
+      "twin_id": "P07_T001",
+      "description": "Default behavior is to repurchase the same product when current body wash runs out, showing habitual purchasing patterns.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[REAL] When your current body wash/soap runs out, what is your typical next step? Repurchase_same",
+        "[SYNTHETIC] A) Finish your current bottle first, then switch. I don't waste products, but I'm open to trying something potentially better.",
+        "[SYNTHETIC] A) Use your regular body wash and layer with a perfume/deo instead. I prefer my oceanic perfume for lasting fragrance anyway.",
+        "[SYNTHETIC] B) My trusted brand \u2014 popularity doesn't equal quality for my skin. I stick with what works for my dryness issues."
+      ],
+      "predictive_value": "When shown new product launches, this person would likely stick with their current choice unless given compelling reasons to switch, making retention easier than acquisition for established brands they use.",
+      "id": "trait:P07_T001:repurchase-same-default-behavior"
+    },
+    {
+      "node_type": "Trait",
+      "label": "trial-size-risk-mitigation-preference",
+      "twin_id": "P07_T001",
+      "description": "Prefers testing products through small sizes, samples, or trial offers before committing to full-size purchases.",
+      "confidence": 0.78,
+      "evidence_quotes": [
+        "[SYNTHETIC] B) When I want to try a new variant before committing. The sachet lets me test without wasting money on a full bottle I might not like.",
+        "[SYNTHETIC] Buy a \u20b999 mini size from Nykaa first. Given my experience with Bath & Body Works not being worth \u20b9600-700, I want to test effectiveness before committing to expensive products.",
+        "[SYNTHETIC] A) Buy the sachet to try \u2014 perfect low-risk trial. At \u20b910, it's ideal for testing without commitment. If I like it, I'll buy the full bottle from Blinkit for convenience.",
+        "[SYNTHETIC] A 50ml trial for \u20b999 with credit toward full size. The credit system reduces risk and lets me test properly before committing to the full bottle."
+      ],
+      "predictive_value": "When shown new product concepts, this person would likely be most responsive to trial size offerings or sample programs rather than full-size launches, making sampling strategies crucial for conversion.",
+      "id": "trait:P07_T001:trial-size-risk-mitigation-preference"
+    },
+    {
+      "node_type": "Trait",
+      "label": "amazon-platform-trust-preference",
+      "twin_id": "P07_T001",
+      "description": "Shows strong preference for Amazon's review system and return policies over brand websites or other platforms.",
+      "confidence": 0.72,
+      "evidence_quotes": [
+        "[SYNTHETIC] Amazon link. I'm more comfortable with Amazon's return policy and delivery, and I trust the platform more for purchases even when prices are identical.",
+        "[SYNTHETIC] \u20b9319 on Amazon with free Prime delivery. The convenience and reliability of Amazon delivery is worth the extra \u20b920",
+        "[SYNTHETIC] Brand A with 4.2 stars and 15,000 reviews. More reviews give me confidence in the rating's reliability, and the price difference isn't huge.",
+        "[SYNTHETIC] C) Search for a similar product on Amazon/Nykaa at a lower price. \u20b9699 is too expensive, and buying from non-standard platforms is inconvenient."
+      ],
+      "predictive_value": "When shown direct-to-consumer or brand website exclusive offers, this person would likely seek the same products on Amazon instead, making marketplace presence more important than exclusive channel strategies.",
+      "id": "trait:P07_T001:amazon-platform-trust-preference"
+    },
+    {
+      "node_type": "Trait",
+      "label": "detailed-review-over-rating-quantity",
+      "twin_id": "P07_T001",
+      "description": "Values quality of reviews and detailed user experiences over sheer volume of ratings when making decisions.",
+      "confidence": 0.7,
+      "evidence_quotes": [
+        "[SYNTHETIC] The one with 4.8 stars and 180 ratings. Quality detailed reviews matter more than quantity. High ratings with fewer reviews often mean genuinely satisfied customers rather than mass marketing.",
+        "[SYNTHETIC] Scroll to find negative/critical reviews specifically. I always look for authentic criticism to understand potential problems before buying any personal care product.",
+        "[SYNTHETIC] Real user experiences with visual proof are more convincing than brand clinical trial claims.",
+        "[SYNTHETIC] Video testimonials from 10 real users with different skin types. Real user experiences are most valuable to me, and seeing different skin types would help me assess compatibility."
+      ],
+      "predictive_value": "When shown product pages, this person would likely focus on detailed negative reviews and authentic user experiences rather than overall star ratings, making review quality more important than review volume for conversion.",
+      "id": "trait:P07_T001:detailed-review-over-rating-quantity"
+    },
+    {
+      "node_type": "Trait",
+      "label": "fragrance-non-negotiable-requirement",
+      "twin_id": "P07_T001",
+      "description": "Considers fragrance essential and non-negotiable in body wash, specifically rejecting unscented options.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[REAL] I care about how I smell\u2014I'd never want to smell bad in front of others. I don't focus on smelling good, but I pay attention to not smelling bad.",
+        "[REAL] How long should a body wash fragrance last on your skin? Half_day",
+        "[SYNTHETIC] C) Not try it \u2014 fragrance is non-negotiable in body wash. I care about not smelling bad and enjoy the fresh oceanic scents. An unscented body wash would feel incomplete for my shower experience.",
+        "[SYNTHETIC] A) I'd definitely repurchase the same product \u2014 the compliment reinforces my choice. External validation that I smell good matters to me since I care about not smelling bad to others."
+      ],
+      "predictive_value": "When shown unscented or fragrance-free products, this person would likely reject them entirely, making fragrance a mandatory feature rather than an optional benefit in product development.",
+      "id": "trait:P07_T001:fragrance-non-negotiable-requirement"
+    },
+    {
+      "node_type": "Trait",
+      "label": "effectiveness-over-brand-prestige",
+      "twin_id": "P07_T001",
+      "description": "Consistently chooses products based on functional performance rather than brand recognition or prestige positioning.",
+      "confidence": 0.82,
+      "evidence_quotes": [
+        "[REAL] No preference or bias. I go with the value proposition the brand offers. Open to any brand\u2014Indian or international\u2014if it adds value to my routine.",
+        "[SYNTHETIC] A) I'd feel no change - I'm happy with what works. I'm values-driven and don't care about others' opinions on my product choices. Results matter, not perception.",
+        "[SYNTHETIC] C) I care about the product, not the founder. Product effectiveness matters more than personal stories.",
+        "[SYNTHETIC] B) No, as long as the product is the same, I don't care who owns it. I focus on product performance, not ownership."
+      ],
+      "predictive_value": "When shown prestige brand positioning or founder stories, this person would likely ignore these elements and focus purely on functional claims and effectiveness, making performance-based messaging more effective than brand heritage.",
+      "id": "trait:P07_T001:effectiveness-over-brand-prestige"
+    },
+    {
+      "node_type": "Trait",
+      "label": "immediate-need-convenience-prioritizer",
+      "twin_id": "P07_T001",
+      "description": "Prioritizes immediate availability and convenience when running out of products, willing to pay slightly more for instant delivery.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SYNTHETIC] Buy from Blinkit at \u20b9299. When I'm almost out of body wash, my first instinct is to open Blinkit. The convenience matters more than saving \u20b9100 when I need it immediately.",
+        "[SYNTHETIC] C) Order my regular body wash on credit card anyway. It's essential and the amount isn't huge enough to wait for salary.",
+        "[SYNTHETIC] (a) Order on Zepto for 10-min delivery, (c) Borrow from flatmate, (d) Buy during lunch break, (b) Use bar soap. I exclusively use body wash, never bar soap.",
+        "[SYNTHETIC] Pick from Zepto's limited range for instant delivery. When I need body wash today, I go with what's available on Blinkit rather than wait, even if selection is limited."
+      ],
+      "predictive_value": "When shown availability messaging, this person would likely prioritize brands that are consistently available on quick commerce platforms over those requiring advance planning or special ordering.",
+      "id": "trait:P07_T001:immediate-need-convenience-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "ingredient-transparency-appreciator",
+      "twin_id": "P07_T001",
+      "description": "Values understanding what goes into products and appreciates detailed ingredient information and transparency.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SYNTHETIC] The detailed ingredient breakdown with percentages. I prefer concrete information over marketing videos when making purchase decisions.",
+        "[SYNTHETIC] A) The body wash with 5 simple ingredients I can pronounce. I prefer understanding what I'm putting on my skin, and simple doesn't mean less effective for my needs.",
+        "[SYNTHETIC] B) I'd research what 'fragrance' typically includes. I want to understand what I'm putting on my skin, especially since I care about not having adverse effects.",
+        "[SYNTHETIC] Make you trust the brand more but you'd still need to like the product itself. Transparency is nice but product effectiveness and value matter most."
+      ],
+      "predictive_value": "When shown ingredient lists and transparency messaging, this person would likely appreciate detailed breakdowns and prefer brands that clearly explain their formulations over those with vague or hidden ingredient information.",
+      "id": "trait:P07_T001:ingredient-transparency-appreciator"
+    },
+    {
+      "node_type": "Trait",
+      "label": "seasonal-gimmick-skeptic",
+      "twin_id": "P07_T001",
+      "description": "Dismisses seasonal variants and limited editions as marketing gimmicks, preferring permanent products with proven track records.",
+      "confidence": 0.7,
+      "evidence_quotes": [
+        "[SYNTHETIC] B) Stick with the regular - I don't pay extra for seasonal gimmicks. \u20b950 more for a temporary variant isn't worth it when the regular version works fine.",
+        "[SYNTHETIC] Not matter \u2014 you'd evaluate it like any other new variant. Limited edition doesn't influence me; I focus on whether the ingredients benefit my skin.",
+        "[SYNTHETIC] C) Actually make you less interested \u2014 you prefer permanent products you can repurchase",
+        "[SYNTHETIC] C) Stick with your regular body wash \u2014 seasonal marketing feels like a sales tactic"
+      ],
+      "predictive_value": "When shown limited edition or seasonal variants, this person would likely dismiss them as unnecessary marketing tactics and stick with proven regular formulations, making seasonal launches less effective for acquisition.",
+      "id": "trait:P07_T001:seasonal-gimmick-skeptic"
+    },
+    {
+      "node_type": "Trait",
+      "label": "multi-source-validation-seeker",
+      "twin_id": "P07_T001",
+      "description": "Requires validation from multiple sources before making decisions, not trusting single expert opinions or isolated recommendations.",
+      "confidence": 0.78,
+      "evidence_quotes": [
+        "[SYNTHETIC] D) Research more dermatologists' opinions before deciding. I trust dermatologists but want multiple expert opinions before switching from something that works.",
+        "[SYNTHETIC] D) Search for other expert opinions to verify the claim. I don't trust single sources, even dermatologists on social media. I'd check multiple expert opinions and reviews before making changes.",
+        "[SYNTHETIC] C) Search for more reviews on other platforms. I'd check Reddit, Nykaa, and Google reviews to get a fuller picture before deciding.",
+        "[SYNTHETIC] Always compare prices before purchasing, even with the extra 5% off."
+      ],
+      "predictive_value": "When shown single-source endorsements or isolated testimonials, this person would likely seek additional validation from multiple platforms and experts before trusting the claims, making multi-channel validation strategies more effective.",
+      "id": "trait:P07_T001:multi-source-validation-seeker"
+    },
+    {
+      "node_type": "Trait",
+      "label": "functional-benefit-over-experience-prioritizer",
+      "twin_id": "P07_T001",
+      "description": "Consistently chooses functional benefits over experiential features, dismissing premium experiences that don't add practical value.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SYNTHETIC] No, wouldn't buy it primarily for the experience. \u20b9300 premium just for dispensing mechanism isn't worth it when the actual body wash is average.",
+        "[SYNTHETIC] C) Hard pass \u2014 too much effort for a shower product. My typical routine is straightforward and I want convenience, not additional steps in an already busy student schedule.",
+        "[SYNTHETIC] No, I wouldn't pay the extra \u20b9250. Customization and name printing don't add functional value. I care about effectiveness, not personalization",
+        "[SYNTHETIC] B) The skin diagnostic utility. The pH indication could actually help me understand my skin better, which aligns with wanting products that solve my dryness problem."
+      ],
+      "predictive_value": "When shown experiential or premium features, this person would likely focus only on functional benefits that solve their skin problems, dismissing luxury experiences or aesthetic enhancements as unnecessary costs.",
+      "id": "trait:P07_T001:functional-benefit-over-experience-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "dry-skin-problem-solver-prioritizer",
+      "twin_id": "P07_T001",
+      "description": "Consistently evaluates products based on their ability to solve dry skin problems completely, not just partially.",
+      "confidence": 0.95,
+      "evidence_quotes": [
+        "[SURVEY] Better moisturizing properties that actually solve dry skin problems completely, not just partially like current products do",
+        "[SURVEY] The 12-hour moisturization promise directly addresses my dry skin problems",
+        "[SURVEY] I'd want clinical proof the moisturization actually lasts 12 hours on dry skin types",
+        "[SURVEY] superior moisturization for dry skin"
+      ],
+      "predictive_value": "When shown a new body wash concept, this person would likely focus immediately on moisturizing claims and dismiss products that don't explicitly address dry skin needs.",
+      "id": "trait:P07_T001:dry-skin-problem-solver-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "scientific-proof-demander",
+      "twin_id": "P07_T001",
+      "description": "Consistently seeks clinical backing and scientific credibility in product claims before believing them.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[SURVEY] The micellar cleansing technology sounds scientifically backed",
+        "[SURVEY] The stress-reducing ingredients with clinical backing sound scientifically credible, which I appreciate in product claims",
+        "[SURVEY] I'd want to see clinical proof that the AI analysis actually works",
+        "[SURVEY] the technology seems scientifically backed which I appreciate over generic solutions"
+      ],
+      "predictive_value": "When shown marketing claims, this person would likely respond positively to clinical studies and scientific terminology but remain skeptical of vague benefit statements.",
+      "id": "trait:P07_T001:scientific-proof-demander"
+    },
+    {
+      "node_type": "Trait",
+      "label": "personalized-solution-seeker",
+      "twin_id": "P07_T001",
+      "description": "Shows strong attraction to customized products that address individual needs rather than one-size-fits-all solutions.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[SURVEY] The AI skin analysis and custom formulation directly addresses my need for products that solve dry skin problems",
+        "[SURVEY] Dove Skin ID rated 'Made for me': 4",
+        "[SURVEY] Dove Skip rated 'Made for me': 5",
+        "[SURVEY] better results than trial-and-error"
+      ],
+      "predictive_value": "When shown product concepts, this person would likely be most attracted to those offering customization or personalization features that promise targeted solutions.",
+      "id": "trait:P07_T001:personalized-solution-seeker"
+    },
+    {
+      "node_type": "Trait",
+      "label": "price-justification-through-efficacy",
+      "twin_id": "P07_T001",
+      "description": "Willing to pay premium prices but only when convinced the product will deliver superior results for their specific needs.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SURVEY] the price seems high for the small sizes",
+        "[SURVEY] the \u20b9699 starting price needs to show real value through superior moisturization",
+        "[SURVEY] What would you expect to pay for your most preferred concept? 400",
+        "[SURVEY] Value for money: 5"
+      ],
+      "predictive_value": "When shown premium-priced products, this person would likely evaluate them based on proven efficacy rather than rejecting them outright for cost.",
+      "id": "trait:P07_T001:price-justification-through-efficacy"
+    },
+    {
+      "node_type": "Trait",
+      "label": "trial-size-risk-mitigator",
+      "twin_id": "P07_T001",
+      "description": "Prefers testing products in smaller sizes before committing to full-size purchases to minimize risk.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SURVEY] the trial size option lets me test it without big investment",
+        "[SURVEY] maybe offer a smaller trial size first",
+        "[SURVEY] I'd want to see proof it actually moisturizes dry skin properly, not just cleans quickly"
+      ],
+      "predictive_value": "When shown new product launches, this person would likely be more interested in concepts that offer trial or sample sizes before full commitment.",
+      "id": "trait:P07_T001:trial-size-risk-mitigator"
+    },
+    {
+      "node_type": "Trait",
+      "label": "routine-efficiency-optimizer",
+      "twin_id": "P07_T001",
+      "description": "Values products that can eliminate steps from their routine, particularly those that combine cleansing and moisturizing.",
+      "confidence": 0.85,
+      "evidence_quotes": [
+        "[SURVEY] eliminates the need for separate body lotion application",
+        "[SURVEY] How likely would the Dove Skip be to save you time in your routine? 5",
+        "[SURVEY] How well does the Dove Skip concept fit with your current routine? 5"
+      ],
+      "predictive_value": "When shown multi-benefit products, this person would likely be attracted to those that promise to reduce their routine steps while maintaining effectiveness.",
+      "id": "trait:P07_T001:routine-efficiency-optimizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "irrelevant-benefit-dismisser",
+      "twin_id": "P07_T001",
+      "description": "Quickly dismisses products with benefits that don't align with their personal needs or lifestyle.",
+      "confidence": 0.9,
+      "evidence_quotes": [
+        "[SURVEY] the relaxation benefit isn't relevant to my needs as a student",
+        "[SURVEY] The concept isn't relevant to me since I'm not in a relationship",
+        "[SURVEY] How relevant is the Dove Night Wash to your personal needs? Not very relevant",
+        "[SURVEY] How relevant is the Dove Yours & Mine to your personal needs? Not very relevant"
+      ],
+      "predictive_value": "When shown products with lifestyle-specific benefits, this person would likely immediately assess relevance to their situation and dismiss non-applicable concepts regardless of innovation.",
+      "id": "trait:P07_T001:irrelevant-benefit-dismisser"
+    },
+    {
+      "node_type": "Trait",
+      "label": "innovation-appreciator-with-purpose",
+      "twin_id": "P07_T001",
+      "description": "Values innovative features but only when they serve a functional purpose rather than novelty for its own sake.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SURVEY] How unique or different is the Dove Skin ID? Extremely unique",
+        "[SURVEY] seems like a novelty feature rather than solving actual skin problems",
+        "[SURVEY] Dove Skin ID rated 'Old-fashioned-Innovative': 5",
+        "[SURVEY] Innovation / uniqueness: 3"
+      ],
+      "predictive_value": "When shown innovative products, this person would likely evaluate whether the innovation solves real problems rather than being impressed by novelty alone.",
+      "id": "trait:P07_T001:innovation-appreciator-with-purpose"
+    },
+    {
+      "node_type": "Trait",
+      "label": "dove-brand-alignment-expecter",
+      "twin_id": "P07_T001",
+      "description": "Has clear expectations for what fits with Dove's brand identity and evaluates new concepts against this standard.",
+      "confidence": 0.75,
+      "evidence_quotes": [
+        "[SURVEY] How well does the Dove Skip idea fit with what you expect from the Dove brand? Fits very well",
+        "[SURVEY] How well does the Dove Yours & Mine idea fit with what you expect from the Dove brand? Doesn't fit very well",
+        "[SURVEY] Which body wash brands have you used in the past 3 months? Dove, Nivea"
+      ],
+      "predictive_value": "When shown new Dove concepts, this person would likely evaluate them against their perception of brand consistency and reject those that seem off-brand.",
+      "id": "trait:P07_T001:dove-brand-alignment-expecter"
+    },
+    {
+      "node_type": "Trait",
+      "label": "moisturization-over-cleansing-prioritizer",
+      "twin_id": "P07_T001",
+      "description": "Rates moisturization as the most important factor in body wash selection, even above cleansing effectiveness.",
+      "confidence": 0.95,
+      "evidence_quotes": [
+        "[SURVEY] Moisturization / skin hydration: 5",
+        "[SURVEY] Cleansing effectiveness: 4",
+        "[SURVEY] I'd want to see proof it actually moisturizes dry skin properly, not just cleans quickly"
+      ],
+      "predictive_value": "When evaluating body wash options, this person would likely prioritize moisturizing claims over cleansing power and choose products that emphasize hydration benefits.",
+      "id": "trait:P07_T001:moisturization-over-cleansing-prioritizer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "current-satisfaction-gap-identifier",
+      "twin_id": "P07_T001",
+      "description": "Currently only somewhat satisfied with existing products, indicating openness to better solutions.",
+      "confidence": 0.7,
+      "evidence_quotes": [
+        "[SURVEY] Overall, how satisfied are you with the body wash you currently use most often? Somewhat satisfied",
+        "[SURVEY] not just partially like current products do",
+        "[SURVEY] Happy with current product (listed as concern for Night Wash)"
+      ],
+      "predictive_value": "When shown superior alternatives, this person would likely be open to switching from their current products if convinced of better performance.",
+      "id": "trait:P07_T001:current-satisfaction-gap-identifier"
+    },
+    {
+      "node_type": "Trait",
+      "label": "availability-concern-practical-buyer",
+      "twin_id": "P07_T001",
+      "description": "Considers product availability in their shopping locations as a practical barrier to purchase.",
+      "confidence": 0.65,
+      "evidence_quotes": [
+        "[SURVEY] Might not be available where I shop",
+        "[SURVEY] What concerns would you have about trying the Dove Skin ID? Might not be available where I shop"
+      ],
+      "predictive_value": "When considering new products, this person would likely factor in distribution and availability before making purchase decisions.",
+      "id": "trait:P07_T001:availability-concern-practical-buyer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "gentle-skin-treatment-requirer",
+      "twin_id": "P07_T001",
+      "description": "Values gentleness on skin as an important factor, likely due to their dry skin concerns.",
+      "confidence": 0.7,
+      "evidence_quotes": [
+        "[SURVEY] Gentleness on skin: 4",
+        "[SURVEY] dry skin problems",
+        "[SURVEY] moisturization actually lasts 12 hours on dry skin types"
+      ],
+      "predictive_value": "When shown products with harsh ingredients or strong formulations, this person would likely be concerned about skin irritation and prefer gentler alternatives.",
+      "id": "trait:P07_T001:gentle-skin-treatment-requirer"
+    },
+    {
+      "node_type": "Trait",
+      "label": "fragrance-quality-appreciator",
+      "twin_id": "P07_T001",
+      "description": "Values good fragrance and scent quality as an important but secondary consideration after skin benefits.",
+      "confidence": 0.7,
+      "evidence_quotes": [
+        "[SURVEY] Fragrance / scent quality: 4",
+        "[SURVEY] The personalized fragrance technology sounds innovative, but it's not relevant"
+      ],
+      "predictive_value": "When evaluating products with similar skin benefits, this person would likely use fragrance quality as a differentiating factor in their final choice.",
+      "id": "trait:P07_T001:fragrance-quality-appreciator"
+    },
+    {
+      "node_type": "Trait",
+      "label": "no-concerns-when-needs-align",
+      "twin_id": "P07_T001",
+      "description": "Shows no hesitation about trying products when they directly address their specific needs.",
+      "confidence": 0.8,
+      "evidence_quotes": [
+        "[SURVEY] What concerns would you have about trying the Dove Skip? No concerns",
+        "[SURVEY] Based on what you've seen, how likely would you be to buy the Dove Skip? Definitely would buy",
+        "[SURVEY] How relevant is the Dove Skip to your personal needs? Extremely relevant"
+      ],
+      "predictive_value": "When shown products that perfectly match their dry skin needs, this person would likely move quickly to purchase without typical new product hesitations.",
+      "id": "trait:P07_T001:no-concerns-when-needs-align"
+    }
+  ],
+  "links": [
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.95,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:dry-skin-problem-solver-first"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.92,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:friend-family-recommendation-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:price-conscious-student-budget-optimizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.88,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:quick-commerce-dependency-for-convenience"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.87,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:research-validation-before-new-purchases"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:anti-social-media-marketing-skeptic"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.83,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:comfortable-new-brand-experimenter"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.82,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:moderate-brand-loyalty-with-switching-triggers"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:oceanic-fresh-fragrance-preference"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.78,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:clinical-evidence-over-traditional-claims"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:essential-lather-texture-requirements"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:hygiene-over-convenience-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:values-driven-but-not-premium-paying"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:packaging-indifferent-function-focused"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:hard-water-formulation-seeker"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:repurchase-same-default-behavior"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.78,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:trial-size-risk-mitigation-preference"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.72,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:amazon-platform-trust-preference"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.7,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:detailed-review-over-rating-quantity"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:fragrance-non-negotiable-requirement"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.82,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:effectiveness-over-brand-prestige"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:immediate-need-convenience-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:ingredient-transparency-appreciator"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.7,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:seasonal-gimmick-skeptic"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.78,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:multi-source-validation-seeker"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:functional-benefit-over-experience-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.95,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:dry-skin-problem-solver-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:scientific-proof-demander"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:personalized-solution-seeker"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:price-justification-through-efficacy"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:trial-size-risk-mitigator"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.85,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:routine-efficiency-optimizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.9,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:irrelevant-benefit-dismisser"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:innovation-appreciator-with-purpose"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.75,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:dove-brand-alignment-expecter"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.95,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:moisturization-over-cleansing-prioritizer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.7,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:current-satisfaction-gap-identifier"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.65,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:availability-concern-practical-buyer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.7,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:gentle-skin-treatment-requirer"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.7,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:fragrance-quality-appreciator"
+    },
+    {
+      "edge_type": "has_trait",
+      "confidence": 0.8,
+      "source": "P07_T001",
+      "target": "trait:P07_T001:no-concerns-when-needs-align"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:dry-skin-problem-solver-first",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "The ongoing dry skin issues make them specifically interested in formulations that address hard water effects on skin, as they recognize water quality significantly impacts their skin condition.",
+      "source": "trait:P07_T001:dry-skin-problem-solver-first",
+      "target": "trait:P07_T001:hard-water-formulation-seeker"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:friend-family-recommendation-prioritizer",
+      "target": "domain:Social & Contextual Drivers"
+    },
+    {
+      "edge_type": "contradicts",
+      "mechanism": "While they highly trust friend recommendations, they still seek additional validation from multiple sources, creating tension between personal trust and systematic research.",
+      "source": "trait:P07_T001:friend-family-recommendation-prioritizer",
+      "target": "trait:P07_T001:multi-source-validation-seeker"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:price-conscious-student-budget-optimizer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Limited student budget makes them risk-averse to expensive full-size purchases, driving preference for smaller trial sizes to test before committing larger amounts.",
+      "source": "trait:P07_T001:price-conscious-student-budget-optimizer",
+      "target": "trait:P07_T001:trial-size-risk-mitigation-preference"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:quick-commerce-dependency-for-convenience",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "The habit of using quick commerce as first instinct reinforces their willingness to prioritize immediate availability over price savings or selection variety.",
+      "source": "trait:P07_T001:quick-commerce-dependency-for-convenience",
+      "target": "trait:P07_T001:immediate-need-convenience-prioritizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:research-validation-before-new-purchases",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:anti-social-media-marketing-skeptic",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Distrust of social media marketing drives them to seek authentic validation through multiple research sources like Reddit and Amazon reviews before making decisions.",
+      "source": "trait:P07_T001:anti-social-media-marketing-skeptic",
+      "target": "trait:P07_T001:research-validation-before-new-purchases"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:comfortable-new-brand-experimenter",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Comfort with trying new brands enables their moderate loyalty approach, making them willing to switch when better options present themselves.",
+      "source": "trait:P07_T001:comfortable-new-brand-experimenter",
+      "target": "trait:P07_T001:moderate-brand-loyalty-with-switching-triggers"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:moderate-brand-loyalty-with-switching-triggers",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:oceanic-fresh-fragrance-preference",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:clinical-evidence-over-traditional-claims",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Preference for clinical evidence drives desire to understand ingredients and formulations, making transparency more valuable than traditional or heritage claims.",
+      "source": "trait:P07_T001:clinical-evidence-over-traditional-claims",
+      "target": "trait:P07_T001:ingredient-transparency-appreciator"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:essential-lather-texture-requirements",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:hygiene-over-convenience-prioritizer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:values-driven-but-not-premium-paying",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Being values-driven but unwilling to pay premiums reinforces focus on functional effectiveness rather than brand positioning or ethical claims.",
+      "source": "trait:P07_T001:values-driven-but-not-premium-paying",
+      "target": "trait:P07_T001:effectiveness-over-brand-prestige"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:packaging-indifferent-function-focused",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Indifference to packaging aesthetics reinforces their broader pattern of prioritizing functional benefits over experiential or aesthetic features.",
+      "source": "trait:P07_T001:packaging-indifferent-function-focused",
+      "target": "trait:P07_T001:functional-benefit-over-experience-prioritizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:hard-water-formulation-seeker",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:repurchase-same-default-behavior",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:trial-size-risk-mitigation-preference",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:amazon-platform-trust-preference",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:detailed-review-over-rating-quantity",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:fragrance-non-negotiable-requirement",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Since fragrance is essential, they've developed specific preferences for oceanic scents that align with their desire to smell fresh and avoid smelling bad.",
+      "source": "trait:P07_T001:fragrance-non-negotiable-requirement",
+      "target": "trait:P07_T001:oceanic-fresh-fragrance-preference"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:effectiveness-over-brand-prestige",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:immediate-need-convenience-prioritizer",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:ingredient-transparency-appreciator",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:seasonal-gimmick-skeptic",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:multi-source-validation-seeker",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:functional-benefit-over-experience-prioritizer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:dry-skin-problem-solver-prioritizer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Because they have a specific skin problem that needs solving, they demand clinical proof that products will actually work rather than accepting marketing claims at face value.",
+      "source": "trait:P07_T001:dry-skin-problem-solver-prioritizer",
+      "target": "trait:P07_T001:scientific-proof-demander"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Their specific dry skin needs make them attracted to customized solutions that can address their individual skin type rather than generic products.",
+      "source": "trait:P07_T001:dry-skin-problem-solver-prioritizer",
+      "target": "trait:P07_T001:personalized-solution-seeker"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:scientific-proof-demander",
+      "target": "domain:Information-Seeking Behavior"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Their need for proof extends to wanting to test products themselves before committing, using trial sizes as personal validation of claims.",
+      "source": "trait:P07_T001:scientific-proof-demander",
+      "target": "trait:P07_T001:trial-size-risk-mitigator"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:personalized-solution-seeker",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:price-justification-through-efficacy",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "They're willing to pay more but need scientific backing to justify the premium, making proof essential for higher-priced purchases.",
+      "source": "trait:P07_T001:price-justification-through-efficacy",
+      "target": "trait:P07_T001:scientific-proof-demander"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:trial-size-risk-mitigator",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:routine-efficiency-optimizer",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Their desire to eliminate separate moisturizing steps makes them prioritize body washes that can handle both cleansing and moisturizing effectively.",
+      "source": "trait:P07_T001:routine-efficiency-optimizer",
+      "target": "trait:P07_T001:moisturization-over-cleansing-prioritizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:irrelevant-benefit-dismisser",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "supports",
+      "mechanism": "Their laser focus on solving dry skin problems makes them quickly dismiss any benefits that don't contribute to this primary need.",
+      "source": "trait:P07_T001:irrelevant-benefit-dismisser",
+      "target": "trait:P07_T001:dry-skin-problem-solver-prioritizer"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:innovation-appreciator-with-purpose",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:dove-brand-alignment-expecter",
+      "target": "domain:Brand Relationship Patterns"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:moisturization-over-cleansing-prioritizer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:current-satisfaction-gap-identifier",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "causes",
+      "mechanism": "Their dissatisfaction with current generic products drives them to seek more targeted, personalized solutions that might work better.",
+      "source": "trait:P07_T001:current-satisfaction-gap-identifier",
+      "target": "trait:P07_T001:personalized-solution-seeker"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:availability-concern-practical-buyer",
+      "target": "domain:Channel & Format Preferences"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:gentle-skin-treatment-requirer",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:fragrance-quality-appreciator",
+      "target": "domain:Purchase Decision Mechanics"
+    },
+    {
+      "edge_type": "belongs_to",
+      "source": "trait:P07_T001:no-concerns-when-needs-align",
+      "target": "domain:Risk & Novelty Orientation"
+    },
+    {
+      "edge_type": "contradicts",
+      "mechanism": "When products perfectly match their needs, they're willing to buy immediately, but for less relevant products they want trial sizes first, showing selective risk tolerance.",
+      "source": "trait:P07_T001:no-concerns-when-needs-align",
+      "target": "trait:P07_T001:trial-size-risk-mitigator"
+    }
+  ]
+}

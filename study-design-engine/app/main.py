@@ -9,6 +9,7 @@ from app.config import settings
 from app.database import get_session
 from app.models.study import Study
 from app.schemas.study import StudyCreate, StudyResponse
+from app.routers import auth as auth_router
 from app.routers import studies as studies_router
 from app.routers import metrics as metrics_router
 from app.routers import audit as audit_router
@@ -35,6 +36,7 @@ app.add_middleware(
 )
 
 # Include all routers
+app.include_router(auth_router.router)
 app.include_router(studies_router.router)
 app.include_router(metrics_router.router)
 app.include_router(audit_router.router)

@@ -98,7 +98,15 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
       set({ loading: true, loadingMessage: "Loading study..." });
       const study = await api.getStudy(id);
       const activeStep = getStepFromStatus(study.status as StudyStatus);
-      set({ study, activeStep, loading: false });
+      set({
+        study,
+        activeStep,
+        loading: false,
+        stepVersions: {},
+        concepts: [],
+        comparability: null,
+        simulationRuns: [],
+      });
     } catch (e) {
       set({ error: (e as Error).message, loading: false });
     }

@@ -563,20 +563,30 @@ def build_m8_questionnaire() -> list[dict]:
 # Question Formatting — natural-language query for evidence retrieval
 # ===========================================================================
 
-def _concept_stimulus_block(concept_idx: int) -> str:
+def _concept_stimulus_block(concept_idx: int, concepts: list[dict] | None = None) -> str:
     """Build a concept stimulus card block for prompts."""
-    for c in M8_CONCEPTS:
-        if c["concept_index"] == concept_idx:
-            return (
-                f"--- CONCEPT STIMULUS CARD ---\n"
-                f"Product: {c['product_name']}\n"
-                f"Consumer Insight: {c['consumer_insight']}\n"
-                f"Key Benefit: {c['key_benefit']}\n"
-                f"How It Works: {c['how_it_works']}\n"
-                f"Price: {c['price']}\n"
-                f"--- END STIMULUS ---\n\n"
-            )
+    source = concepts if concepts is not None else M8_CONCEPTS
+    for c in source:
+        if c.get("concept_index") == concept_idx:
+            lines = [f"--- CONCEPT STIMULUS CARD ---"]
+            lines.append(f"Product: {c.get('product_name', '')}")
+            if c.get("consumer_insight"):
+                lines.append(f"Consumer Insight: {c['consumer_insight']}")
+            if c.get("key_benefit"):
+                lines.append(f"Key Benefit: {c['key_benefit']}")
+            if c.get("how_it_works"):
+                lines.append(f"How It Works: {c['how_it_works']}")
+            if c.get("reasons_to_believe"):
+                lines.append(f"Reasons to Believe: {c['reasons_to_believe']}")
+            if c.get("price"):
+                lines.append(f"Price: {c['price']}")
+            lines.append("--- END STIMULUS ---\n")
+            return "\n".join(lines) + "\n"
     return ""
+
+
+# Module-level concepts override for format_question_query (set by run_simulation)
+_active_concepts: list[dict] | None = None
 
 
 def format_question_query(question: dict) -> str:
@@ -588,7 +598,7 @@ def format_question_query(question: dict) -> str:
     scale = question.get("scale") or {}
     matrix_items = question.get("matrix_items") or []
 
-    concept_block = _concept_stimulus_block(concept_idx) if concept_idx else ""
+    concept_block = _concept_stimulus_block(concept_idx, _active_concepts) if concept_idx else ""
 
     option_labels = [o["label"] for o in options if isinstance(o, dict)]
 
@@ -1178,6 +1188,40 @@ def export_csv(twin_id: str, responses: list[dict], questions: list[dict], outpu
 # Main Orchestration
 # ===========================================================================
 
+async def run_simulation(
+    twin_id: str,
+    questionnaire: list[dict],
+    concepts: list[dict] | None = None,
+    mode: str = "combined",
+    batch_size: int = STEP5_MAX_BATCH_SIZE,
+    output_dir: Path | None = None,
+    participant_id: str = "default",
+    collection=None,
+    kg=None,
+) -> list[dict]:
+    """Run simulation for one twin with an arbitrary questionnaire.
+
+    This is the general-purpose entry point used by the API/Celery tasks.
+    The questionnaire is a list of question dicts (same schema as
+    build_m8_questionnaire() output). Concepts are optional stimulus cards.
+    """
+    global _active_concepts
+    _active_concepts = concepts
+    try:
+        return await _run_simulation_inner(
+            twin_id=twin_id,
+            questions=questionnaire,
+            mode=mode,
+            batch_size=batch_size,
+            output_dir=output_dir,
+            participant_id=participant_id,
+            collection=collection,
+            kg=kg,
+        )
+    finally:
+        _active_concepts = None
+
+
 async def run_m8_simulation(
     twin_id: str,
     mode: str = "combined",
@@ -1188,15 +1232,38 @@ async def run_m8_simulation(
     kg=None,
 ) -> list[dict]:
     """Run the complete M8 concept test simulation for one twin."""
+    questions = build_m8_questionnaire()
+    return await run_simulation(
+        twin_id=twin_id,
+        questionnaire=questions,
+        concepts=M8_CONCEPTS,
+        mode=mode,
+        batch_size=batch_size,
+        output_dir=output_dir,
+        participant_id=participant_id,
+        collection=collection,
+        kg=kg,
+    )
+
+
+async def _run_simulation_inner(
+    twin_id: str,
+    questions: list[dict],
+    mode: str = "combined",
+    batch_size: int = STEP5_MAX_BATCH_SIZE,
+    output_dir: Path | None = None,
+    participant_id: str = "default",
+    collection=None,
+    kg=None,
+) -> list[dict]:
+    """Internal implementation shared by run_simulation and run_m8_simulation."""
     t0 = time.time()
     output_dir = output_dir or (OUTPUT_DIR / "step5_m8_simulation")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     pid = participant_id if participant_id != "default" else twin_id.split("_")[0]
 
-    # Build questionnaire
-    questions = build_m8_questionnaire()
-    logger.info(f"M8 Questionnaire: {len(questions)} questions")
+    logger.info(f"Questionnaire: {len(questions)} questions")
     logger.info(f"Twin: {twin_id} | Mode: {mode} | Batch size: {batch_size}")
 
     questions_lookup = {q["question_id"]: q for q in questions}

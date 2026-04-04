@@ -33,9 +33,8 @@ export function ActionBar({
   // Figure out what phase the active step is actually in:
   // If previous step is locked and we're on the next step, we need to generate
   const needsGenerate =
-    (status === "init") ||
-    (status.endsWith("_locked") && activeStep === rawStep + 1) ||
-    (status === `step_${activeStep}_draft`);
+    (status === "init" && activeStep === 1) ||
+    (status.endsWith("_locked") && activeStep === rawStep + 1);
 
   const canLock = status === `step_${activeStep}_review` || status === `step_${activeStep}_draft`;
   const canEdit =

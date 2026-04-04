@@ -352,19 +352,64 @@ function SemanticDifferentialPreview({
   anchors: Record<string, string> | null;
   attributePairs?: Array<{ left: string; right: string }>;
 }) {
-  const pts = options.length > 0 ? options : defaultScale(5);
+  // Detect matrix scale: if options have text labels (not just numbers) and
+  // there are anchors with numeric keys (1, 3, 5), treat options as items to rate
+  const isMatrixScale =
+    options.length > 0 &&
+    anchors &&
+    Object.keys(anchors).some((k) => /^\d+$/.test(k)) &&
+    options.some((o) => o.label && o.label !== String(o.value));
 
-  // Build rows from attribute_pairs, anchors, or show placeholder
+  if (isMatrixScale) {
+    // Matrix: each option is an item/attribute to rate on a 1-5 scale
+    const scalePts = defaultScale(5);
+    const { low, high } = resolveAnchors(anchors, 5);
+    return (
+      <div className="space-y-3">
+        <AnchorBar low={low} high={high} />
+        {options.map((item) => (
+          <div key={item.value} className="flex items-center gap-3">
+            <span className="text-xs text-white/60 min-w-[180px] shrink-0">
+              {item.label}
+            </span>
+            <div className="flex items-center gap-1.5">
+              {scalePts.map((pt) => (
+                <span
+                  key={pt.value}
+                  className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-[10px] text-white/30 font-mono"
+                >
+                  {pt.value}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // Bipolar semantic differential: attribute pairs
+  const pts = options.length > 0 ? options : defaultScale(5);
   let rows: Array<{ left: string; right: string }> = [];
 
   if (attributePairs && attributePairs.length > 0) {
     rows = attributePairs;
+  } else if (options.length > 0 && options.some((o) => o.label && o.label.includes("-"))) {
+    // Options like "Basic-Premium", "Boring-Exciting" — split into pairs
+    rows = options
+      .map((o) => {
+        const parts = o.label.split("-");
+        return parts.length === 2 ? { left: parts[0].trim(), right: parts[1].trim() } : null;
+      })
+      .filter((r): r is { left: string; right: string } => r !== null);
   } else if (anchors) {
     const keys = Object.keys(anchors).sort();
     const left = anchors.low || (keys.length > 0 ? anchors[keys[0]] : "") || "";
     const right = anchors.high || (keys.length > 1 ? anchors[keys[keys.length - 1]] : "") || "";
     if (left || right) rows = [{ left, right }];
   }
+
+  const scalePts = defaultScale(5);
 
   if (rows.length === 0) {
     return (
@@ -375,7 +420,7 @@ function SemanticDifferentialPreview({
         <div className="flex items-center gap-3">
           <span className="text-xs text-white/30 min-w-[80px] text-right">‹ Left anchor ›</span>
           <div className="flex items-center gap-1.5">
-            {pts.map((pt) => (
+            {scalePts.map((pt) => (
               <span
                 key={pt.value}
                 className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-[10px] text-white/30 font-mono"
@@ -398,7 +443,7 @@ function SemanticDifferentialPreview({
             {pair.left}
           </span>
           <div className="flex items-center gap-1.5">
-            {pts.map((pt) => (
+            {scalePts.map((pt) => (
               <span
                 key={pt.value}
                 className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-[10px] text-white/30 font-mono"

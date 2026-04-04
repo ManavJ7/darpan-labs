@@ -1,206 +1,115 @@
-# Darpan Labs - AI-Powered Consumer Research Platform
+# Darpan Labs - Digital Twin Platform
 
-AI-powered interview platform for consumer research. Conducts structured voice/text interviews across modular question banks to build deep consumer understanding.
+A complete digital twin platform for consumer research. The platform enables creating AI-powered digital replicas of real consumers through structured interviews, then uses those twins to simulate survey responses for market research.
 
-## Overview
+## Modules
 
-Darpan Labs enables:
-- **AI Interviews**: Conduct structured interviews with AI-powered follow-up probing, acknowledgment, and satisfaction scoring
-- **Voice Support**: Record voice responses with real-time transcription (OpenAI Whisper) and transcript correction
-- **Modular Question Banks**: 8 themed modules (M1-M8) covering identity, preferences, decision logic, lifestyle, sensory aesthetics, product deep-dives, and concept testing
-- **Admin Dashboard**: View transcripts, module completion status, and manage interviews
-- **Multi-language**: Supports English, Hindi, and Hinglish responses
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| **Backend** | FastAPI, Pydantic v2, SQLAlchemy (async), LiteLLM |
-| **Frontend** | Next.js 14, TypeScript, Tailwind CSS, Zustand, Framer Motion |
-| **Database** | PostgreSQL (asyncpg) |
-| **LLM** | LiteLLM (OpenAI, Anthropic, etc.) |
-| **Voice/ASR** | OpenAI Whisper API |
-| **Auth** | Google OAuth + JWT |
-| **Deployment** | Railway / Docker Compose |
-
-## Quick Start
-
-### Prerequisites
-
-- Python 3.11+
-- Node.js 20+
-- PostgreSQL (or use Docker)
-
-### 1. Clone and Setup
-
-```bash
-git clone https://github.com/Aniket-Pratik/darpan-labs-V2.git
-cd darpan-labs-V2
-
-# Backend setup
-cd backend
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# Create .env file
-cp .env.example .env
-# Edit .env with your API keys
-```
-
-### 2. Start with Docker Compose
-
-```bash
-docker-compose up -d
-
-# Backend auto-creates tables on startup
-```
-
-### 3. Or Run Locally
-
-```bash
-# Start database (with Docker)
-docker-compose up db -d
-
-# Run backend
-cd backend
-uvicorn app.main:app --reload
-
-# In another terminal, run frontend
-cd frontend
-npm install
-npm run dev
-```
-
-### 4. Verify
-
-- Backend Health: http://localhost:8000/health
-- Frontend: http://localhost:3000
-- API Docs: http://localhost:8000/docs
-
-## Project Structure
+This repository contains three independent modules. Each module is self-contained with its own dependencies, configuration, and run instructions.
 
 ```
-darpan-labs/
-├── backend/
-│   ├── app/
-│   │   ├── main.py              # FastAPI app entry point
-│   │   ├── config.py            # Pydantic settings (env vars)
-│   │   ├── database.py          # Async SQLAlchemy engine & session
-│   │   ├── dependencies.py      # FastAPI dependency injection
-│   │   ├── models/              # SQLAlchemy ORM models
-│   │   │   ├── user.py          # User model
-│   │   │   ├── interview.py     # Session, module, turn models
-│   │   │   └── consent.py       # Consent tracking
-│   │   ├── schemas/             # Pydantic request/response schemas
-│   │   ├── routers/             # API route handlers
-│   │   │   ├── interviews.py    # Interview CRUD & flow
-│   │   │   ├── voice.py         # Voice recording & transcription
-│   │   │   ├── auth.py          # Google OAuth & JWT
-│   │   │   └── admin.py         # Admin transcript & status views
-│   │   ├── services/            # Business logic layer
-│   │   │   ├── interview_service.py       # Core interview orchestration
-│   │   │   ├── question_bank_service.py   # Module question loading
-│   │   │   ├── prompt_service.py          # LLM prompt rendering
-│   │   │   ├── answer_parser_service.py   # Response parsing & scoring
-│   │   │   ├── module_state_service.py    # Module progress tracking
-│   │   │   ├── asr_service.py             # Speech-to-text (Whisper)
-│   │   │   ├── voice_orchestrator.py      # Voice pipeline coordination
-│   │   │   ├── transcript_corrector.py    # LLM-based transcript cleanup
-│   │   │   └── auth_service.py            # Auth logic
-│   │   ├── llm/                 # LLM abstraction (LiteLLM)
-│   │   └── workers/             # Background task stubs
-│   ├── prompts/                 # LLM prompt templates (.txt)
-│   │   ├── interviewer_question.txt
-│   │   ├── answer_parser.txt
-│   │   ├── answer_satisfaction.txt
-│   │   ├── acknowledgment.txt
-│   │   ├── followup_probe.txt
-│   │   ├── module_completion.txt
-│   │   └── transcript_correction.txt
-│   ├── seed_data/
-│   │   └── question_banks/      # JSON question banks (M1-M8)
-│   └── requirements.txt
-├── frontend/
-│   └── src/
-│       ├── app/                 # Next.js app router pages
-│       │   ├── page.tsx         # Landing page
-│       │   ├── login/           # Login page
-│       │   ├── create/modules/  # Module selection & interview start
-│       │   ├── interview/       # Interview UI
-│       │   ├── profile/         # User profile
-│       │   └── admin/           # Admin dashboard
-│       ├── components/
-│       │   ├── interview/       # Interview chat & voice components
-│       │   ├── navigation/      # Nav bar
-│       │   ├── auth/            # Auth components
-│       │   └── ui/              # Shared UI primitives
-│       ├── lib/                 # API client & utilities
-│       ├── store/               # Zustand state management
-│       ├── hooks/               # Custom React hooks
-│       ├── types/               # TypeScript type definitions
-│       └── styles/              # Global styles
-├── docker-compose.yml
-└── README.md
+darpan-labs-V2/
+├── ai-interviewer/         # Module 1: AI Interview Platform
+├── study-design-engine/    # Module 2: Research Study Designer
+└── twin-generator/         # Module 3: Digital Twin Pipeline
 ```
 
-## Interview Modules
+---
 
-| Module | Name | Description |
-|--------|------|-------------|
-| M1 | Core Identity & Context | Demographics, background, self-perception |
-| M2 | Preferences & Values | Personal values, brand preferences |
-| M3 | Purchase Decision Logic | How they evaluate and buy products |
-| M4 | Lifestyle & Grooming | Daily routines, grooming habits |
-| M5 | Sensory & Aesthetic | Sensory preferences, aesthetic tastes |
-| M6 | Body Wash Deep Dive | Category-specific deep exploration |
-| M7 | Media & Influence | Media consumption, influencer impact |
-| M8 | Concept Test | Evaluate product concepts with structured scoring |
+### 1. AI Interviewer (`ai-interviewer/`)
 
-## API Endpoints
+**What:** An AI-powered interview platform that conducts structured voice/text interviews across 8 modules (M1-M8) covering identity, preferences, lifestyle, decision-making, and concept testing.
 
-### Interviews
-- `POST /api/v1/interviews/start-module` — Start a module interview
-- `POST /api/v1/interviews/{session_id}/answer` — Submit an answer
-- `POST /api/v1/interviews/{session_id}/complete-module` — Complete current module
-- `GET /api/v1/interviews/user/{user_id}/modules` — Get module completion status
+**How it works:**
+- Users sign in via Google OAuth and complete interview modules
+- AI interviewer asks adaptive questions, with follow-up probes based on answer quality
+- Supports both text and voice input (Whisper ASR + LLM transcript correction)
+- Admin dashboard for viewing transcripts and tracking progress
+- Produces structured interview data that feeds into the Twin Generator
 
-### Voice
-- `POST /api/v1/voice/transcribe` — Transcribe audio (Whisper)
+**Tech:** FastAPI (Python) + Next.js 14 (TypeScript) + PostgreSQL + Redis
 
-### Auth
-- `POST /api/v1/auth/google` — Google OAuth login
-- `GET /api/v1/auth/me` — Get current user
+**Run:** `cd ai-interviewer && docker-compose up`
 
-### Admin
-- `GET /api/v1/admin/transcripts` — View all transcripts
-- `GET /api/v1/admin/modules/status` — Module completion overview
+**Ports:** Backend :8000, Frontend :3000
 
-## Environment Variables
+---
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `DATABASE_URL` | PostgreSQL connection string | Yes |
-| `OPENAI_API_KEY` | OpenAI API key (for LLM + Whisper) | Yes |
-| `ANTHROPIC_API_KEY` | Anthropic API key (alternative LLM) | No |
-| `GOOGLE_CLIENT_ID` | Google OAuth client ID | Yes |
-| `AUTH_SECRET_KEY` | JWT signing secret | Yes |
-| `LLM_MODEL` | LiteLLM model name (default: `gpt-4-turbo-preview`) | No |
-| `CORS_ORIGINS` | Allowed CORS origins (JSON list) | No |
-| `SENTRY_DSN` | Sentry error tracking | No |
-| `LANGFUSE_PUBLIC_KEY` | Langfuse observability | No |
-| `LANGFUSE_SECRET_KEY` | Langfuse observability | No |
+### 2. Study Design Engine (`study-design-engine/`)
 
-## How It Works
+**What:** An AI-assisted tool that converts a brand's unstructured research question into an execution-ready research study design through a 4-step human-in-the-loop workflow.
 
-1. **User signs in** via Google OAuth
-2. **Selects modules** to complete from the module dashboard
-3. **AI interviewer** asks questions from the selected module's question bank
-4. **User responds** via text or voice (voice is transcribed and corrected by LLM)
-5. **Answer parser** evaluates response satisfaction and extracts key insights
-6. **Follow-up probes** are generated if the answer needs deeper exploration
-7. **Module completes** when all questions are satisfactorily answered
-8. **Admin dashboard** allows viewing transcripts and tracking progress
+**How it works:**
+1. **Step 1 - Study Brief:** AI generates a structured research brief from a free-form question
+2. **Step 2 - Concept Boards:** AI creates product concept templates for testing
+3. **Step 3 - Research Design:** AI recommends methodology, sample size, quotas
+4. **Step 4 - Questionnaire:** AI generates a complete survey questionnaire
+
+Each step follows: AI generates -> Human reviews -> Human edits -> Human locks.
+
+The final questionnaire is used by the Twin Generator for simulation.
+
+**Tech:** FastAPI (Python) + Next.js (TypeScript) + PostgreSQL
+
+**Run:** `cd study-design-engine && docker-compose up`
+
+**Ports:** Backend :8001, Frontend :3001
+
+---
+
+### 3. Twin Generator (`twin-generator/`)
+
+**What:** A batch pipeline that creates digital twins of real consumers. Takes interview data from the AI Interviewer, generates branched synthetic profiles, builds inference layers (Vector DB + Knowledge Graph), and simulates survey responses using the questionnaire from the Study Design Engine.
+
+**How it works:**
+1. **Step 1 - Question Bank:** Expands 59 real interview questions to 350 using LLM
+2. **Step 2 - Branching:** Identifies uncaptured behavioral dimensions, generates 100 plausible variants per participant, prunes to 20
+3. **Step 3 - Profile Expansion:** Uses ICL to fill each twin's 350-question profile
+4. **Step 4A - Vector DB:** Builds ChromaDB index with sentence-transformer embeddings
+5. **Step 4B - Knowledge Graph:** Extracts behavioral traits into a NetworkX graph
+6. **Step 5 - Survey Simulation:** Uses twins to answer research questionnaires with evidence-backed responses
+
+**Tech:** Python scripts + LiteLLM + ChromaDB + NetworkX + sentence-transformers
+
+**Run:** `cd twin-generator && pip install -r requirements.txt && python scripts/orchestrator.py`
+
+---
+
+## How the Modules Connect
+
+```
+Study Design Engine                AI Interviewer              Twin Generator
+┌──────────────────┐      ┌──────────────────────┐     ┌──────────────────────┐
+│                  │      │                      │     │                      │
+│ Research Question│      │  Real humans take     │     │ Step 1: Expand Qs    │
+│       ↓          │      │  8-module interviews  │     │ Step 2: Branch twins  │
+│ Study Brief      │      │  (voice or text)      │     │ Step 3: Expand profiles│
+│       ↓          │      │       ↓               │     │ Step 4: Build VectorDB│
+│ Concept Boards   │      │  Interview responses  │────→│         + KG          │
+│       ↓          │      │  (structured Q&A)     │     │ Step 5: Simulate      │
+│ Research Design  │      │                      │     │  survey responses     │
+│       ↓          │      └──────────────────────┘     │       ↓               │
+│ Questionnaire  ──│─────────────────────────────────→│ Answer questionnaire  │
+│                  │                                    │  using digital twins  │
+└──────────────────┘                                    └──────────────────────┘
+                                                               ↓
+                                                        Validation:
+                                                        Compare twin responses
+                                                        vs actual human responses
+```
+
+**Data flow:**
+1. **Study Design Engine** produces a questionnaire for the research study
+2. **AI Interviewer** collects real human interview responses (8 modules)
+3. **Twin Generator** takes interview data, builds digital twins, and uses them to answer the questionnaire
+4. Twin responses are validated against actual human survey responses
+
+## Getting Started
+
+Each module runs independently. See the README in each folder:
+
+- [`ai-interviewer/README.md`](ai-interviewer/README.md)
+- [`study-design-engine/README.md`](study-design-engine/README.md)
+- [`twin-generator/README.md`](twin-generator/README.md)
 
 ## License
 
