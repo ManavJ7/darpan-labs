@@ -68,21 +68,36 @@ async def seed(username: str, password: str) -> None:
                 # SDE's User model exposes (display_name, profile_completed, etc.)
                 # so ORM insert would miss NOT NULL columns. Here we rely on
                 # column defaults for everything we don't set explicitly.
-                await session.execute(
+                # Detect the schema at runtime — the unified ai-interviewer
+                # `users` table has extra columns (display_name, profile_completed,
+                # etc.) that SDE's Alembic migrations don't create. On Railway
+                # (SDE-only deploy) those columns don't exist; locally with
+                # setup.py they do. Include them only when present.
+                cols_result = await session.execute(
                     text(
-                        """
-                        INSERT INTO users (id, email, username, password_hash, name, display_name)
-                        VALUES (:id, :email, :username, :password_hash, :name, :display_name)
-                        """
-                    ),
-                    {
-                        "id": user_id,
-                        "email": f"{username}@darpan-shared.local",
-                        "username": username,
-                        "password_hash": password_hash,
-                        "name": username.capitalize(),
-                        "display_name": username.capitalize(),
-                    },
+                        "SELECT column_name FROM information_schema.columns "
+                        "WHERE table_name = 'users'"
+                    )
+                )
+                existing_cols = {row[0] for row in cols_result.fetchall()}
+
+                base_cols = {
+                    "id": user_id,
+                    "email": f"{username}@darpan-shared.local",
+                    "username": username,
+                    "password_hash": password_hash,
+                    "name": username.capitalize(),
+                }
+                optional_cols = {
+                    "display_name": username.capitalize(),
+                }
+                insert_cols = {**base_cols, **{k: v for k, v in optional_cols.items() if k in existing_cols}}
+
+                col_list = ", ".join(insert_cols.keys())
+                val_list = ", ".join(f":{k}" for k in insert_cols.keys())
+                await session.execute(
+                    text(f"INSERT INTO users ({col_list}) VALUES ({val_list})"),
+                    insert_cols,
                 )
                 print(f"[OK] Created shared-login user '{username}' ({user_id})")
 
