@@ -12,6 +12,7 @@ interface ActionBarProps {
   onEdit?: () => void;
   loading: boolean;
   editMode?: boolean;
+  studyType?: string;
 }
 
 export function ActionBar({
@@ -22,9 +23,10 @@ export function ActionBar({
   onEdit,
   loading,
   editMode,
+  studyType,
 }: ActionBarProps) {
-  const currentStep = getStepFromStatus(status); // advances past locked
-  const rawStep = getRawStepFromStatus(status);
+  const currentStep = getStepFromStatus(status, studyType); // advances past locked
+  const rawStep = getRawStepFromStatus(status, studyType);
   const isComplete = status === "complete";
 
   // Hide for completed studies or when viewing a past step

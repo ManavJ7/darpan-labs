@@ -40,9 +40,12 @@ class QuestionnaireService:
         self,
         llm_client: LLMClient | None = None,
         prompt_service: PromptService | None = None,
+        step_number: int = 4,
     ):
         self.llm = llm_client or get_llm_client()
         self.prompts = prompt_service or get_prompt_service()
+        # step_number: 4 for concept_testing, 5 for ad_creative_testing
+        self.step_number = step_number
 
     # ── helpers ───────────────────────────────────────────────────────────
 
@@ -106,7 +109,7 @@ class QuestionnaireService:
         study = await self._load_study(study_id, db)
 
         # Validate that step 3 is locked (prerequisite for step 4)
-        if not StudyStateMachine.can_start_step(study, 4):
+        if not StudyStateMachine.can_start_step(study, self.step_number):
             raise ValueError(
                 f"Cannot generate questionnaire: step 3 must be locked. "
                 f"Current study status is '{study.status}'"
@@ -143,19 +146,19 @@ class QuestionnaireService:
         # Run validation
         warnings = self.validate_questionnaire(content)
 
-        # Transition study state: step_3_locked -> step_4_draft -> step_4_review
-        StudyStateMachine.transition(study, "step_4_draft")
-        StudyStateMachine.transition(study, "step_4_review")
+        # Transition study state: step_(N-1)_locked -> step_N_draft -> step_N_review
+        StudyStateMachine.transition(study, f"step_{self.step_number}_draft")
+        StudyStateMachine.transition(study, f"step_{self.step_number}_review")
 
         # Determine version number
-        existing = await self._load_step_version(study_id, 4, db)
+        existing = await self._load_step_version(study_id, self.step_number, db)
         version = (existing.version + 1) if existing else 1
 
         # Create StepVersion record
         sv = StepVersion(
             id=uuid.uuid4(),
             study_id=study_id,
-            step=4,
+            step=self.step_number,
             version=version,
             status="review",
             content=content.model_dump(),
@@ -185,10 +188,10 @@ class QuestionnaireService:
         """
         study = await self._load_study(study_id, db)
 
-        if StudyStateMachine.is_step_locked(study, 4):
+        if StudyStateMachine.is_step_locked(study, self.step_number):
             raise ValueError("Cannot edit questionnaire: step 4 is already locked")
 
-        current_sv = await self._load_step_version(study_id, 4, db)
+        current_sv = await self._load_step_version(study_id, self.step_number, db)
         if current_sv is None:
             raise ValueError("No questionnaire found. Generate one first.")
 
@@ -216,7 +219,7 @@ class QuestionnaireService:
         sv = StepVersion(
             id=uuid.uuid4(),
             study_id=study_id,
-            step=4,
+            step=self.step_number,
             version=new_version,
             status="review",
             content=questionnaire.model_dump(),
@@ -288,11 +291,11 @@ class QuestionnaireService:
         study = await self._load_study(study_id, db)
 
         # Step 4 must not be locked
-        if StudyStateMachine.is_step_locked(study, 4):
+        if StudyStateMachine.is_step_locked(study, self.step_number):
             raise ValueError("Cannot edit questionnaire: step 4 is already locked")
 
         # Load current questionnaire
-        current_sv = await self._load_step_version(study_id, 4, db)
+        current_sv = await self._load_step_version(study_id, self.step_number, db)
         if current_sv is None:
             raise ValueError("No questionnaire found for this study. Generate one first.")
 
@@ -348,7 +351,7 @@ class QuestionnaireService:
         sv = StepVersion(
             id=uuid.uuid4(),
             study_id=study_id,
-            step=4,
+            step=self.step_number,
             version=new_version,
             status="review",
             content=questionnaire.model_dump(),
@@ -380,13 +383,13 @@ class QuestionnaireService:
         study = await self._load_study(study_id, db)
 
         # Lock the step using the state machine
-        StudyStateMachine.lock_step(study, 4, user_id)
+        StudyStateMachine.lock_step(study, self.step_number, user_id)
 
         # Transition to complete
         StudyStateMachine.transition(study, "complete")
 
         # Update the latest StepVersion
-        current_sv = await self._load_step_version(study_id, 4, db)
+        current_sv = await self._load_step_version(study_id, self.step_number, db)
         if current_sv is None:
             raise ValueError("No questionnaire found to lock")
 

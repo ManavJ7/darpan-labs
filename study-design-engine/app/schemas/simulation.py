@@ -20,10 +20,19 @@ class SimulationQuestion(BaseSchema):
 
 class ConceptText(BaseSchema):
     concept_index: int
-    product_name: str
-    consumer_insight: str
-    key_benefit: str
-    reasons_to_believe: str
+    # Concept-testing fields (product concepts)
+    product_name: str = ""
+    consumer_insight: str = ""
+    key_benefit: str = ""
+    reasons_to_believe: str = ""
+    # Ad-creative-testing fields (creative territories)
+    territory_name: Optional[str] = None
+    core_insight: Optional[str] = None
+    big_idea: Optional[str] = None
+    key_message: Optional[str] = None
+    execution_sketch: Optional[str] = None
+    tone_mood: Optional[list[str]] = None
+    target_emotion: Optional[list[str]] = None
 
 
 class SimulationPayload(BaseSchema):
@@ -33,6 +42,10 @@ class SimulationPayload(BaseSchema):
     category: Optional[str] = None
     questions: list[SimulationQuestion]
     concepts: list[ConceptText]
+    # For ad_creative_testing: the locked Product Brief content. Used as Batch 0
+    # shared context for twin simulation (written to ChromaDB so every batch
+    # retrieves it during RAG).
+    product_brief: Optional[dict] = None
 
 
 # ─── Simulation Results (uploaded by bridge script) ───────

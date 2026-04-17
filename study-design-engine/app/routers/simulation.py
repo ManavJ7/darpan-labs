@@ -14,10 +14,12 @@ from sqlalchemy import and_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
+from app.auth import get_current_user, require_study_owner
 from app.config import settings
 from app.database import get_session
 from app.models.study import Study, StepVersion
 from app.models.twin import DigitalTwin, Participant, PipelineJob, TwinSimulationRun, ValidationReport
+from app.models.user import User
 from app.schemas.simulation import (
     SimulationPayload,
     SimulationQuestion,
@@ -25,6 +27,8 @@ from app.schemas.simulation import (
     SimulationResultUpload,
     SimulationRunResponse,
 )
+from app.schemas.qualitative_insights import QualitativeInsightsResponse
+from app.services.qualitative_insights_service import QualitativeInsightsService
 
 router = APIRouter(
     prefix=f"{settings.API_V1_PREFIX}/studies/{{study_id}}",
@@ -33,14 +37,46 @@ router = APIRouter(
 
 
 def _extract_concept_text(components: dict, concept_index: int) -> ConceptText:
-    """Extract display text from concept components, handling raw/refined/approved formats."""
+    """Extract display text from concept/territory components.
+
+    Handles two shapes:
+    - Concept testing: product_name, consumer_insight, key_benefit, reasons_to_believe
+    - Ad creative testing: territory_name, core_insight, big_idea, key_message,
+      execution_sketch, tone_mood, target_emotion
+    """
     def _get(field: str) -> str:
         comp = components.get(field, {})
         if isinstance(comp, dict):
-            # Prefer approved brand_edit > refined > raw_input
             return comp.get("brand_edit") or comp.get("refined") or comp.get("raw_input") or ""
         return str(comp)
 
+    # Detect ad_creative territory shape by presence of territory_name
+    if "territory_name" in components:
+        tone = components.get("tone_mood")
+        if isinstance(tone, str):
+            tone = [tone] if tone else []
+        elif not isinstance(tone, list):
+            tone = []
+        emotions = components.get("target_emotion")
+        if not isinstance(emotions, list):
+            emotions = []
+
+        name = _get("territory_name")
+        return ConceptText(
+            concept_index=concept_index,
+            # product_name used by the bridge script as a display label —
+            # map to territory name so downstream doesn't show blanks.
+            product_name=name,
+            territory_name=name,
+            core_insight=_get("core_insight"),
+            big_idea=_get("big_idea"),
+            key_message=_get("key_message"),
+            execution_sketch=_get("execution_sketch"),
+            tone_mood=tone,
+            target_emotion=emotions,
+        )
+
+    # Concept testing shape
     return ConceptText(
         concept_index=concept_index,
         product_name=_get("product_name"),
@@ -55,23 +91,36 @@ async def get_simulation_payload(
     study_id: uuid.UUID,
     db: AsyncSession = Depends(get_session),
 ):
-    """Serve a clean questionnaire + concept text payload for twin simulation."""
-    # Load study
+    """Serve a clean questionnaire + concept text payload for twin simulation.
+
+    For concept_testing: questionnaire is at step 4, concepts at step 2.
+    For ad_creative_testing: questionnaire at step 5, territories at step 3,
+                              product brief at step 2 (included as `product_brief` field).
+    """
     result = await db.execute(select(Study).where(Study.id == study_id))
     study = result.scalar_one_or_none()
     if not study:
         raise HTTPException(status_code=404, detail="Study not found")
 
-    if study.status not in ("step_4_locked", "complete"):
+    study_type = (study.study_metadata or {}).get("study_type", "concept_testing")
+    is_ad_creative = study_type == "ad_creative_testing"
+
+    # Determine step numbers based on study type
+    questionnaire_step = 5 if is_ad_creative else 4
+    concepts_step = 3 if is_ad_creative else 2
+
+    # Valid "ready for simulation" statuses
+    ready_statuses = {"complete", f"step_{questionnaire_step}_locked"}
+    if study.status not in ready_statuses:
         raise HTTPException(
             status_code=400,
             detail=f"Study must be locked or complete to simulate. Current status: {study.status}",
         )
 
-    # Get locked questionnaire (step 4, latest version with status=locked)
+    # Get locked questionnaire
     q_result = await db.execute(
         select(StepVersion)
-        .where(StepVersion.study_id == study_id, StepVersion.step == 4, StepVersion.status == "locked")
+        .where(StepVersion.study_id == study_id, StepVersion.step == questionnaire_step, StepVersion.status == "locked")
         .order_by(StepVersion.version.desc())
         .limit(1)
     )
@@ -81,7 +130,6 @@ async def get_simulation_payload(
 
     content = q_version.content
 
-    # Extract questions from sections
     questions: list[SimulationQuestion] = []
     for section in content.get("sections", []):
         for q in section.get("questions", []):
@@ -96,11 +144,11 @@ async def get_simulation_payload(
                 position_in_section=q.get("position_in_section", 0),
             ))
 
-    # Get locked concept boards (step 2)
+    # Get locked concepts/territories
     concepts: list[ConceptText] = []
     c_result = await db.execute(
         select(StepVersion)
-        .where(StepVersion.study_id == study_id, StepVersion.step == 2, StepVersion.status == "locked")
+        .where(StepVersion.study_id == study_id, StepVersion.step == concepts_step, StepVersion.status == "locked")
         .order_by(StepVersion.version.desc())
         .limit(1)
     )
@@ -111,6 +159,19 @@ async def get_simulation_payload(
             idx = c.get("concept_index", 0)
             concepts.append(_extract_concept_text(comp, idx))
 
+    # For ad_creative_testing: include product brief as shared Batch 0 context
+    product_brief = None
+    if is_ad_creative:
+        pb_result = await db.execute(
+            select(StepVersion)
+            .where(StepVersion.study_id == study_id, StepVersion.step == 2, StepVersion.status == "locked")
+            .order_by(StepVersion.version.desc())
+            .limit(1)
+        )
+        pb_version = pb_result.scalar_one_or_none()
+        if pb_version and pb_version.content:
+            product_brief = pb_version.content
+
     return SimulationPayload(
         study_id=str(study_id),
         study_title=study.title,
@@ -118,6 +179,7 @@ async def get_simulation_payload(
         category=study.category,
         questions=questions,
         concepts=concepts,
+        product_brief=product_brief,
     )
 
 
@@ -126,13 +188,11 @@ async def upload_simulation_results(
     study_id: uuid.UUID,
     data: SimulationResultUpload,
     db: AsyncSession = Depends(get_session),
+    current_user: User = Depends(get_current_user),
 ):
     """Upload simulation results from the bridge script."""
-    # Verify study exists
-    result = await db.execute(select(Study).where(Study.id == study_id))
-    study = result.scalar_one_or_none()
-    if not study:
-        raise HTTPException(status_code=404, detail="Study not found")
+    # Ownership check — only the creator can push result rows to their study.
+    study = await require_study_owner(study_id, current_user, db)
 
     run = SimulationRun(
         study_id=study_id,
@@ -304,7 +364,10 @@ async def get_available_twins(
     study = result.scalar_one_or_none()
     if not study:
         raise HTTPException(status_code=404, detail="Study not found")
-    if study.status not in ("step_4_locked", "complete"):
+    study_type = (study.study_metadata or {}).get("study_type", "concept_testing")
+    terminal_step = 5 if study_type == "ad_creative_testing" else 4
+    ready_statuses = {"complete", f"step_{terminal_step}_locked"}
+    if study.status not in ready_statuses:
         raise HTTPException(
             status_code=400,
             detail=f"Study must be locked or complete. Current status: {study.status}",
@@ -342,20 +405,25 @@ async def simulate_twins(
     study_id: uuid.UUID,
     request: SimulateTwinsRequest,
     db: AsyncSession = Depends(get_session),
+    current_user: User = Depends(get_current_user),
 ):
     """Trigger simulation for selected twins using the study's locked questionnaire."""
-    # Verify study and get locked questionnaire
-    result = await db.execute(select(Study).where(Study.id == study_id))
-    study = result.scalar_one_or_none()
-    if not study:
-        raise HTTPException(status_code=404, detail="Study not found")
-    if study.status not in ("step_4_locked", "complete"):
+    # Ownership check — simulation costs ~$60 in LLM calls per study, must be
+    # guarded so random UUID-guessing can't trigger runs against studies you
+    # don't own.
+    study = await require_study_owner(study_id, current_user, db)
+    study_type = (study.study_metadata or {}).get("study_type", "concept_testing")
+    is_ad_creative = study_type == "ad_creative_testing"
+    questionnaire_step = 5 if is_ad_creative else 4
+    concepts_step = 3 if is_ad_creative else 2
+    ready_statuses = {"complete", f"step_{questionnaire_step}_locked"}
+    if study.status not in ready_statuses:
         raise HTTPException(status_code=400, detail="Study must be locked or complete")
 
     # Get locked questionnaire
     q_result = await db.execute(
         select(StepVersion)
-        .where(StepVersion.study_id == study_id, StepVersion.step == 4, StepVersion.status == "locked")
+        .where(StepVersion.study_id == study_id, StepVersion.step == questionnaire_step, StepVersion.status == "locked")
         .order_by(StepVersion.version.desc())
         .limit(1)
     )
@@ -382,11 +450,11 @@ async def simulate_twins(
                 "position_in_section": q.get("position_in_section", 0),
             })
 
-    # Get concepts
+    # Get concepts (for concept_testing: step 2; for ad_creative_testing: step 3 / territories)
     concepts = []
     c_result = await db.execute(
         select(StepVersion)
-        .where(StepVersion.study_id == study_id, StepVersion.step == 2, StepVersion.status == "locked")
+        .where(StepVersion.study_id == study_id, StepVersion.step == concepts_step, StepVersion.status == "locked")
         .order_by(StepVersion.version.desc())
         .limit(1)
     )
@@ -398,6 +466,18 @@ async def simulate_twins(
             concepts.append(ct.model_dump())
 
     questionnaire_snapshot = {"questions": questions, "concepts": concepts}
+
+    # For ad_creative_testing, also snapshot the Product Brief for Batch 0 context
+    if is_ad_creative:
+        pb_result = await db.execute(
+            select(StepVersion)
+            .where(StepVersion.study_id == study_id, StepVersion.step == 2, StepVersion.status == "locked")
+            .order_by(StepVersion.version.desc())
+            .limit(1)
+        )
+        pb_version = pb_result.scalar_one_or_none()
+        if pb_version and pb_version.content:
+            questionnaire_snapshot["product_brief"] = pb_version.content
 
     # Process each twin
     jobs = []
@@ -533,6 +613,27 @@ async def list_twin_simulation_results(
 
 
 # ===========================================================================
+# Qualitative Insights endpoint
+# ===========================================================================
+
+
+@router.get("/qualitative-insights", response_model=QualitativeInsightsResponse)
+async def get_qualitative_insights(
+    study_id: uuid.UUID,
+    force_refresh: bool = False,
+    db: AsyncSession = Depends(get_session),
+):
+    """Generate or retrieve AI-summarized qualitative insights from twin simulation responses."""
+    service = QualitativeInsightsService()
+    try:
+        return await service.get_or_generate_insights(
+            str(study_id), db, force_refresh=force_refresh,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+
+# ===========================================================================
 # Validation Report endpoints
 # ===========================================================================
 
@@ -569,6 +670,7 @@ async def create_validation_report(
     study_id: uuid.UUID,
     request: ValidationReportRequest,
     db: AsyncSession = Depends(get_session),
+    current_user: User = Depends(get_current_user),
 ):
     """Generate a validation report from twin simulation results.
 
@@ -576,10 +678,7 @@ async def create_validation_report(
     - "synthesis": Analyze twin responses only (aggregate stats, T2B, composites, etc.)
     - "comparison": Compare twin responses against real participant M8 interview data
     """
-    result = await db.execute(select(Study).where(Study.id == study_id))
-    study = result.scalar_one_or_none()
-    if not study:
-        raise HTTPException(status_code=404, detail="Study not found")
+    study = await require_study_owner(study_id, current_user, db)
 
     # Check that completed simulations exist
     sim_result = await db.execute(

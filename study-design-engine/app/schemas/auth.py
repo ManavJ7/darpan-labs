@@ -8,6 +8,11 @@ class GoogleAuthRequest(BaseSchema):
     token: str
 
 
+class PasswordLoginRequest(BaseSchema):
+    username: str
+    password: str
+
+
 class UserResponse(BaseSchema):
     id: uuid.UUID
     email: str

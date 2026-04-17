@@ -17,8 +17,23 @@ class Settings(BaseSettings):
     JWT_SECRET_KEY: str = "darpan-sde-dev-secret-change-in-prod"
     JWT_ALGORITHM: str = "HS256"
     JWT_EXPIRATION_HOURS: int = 72
+    # Comma-separated list of emails allowed to sign in. Empty = allow all
+    # (development default). In production, set this to the beta invite list.
+    ALLOWED_EMAILS: str = ""
+    # Comma-separated list of frontend origins allowed by CORS. Replaces the
+    # previous wildcard which was incompatible with allow_credentials=True.
+    CORS_ORIGINS: str = "http://localhost:3099,http://localhost:3001,http://localhost:3000"
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
+
+    @property
+    def allowed_emails_set(self) -> set[str]:
+        """Return the lower-cased allowlist as a set. Empty set = allow all."""
+        return {e.strip().lower() for e in self.ALLOWED_EMAILS.split(",") if e.strip()}
+
+    @property
+    def cors_origins_list(self) -> list[str]:
+        return [o.strip() for o in self.CORS_ORIGINS.split(",") if o.strip()]
 
 
 settings = Settings()

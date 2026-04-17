@@ -1,0 +1,55 @@
+# Worker Dockerfile — builds a combined Celery worker image that includes
+# the ai-interviewer backend (which owns the Celery tasks + models), the
+# twin-generator scripts (which the tasks import for simulation logic), and
+# the study-design-engine app (used for shared DB models in sync_session_factory).
+#
+# The worker processes `twin.run_simulation`, `twin.create_pipeline`,
+# `twin.run_validation_report`. It does NOT expose any HTTP port.
+#
+# On Railway, point a Volume mount at `/twin-generator/data` so the ~1.1 GB of
+# per-participant ChromaDB + KG files persist across deploys.
+#
+# BUILD FROM REPO ROOT:
+#   docker build -f Dockerfile.worker -t darpan-worker .
+# RUN LOCALLY:
+#   docker run --env-file .env darpan-worker
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install from the ai-interviewer backend's requirements (superset).
+COPY ai-interviewer/backend/requirements.txt /tmp/ai-interviewer-requirements.txt
+RUN pip install --no-cache-dir -r /tmp/ai-interviewer-requirements.txt
+
+# Twin-generator has its own requirements (ChromaDB, sentence-transformers,
+# networkx, litellm). Install those too so the simulation scripts import.
+COPY twin-generator/requirements.txt /tmp/twin-generator-requirements.txt
+RUN pip install --no-cache-dir -r /tmp/twin-generator-requirements.txt
+
+# Copy the three source trees into predictable locations that match the
+# `sys.path` assumptions in ai-interviewer/backend/app/celery_app.py.
+COPY ai-interviewer/backend/ /app/
+COPY twin-generator/ /twin-generator/
+COPY study-design-engine/ /study-design-engine/
+
+# Put both sibling repos on PYTHONPATH so `from scripts import ...` resolves.
+ENV PYTHONPATH=/app:/twin-generator:/study-design-engine:$PYTHONPATH
+
+# Twin-generator's config reads TWIN_DATA_DIR; we standardize on the Railway
+# volume mount point. Override in env if different.
+ENV TWIN_DATA_DIR=/twin-generator/data
+
+# macOS fork-safety flag. Harmless on Linux; keeps parity with local dev.
+ENV OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# `--pool=solo` avoids fork() entirely. Concurrency-1 is our current ceiling
+# anyway (a single twin simulation saturates the OpenAI API-key rate limit).
+# Change to `--pool=prefork --concurrency=2` once we run multi-tenant with
+# per-user queues.
+CMD ["celery", "-A", "app.celery_app", "worker", "--loglevel=info", "--pool=solo"]

@@ -14,17 +14,20 @@ export interface AuthResponse {
   user: UserResponse;
 }
 
-export async function googleLogin(googleToken: string): Promise<AuthResponse> {
-  const res = await fetch(`${BASE_URL}/api/v1/auth/google`, {
+export async function passwordLogin(
+  username: string,
+  password: string,
+): Promise<AuthResponse> {
+  const res = await fetch(`${BASE_URL}/api/v1/auth/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ token: googleToken }),
+    body: JSON.stringify({ username, password }),
   });
   if (!res.ok) {
     const body = await res.json().catch(() => null);
     const detail = body?.detail;
     throw new Error(
-      typeof detail === "string" ? detail : "Google login failed",
+      typeof detail === "string" ? detail : "Login failed",
     );
   }
   return res.json();

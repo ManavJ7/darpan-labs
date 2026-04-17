@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, forwardRef, useImperativeHandle } from "react";
 import { motion } from "framer-motion";
 import { Target, Users, Beaker, AlertTriangle, BarChart3, Check, Swords } from "lucide-react";
 import { Card, CardTitle } from "@/components/ui/Card";
@@ -10,6 +10,12 @@ import { listMetrics, type MetricResponse } from "@/lib/studyApi";
 import { METHODOLOGY_OPTIONS } from "@/lib/constants";
 import type { StudyResponse, StepVersionResponse, StudyBriefContent } from "@/types/study";
 
+export interface StudyBriefViewHandle {
+  /** Save any pending edits. Returns true if success (or nothing to save). */
+  saveIfDirty: () => Promise<boolean>;
+  hasPendingEdits: () => boolean;
+}
+
 interface StudyBriefViewProps {
   study: StudyResponse;
   stepVersion: StepVersionResponse | null;
@@ -17,15 +23,44 @@ interface StudyBriefViewProps {
   onSaveEdits: (edits: Record<string, unknown>) => Promise<void>;
 }
 
-export function StudyBriefView({ study, stepVersion, editMode, onSaveEdits }: StudyBriefViewProps) {
+export const StudyBriefView = forwardRef<StudyBriefViewHandle, StudyBriefViewProps>(function StudyBriefView(
+  { study, stepVersion, editMode, onSaveEdits },
+  ref,
+) {
   const content = stepVersion?.content as unknown as StudyBriefContent | undefined;
   const [editValues, setEditValues] = useState<Record<string, unknown>>({});
   const [metricLibrary, setMetricLibrary] = useState<MetricResponse[]>([]);
 
-  // Fetch metric library for the selector
+  // Fetch metric library for the selector — filtered by this study's type so
+  // ad_creative_testing sees the 19 LINK+ metrics and concept_testing sees the
+  // classic concept metrics. Without the filter the backend returns every row
+  // in the catalog, which is the root cause of the "wizard selected 9, dashboard
+  // shows 19" mismatch.
+  const studyType =
+    (study.study_metadata?.study_type as string | undefined) ||
+    content?.study_type;
   useEffect(() => {
-    listMetrics().then(setMetricLibrary).catch(() => {});
-  }, []);
+    listMetrics(studyType).then(setMetricLibrary).catch(() => {});
+  }, [studyType]);
+
+  // Expose imperative handle so parent can save pending edits before locking
+  useImperativeHandle(
+    ref,
+    () => ({
+      hasPendingEdits: () => Object.keys(editValues).length > 0,
+      saveIfDirty: async () => {
+        if (Object.keys(editValues).length === 0) return true;
+        try {
+          await onSaveEdits(editValues);
+          setEditValues({});
+          return true;
+        } catch {
+          return false;
+        }
+      },
+    }),
+    [editValues, onSaveEdits],
+  );
 
   if (!content) return null;
 
@@ -44,10 +79,14 @@ export function StudyBriefView({ study, stepVersion, editMode, onSaveEdits }: St
     handleFieldChange("recommended_metrics", updated);
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (Object.keys(editValues).length > 0) {
-      onSaveEdits(editValues);
-      setEditValues({});
+      try {
+        await onSaveEdits(editValues);
+        setEditValues({});
+      } catch {
+        // Keep edit values so user can retry or see the error
+      }
     }
   };
 
@@ -275,4 +314,4 @@ export function StudyBriefView({ study, stepVersion, editMode, onSaveEdits }: St
       )}
     </motion.div>
   );
-}
+});

@@ -1,4 +1,76 @@
-# Each module has its own .gitignore — this covers root-level only
+# OS / editor
 .DS_Store
 .claude/
+*.swp
+*.swo
+*~
+
+# Logs
 *.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments (this repo has a root-level .venv used by setup.py)
+.venv/
+venv/
+env/
+ENV/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+.vercel
+
+# Env files — NEVER commit these (API keys, OAuth secrets, JWT secrets live here)
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Secrets / keys
+*.pem
+*.key
+secrets/
+
+# Railway / deploy artifacts
+.railway/
+railway.json.local
+
+# Databases / storage
+*.db
+*.sqlite3
+storage/
+
+# Twin-generator output data (1.1 GB of ChromaDB + KG files).
+# Ship via Railway volume upload post-deploy, not git.
+twin-generator/data/output/
+
+# Build outputs
+*.tsbuildinfo
+dist/
+build/
+
+# Docker
+.docker/
+
+# Claude Code plans (tracked at user level, not repo level)
+.claude/

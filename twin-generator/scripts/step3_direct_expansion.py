@@ -26,7 +26,7 @@ from config.settings import (
     OUTPUT_DIR,
     STEP3_BATCH_SIZE,
     LLM_MAX_TOKENS_STEP3,
-    LLM_UNIFIED_MODEL,
+    LLM_GENERATION_MODEL,
 )
 from scripts.llm_utils import call_llm
 from scripts.data_utils import load_prompt, format_questions_block
@@ -77,7 +77,7 @@ async def generate_batch(
         prompt=prompt,
         max_tokens=LLM_MAX_TOKENS_STEP3,
         temperature=0.5,
-        model=LLM_UNIFIED_MODEL,
+        model=LLM_GENERATION_MODEL,
         participant_id=participant_id,
     )
 

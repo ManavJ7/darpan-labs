@@ -1,17 +1,33 @@
 # Twin Generator
 
-Digital twin generation pipeline for Darpan Labs. Generates 2,000 synthetic consumer profiles from 20 real interview participants (men and women, 20-30, metro India) for the **body wash** product category using branching + ICL expansion.
+Digital twin generation pipeline for Darpan Labs. Generates synthetic consumer profiles from 20 real interview participants (men and women, 20-30, metro India) for the **body wash** product category using branching + ICL expansion.
+
+## Twin Funnel (per participant)
+
+```
+59 real Q&A
+   │
+   ├── Step 2a: identify 5 uncaptured behavioral dimensions
+   ├── Step 2b: select 5 branching Qs × 3 archetype variants = 243 raw combos
+   ├── Step 2c: coherence-score + diversity-prune  → 100 twins
+   ├── Step 3 pre-prune: coherence × diversity     →  20 twins
+   └── Step 3: ICL expand each twin's 289 unanswered Qs → 353 Q&A per twin
+```
+
+**Final deliverable:** 20 participants × 20 twins = **400 digital twins**, each with 353 Q&A pairs. (Intermediate 100/person kept on disk for ablations.)
 
 ## Pipeline Steps
 
 | Step | Description | Status |
 |------|-------------|--------|
-| 1 | Master Question Bank Design (59 existing + 291 new = 350) | Script built |
-| 2 | Branching Question Selection + Variant Generation + Pruning | Script built |
-| 3 | Full Profile Expansion via ICL (→ 2,000 twins × 350 Q&A) | Not started |
-| 4A | Vector DB Inference Layer | Not started |
-| 4B | Knowledge Graph Inference Layer | Not started |
-| 5 | Benchmark (both approaches vs human holdout) | Not started |
+| 1 | Master Question Bank (59 existing + 291 new = 350) | COMPLETE (Opus 4.6) |
+| 2 | Branching: 5 dimensions × 3 variants → 243 combos → 100 twins/person | COMPLETE for P01, P02 (200 twins) |
+| 3 | ICL profile expansion (100 → 20 twins/person × 353 Q&A) | COMPLETE for P01, P02 (40 twins, 14,115 Q&A) |
+| 4A | Vector DB inference layer (ChromaDB + all-MiniLM-L6-v2) | P01 built (7,055 entries); P02 rebuild pending |
+| 4B | Knowledge Graph inference layer (NetworkX, Opus trait extraction) | Built for P01_T001 only; remaining twins pending |
+| 5 | Survey simulation (SDE questionnaire + M8 concept test, batched) | SDE 87/87 + M8 64/64 for P01_T001; benchmark vs humans pending |
+
+See `PROGRESS.md` for task-level status and run metrics.
 
 ## Setup
 

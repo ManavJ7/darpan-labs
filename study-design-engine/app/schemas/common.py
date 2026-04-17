@@ -18,6 +18,10 @@ class StudyStatus(str, Enum):
     step_4_draft = "step_4_draft"
     step_4_review = "step_4_review"
     step_4_locked = "step_4_locked"
+    # Step 5 only applies to ad_creative_testing
+    step_5_draft = "step_5_draft"
+    step_5_review = "step_5_review"
+    step_5_locked = "step_5_locked"
     complete = "complete"
 
 

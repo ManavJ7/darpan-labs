@@ -209,7 +209,7 @@ Each entry follows:
 **Rule going forward**: Never assume IDs from external systems are globally unique. Always check for duplicates before using them as keys, especially after expansion/cloning operations.
 
 ### 2026-03-06 — Standalone questionnaire scripts avoid SDE coupling issues
-**Scenario**: The SDE-based simulation (step5_survey_simulation.py) depends on the SDE API being running, handles template expansion, and deals with question_id collisions across sections. For M8 Concept Test validation, we needed to bypass all of this.
+**Scenario**: An earlier SDE-driven simulation path depended on the SDE API being running, handled template expansion, and had to deal with question_id collisions across sections. For M8 Concept Test validation, we needed to bypass all of this.
 **Solution**: Created `step5_m8_simulation.py` with the full 64-question M8 questionnaire hardcoded in Python. No SDE dependency, no expansion logic, no duplicate ID issues. Each question has its own unique ID (M8_q01 through M8_q82), options, scales, and matrix items embedded directly.
 **Benefit**: Faster iteration (no server startup), no ID collision bugs, questions exactly match the PDF, and answer label resolution is trivially correct because each question carries its own options/scale.
 **Rule going forward**: When validating against a specific paper questionnaire, hardcode it in a standalone script rather than routing through a design tool's API. The indirection adds bugs without value for single-questionnaire runs.

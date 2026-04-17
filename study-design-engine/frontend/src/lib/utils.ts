@@ -7,8 +7,14 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+/** Maximum step number for a given study type. */
+export function maxStepFor(studyType?: string): number {
+  return studyType === "ad_creative_testing" ? 5 : 4;
+}
+
 /** Map a StudyStatus to the current logical step (advances past locked). */
-export function getStepFromStatus(status: StudyStatus): number {
+export function getStepFromStatus(status: StudyStatus, studyType?: string): number {
+  const terminal = maxStepFor(studyType);
   switch (status) {
     case "init":
     case "step_1_draft":
@@ -27,47 +33,58 @@ export function getStepFromStatus(status: StudyStatus): number {
     case "step_4_review":
       return 4;
     case "step_4_locked":
+      // For concept_testing (terminal=4), step_4_locked → stay at 4.
+      // For ad_creative_testing (terminal=5), step_4_locked → advance to 5.
+      return terminal === 5 ? 5 : 4;
+    case "step_5_draft":
+    case "step_5_review":
+      return 5;
+    case "step_5_locked":
     case "complete":
-      return 4;
+      return terminal;
     default:
       return 1;
   }
 }
 
 /** Map a StudyStatus to the raw step number without advancing past locked. */
-export function getRawStepFromStatus(status: StudyStatus): number {
+export function getRawStepFromStatus(status: StudyStatus, studyType?: string): number {
   if (status === "init") return 0;
-  if (status === "complete") return 4;
+  if (status === "complete") return maxStepFor(studyType);
   const match = status.match(/^step_(\d)/);
   return match ? parseInt(match[1], 10) : 0;
 }
 
 /** Human-readable step name. */
-export function stepName(step: number): string {
+export function stepName(step: number, studyType?: string): string {
+  if (studyType === "ad_creative_testing") {
+    switch (step) {
+      case 1: return "Study Brief";
+      case 2: return "Product Brief";
+      case 3: return "Creative Territories";
+      case 4: return "Research Design";
+      case 5: return "Questionnaire";
+      default: return `Step ${step}`;
+    }
+  }
   switch (step) {
-    case 1:
-      return "Study Brief";
-    case 2:
-      return "Concept Boards";
-    case 3:
-      return "Research Design";
-    case 4:
-      return "Questionnaire";
-    default:
-      return `Step ${step}`;
+    case 1: return "Study Brief";
+    case 2: return "Concept Boards";
+    case 3: return "Research Design";
+    case 4: return "Questionnaire";
+    default: return `Step ${step}`;
   }
 }
 
 /** Whether the given step is accessible (can be navigated to). */
-export function isStepAccessible(step: number, status: StudyStatus): boolean {
-  const current = getStepFromStatus(status);
-  // Can always go back to locked steps or the current step
+export function isStepAccessible(step: number, status: StudyStatus, studyType?: string): boolean {
+  const current = getStepFromStatus(status, studyType);
   return step <= current;
 }
 
 /** Whether the given step is locked. */
-export function isStepLocked(step: number, status: StudyStatus): boolean {
-  const raw = getRawStepFromStatus(status);
+export function isStepLocked(step: number, status: StudyStatus, studyType?: string): boolean {
+  const raw = getRawStepFromStatus(status, studyType);
   if (status === "complete") return true;
   if (status.endsWith("_locked") && step <= raw) return true;
   return step < raw;

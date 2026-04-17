@@ -1,12 +1,12 @@
 import { create } from "zustand";
-import { googleLogin, type UserResponse } from "@/lib/authApi";
+import { passwordLogin, type UserResponse } from "@/lib/authApi";
 
 interface AuthStore {
   user: UserResponse | null;
   token: string | null;
   isLoading: boolean;
 
-  loginWithGoogle: (googleToken: string) => Promise<void>;
+  loginWithPassword: (username: string, password: string) => Promise<void>;
   logout: () => void;
   loadFromStorage: () => void;
 }
@@ -16,8 +16,8 @@ export const useAuthStore = create<AuthStore>((set) => ({
   token: null,
   isLoading: true,
 
-  loginWithGoogle: async (googleToken: string) => {
-    const res = await googleLogin(googleToken);
+  loginWithPassword: async (username: string, password: string) => {
+    const res = await passwordLogin(username, password);
     localStorage.setItem("auth_token", res.access_token);
     localStorage.setItem("auth_user", JSON.stringify(res.user));
     set({ user: res.user, token: res.access_token });

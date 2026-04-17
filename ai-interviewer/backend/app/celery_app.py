@@ -26,6 +26,16 @@ celery_app.conf.update(
     timezone="UTC",
     enable_utc=True,
     worker_prefetch_multiplier=1,  # one task at a time per worker (LLM-bound)
+    # Hard kill any task that runs past 30 minutes. A single twin simulation
+    # normally takes ~4 minutes; anything close to 30m indicates a stuck
+    # retry loop or hung HTTP call, and we'd rather fail fast than burn API
+    # credits while a worker spins.
+    task_time_limit=1800,       # SIGKILL at 30 min
+    task_soft_time_limit=1680,  # SoftTimeLimitExceeded at 28 min (graceful)
+    # Retry a task once on WorkerLostError / SIGKILL — safe for our idempotent
+    # sim tasks (each simulation_run row is created upstream by the API).
+    task_acks_late=True,
+    task_reject_on_worker_lost=True,
 )
 
 # Explicitly import tasks to ensure registration

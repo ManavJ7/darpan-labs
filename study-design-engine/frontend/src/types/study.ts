@@ -14,6 +14,10 @@ export type StudyStatus =
   | "step_4_draft"
   | "step_4_review"
   | "step_4_locked"
+  // step_5_* only applies to ad_creative_testing (Questionnaire)
+  | "step_5_draft"
+  | "step_5_review"
+  | "step_5_locked"
   | "complete";
 
 export type StepStatus = "draft" | "review" | "locked";
@@ -22,12 +26,15 @@ export type ConceptStatus = "raw" | "refined" | "approved";
 
 // ─── Study ───────────────────────────────────────────────
 
+export type StudyType = "concept_testing" | "ad_creative_testing";
+
 export interface StudyCreate {
   question: string;
   brand_id: string;
   brand_name?: string;
   category?: string;
   context?: Record<string, unknown>;
+  study_type?: StudyType;
 }
 
 export interface StudyResponse {
@@ -42,6 +49,8 @@ export interface StudyResponse {
   created_at: string;
   updated_at: string;
   steps?: Record<string, unknown>;
+  created_by_user_id?: string | null;
+  is_public?: boolean;
 }
 
 // ─── Step Version ────────────────────────────────────────

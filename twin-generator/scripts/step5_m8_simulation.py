@@ -564,25 +564,80 @@ def build_m8_questionnaire() -> list[dict]:
 # ===========================================================================
 
 def _concept_stimulus_block(concept_idx: int, concepts: list[dict] | None = None) -> str:
-    """Build a concept stimulus card block for prompts."""
+    """Build a concept / creative territory stimulus card block for prompts.
+
+    Supports two shapes:
+    - M8 concept testing: product_name, consumer_insight, key_benefit, how_it_works,
+      reasons_to_believe, price
+    - Ad creative testing: territory_name, core_insight, big_idea, key_message,
+      execution_sketch, tone_mood, target_emotion
+    """
     source = concepts if concepts is not None else M8_CONCEPTS
     for c in source:
-        if c.get("concept_index") == concept_idx:
-            lines = [f"--- CONCEPT STIMULUS CARD ---"]
-            lines.append(f"Product: {c.get('product_name', '')}")
-            if c.get("consumer_insight"):
-                lines.append(f"Consumer Insight: {c['consumer_insight']}")
-            if c.get("key_benefit"):
-                lines.append(f"Key Benefit: {c['key_benefit']}")
-            if c.get("how_it_works"):
-                lines.append(f"How It Works: {c['how_it_works']}")
-            if c.get("reasons_to_believe"):
-                lines.append(f"Reasons to Believe: {c['reasons_to_believe']}")
-            if c.get("price"):
-                lines.append(f"Price: {c['price']}")
-            lines.append("--- END STIMULUS ---\n")
+        if c.get("concept_index") != concept_idx:
+            continue
+        # Ad creative territory shape
+        if c.get("territory_name"):
+            lines = [f"--- CREATIVE TERRITORY CARD ---"]
+            lines.append(f"Name: {c['territory_name']}")
+            if c.get("core_insight"):
+                lines.append(f"Core Insight: {c['core_insight']}")
+            if c.get("big_idea"):
+                lines.append(f"Big Idea: {c['big_idea']}")
+            if c.get("key_message"):
+                lines.append(f"Key Message / Tagline: {c['key_message']}")
+            if c.get("execution_sketch"):
+                lines.append(f"Execution Sketch: {c['execution_sketch']}")
+            tones = c.get("tone_mood") or []
+            if isinstance(tones, list) and tones:
+                lines.append(f"Tone & Mood: {', '.join(tones)}")
+            elif isinstance(tones, str) and tones:
+                lines.append(f"Tone & Mood: {tones}")
+            emotions = c.get("target_emotion") or []
+            if isinstance(emotions, list) and emotions:
+                lines.append(f"Target Emotion: {', '.join(emotions)}")
+            lines.append("--- END TERRITORY ---\n")
             return "\n".join(lines) + "\n"
+        # Concept testing shape
+        lines = [f"--- CONCEPT STIMULUS CARD ---"]
+        lines.append(f"Product: {c.get('product_name', '')}")
+        if c.get("consumer_insight"):
+            lines.append(f"Consumer Insight: {c['consumer_insight']}")
+        if c.get("key_benefit"):
+            lines.append(f"Key Benefit: {c['key_benefit']}")
+        if c.get("how_it_works"):
+            lines.append(f"How It Works: {c['how_it_works']}")
+        if c.get("reasons_to_believe"):
+            lines.append(f"Reasons to Believe: {c['reasons_to_believe']}")
+        if c.get("price"):
+            lines.append(f"Price: {c['price']}")
+        lines.append("--- END STIMULUS ---\n")
+        return "\n".join(lines) + "\n"
     return ""
+
+
+def _concept_idx_for_question(q: dict) -> int | None:
+    """Extract the concept/territory index this question is evaluating.
+
+    Checks, in order:
+    1. Explicit concept_index on the question (M8 hardcoded questionnaire)
+    2. section name matching 'concept_N' or 'territory_N'
+    3. Section name ending with '_N' (per-territory sections like M1_distinctiveness_1)
+    """
+    if q.get("concept_index") is not None:
+        return q.get("concept_index")
+    section = (q.get("section") or "").lower()
+    if not section:
+        return None
+    m = re.search(r"(?:concept|territory)[_\s]*(\d+)", section)
+    if m is None:
+        m = re.search(r"_(\d+)$", section)
+    if m:
+        try:
+            return int(m.group(1))
+        except ValueError:
+            return None
+    return None
 
 
 # Module-level concepts override for format_question_query (set by run_simulation)
@@ -591,14 +646,20 @@ _active_concepts: list[dict] | None = None
 
 def format_question_query(question: dict) -> str:
     """Format a survey question as a natural-language query for the inference engine."""
-    q_text = question["question_text"]
-    q_type = question["question_type"]
-    concept_idx = question.get("concept_index")
-    options = question.get("options") or []
+    # question_text may be a dict ({"en": ...}) or a plain string
+    raw_qt = question.get("question_text", "")
+    if isinstance(raw_qt, dict):
+        q_text = raw_qt.get("en") or next(iter(raw_qt.values()), "")
+    else:
+        q_text = str(raw_qt)
+    q_type = question.get("question_type", "open_text")
+    concept_idx = _concept_idx_for_question(question)
+    # options can be either a top-level field (M8 schema) or nested under scale.options (SDE schema)
+    options = question.get("options") or (question.get("scale") or {}).get("options") or []
     scale = question.get("scale") or {}
     matrix_items = question.get("matrix_items") or []
 
-    concept_block = _concept_stimulus_block(concept_idx, _active_concepts) if concept_idx else ""
+    concept_block = _concept_stimulus_block(concept_idx, _active_concepts) if concept_idx is not None else ""
 
     option_labels = [o["label"] for o in options if isinstance(o, dict)]
 
@@ -648,10 +709,16 @@ def format_questions_block(questions: list[dict]) -> str:
     lines = []
     for q in questions:
         q_id = q["question_id"]
-        q_type = q["question_type"]
-        q_text = q["question_text"]
-        concept_idx = q.get("concept_index")
-        options = q.get("options") or []
+        q_type = q.get("question_type", "open_text")
+        # question_text may be a dict ({"en": ...}) or plain string
+        raw_qt = q.get("question_text", "")
+        if isinstance(raw_qt, dict):
+            q_text = raw_qt.get("en") or next(iter(raw_qt.values()), "")
+        else:
+            q_text = str(raw_qt)
+        concept_idx = _concept_idx_for_question(q)
+        # options may be top-level (M8) or nested under scale.options (SDE)
+        options = q.get("options") or (q.get("scale") or {}).get("options") or []
         scale = q.get("scale") or {}
         matrix_items = q.get("matrix_items") or []
 
@@ -668,32 +735,88 @@ def format_questions_block(questions: list[dict]) -> str:
 
         lines.append(f"### {q_id} (type: {prompt_type})")
 
-        # Concept stimulus inline
-        if concept_idx:
-            for c in M8_CONCEPTS:
-                if c["concept_index"] == concept_idx:
+        # Concept / territory stimulus inline — uses active_concepts from run_simulation
+        if concept_idx is not None:
+            source = _active_concepts if _active_concepts is not None else M8_CONCEPTS
+            for c in source:
+                if c.get("concept_index") != concept_idx:
+                    continue
+                # Ad creative territory shape
+                if c.get("territory_name"):
+                    tones = c.get("tone_mood") or []
+                    tones_str = ", ".join(tones) if isinstance(tones, list) else str(tones or "")
+                    emotions = c.get("target_emotion") or []
+                    emotions_str = ", ".join(emotions) if isinstance(emotions, list) else str(emotions or "")
+                    bits = [f"  [Creative Territory #{concept_idx}: {c['territory_name']}"]
+                    if c.get("core_insight"):
+                        bits.append(f"    Insight: {c['core_insight']}")
+                    if c.get("big_idea"):
+                        bits.append(f"    Big idea: {c['big_idea']}")
+                    if c.get("key_message"):
+                        bits.append(f"    Key message: {c['key_message']}")
+                    if c.get("execution_sketch"):
+                        bits.append(f"    Execution: {c['execution_sketch']}")
+                    if tones_str:
+                        bits.append(f"    Tone: {tones_str}")
+                    if emotions_str:
+                        bits.append(f"    Target emotion: {emotions_str}")
+                    bits[-1] = bits[-1] + "]"
+                    lines.append("\n".join(bits))
+                else:
+                    # Concept testing shape (M8 + legacy)
                     lines.append(
-                        f"  [Product Concept: {c['product_name']} — "
-                        f"Insight: {c['consumer_insight'][:120]}...; "
-                        f"Benefit: {c['key_benefit']}; "
-                        f"How It Works: {c['how_it_works'][:150]}...; "
-                        f"Price: {c['price']}]"
+                        f"  [Product Concept: {c.get('product_name', '')} — "
+                        f"Insight: {(c.get('consumer_insight', '') or '')[:120]}; "
+                        f"Benefit: {c.get('key_benefit', '')}; "
+                        f"How It Works: {(c.get('how_it_works', '') or '')[:150]}; "
+                        f"Price: {c.get('price', '')}]"
                     )
-                    break
+                break
 
         lines.append(f"Q: {q_text}")
 
-        option_labels = [o["label"] for o in options if isinstance(o, dict)]
+        option_labels = [o["label"] for o in options if isinstance(o, dict) and "label" in o]
 
         if q_type == "single_select" and option_labels:
             lines.append(f"Options: {', '.join(option_labels)}")
+            lines.append(f"Answer with EXACTLY one of the labels above (copy verbatim).")
         elif q_type == "multi_select" and option_labels:
             lines.append(f"Options (select all that apply): {', '.join(option_labels)}")
-        elif q_type == "scale":
+            lines.append(f"Answer with a JSON list of labels from above — every element MUST be copied verbatim from the options.")
+        elif q_type in ("scale", "rating", "likert"):
+            # Rating / likert questions — MUST render scale bounds in the prompt
+            # or the LLM extrapolates to wider scales (e.g. returning 6 or 7 on a 1-5 likert).
             anchors = scale.get("anchors", {})
-            if anchors:
+            scale_opts = scale.get("options") or options
+            numeric_values = []
+            for o in scale_opts:
+                if isinstance(o, dict) and "value" in o:
+                    try:
+                        numeric_values.append(int(o["value"]))
+                    except (TypeError, ValueError):
+                        pass
+            if numeric_values:
+                scale_min, scale_max = min(numeric_values), max(numeric_values)
+                # Attach label descriptions if present
+                label_bits = []
+                for o in scale_opts:
+                    if isinstance(o, dict) and "label" in o and "value" in o:
+                        label_bits.append(f"{o['value']}={o['label']}")
+                label_str = ", ".join(label_bits) if label_bits else ""
+                if label_str:
+                    lines.append(f"Scale: {scale_min} to {scale_max} ({label_str})")
+                else:
+                    lines.append(f"Scale: {scale_min} to {scale_max}")
+                lines.append(f"Answer with an INTEGER between {scale_min} and {scale_max} inclusive — no values outside this range.")
+            elif anchors:
                 anchor_desc = ", ".join(f"{k}={v}" for k, v in sorted(anchors.items(), key=lambda x: int(x[0])))
-                lines.append(f"Scale: {anchor_desc}")
+                anchor_keys = [int(k) for k in anchors.keys() if str(k).lstrip("-").isdigit()]
+                if anchor_keys:
+                    scale_min, scale_max = min(anchor_keys), max(anchor_keys)
+                    lines.append(f"Scale: {anchor_desc}")
+                    lines.append(f"Answer with an INTEGER between {scale_min} and {scale_max} inclusive.")
+                else:
+                    lines.append(f"Scale: {anchor_desc}")
         elif q_type == "matrix_scale":
             anchors = scale.get("anchors", {})
             if anchors:
@@ -866,6 +989,106 @@ async def retrieve_batch_evidence_with_kg(
 # Batch Synthesis
 # ===========================================================================
 
+def _question_scale_bounds(q: dict) -> tuple[int, int] | None:
+    """Return (min, max) integer bounds of a rating/likert question's scale, or None."""
+    scale = q.get("scale") or {}
+    scale_opts = scale.get("options") or q.get("options") or []
+    numeric_values = []
+    for o in scale_opts:
+        if isinstance(o, dict) and "value" in o:
+            try:
+                numeric_values.append(int(o["value"]))
+            except (TypeError, ValueError):
+                pass
+    if numeric_values:
+        return min(numeric_values), max(numeric_values)
+    # fall back to anchors
+    anchors = scale.get("anchors") or {}
+    anchor_keys = [int(k) for k in anchors.keys() if str(k).lstrip("-").isdigit()]
+    if anchor_keys:
+        return min(anchor_keys), max(anchor_keys)
+    return None
+
+
+def _option_labels_lower(q: dict) -> list[str]:
+    """Return lower-cased option labels from either top-level options or scale.options."""
+    options = q.get("options") or (q.get("scale") or {}).get("options") or []
+    return [str(o["label"]).strip().lower() for o in options if isinstance(o, dict) and "label" in o]
+
+
+def validate_batch_answers(batch: list[dict], batch_result: dict) -> list[dict]:
+    """Return a list of {question_id, reason} for any answer that violates its question schema.
+
+    Validates:
+    - rating/scale/likert: integer within declared scale bounds
+    - single_select: exact label match (case-insensitive)
+    - multi_select / ranking: every element an exact label match
+    Open_text and numeric are always accepted.
+    """
+    errors: list[dict] = []
+    for q in batch:
+        q_id = q["question_id"]
+        q_type = q.get("question_type", "")
+
+        if q_id not in batch_result:
+            errors.append({"question_id": q_id, "reason": "missing from batch response"})
+            continue
+
+        entry = batch_result.get(q_id) or {}
+        raw = entry.get("answer") if isinstance(entry, dict) else entry
+
+        # --- rating / scale / likert: must be integer within scale bounds ---
+        if q_type in ("rating", "scale", "likert", "likert_5"):
+            try:
+                val = int(raw) if not isinstance(raw, bool) else None
+                if val is None:
+                    raise ValueError
+            except (TypeError, ValueError):
+                errors.append({"question_id": q_id, "reason": f"rating answer {raw!r} is not an integer"})
+                continue
+            bounds = _question_scale_bounds(q)
+            if bounds:
+                lo, hi = bounds
+                if not (lo <= val <= hi):
+                    errors.append({"question_id": q_id, "reason": f"rating value {val} is outside scale {lo}-{hi}"})
+
+        # --- single_select: label must match verbatim ---
+        elif q_type == "single_select":
+            labels = _option_labels_lower(q)
+            if labels:
+                if not isinstance(raw, str) or raw.strip().lower() not in labels:
+                    errors.append({"question_id": q_id, "reason": f"single_select answer {raw!r} is not in options"})
+
+        # --- multi_select / ranking: each element must match a label ---
+        elif q_type in ("multi_select", "rank_order", "ranking"):
+            labels = _option_labels_lower(q)
+            if labels:
+                if not isinstance(raw, list):
+                    errors.append({"question_id": q_id, "reason": f"{q_type} answer must be a JSON list, got {type(raw).__name__}"})
+                else:
+                    for item in raw:
+                        if not isinstance(item, str) or item.strip().lower() not in labels:
+                            errors.append({"question_id": q_id, "reason": f"{q_type} item {item!r} is not a valid option"})
+                            break
+
+        # matrix_scale / open_text / numeric: no strict validation (matrix is complex, others free-form)
+
+    return errors
+
+
+def _format_validation_feedback(errors: list[dict]) -> str:
+    """Render validator errors as a prompt-injectable corrective block."""
+    if not errors:
+        return ""
+    lines = ["## RETRY — Your previous answers VIOLATED the rules below. Fix them now.",
+             "For each listed question_id, re-read its Options / Scale line and return a compliant answer. Return the COMPLETE batch JSON again with corrected answers."]
+    for e in errors[:20]:  # cap listing length for prompt size
+        lines.append(f"- {e['question_id']}: {e['reason']}")
+    if len(errors) > 20:
+        lines.append(f"- ... plus {len(errors) - 20} more — re-check every answer against its scale/options before submitting.")
+    return "\n".join(lines)
+
+
 async def synthesize_batch(
     twin_id: str,
     evidence_block: str,
@@ -874,18 +1097,35 @@ async def synthesize_batch(
     n_questions: int,
     batch_id: int = 0,
     participant_id: str = "default",
+    product_brief_context: str = "",
+    validation_feedback: list[dict] | None = None,
 ) -> dict:
-    """Call LLM to answer a batch of survey questions."""
+    """Call LLM to answer a batch of survey questions.
+
+    `product_brief_context` is injected into the prompt as per-study context
+    (never written to persistent twin memory).
+
+    `validation_feedback`, when non-empty, appends a corrective block listing
+    which prior answers violated their schema — used by the retry loop in
+    run_twin_batched to surface scale/option mismatches to the LLM.
+    """
     prompt_template = (PROMPTS_DIR / "step5_batch_survey.txt").read_text()
     twin_summary = build_twin_summary(twin_id)
+
+    pb_text = product_brief_context if (product_brief_context or "").strip() else "No product context for this study."
 
     prompt = (
         prompt_template
         .replace("{twin_summary}", twin_summary)
+        .replace("{product_brief_context}", pb_text)
         .replace("{evidence_block}", evidence_block)
         .replace("{questions_block}", questions_block)
         .replace("{prior_survey_answers}", prior_answers_text)
     )
+
+    feedback_block = _format_validation_feedback(validation_feedback or [])
+    if feedback_block:
+        prompt = f"{prompt}\n\n{feedback_block}\n"
 
     max_tokens = max(n_questions * 400, LLM_MAX_TOKENS_BATCH_SURVEY)
 
@@ -1198,12 +1438,17 @@ async def run_simulation(
     participant_id: str = "default",
     collection=None,
     kg=None,
+    product_brief: dict | None = None,
 ) -> list[dict]:
     """Run simulation for one twin with an arbitrary questionnaire.
 
     This is the general-purpose entry point used by the API/Celery tasks.
     The questionnaire is a list of question dicts (same schema as
     build_m8_questionnaire() output). Concepts are optional stimulus cards.
+
+    `product_brief` is an optional dict injected into every batch's prompt as
+    per-study context (ad_creative_testing). It is NEVER persisted to ChromaDB
+    so it can't leak to future studies for the same twin.
     """
     global _active_concepts
     _active_concepts = concepts
@@ -1217,9 +1462,37 @@ async def run_simulation(
             participant_id=participant_id,
             collection=collection,
             kg=kg,
+            product_brief=product_brief,
         )
     finally:
         _active_concepts = None
+
+
+def _format_product_brief_for_prompt(product_brief: dict | None) -> str:
+    """Format the Product Brief as a plain-text block for injection into the
+    batch synthesis prompt. Ephemeral — never written to twin memory."""
+    if not product_brief:
+        return ""
+    lines = []
+    if product_brief.get("product_name"):
+        lines.append(f"- **Product**: {product_brief['product_name']}")
+    if product_brief.get("category"):
+        lines.append(f"- **Category**: {product_brief['category']}")
+    if product_brief.get("target_audience_description"):
+        lines.append(f"- **Target audience**: {product_brief['target_audience_description']}")
+    features = product_brief.get("key_features")
+    if isinstance(features, list) and features:
+        lines.append("- **Key features**: " + "; ".join(features))
+    if product_brief.get("key_differentiator"):
+        lines.append(f"- **Key differentiator**: {product_brief['key_differentiator']}")
+    if product_brief.get("must_communicate"):
+        lines.append(f"- **Must communicate**: {product_brief['must_communicate']}")
+    if not lines:
+        return ""
+    return (
+        "You are being asked to evaluate creative ideas for this product:\n"
+        + "\n".join(lines)
+    )
 
 
 async def run_m8_simulation(
@@ -1255,6 +1528,7 @@ async def _run_simulation_inner(
     participant_id: str = "default",
     collection=None,
     kg=None,
+    product_brief: dict | None = None,
 ) -> list[dict]:
     """Internal implementation shared by run_simulation and run_m8_simulation."""
     t0 = time.time()
@@ -1263,8 +1537,13 @@ async def _run_simulation_inner(
 
     pid = participant_id if participant_id != "default" else twin_id.split("_")[0]
 
+    # Build the product brief prompt context once per twin run (ephemeral, not persisted)
+    product_brief_context = _format_product_brief_for_prompt(product_brief)
+
     logger.info(f"Questionnaire: {len(questions)} questions")
     logger.info(f"Twin: {twin_id} | Mode: {mode} | Batch size: {batch_size}")
+    if product_brief_context:
+        logger.info(f"  Product Brief context: {len(product_brief_context)} chars (prompt-only, not persisted)")
 
     questions_lookup = {q["question_id"]: q for q in questions}
     prior_answers: dict = {}
@@ -1298,16 +1577,50 @@ async def _run_simulation_inner(
         # 4. Format prior answers summary
         prior_text = format_prior_answers_text(prior_answers, questions_lookup)
 
-        # 5. Batch synthesis
-        try:
-            batch_result = await synthesize_batch(
-                twin_id, evidence_block, questions_block, prior_text,
-                n_questions=len(batch), batch_id=batch_id,
-                participant_id=pid,
-            )
-        except Exception as e:
-            logger.error(f"  Batch synthesis failed: {e}")
-            batch_result = {}
+        # 5. Batch synthesis with validation-retry loop.
+        # We re-call the LLM up to MAX_VALIDATION_RETRIES times, each time feeding back
+        # the specific violations (e.g. "q_m1_1_1: rating value 7 is outside scale 1-5")
+        # so the twin can correct those answers. Only answers that survive validation
+        # are persisted to ChromaDB — anything still invalid at the end of the retry
+        # budget is marked skipped=True so persist_answers_to_chromadb drops it.
+        MAX_VALIDATION_RETRIES = 3
+        batch_result: dict = {}
+        validation_errors: list[dict] = []
+        for attempt in range(MAX_VALIDATION_RETRIES + 1):
+            try:
+                batch_result = await synthesize_batch(
+                    twin_id, evidence_block, questions_block, prior_text,
+                    n_questions=len(batch), batch_id=batch_id,
+                    participant_id=pid,
+                    product_brief_context=product_brief_context,
+                    validation_feedback=validation_errors if attempt > 0 else None,
+                )
+            except Exception as e:
+                logger.error(f"  Batch synthesis failed (attempt {attempt + 1}): {e}")
+                batch_result = {}
+                break
+
+            validation_errors = validate_batch_answers(batch, batch_result)
+            if not validation_errors:
+                if attempt > 0:
+                    logger.info(f"  Batch {batch_id} validated after {attempt} retry(ies)")
+                break
+
+            if attempt < MAX_VALIDATION_RETRIES:
+                preview = "; ".join(f"{e['question_id']}: {e['reason']}" for e in validation_errors[:3])
+                logger.warning(
+                    f"  Batch {batch_id} validation failed (attempt {attempt + 1}/{MAX_VALIDATION_RETRIES + 1}, "
+                    f"{len(validation_errors)} bad): {preview}{' ...' if len(validation_errors) > 3 else ''}"
+                )
+            else:
+                logger.error(
+                    f"  Batch {batch_id} exhausted {MAX_VALIDATION_RETRIES} validation retries; "
+                    f"{len(validation_errors)} answers will be marked skipped (not persisted)"
+                )
+
+        # Question IDs that are still invalid after the retry budget — these will be
+        # forced to skipped=True so they're excluded from ChromaDB persistence below.
+        invalid_qids = {e["question_id"] for e in validation_errors}
 
         batch_elapsed = time.time() - t_batch
 
@@ -1331,6 +1644,12 @@ async def _run_simulation_inner(
                 raw_text = ""
                 structured = None
 
+            # Force-skip any answer that still violates validation after retries.
+            # This keeps polluted answers out of ChromaDB + the exported results.
+            is_invalid = q_id in invalid_qids
+            if is_invalid:
+                logger.warning(f"  {q_id}: final answer {raw_text!r} still invalid; marking skipped")
+
             resp = {
                 "question_id": q_id,
                 "question_text": q_text,
@@ -1338,18 +1657,22 @@ async def _run_simulation_inner(
                 "section": q["section"],
                 "concept_index": q.get("concept_index"),
                 "raw_answer": raw_text,
-                "structured_answer": structured,
+                "structured_answer": structured if not is_invalid else None,
                 "reasoning": reasoning,
-                "skipped": structured is None,
+                "skipped": structured is None or is_invalid,
+                "invalid": is_invalid,
                 "inference_mode": mode,
                 "evidence_count": stats.get("n_vector_evidence", 0),
                 "elapsed_s": round(batch_elapsed / len(batch), 2),
             }
             all_responses.append(resp)
-            if structured is not None:
+            if structured is not None and not is_invalid:
                 prior_answers[q_id] = structured
 
-        # 7. Persist batch answers to ChromaDB for self-consistency
+        # 7. Persist batch answers to ChromaDB for self-consistency — but only the
+        # ones that passed validation (or were free-text / unskipped). The skipped
+        # filter in persist_answers_to_chromadb already drops invalid answers since
+        # we set skipped=True above for anything that exhausted retries.
         batch_responses = [r for r in all_responses[-len(batch):] if not r.get("skipped")]
         persist_answers_to_chromadb(twin_id, batch_responses, collection=collection)
 

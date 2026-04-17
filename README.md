@@ -62,8 +62,8 @@ The final questionnaire is used by the Twin Generator for simulation.
 
 **How it works:**
 1. **Step 1 - Question Bank:** Expands 59 real interview questions to 350 using LLM
-2. **Step 2 - Branching:** Identifies uncaptured behavioral dimensions, generates 100 plausible variants per participant, prunes to 20
-3. **Step 3 - Profile Expansion:** Uses ICL to fill each twin's 350-question profile
+2. **Step 2 - Branching:** Identifies 5 uncaptured behavioral dimensions per participant, generates 3 archetype variants per dimension (243 raw combos), coherence-prunes to 100 twins per participant
+3. **Step 3 - Profile Expansion:** Further prunes 100 → 20 twins per participant (coherence × diversity), then uses ICL to fill each twin's 289 unanswered questions → 353 Q&A per twin. Final deliverable: 20 × 20 = **400 twins**
 4. **Step 4A - Vector DB:** Builds ChromaDB index with sentence-transformer embeddings
 5. **Step 4B - Knowledge Graph:** Extracts behavioral traits into a NetworkX graph
 6. **Step 5 - Survey Simulation:** Uses twins to answer research questionnaires with evidence-backed responses

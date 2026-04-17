@@ -43,13 +43,24 @@ interface StudyStore {
   lockStep1: () => Promise<void>;
 
   // Step 2
+  // - concept_testing: concept boards
+  // - ad_creative_testing: Product Brief (use generateProductBrief / editProductBrief)
   generateConcepts: (n?: number) => Promise<void>;
   addConcept: () => Promise<void>;
+  deleteConcept: (conceptId: string) => Promise<void>;
   updateConcept: (conceptId: string, components: Record<string, unknown>) => Promise<void>;
   refineConcept: (conceptId: string) => Promise<void>;
   approveConcept: (conceptId: string, approved: Record<string, unknown>) => Promise<void>;
   checkComparability: () => Promise<void>;
   lockStep2: () => Promise<void>;
+
+  // Product Brief (ad_creative_testing only — stored as step 2)
+  generateProductBrief: () => Promise<void>;
+  editProductBrief: (edits: Record<string, unknown>) => Promise<void>;
+
+  // Territories (ad_creative_testing only — stored as step 3)
+  generateTerritories: (n?: number) => Promise<void>;
+  lockTerritories: () => Promise<void>;
 
   // Step 3
   generateDesign: () => Promise<void>;
@@ -97,7 +108,8 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
     try {
       set({ loading: true, loadingMessage: "Loading study..." });
       const study = await api.getStudy(id);
-      const activeStep = getStepFromStatus(study.status as StudyStatus);
+      const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+      const activeStep = getStepFromStatus(study.status as StudyStatus, studyType);
       set({
         study,
         activeStep,
@@ -150,6 +162,7 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
       await get().loadStepData(1);
     } catch (e) {
       set({ error: (e as Error).message, loading: false });
+      throw e; // Re-throw so the caller can handle the failure
     }
   },
 
@@ -189,7 +202,7 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
     const { study } = get();
     if (!study) return;
     try {
-      set({ loading: true, loadingMessage: "Adding concept board..." });
+      set({ loading: true, loadingMessage: "Adding..." });
       const newConcept = await api.addConcept(study.id);
       set((s) => ({
         concepts: [...s.concepts, newConcept],
@@ -197,6 +210,23 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
       }));
     } catch (e) {
       set({ error: (e as Error).message, loading: false });
+      throw e;
+    }
+  },
+
+  deleteConcept: async (conceptId) => {
+    const { study } = get();
+    if (!study) return;
+    try {
+      set({ loading: true, loadingMessage: "Deleting..." });
+      await api.deleteConcept(study.id, conceptId);
+      set((s) => ({
+        concepts: s.concepts.filter((c) => c.id !== conceptId),
+        loading: false,
+      }));
+    } catch (e) {
+      set({ error: (e as Error).message, loading: false });
+      throw e;
     }
   },
 
@@ -238,6 +268,7 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
       }));
     } catch (e) {
       set({ error: (e as Error).message });
+      throw e;
     }
   },
 
@@ -256,9 +287,76 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
   lockStep2: async () => {
     const { study } = get();
     if (!study) return;
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const msg = studyType === "ad_creative_testing" ? "Locking Product Brief..." : "Locking concept boards...";
     try {
-      set({ loading: true, loadingMessage: "Locking concept boards..." });
+      set({ loading: true, loadingMessage: msg });
       await api.lockStep2(study.id);
+      set({ loading: false });
+      await get().fetchStudy(study.id);
+      await get().loadStepData(2);
+    } catch (e) {
+      set({ error: (e as Error).message, loading: false });
+    }
+  },
+
+  // ─── Product Brief (ad_creative_testing, step 2) ─────
+
+  generateProductBrief: async () => {
+    const { study } = get();
+    if (!study) return;
+    try {
+      set({ loading: true, loadingMessage: "Drafting product brief..." });
+      const sv = await api.generateProductBrief(study.id);
+      set((s) => ({
+        stepVersions: { ...s.stepVersions, 2: sv },
+        loading: false,
+      }));
+      await get().fetchStudy(study.id);
+    } catch (e) {
+      set({ error: (e as Error).message, loading: false });
+    }
+  },
+
+  editProductBrief: async (edits) => {
+    const { study } = get();
+    if (!study) return;
+    try {
+      set({ loading: true, loadingMessage: "Saving product brief..." });
+      const sv = await api.editProductBrief(study.id, edits);
+      set((s) => ({
+        stepVersions: { ...s.stepVersions, 2: sv },
+        loading: false,
+      }));
+      await get().fetchStudy(study.id);
+      await get().loadStepData(2);
+    } catch (e) {
+      set({ error: (e as Error).message, loading: false });
+      throw e;
+    }
+  },
+
+  // ─── Creative Territories (ad_creative_testing, step 3) ──
+
+  generateTerritories: async (n = 3) => {
+    const { study } = get();
+    if (!study) return;
+    try {
+      set({ loading: true, loadingMessage: "Creating territory templates..." });
+      const territories = await api.generateTerritories(study.id, n);
+      set({ concepts: territories, loading: false });
+      await get().fetchStudy(study.id);
+    } catch (e) {
+      set({ error: (e as Error).message, loading: false });
+    }
+  },
+
+  lockTerritories: async () => {
+    const { study } = get();
+    if (!study) return;
+    try {
+      set({ loading: true, loadingMessage: "Locking territories..." });
+      await api.lockTerritories(study.id);
       set({ loading: false });
       await get().fetchStudy(study.id);
     } catch (e) {
@@ -266,16 +364,19 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
     }
   },
 
-  // ─── Step 3 ──────────────────────────────────────────
+  // ─── Step 3 / 4 (Research Design) ────────────────────
+  // concept_testing: step 3; ad_creative_testing: step 4
 
   generateDesign: async () => {
     const { study } = get();
     if (!study) return;
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const stepKey = studyType === "ad_creative_testing" ? 4 : 3;
     try {
       set({ loading: true, loadingMessage: "Generating research design..." });
-      const sv = await api.generateDesign(study.id);
+      const sv = await api.generateDesign(study.id, studyType);
       set((s) => ({
-        stepVersions: { ...s.stepVersions, 3: sv },
+        stepVersions: { ...s.stepVersions, [stepKey]: sv },
         loading: false,
       }));
       await get().fetchStudy(study.id);
@@ -287,27 +388,32 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
   editDesign: async (edits) => {
     const { study } = get();
     if (!study) return;
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const stepKey = studyType === "ad_creative_testing" ? 4 : 3;
     try {
       set({ loading: true, loadingMessage: "Recalculating design..." });
-      const sv = await api.editDesign(study.id, edits);
+      const sv = await api.editDesign(study.id, edits, studyType);
       set((s) => ({
-        stepVersions: { ...s.stepVersions, 3: sv },
+        stepVersions: { ...s.stepVersions, [stepKey]: sv },
         loading: false,
       }));
       await get().fetchStudy(study.id);
     } catch (e) {
       set({ error: (e as Error).message, loading: false });
+      throw e;
     }
   },
 
   lockStep3: async () => {
     const { study } = get();
     if (!study) return;
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const stepKey = studyType === "ad_creative_testing" ? 4 : 3;
     try {
       set({ loading: true, loadingMessage: "Locking research design..." });
-      const sv = await api.lockStep3(study.id);
+      const sv = await api.lockStep3(study.id, studyType);
       set((s) => ({
-        stepVersions: { ...s.stepVersions, 3: sv },
+        stepVersions: { ...s.stepVersions, [stepKey]: sv },
         loading: false,
       }));
       await get().fetchStudy(study.id);
@@ -316,16 +422,19 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
     }
   },
 
-  // ─── Step 4 ──────────────────────────────────────────
+  // ─── Step 4 / 5 (Questionnaire) ──────────────────────
+  // concept_testing: step 4; ad_creative_testing: step 5
 
   generateQuestionnaire: async () => {
     const { study } = get();
     if (!study) return;
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const stepKey = studyType === "ad_creative_testing" ? 5 : 4;
     try {
       set({ loading: true, loadingMessage: "Generating questionnaire..." });
-      const sv = await api.generateQuestionnaire(study.id);
+      const sv = await api.generateQuestionnaire(study.id, studyType);
       set((s) => ({
-        stepVersions: { ...s.stepVersions, 4: sv },
+        stepVersions: { ...s.stepVersions, [stepKey]: sv },
         loading: false,
       }));
       await get().fetchStudy(study.id);
@@ -337,27 +446,31 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
   editQuestionnaire: async (operations) => {
     const { study } = get();
     if (!study) return;
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const stepKey = studyType === "ad_creative_testing" ? 5 : 4;
     try {
       set({ loading: true, loadingMessage: "Saving changes..." });
-      const sv = await api.editQuestionnaire(study.id, operations);
+      const sv = await api.editQuestionnaire(study.id, operations, studyType);
       set((s) => ({
-        stepVersions: { ...s.stepVersions, 4: sv },
+        stepVersions: { ...s.stepVersions, [stepKey]: sv },
         loading: false,
       }));
-      await get().loadStepData(4);
+      await get().loadStepData(stepKey);
     } catch (e) {
       set({ error: (e as Error).message, loading: false });
+      throw e;
     }
   },
 
   submitFeedback: async (sectionId, feedback) => {
     const { study } = get();
     if (!study) throw new Error("No study loaded");
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const stepKey = studyType === "ad_creative_testing" ? 5 : 4;
     set({ loading: true, loadingMessage: "Processing feedback..." });
     try {
-      const result = await api.submitSectionFeedback(study.id, sectionId, feedback);
-      // Reload step 4 data after feedback
-      await get().loadStepData(4);
+      const result = await api.submitSectionFeedback(study.id, sectionId, feedback, studyType);
+      await get().loadStepData(stepKey);
       set({ loading: false });
       return result;
     } catch (e) {
@@ -369,11 +482,13 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
   lockStep4: async () => {
     const { study } = get();
     if (!study) return;
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const stepKey = studyType === "ad_creative_testing" ? 5 : 4;
     try {
       set({ loading: true, loadingMessage: "Finalizing study..." });
-      const sv = await api.lockStep4(study.id);
+      const sv = await api.lockStep4(study.id, studyType);
       set((s) => ({
-        stepVersions: { ...s.stepVersions, 4: sv },
+        stepVersions: { ...s.stepVersions, [stepKey]: sv },
         loading: false,
       }));
       await get().fetchStudy(study.id);
@@ -400,6 +515,11 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
   loadStepData: async (step) => {
     const { study } = get();
     if (!study) return;
+    // For ad_creative_testing, concepts (territories) are stored in DB but
+    // logically belong to step 3, not step 2.
+    const studyType = (study.study_metadata as Record<string, unknown>)?.study_type as string | undefined;
+    const conceptsStep = studyType === "ad_creative_testing" ? 3 : 2;
+
     try {
       const versions = await api.getStepVersions(study.id, step);
       if (versions.length > 0) {
@@ -408,16 +528,16 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
           stepVersions: { ...s.stepVersions, [step]: latest },
         }));
 
-        // For step 2, extract concepts from locked step version
-        if (step === 2 && latest.content?.concepts) {
+        // Extract concepts from a locked step version snapshot
+        if (step === conceptsStep && latest.content?.concepts) {
           set({ concepts: latest.content.concepts as unknown as ConceptResponse[] });
           return;
         }
       }
 
-      // For step 2, always fetch concepts directly from DB
-      // (step versions only exist after locking)
-      if (step === 2) {
+      // If we're on the concepts step, always fetch concepts directly from DB
+      // (they exist as DB rows before any step version is locked)
+      if (step === conceptsStep) {
         const concepts = await api.getConcepts(study.id);
         if (concepts.length > 0) {
           set({ concepts });

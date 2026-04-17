@@ -1,8 +1,32 @@
 from datetime import datetime, timezone
 
 
+def max_step_for(study_type: str | None) -> int:
+    """Return the terminal step number for a study type.
+
+    - concept_testing: 4 steps (Brief, Concepts, Research Design, Questionnaire)
+    - ad_creative_testing: 5 steps (Brief, Product Brief, Territories, Research Design, Questionnaire)
+    """
+    if study_type == "ad_creative_testing":
+        return 5
+    return 4
+
+
+def _study_type(study: object) -> str | None:
+    """Safely extract study_type from study_metadata."""
+    metadata = getattr(study, "study_metadata", None) or {}
+    if isinstance(metadata, dict):
+        return metadata.get("study_type")
+    return None
+
+
 class StudyStateMachine:
-    """Enforces the study lifecycle state transitions from the PRD."""
+    """Enforces the study lifecycle state transitions from the PRD.
+
+    Supports two study types with different terminal steps:
+    - concept_testing: step_4_locked → complete
+    - ad_creative_testing: step_4_locked → step_5_draft → ... → step_5_locked → complete
+    """
 
     TRANSITIONS: dict[str, list[str]] = {
         "init": ["step_1_draft"],
@@ -17,7 +41,13 @@ class StudyStateMachine:
         "step_3_locked": ["step_4_draft"],
         "step_4_draft": ["step_4_review"],
         "step_4_review": ["step_4_draft", "step_4_locked"],
-        "step_4_locked": ["complete"],
+        # step_4_locked has TWO valid transitions depending on study_type:
+        # - concept_testing: "complete"
+        # - ad_creative_testing: "step_5_draft"
+        "step_4_locked": ["complete", "step_5_draft"],
+        "step_5_draft": ["step_5_review"],
+        "step_5_review": ["step_5_draft", "step_5_locked"],
+        "step_5_locked": ["complete"],
         "complete": [],
     }
 
@@ -26,6 +56,7 @@ class StudyStateMachine:
         2: "step_1_locked",
         3: "step_2_locked",
         4: "step_3_locked",
+        5: "step_4_locked",
     }
 
     @staticmethod
@@ -83,7 +114,7 @@ class StudyStateMachine:
         if status == "init":
             return 0
         if status == "complete":
-            return 5
+            return max_step_for(_study_type(study))
         # Status format: step_N_xxx
         parts = status.split("_")
         if len(parts) >= 2 and parts[0] == "step":
@@ -101,7 +132,7 @@ class StudyStateMachine:
         # A step is locked if the study has progressed past it
         if study.status == locked_status:
             return True
-        if study.status == "complete" and step_number <= 4:
+        if study.status == "complete" and step_number <= max_step_for(_study_type(study)):
             return True
         # If current step is greater than this step, it's locked
         if current_step > step_number:

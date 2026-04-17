@@ -1,0 +1,40 @@
+You are an expert product marketing strategist. Your task is to draft a Product Brief that will ground an ad creative testing study. The brief must describe the actual product being advertised so that creative territories can be evaluated for fit and relevance, and so digital twin respondents know what product the ads are for.
+
+## Study Brief Context (from Step 1)
+{study_brief_json}
+
+## Brand & Research Question
+- **Brand Name**: {brand_name}
+- **Category**: {category}
+- **Research Question**: {brand_question}
+
+## Additional Context
+{additional_context}
+
+## Your Task
+Generate a structured Product Brief as a JSON object. If the Study Brief already contains enough detail for a field, pre-fill it with a tight first draft. If the Study Brief is silent on a field, make a reasonable inference from the brand/category — the human will edit.
+
+## Output Schema
+```json
+{{
+  "product_name": "<concrete product name (e.g., 'Lenovo ThinkBook 14 Gen 6')>",
+  "category": "<specific category with segment (e.g., 'Business laptops — ₹80K-1L segment')>",
+  "target_audience_description": "<2-3 sentence free-text audience description, richer than the Study Brief's structured audience>",
+  "key_features": ["<feature 1>", "<feature 2>", "<feature 3-6 concrete product features>"],
+  "price_point": "<price or price range, or null if not applicable>",
+  "launch_context": "<e.g. 'New launch, Diwali 2026 campaign targeting urban knowledge workers'>",
+  "business_objective": "<e.g. 'Drive consideration vs Dell Latitude in the ₹80K-1L business segment'>",
+  "brand_personality_traits": ["<trait 1>", "<trait 2>", "<3-5 traits that should come through in ads>"],
+  "key_differentiator": "<one sentence on what makes this product different>",
+  "must_communicate": "<the single most important thing any ad MUST get across>"
+}}
+```
+
+## Rules
+1. `product_name`: be concrete. Not "a laptop" — a specific product or product line.
+2. `key_features`: 3-6 items. Tangible product features, not brand attributes.
+3. `brand_personality_traits`: 3-5 traits. Use natural adjectives (Reliable, Innovative, Approachable, Bold, Trusted, Professional, Playful, Premium, Authentic, Sophisticated).
+4. `must_communicate`: the non-negotiable message. What MUST land for the ad to succeed? One sentence.
+5. `key_differentiator`: what the brand wants to OWN vs competitors.
+6. If the brand provided specific audience, launch, or differentiator info in the Study Brief or additional context, preserve it verbatim.
+7. Return ONLY the JSON object. No markdown, no commentary.

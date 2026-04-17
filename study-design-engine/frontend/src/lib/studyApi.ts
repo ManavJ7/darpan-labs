@@ -76,7 +76,21 @@ export function lockStep1(studyId: string): Promise<StepVersionResponse> {
   });
 }
 
-// ─── Step 2: Concept Boards ─────────────────────────────
+// ─── Study-type-aware step number helper ─────────────────
+//
+// concept_testing: 4 steps (Brief → Concepts → ResearchDesign → Questionnaire)
+// ad_creative_testing: 5 steps (Brief → ProductBrief → Territories → ResearchDesign → Questionnaire)
+
+type ActionKind = "research_design" | "questionnaire";
+
+function stepForAction(action: ActionKind, studyType?: string): number {
+  const isAd = studyType === "ad_creative_testing";
+  if (action === "research_design") return isAd ? 4 : 3;
+  if (action === "questionnaire") return isAd ? 5 : 4;
+  return 0;
+}
+
+// ─── Step 2: Concept Boards (concept_testing) / Product Brief (ad_creative) ──
 
 export function generateConcepts(
   studyId: string,
@@ -88,6 +102,62 @@ export function generateConcepts(
   });
 }
 
+// ─── Product Brief (ad_creative_testing only, step 2) ──
+
+export function generateProductBrief(studyId: string): Promise<StepVersionResponse> {
+  return request(`/api/v1/studies/${studyId}/steps/2/generate`, {
+    method: "POST",
+    body: JSON.stringify({}),
+  });
+}
+
+export function editProductBrief(
+  studyId: string,
+  edits: Record<string, unknown>,
+): Promise<StepVersionResponse> {
+  return request(`/api/v1/studies/${studyId}/steps/2`, {
+    method: "PATCH",
+    body: JSON.stringify(edits),
+  });
+}
+
+export interface ProductBriefRefinedField {
+  raw_input: string;
+  refined: string;
+  refinement_rationale: string;
+}
+
+export interface ProductBriefRefineResponse {
+  refined_fields: Record<string, ProductBriefRefinedField>;
+  flags: string[];
+}
+
+export function refineProductBrief(
+  studyId: string,
+): Promise<ProductBriefRefineResponse> {
+  return request(`/api/v1/studies/${studyId}/product-brief/refine`, {
+    method: "POST",
+  });
+}
+
+// ─── Creative Territories (ad_creative_testing only, step 3) ──
+
+export function generateTerritories(
+  studyId: string,
+  n: number,
+): Promise<ConceptResponse[]> {
+  return request(`/api/v1/studies/${studyId}/steps/3/generate`, {
+    method: "POST",
+    body: JSON.stringify({ num_concepts: n }),
+  });
+}
+
+export function lockTerritories(studyId: string): Promise<void> {
+  return request(`/api/v1/studies/${studyId}/steps/3/lock`, {
+    method: "POST",
+  });
+}
+
 export function getConcepts(studyId: string): Promise<ConceptResponse[]> {
   return request(`/api/v1/studies/${studyId}/concepts`);
 }
@@ -95,6 +165,15 @@ export function getConcepts(studyId: string): Promise<ConceptResponse[]> {
 export function addConcept(studyId: string): Promise<ConceptResponse> {
   return request(`/api/v1/studies/${studyId}/concepts/add`, {
     method: "POST",
+  });
+}
+
+export function deleteConcept(
+  studyId: string,
+  conceptId: string,
+): Promise<{ deleted: boolean; concept_id?: string; territory_id?: string }> {
+  return request(`/api/v1/studies/${studyId}/concepts/${conceptId}`, {
+    method: "DELETE",
   });
 }
 
@@ -125,7 +204,7 @@ export function approveConcept(
 ): Promise<ConceptResponse> {
   return request(`/api/v1/studies/${studyId}/concepts/${conceptId}/approve`, {
     method: "POST",
-    body: JSON.stringify(approved),
+    body: JSON.stringify({ approved_components: approved }),
   });
 }
 
@@ -143,12 +222,14 @@ export function lockStep2(studyId: string): Promise<void> {
   });
 }
 
-// ─── Step 3: Research Design ─────────────────────────────
+// ─── Step 3/4: Research Design (step 3 concept_testing, step 4 ad_creative) ──
 
 export function generateDesign(
   studyId: string,
+  studyType?: string,
 ): Promise<StepVersionResponse> {
-  return request(`/api/v1/studies/${studyId}/steps/3/generate`, {
+  const step = stepForAction("research_design", studyType);
+  return request(`/api/v1/studies/${studyId}/steps/${step}/generate`, {
     method: "POST",
   });
 }
@@ -156,25 +237,33 @@ export function generateDesign(
 export function editDesign(
   studyId: string,
   edits: Record<string, unknown>,
+  studyType?: string,
 ): Promise<StepVersionResponse> {
-  return request(`/api/v1/studies/${studyId}/steps/3`, {
+  const step = stepForAction("research_design", studyType);
+  return request(`/api/v1/studies/${studyId}/steps/${step}`, {
     method: "PATCH",
-    body: JSON.stringify(edits),
+    body: JSON.stringify({ edits }),
   });
 }
 
-export function lockStep3(studyId: string): Promise<StepVersionResponse> {
-  return request(`/api/v1/studies/${studyId}/steps/3/lock`, {
+export function lockStep3(
+  studyId: string,
+  studyType?: string,
+): Promise<StepVersionResponse> {
+  const step = stepForAction("research_design", studyType);
+  return request(`/api/v1/studies/${studyId}/steps/${step}/lock`, {
     method: "POST",
   });
 }
 
-// ─── Step 4: Questionnaire ──────────────────────────────
+// ─── Step 4/5: Questionnaire (step 4 concept_testing, step 5 ad_creative) ──
 
 export function generateQuestionnaire(
   studyId: string,
+  studyType?: string,
 ): Promise<StepVersionResponse> {
-  return request(`/api/v1/studies/${studyId}/steps/4/generate`, {
+  const step = stepForAction("questionnaire", studyType);
+  return request(`/api/v1/studies/${studyId}/steps/${step}/generate`, {
     method: "POST",
   });
 }
@@ -183,9 +272,11 @@ export function submitSectionFeedback(
   studyId: string,
   sectionId: string,
   feedback: SectionFeedbackRequest,
+  studyType?: string,
 ): Promise<SectionFeedbackResponse> {
+  const step = stepForAction("questionnaire", studyType);
   return request(
-    `/api/v1/studies/${studyId}/steps/4/sections/${sectionId}/feedback`,
+    `/api/v1/studies/${studyId}/steps/${step}/sections/${sectionId}/feedback`,
     { method: "POST", body: JSON.stringify(feedback) },
   );
 }
@@ -193,15 +284,21 @@ export function submitSectionFeedback(
 export function editQuestionnaire(
   studyId: string,
   operations: Array<Record<string, unknown>>,
+  studyType?: string,
 ): Promise<StepVersionResponse> {
-  return request(`/api/v1/studies/${studyId}/steps/4/edit`, {
+  const step = stepForAction("questionnaire", studyType);
+  return request(`/api/v1/studies/${studyId}/steps/${step}/edit`, {
     method: "POST",
     body: JSON.stringify({ operations }),
   });
 }
 
-export function lockStep4(studyId: string): Promise<StepVersionResponse> {
-  return request(`/api/v1/studies/${studyId}/steps/4/lock`, {
+export function lockStep4(
+  studyId: string,
+  studyType?: string,
+): Promise<StepVersionResponse> {
+  const step = stepForAction("questionnaire", studyType);
+  return request(`/api/v1/studies/${studyId}/steps/${step}/lock`, {
     method: "POST",
   });
 }
@@ -336,4 +433,40 @@ export function listValidationReports(
   studyId: string,
 ): Promise<ValidationReportDetail[]> {
   return request(`/api/v1/studies/${studyId}/validation-reports`);
+}
+
+// ─── Qualitative Insights ──────────────────────────────
+
+export interface ThemeItem {
+  theme_name: string;
+  frequency: number;
+  frequency_pct: number;
+  sentiment: string;
+  representative_quote: string;
+}
+
+export interface ConceptInsight {
+  concept_index: number;
+  concept_name: string;
+  question_type: string;
+  question_text: string;
+  summary: string;
+  themes: ThemeItem[];
+  representative_quotes: string[];
+  response_count: number;
+}
+
+export interface QualitativeInsightsResponse {
+  study_id: string;
+  insights: ConceptInsight[];
+  generated_at: string;
+  cached: boolean;
+}
+
+export function getQualitativeInsights(
+  studyId: string,
+  forceRefresh = false,
+): Promise<QualitativeInsightsResponse> {
+  const qs = forceRefresh ? "?force_refresh=true" : "";
+  return request(`/api/v1/studies/${studyId}/qualitative-insights${qs}`);
 }

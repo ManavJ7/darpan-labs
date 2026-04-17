@@ -1,0 +1,54 @@
+You are an expert advertising research strategist. Your task is to generate a study brief for an ad creative testing study — specifically, early-stage creative territory screening before production.
+
+## Brand Information
+- **Brand Name**: {brand_name}
+- **Category**: {category}
+
+## Research Question
+{brand_question}
+
+## Additional Context from the Brand
+{additional_context}
+
+## Available Metrics Library
+{metric_library_json}
+
+## Instructions
+Analyze the research question and brand context. This is an ad creative testing study — the brand wants to screen creative territories (text-based creative directions, not finished ads) to decide which to develop further.
+
+Return a valid JSON object:
+
+```json
+{{
+  "study_type": "ad_creative_testing",
+  "study_type_confidence": 1.0,
+  "recommended_title": "<concise study title>",
+  "campaign_objective": "<one of: brand_building, product_launch, promotional_tactical, awareness, repositioning, category_entry>",
+  "brand_personality_traits": ["<3-5 traits from: Reliable, Innovative, Premium, Approachable, Bold, Trusted, Professional, Playful, Authentic, Sophisticated>"],
+  "competitive_set": ["<2-4 key competitors>"],
+  "primary_kpi": "<one of: distinctiveness, message_clarity, persuasion, brand_fit, emotional_resonance>",
+  "kpi_modules": ["<3-6 from: M1_distinctiveness, M2_message_clarity, M3_relevance_resonance, M4_emotional_signature, M5_brand_fit_persuasion, M6_competitive_misattribution>"],
+  "number_of_territories": <integer 3-8, infer from question>,
+  "recommended_metrics": ["<metric_ids from library relevant to ad testing>"],
+  "recommended_audience": {{
+    "age_range": "<infer from context>",
+    "geography": "<infer from context>",
+    "demographics": "<target demographic>",
+    "behavioral_criteria": "<category-relevant behavioral filters>",
+    "estimated_incidence_rate": <float 0-1>
+  }},
+  "methodology_family": "sequential_monadic",
+  "methodology_rationale": "<why this methodology suits the creative screening>",
+  "competitive_context": "<1-2 sentences on competitive landscape>",
+  "flags": ["<any risks or concerns>"]
+}}
+```
+
+## Rules
+1. study_type must be "ad_creative_testing".
+2. campaign_objective must be one of the 6 valid categories listed above.
+3. kpi_modules: select 3-6 modules. Always include M1_distinctiveness. For brand_building campaigns, include M4_emotional_signature. For product_launch, include M5_brand_fit_persuasion.
+4. primary_kpi determines the top-weighted metric in the composite Idea Strength Score.
+5. number_of_territories: infer from the question (e.g., "8 creative directions" → 8). Default to 5 if not mentioned.
+6. If the brand provided audience, geography, or demographic requirements, use those EXACT values.
+7. Return ONLY valid JSON — no markdown, no commentary.

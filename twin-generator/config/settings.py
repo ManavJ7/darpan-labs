@@ -18,12 +18,16 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 INPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # LLM
-LLM_MODEL = os.getenv("LLM_DEFAULT_MODEL", "anthropic/claude-opus-4-6")
+# Single-model policy: all twin-generator LLM calls route through gpt-5.4
+# (reasoning, generation, querying). This avoids needing multiple API keys
+# (DeepSeek, Anthropic) and keeps model behaviour consistent across steps.
+# Override via env vars if you want to split models by role.
+LLM_MODEL = os.getenv("LLM_DEFAULT_MODEL", "gpt-5.4")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
-# Multi-provider model configuration
-LLM_REASONING_MODEL = os.getenv("LLM_REASONING_MODEL", "deepseek/deepseek-reasoner")  # Steps 2, 4B
-LLM_GENERATION_MODEL = os.getenv("LLM_GENERATION_MODEL", "openai/gpt-5-mini")         # Steps 3, 5
+# Multi-provider model configuration (all default to gpt-5.4 now)
+LLM_REASONING_MODEL = os.getenv("LLM_REASONING_MODEL", "gpt-5.4")   # Steps 2, 4B
+LLM_GENERATION_MODEL = os.getenv("LLM_GENERATION_MODEL", "gpt-5.4") # Steps 3, 5
 
 # API key pool: comma-separated ANTHROPIC_API_KEYS, falls back to single key
 _keys_env = os.getenv("ANTHROPIC_API_KEYS", "")
@@ -72,7 +76,7 @@ CHROMA_PERSIST_DIR = str(OUTPUT_DIR / "step4_chromadb")
 CHROMA_COLLECTION_NAME = "twin_qa_pairs"
 VECTOR_TOP_K = int(os.getenv("VECTOR_TOP_K", "15"))
 KG_MAX_TRAITS_PER_TWIN = int(os.getenv("KG_MAX_TRAITS_PER_TWIN", "35"))
-LLM_QUERY_MODEL = os.getenv("LLM_QUERY_MODEL", "deepseek/deepseek-reasoner")
+LLM_QUERY_MODEL = os.getenv("LLM_QUERY_MODEL", "gpt-5.4")
 LLM_MAX_TOKENS_QUERY = int(os.getenv("LLM_MAX_TOKENS_QUERY", "1024"))
 LLM_TEMPERATURE_QUERY = float(os.getenv("LLM_TEMPERATURE_QUERY", "0.3"))
 LLM_MAX_TOKENS_KG_EXTRACT = int(os.getenv("LLM_MAX_TOKENS_KG_EXTRACT", "16000"))

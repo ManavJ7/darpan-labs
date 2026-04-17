@@ -11,6 +11,7 @@ class StudyCreate(BaseSchema):
     brand_name: Optional[str] = None
     category: Optional[str] = None
     context: Optional[dict] = None
+    study_type: Optional[str] = "concept_testing"  # concept_testing | ad_creative_testing
 
 
 class StudyResponse(BaseSchema):
@@ -25,6 +26,8 @@ class StudyResponse(BaseSchema):
     created_at: datetime
     updated_at: datetime
     steps: Optional[dict] = None
+    created_by_user_id: Optional[uuid.UUID] = None
+    is_public: bool = False
 
 
 class StudyBriefContent(BaseSchema):

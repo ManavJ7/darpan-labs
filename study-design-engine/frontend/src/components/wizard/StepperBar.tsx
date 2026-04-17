@@ -8,16 +8,17 @@ interface StepperBarProps {
   status: StudyStatus;
   activeStep: number;
   onStepClick: (step: number) => void;
+  studyType?: string;
 }
 
-export function StepperBar({ status, activeStep, onStepClick }: StepperBarProps) {
-  const steps = [1, 2, 3, 4];
+export function StepperBar({ status, activeStep, onStepClick, studyType }: StepperBarProps) {
+  const steps = studyType === "ad_creative_testing" ? [1, 2, 3, 4, 5] : [1, 2, 3, 4];
 
   return (
     <div className="flex items-center justify-center gap-0 py-6 px-4">
       {steps.map((step, i) => {
-        const accessible = isStepAccessible(step, status);
-        const locked = isStepLocked(step, status);
+        const accessible = isStepAccessible(step, status, studyType);
+        const locked = isStepLocked(step, status, studyType);
         const isActive = step === activeStep;
 
         return (
@@ -50,7 +51,7 @@ export function StepperBar({ status, activeStep, onStepClick }: StepperBarProps)
                   isActive ? "text-white" : "text-white/50",
                 )}
               >
-                {stepName(step)}
+                {stepName(step, studyType)}
               </span>
             </button>
 

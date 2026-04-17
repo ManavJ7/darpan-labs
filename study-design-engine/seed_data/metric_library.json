@@ -4,7 +4,7 @@
     "display_name": "Purchase Intent",
     "category": "core_kpi",
     "description": "Measures likelihood to purchase the product/service at a given price point",
-    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "price_sensitivity", "portfolio_optimization", "ad_creative_testing", "category_entry"],
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "price_sensitivity", "portfolio_optimization", "category_entry"],
     "default_scale": {
       "type": "likert_5",
       "options": [
@@ -57,7 +57,7 @@
     "display_name": "Uniqueness",
     "category": "core_kpi",
     "description": "Measures perceived differentiation from existing products",
-    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "portfolio_optimization", "ad_creative_testing", "category_entry"],
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "portfolio_optimization", "category_entry"],
     "default_scale": {
       "type": "likert_5",
       "options": [
@@ -93,7 +93,7 @@
     "display_name": "Overall Appeal",
     "category": "core_kpi",
     "description": "Measures overall attractiveness of the concept",
-    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "ad_creative_testing", "category_entry"],
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "category_entry"],
     "default_scale": {
       "type": "likert_5",
       "options": [
@@ -109,8 +109,8 @@
   {
     "id": "relevance",
     "display_name": "Relevance",
-    "category": "core_kpi",
-    "description": "Measures personal relevance and need fit",
+    "category": "Engagement",
+    "description": "Personal relevance and need fit for the territory or concept",
     "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "ad_creative_testing", "category_entry"],
     "default_scale": {
       "type": "likert_5",
@@ -129,7 +129,7 @@
     "display_name": "Believability",
     "category": "core_kpi",
     "description": "Measures credibility of the concept claims",
-    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "ad_creative_testing"],
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization"],
     "default_scale": {
       "type": "likert_5",
       "options": [
@@ -145,8 +145,8 @@
   {
     "id": "brand_fit",
     "display_name": "Brand Fit",
-    "category": "diagnostic",
-    "description": "Measures how well the concept fits with the brand image",
+    "category": "Brand Predisposition",
+    "description": "How well the creative territory (or concept) fits the brand's identity",
     "applicable_study_types": ["concept_testing", "brand_positioning", "ad_creative_testing", "portfolio_optimization"],
     "default_scale": {
       "type": "likert_5",
@@ -200,7 +200,7 @@
     "display_name": "Likes & Dislikes",
     "category": "diagnostic",
     "description": "Open-ended exploration of positive and negative reactions",
-    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "ad_creative_testing", "category_entry"],
+    "applicable_study_types": ["concept_screening", "concept_testing", "claims_optimization", "brand_positioning", "category_entry"],
     "default_scale": {
       "type": "open_text",
       "options": [
@@ -244,7 +244,7 @@
     "display_name": "Aided Awareness",
     "category": "competitive",
     "description": "Measures brand recognition when prompted",
-    "applicable_study_types": ["brand_positioning", "ad_creative_testing", "customer_segmentation"],
+    "applicable_study_types": ["brand_positioning", "customer_segmentation"],
     "default_scale": {
       "type": "single_select",
       "options": [
@@ -259,7 +259,7 @@
     "display_name": "Brand Consideration",
     "category": "competitive",
     "description": "Measures likelihood to consider the brand for future purchase",
-    "applicable_study_types": ["brand_positioning", "ad_creative_testing", "customer_segmentation"],
+    "applicable_study_types": ["brand_positioning", "customer_segmentation"],
     "default_scale": {
       "type": "likert_5",
       "options": [
@@ -324,6 +324,312 @@
       "type": "single_select",
       "options": [
         {"value": "brand_list", "label": "Which brand did you purchase most recently?"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "distinctive_impact",
+    "display_name": "Distinctive Impact",
+    "category": "In-Market Impact",
+    "description": "How different the idea feels from other advertising in the category — a primary driver of in-market distinctiveness",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely different"},
+        {"value": 4, "label": "Very different"},
+        {"value": 3, "label": "Somewhat different"},
+        {"value": 2, "label": "Slightly different"},
+        {"value": 1, "label": "Not at all different"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "freshness",
+    "display_name": "Freshness",
+    "category": "In-Market Impact",
+    "description": "How fresh and new the idea feels (novelty signal within the category)",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely fresh"},
+        {"value": 4, "label": "Very fresh"},
+        {"value": 3, "label": "Somewhat fresh"},
+        {"value": 2, "label": "Slightly fresh"},
+        {"value": 1, "label": "Not at all fresh"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "memorability",
+    "display_name": "Memorability",
+    "category": "In-Market Impact",
+    "description": "How memorable the idea is — predicts recall after the media moment",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely memorable"},
+        {"value": 4, "label": "Very memorable"},
+        {"value": 3, "label": "Somewhat memorable"},
+        {"value": 2, "label": "Slightly memorable"},
+        {"value": 1, "label": "Not at all memorable"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "originality",
+    "display_name": "Originality",
+    "category": "In-Market Impact",
+    "description": "Whether respondents have seen anything like this before",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "categorical",
+      "options": [
+        {"value": 5, "label": "No, nothing like it"},
+        {"value": 4, "label": "No, not really"},
+        {"value": 3, "label": "Somewhat similar"},
+        {"value": 2, "label": "Yes, very similar"},
+        {"value": 1, "label": "Yes, identical"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "stopping_power_m1",
+    "display_name": "Stopping Power (In-Market)",
+    "category": "In-Market Impact",
+    "description": "Whether the idea would halt a scroll / command attention if encountered live — in-market context",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Definitely would stop me"},
+        {"value": 4, "label": "Probably would stop me"},
+        {"value": 3, "label": "Might stop me"},
+        {"value": 2, "label": "Probably would not"},
+        {"value": 1, "label": "Definitely would not"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "communication_awareness",
+    "display_name": "Communication Awareness",
+    "category": "In-Market Impact",
+    "description": "How clearly the main message was communicated — central to whether the ad lands its idea",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely clear"},
+        {"value": 4, "label": "Very clear"},
+        {"value": 3, "label": "Somewhat clear"},
+        {"value": 2, "label": "Slightly clear"},
+        {"value": 1, "label": "Not at all clear"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "enjoyment",
+    "display_name": "Enjoyment",
+    "category": "Engagement",
+    "description": "How enjoyable respondents find the idea — drives positive engagement and sharing",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Extremely enjoyable"},
+        {"value": 4, "label": "Very enjoyable"},
+        {"value": 3, "label": "Somewhat enjoyable"},
+        {"value": 2, "label": "Slightly enjoyable"},
+        {"value": 1, "label": "Not at all enjoyable"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "need_alignment",
+    "display_name": "Need Alignment",
+    "category": "Engagement",
+    "description": "Whether the idea addresses a real need the respondent has — drives resonance",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Addresses my need exactly"},
+        {"value": 4, "label": "Closely addresses my need"},
+        {"value": 3, "label": "Somewhat addresses"},
+        {"value": 2, "label": "Barely addresses"},
+        {"value": 1, "label": "Does not address at all"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "stopping_power",
+    "display_name": "Stopping Power (Engagement)",
+    "category": "Engagement",
+    "description": "Whether respondents would actively stop to pay attention — engagement-side measure",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Definitely would pay attention"},
+        {"value": 4, "label": "Probably would pay attention"},
+        {"value": 3, "label": "Might pay attention"},
+        {"value": 2, "label": "Probably would not"},
+        {"value": 1, "label": "Definitely would not"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "persuasion_lift",
+    "display_name": "Persuasion Lift",
+    "category": "Brand Predisposition",
+    "description": "Post-exposure shift in purchase intent vs. the pre-exposure baseline",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Definitely would buy"},
+        {"value": 4, "label": "Probably would buy"},
+        {"value": 3, "label": "Might or might not buy"},
+        {"value": 2, "label": "Probably would not buy"},
+        {"value": 1, "label": "Definitely would not buy"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "affinity",
+    "display_name": "Affinity",
+    "category": "Brand Predisposition",
+    "description": "How much warmer the idea makes respondents feel toward the brand",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Feel much warmer"},
+        {"value": 4, "label": "Feel somewhat warmer"},
+        {"value": 3, "label": "No change"},
+        {"value": 2, "label": "Feel somewhat cooler"},
+        {"value": 1, "label": "Feel much cooler"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "advocacy",
+    "display_name": "Advocacy",
+    "category": "Brand Predisposition",
+    "description": "Likelihood of sharing or recommending after exposure — viral potential signal",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Definitely would share/recommend"},
+        {"value": 4, "label": "Probably would share/recommend"},
+        {"value": 3, "label": "Might share/recommend"},
+        {"value": 2, "label": "Probably would not"},
+        {"value": 1, "label": "Definitely would not"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "personality_match",
+    "display_name": "Personality Match",
+    "category": "Brand Predisposition",
+    "description": "How well the idea matches the brand's target personality traits (from the Product Brief)",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Matches perfectly"},
+        {"value": 4, "label": "Matches well"},
+        {"value": 3, "label": "Somewhat matches"},
+        {"value": 2, "label": "Barely matches"},
+        {"value": 1, "label": "Does not match at all"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "emotional_active_positive",
+    "display_name": "Active Positive",
+    "category": "Emotional Signature",
+    "description": "High-arousal positive emotions the idea evokes (e.g., joy, excitement, inspiration)",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Strongly evokes"},
+        {"value": 4, "label": "Evokes"},
+        {"value": 3, "label": "Somewhat evokes"},
+        {"value": 2, "label": "Barely evokes"},
+        {"value": 1, "label": "Does not evoke"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "emotional_passive_positive",
+    "display_name": "Passive Positive",
+    "category": "Emotional Signature",
+    "description": "Low-arousal positive emotions (e.g., warmth, comfort, reassurance, trust)",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Strongly evokes"},
+        {"value": 4, "label": "Evokes"},
+        {"value": 3, "label": "Somewhat evokes"},
+        {"value": 2, "label": "Barely evokes"},
+        {"value": 1, "label": "Does not evoke"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "emotional_passive_negative",
+    "display_name": "Passive Negative",
+    "category": "Emotional Signature",
+    "description": "Low-arousal negative emotions (e.g., boredom, confusion, disinterest)",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Strongly evokes"},
+        {"value": 4, "label": "Evokes"},
+        {"value": 3, "label": "Somewhat evokes"},
+        {"value": 2, "label": "Barely evokes"},
+        {"value": 1, "label": "Does not evoke"}
+      ]
+    },
+    "benchmark_available": false
+  },
+  {
+    "id": "emotional_active_negative",
+    "display_name": "Active Negative",
+    "category": "Emotional Signature",
+    "description": "High-arousal negative emotions (e.g., annoyance, anger, discomfort)",
+    "applicable_study_types": ["ad_creative_testing"],
+    "default_scale": {
+      "type": "likert_5",
+      "options": [
+        {"value": 5, "label": "Strongly evokes"},
+        {"value": 4, "label": "Evokes"},
+        {"value": 3, "label": "Somewhat evokes"},
+        {"value": 2, "label": "Barely evokes"},
+        {"value": 1, "label": "Does not evoke"}
       ]
     },
     "benchmark_available": false

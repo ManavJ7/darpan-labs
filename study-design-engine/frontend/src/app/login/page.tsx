@@ -2,22 +2,38 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { GoogleLogin } from "@react-oauth/google";
 import { FlaskConical } from "lucide-react";
 import { toast } from "sonner";
 import { useAuthStore } from "@/store/authStore";
 
 export default function LoginPage() {
   const router = useRouter();
-  const { loginWithGoogle, user } = useAuthStore();
+  const { loginWithPassword, user } = useAuthStore();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // If already logged in, redirect
+  // If already logged in, redirect to home
   useEffect(() => {
     if (user) {
       router.replace("/");
     }
   }, [user, router]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!username.trim() || !password) return;
+    setLoading(true);
+    try {
+      await loginWithPassword(username.trim(), password);
+      toast.success("Signed in");
+      router.replace("/");
+    } catch (err) {
+      toast.error((err as Error).message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -26,73 +42,57 @@ export default function LoginPage() {
           <div className="w-16 h-16 rounded-2xl bg-darpan-lime/10 border border-darpan-lime/20 flex items-center justify-center mx-auto">
             <FlaskConical className="w-8 h-8 text-darpan-lime" />
           </div>
-          <h1 className="text-2xl font-bold">Study Design Engine</h1>
+          <h1 className="text-2xl font-bold">Darpan Labs</h1>
           <p className="text-sm text-white/50">
-            Sign in to create and manage research studies
+            Sign in to design and run research studies
           </p>
         </div>
 
-        <div className="flex justify-center">
-          {loading ? (
-            <div className="text-sm text-white/40">Signing in...</div>
-          ) : (
-            <GoogleLogin
-              onSuccess={async (response) => {
-                if (!response.credential) {
-                  toast.error("No credential received from Google");
-                  return;
-                }
-                setLoading(true);
-                try {
-                  await loginWithGoogle(response.credential);
-                  toast.success("Signed in successfully");
-                  router.replace("/");
-                } catch (e) {
-                  toast.error((e as Error).message);
-                } finally {
-                  setLoading(false);
-                }
-              }}
-              onError={() => {
-                toast.error("Google sign-in failed");
-              }}
-              theme="filled_black"
-              size="large"
-              shape="pill"
-              text="signin_with"
+        <form onSubmit={handleSubmit} className="space-y-3 text-left">
+          <div>
+            <label className="block text-xs text-white/50 mb-1.5">Username</label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              autoComplete="username"
+              autoFocus
+              disabled={loading}
+              className="w-full px-3 py-2.5 bg-darpan-surface border border-darpan-border rounded-lg text-white text-sm placeholder-white/25 focus:outline-none focus:border-darpan-lime/40 transition-colors"
+              placeholder=""
             />
-          )}
-        </div>
-
-        <div className="border-t border-white/10 pt-4">
+          </div>
+          <div>
+            <label className="block text-xs text-white/50 mb-1.5">Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              autoComplete="current-password"
+              disabled={loading}
+              className="w-full px-3 py-2.5 bg-darpan-surface border border-darpan-border rounded-lg text-white text-sm placeholder-white/25 focus:outline-none focus:border-darpan-lime/40 transition-colors"
+              placeholder=""
+            />
+          </div>
           <button
-            onClick={async () => {
-              setLoading(true);
-              try {
-                const res = await fetch("http://localhost:8001/api/v1/auth/dev-login", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                });
-                if (!res.ok) throw new Error("Dev login failed");
-                const data = await res.json();
-                localStorage.setItem("auth_token", data.access_token);
-                localStorage.setItem("auth_user", JSON.stringify(data.user));
-                window.location.href = "/";
-              } catch (e) {
-                toast.error((e as Error).message);
-              } finally {
-                setLoading(false);
-              }
-            }}
-            className="w-full py-2 px-4 rounded-lg bg-white/5 border border-white/10 text-white/60 text-sm hover:bg-white/10 hover:text-white transition-colors"
+            type="submit"
+            disabled={loading || !username.trim() || !password}
+            className="w-full py-2.5 bg-darpan-lime text-black text-sm font-semibold rounded-lg hover:bg-darpan-lime-dim transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
-            Dev Login (skip Google)
+            {loading ? "Signing in..." : "Sign in"}
+          </button>
+        </form>
+
+        <div className="pt-2">
+          <button
+            onClick={() => router.replace("/")}
+            className="text-xs text-white/40 hover:text-white/60 transition-colors"
+          >
+            ← Back to public studies
           </button>
         </div>
 
-        <p className="text-xs text-white/30">
-          Powered by Darpan Labs
-        </p>
+        <p className="text-xs text-white/30">Powered by Darpan Labs</p>
       </div>
     </div>
   );

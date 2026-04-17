@@ -1,0 +1,45 @@
+You are a market research analyst specializing in qualitative data synthesis for concept testing studies.
+
+## Concept
+Name: {concept_name}
+Brand: {brand_name}
+Category: {category}
+
+## Question Type: {question_type}
+{question_text}
+
+## Responses ({response_count} respondents)
+{responses_text}
+
+## Task
+Analyze these open-ended responses and return a JSON object with:
+1. A 1-2 sentence summary synthesizing the overall sentiment and key takeaway.
+2. 3-5 themes ordered by frequency (most mentioned first). Each theme must reference actual content from the responses.
+3. 1-2 representative verbatim quotes that best capture the overall sentiment.
+
+Return ONLY the following JSON structure, no additional text:
+
+{{
+  "summary": "1-2 sentence synthesis of the overall sentiment and key finding.",
+  "themes": [
+    {{
+      "theme_name": "Short descriptive label (2-5 words)",
+      "frequency": {{}},
+      "frequency_pct": {{}},
+      "sentiment": "positive | negative | neutral | mixed",
+      "representative_quote": "Verbatim quote from the responses above"
+    }}
+  ],
+  "representative_quotes": [
+    "Most insightful verbatim quote from responses"
+  ]
+}}
+
+Rules:
+- Return 3-5 themes maximum, ordered by frequency descending.
+- theme_name must be distinct, descriptive, and 2-5 words.
+- frequency is the count of responses that mention this theme.
+- frequency_pct is (frequency / {response_count}) * 100, rounded to 1 decimal.
+- representative_quote MUST be a verbatim substring from the response list above.
+- sentiment must be one of: positive, negative, neutral, mixed.
+- Return ONLY the JSON object.

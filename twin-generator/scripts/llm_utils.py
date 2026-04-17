@@ -169,9 +169,20 @@ async def call_llm(
                 kwargs = dict(
                     model=effective_model,
                     messages=messages,
-                    max_tokens=max_tokens,
                     temperature=temperature if temperature is not None else LLM_TEMPERATURE,
+                    # Hard HTTP request timeout. Without this, an OpenAI stall
+                    # can spin the SDK's internal retry loop for 10+ minutes
+                    # per attempt (as observed with stuck P04 sim on Apr 13).
+                    # 120s is plenty even for long gpt-5.4 completions.
+                    timeout=120.0,
                 )
+                # GPT-5 / o-series reasoning models use `max_completion_tokens`;
+                # everything else still accepts `max_tokens`.
+                _m = (effective_model or "").lower()
+                if _m.startswith(("gpt-5", "o1", "o3", "o4")):
+                    kwargs["max_completion_tokens"] = max_tokens
+                else:
+                    kwargs["max_tokens"] = max_tokens
                 if api_key:
                     kwargs["api_key"] = api_key
                 response = await litellm.acompletion(**kwargs)

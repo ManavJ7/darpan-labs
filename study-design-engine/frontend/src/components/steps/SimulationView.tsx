@@ -1,6 +1,8 @@
 "use client";
 
 import { Fragment, useEffect, useState } from "react";
+import Link from "next/link";
+import { BarChart3 } from "lucide-react";
 import { useStudyStore } from "@/store/studyStore";
 import {
   listAvailableTwins,
@@ -46,12 +48,16 @@ export default function SimulationView() {
 
   if (!study) return null;
 
+  // Ready for simulation when the questionnaire step is locked (step 4 for
+  // concept_testing, step 5 for ad_creative_testing) or the study is complete.
   const isComplete =
-    study.status === "complete" || study.status === "step_4_locked";
+    study.status === "complete" ||
+    study.status === "step_4_locked" ||
+    study.status === "step_5_locked";
   if (!isComplete) {
     return (
       <div className="rounded-lg border border-darpan-border bg-darpan-surface p-6 text-center text-gray-400">
-        Complete all 4 steps to run twin simulations.
+        Lock the questionnaire to run twin simulations.
       </div>
     );
   }
@@ -144,18 +150,41 @@ export default function SimulationView() {
         ))}
       </div>
 
-      {/* Validation Dashboard buttons — always visible when results exist */}
+      {/* Results Dashboard — available for all studies with results */}
       {completedResults.length > 0 && (
         <div className="rounded-lg border border-lime-800/50 bg-lime-950/20 p-5">
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                Results Dashboard
+              </h3>
+              <p className="text-sm text-gray-400 mt-1">
+                View T2B scores, metric breakdowns, and concept recommendations
+                from twin simulation results.
+              </p>
+            </div>
+            <Link
+              href={`/study/${studyId}/results`}
+              className="flex items-center gap-2 rounded-md bg-darpan-lime px-5 py-2.5 text-sm font-semibold text-black hover:bg-lime-400 transition shrink-0 ml-6"
+            >
+              <BarChart3 className="w-4 h-4" />
+              View Results
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Validation Dashboard — only for the Dove study (has real participant data) */}
+      {completedResults.length > 0 && study?.brand_name?.toLowerCase() === "dove" && (
+        <div className="rounded-lg border border-cyan-800/50 bg-cyan-950/20 p-5">
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-lg font-semibold text-white">
                 Validation Dashboard
               </h3>
               <p className="text-sm text-gray-400 mt-1">
-                Generate the full validation report with radar charts, heatmaps,
-                tier analysis, TURF, and individual twin accuracy — then open the
-                dashboard.
+                Compare twin vs. real participant data with radar charts, heatmaps,
+                tier analysis, TURF, and individual twin accuracy.
               </p>
             </div>
             <div className="flex items-center gap-3 shrink-0 ml-6">

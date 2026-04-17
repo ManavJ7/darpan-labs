@@ -34,9 +34,14 @@ class ResearchDesignService:
         self,
         llm_client: LLMClient | None = None,
         prompt_service: PromptService | None = None,
+        step_number: int = 3,
     ):
         self.llm = llm_client or get_llm_client()
         self.prompts = prompt_service or get_prompt_service()
+        # step_number: 3 for concept_testing, 4 for ad_creative_testing
+        # (because ad_creative inserts a Product Brief as step 2 and shifts
+        # territories to step 3, research design to step 4)
+        self.step_number = step_number
 
     # ── Generate Design ──────────────────────────────────────────
 
@@ -58,11 +63,11 @@ class ResearchDesignService:
         # 1. Load study
         study = await self._get_study(study_id, db)
 
-        # 2. Validate prerequisite: step 2 locked
-        if not StudyStateMachine.can_start_step(study, 3):
+        # 2. Validate prerequisite: previous step locked
+        if not StudyStateMachine.can_start_step(study, self.step_number):
             raise ValueError(
-                f"Cannot generate Step 3: study must be in step_2_locked status, "
-                f"currently '{study.status}'"
+                f"Cannot generate Step {self.step_number}: study must be in "
+                f"step_{self.step_number - 1}_locked status, currently '{study.status}'"
             )
 
         # 3. Load step 1 (study brief) and step 2 (concepts)
@@ -135,12 +140,12 @@ class ResearchDesignService:
         }
 
         # 8. Determine version number
-        version = await self._next_version(study_id, step=3, db=db)
+        version = await self._next_version(study_id, step=self.step_number, db=db)
 
         # 9. Persist StepVersion
         step_version = StepVersion(
             study_id=study_id,
-            step=3,
+            step=self.step_number,
             version=version,
             status="draft",
             content=content.model_dump(),
@@ -148,9 +153,9 @@ class ResearchDesignService:
         )
         db.add(step_version)
 
-        # 10. Transition study status (draft → review, like study_brief_service)
-        StudyStateMachine.transition(study, "step_3_draft")
-        StudyStateMachine.transition(study, "step_3_review")
+        # 10. Transition study status (draft → review)
+        StudyStateMachine.transition(study, f"step_{self.step_number}_draft")
+        StudyStateMachine.transition(study, f"step_{self.step_number}_review")
         step_version.status = "review"
         await db.commit()
         await db.refresh(step_version)
@@ -182,22 +187,22 @@ class ResearchDesignService:
         """
         study = await self._get_study(study_id, db)
 
-        if not StudyStateMachine.can_edit_step(study, 3):
+        if not StudyStateMachine.can_edit_step(study, self.step_number):
             raise ValueError(
-                f"Cannot edit Step 3: step is locked. Study status: '{study.status}'"
+                f"Cannot edit Step {self.step_number}: step is locked. Study status: '{study.status}'"
             )
 
-        # Ensure study is at step 3
+        # Ensure study is at this step
         current_step = StudyStateMachine.get_current_step(study)
-        if current_step != 3:
+        if current_step != self.step_number:
             raise ValueError(
-                f"Cannot edit Step 3: study is currently at step {current_step}"
+                f"Cannot edit Step {self.step_number}: study is currently at step {current_step}"
             )
 
-        # Load latest step 3 version
-        latest = await self._load_latest_step_version(study_id, step=3, db=db)
+        # Load latest version
+        latest = await self._load_latest_step_version(study_id, step=self.step_number, db=db)
         if latest is None:
-            raise ValueError("No existing Step 3 design to edit. Generate one first.")
+            raise ValueError(f"No existing Step {self.step_number} design to edit. Generate one first.")
 
         current_content = dict(latest.content)
 
@@ -219,7 +224,7 @@ class ResearchDesignService:
         new_version = latest.version + 1
         step_version = StepVersion(
             study_id=study_id,
-            step=3,
+            step=self.step_number,
             version=new_version,
             status="draft",
             content=updated_content,
@@ -228,8 +233,8 @@ class ResearchDesignService:
         db.add(step_version)
 
         # If study was in review, move back to draft
-        if study.status == "step_3_review":
-            StudyStateMachine.transition(study, "step_3_draft")
+        if study.status == f"step_{self.step_number}_review":
+            StudyStateMachine.transition(study, f"step_{self.step_number}_draft")
 
         await db.commit()
         await db.refresh(step_version)
@@ -260,15 +265,15 @@ class ResearchDesignService:
         """
         study = await self._get_study(study_id, db)
 
-        if not StudyStateMachine.can_lock_step(study, 3):
+        if not StudyStateMachine.can_lock_step(study, self.step_number):
             raise ValueError(
-                f"Cannot lock Step 3: study must be in step_3_review status, "
-                f"currently '{study.status}'"
+                f"Cannot lock Step {self.step_number}: study must be in "
+                f"step_{self.step_number}_review status, currently '{study.status}'"
             )
 
-        latest = await self._load_latest_step_version(study_id, step=3, db=db)
+        latest = await self._load_latest_step_version(study_id, step=self.step_number, db=db)
         if latest is None:
-            raise ValueError("No Step 3 design exists to lock.")
+            raise ValueError(f"No Step {self.step_number} design exists to lock.")
 
         # Update the step version
         latest.status = "locked"
@@ -279,7 +284,7 @@ class ResearchDesignService:
             latest.locked_by = None
 
         # Transition study
-        StudyStateMachine.lock_step(study, 3, user_id)
+        StudyStateMachine.lock_step(study, self.step_number, user_id)
 
         await db.commit()
         await db.refresh(latest)

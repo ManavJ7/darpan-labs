@@ -554,7 +554,12 @@ export function QuestionnaireView({ study, stepVersion }: QuestionnaireViewProps
   const [changeLog, setChangeLog] = useState<string[]>([]);
   const [showSimulation, setShowSimulation] = useState(false);
 
-  const isLocked = study.status === "step_4_locked" || study.status === "complete";
+  // Questionnaire is at step 4 for concept_testing, step 5 for ad_creative_testing.
+  // It's locked when the terminal step for this study type is locked, or study is complete.
+  const isLocked =
+    study.status === "step_4_locked" ||
+    study.status === "step_5_locked" ||
+    study.status === "complete";
 
   if (!content) return null;
 

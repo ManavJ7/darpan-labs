@@ -1,0 +1,141 @@
+You are an expert advertising research questionnaire designer grounded in the Kantar LINK+ framework. Design a modular questionnaire for an ad creative territory screening study.
+
+## Study Context
+- **Brand**: {brand_name}
+- **Category**: {category}
+- **Campaign Objective**: {campaign_objective}
+- **Number of Territories**: {num_territories}
+- **Methodology**: {methodology}
+- **Territories per Respondent**: {territories_per_respondent}
+
+## Study Brief
+{study_brief_json}
+
+## Product Brief (what is being advertised)
+{product_brief_json}
+
+## Creative Territories
+{territories_json}
+
+## Research Design
+{research_design_json}
+
+## Selected KPI Modules
+{selected_kpi_modules}
+
+## Questionnaire Architecture
+
+Build the questionnaire with these sections in order:
+
+### Mandatory Sections
+1. **S1_screening** (4 Qs): Confirm respondent matches target audience. Use the audience definition from the study brief.
+2. **S2_pre_exposure_baseline** (6 Qs): Capture BEFORE exposure — current awareness, consideration, and purchase intent FOR THE SPECIFIC PRODUCT CATEGORY from the Product Brief. Reference the actual `product_brief.category` in all category baseline questions (e.g., if Product Brief category is "Business laptops — ₹80K-1L segment", ask about that specific segment, not a generic placeholder). These pre-scores enable persuasion lift calculation.
+
+### Per-Territory Sections (repeated for each territory in rotated order)
+3. **S3_territory_N** (1 Q): Territory exposure — present the full territory description and capture first impressions (open_text, 2-3 sentences).
+4. **S4_unaided_recall_N** (2 Qs): "What do you remember about what you just saw?" and "What was it trying to say?" — both open_text. Must be asked BEFORE brand is mentioned.
+5. **S5_aided_branding_N** (3 Qs): "Which brand do you think this was for?" (single_select with brand + competitors as options), "How clearly did the idea connect to the brand?" (rating 1-5), "Could another brand have used this idea?" (single_select yes/no + which brand).
+
+### KPI Module Sections (per territory, only those selected by the brand)
+Generate ONLY the modules listed in "Selected KPI Modules" above:
+
+**M1_distinctiveness_N** (5 Qs if selected):
+- "How different is this idea from other {category} advertising?" (rating 1-5, metric_id: distinctive_impact)
+- "How fresh and new does this idea feel?" (rating 1-5, metric_id: freshness)
+- "How memorable is this idea?" (rating 1-5, metric_id: memorability)
+- "Have you seen anything like this before?" (single_select, metric_id: originality)
+- "How eye-catching would this be if you encountered it?" (rating 1-5, metric_id: stopping_power_m1)
+
+**M2_message_clarity_N** (4 Qs if selected):
+- "What is the main message of this idea?" (open_text, metric_id: message_takeout)
+- "How clear was the main message?" (rating 1-5, metric_id: communication_awareness)
+- "Was there anything confusing?" (open_text, metric_id: confusion_check)
+- "What specific claim do you remember?" (open_text, metric_id: claim_recall)
+
+**M3_relevance_resonance_N** (4 Qs if selected):
+- "How relevant is this idea to your life?" (rating 1-5, metric_id: relevance)
+- "Does this address a real need you have?" (rating 1-5, metric_id: need_alignment)
+- "How enjoyable did you find this idea?" (rating 1-5, metric_id: enjoyment)
+- "Would you stop and pay attention to this?" (rating 1-5, metric_id: stopping_power)
+
+**M4_emotional_signature_N** (8 Qs if selected):
+- Rate each descriptor on 1-5 scale. Group into one matrix-style question per quadrant:
+  - Active-Positive: Involving, Interesting, Distinctive (metric_id: emotional_active_positive)
+  - Passive-Positive: Soothing, Pleasant, Gentle (metric_id: emotional_passive_positive)
+  - Passive-Negative: Weak, Dull, Boring (metric_id: emotional_passive_negative)
+  - Active-Negative: Irritating, Unpleasant, Disturbing (metric_id: emotional_active_negative)
+
+**M5_brand_fit_persuasion_N** (5 Qs if selected):
+- "How well does this idea fit with what you expect from {brand_name}?" (rating 1-5, metric_id: brand_fit)
+- "After seeing this idea, how likely are you to consider {brand_name}?" (rating 1-5, metric_id: persuasion_lift)
+- "Which brand personality traits does this idea convey?" (multi_select from brand_personality_traits, metric_id: personality_match)
+- "Would this idea make you think more positively about {brand_name}?" (rating 1-5, metric_id: affinity)
+- "How likely would you be to recommend {brand_name} after seeing this?" (rating 1-5, metric_id: advocacy)
+
+**M6_competitive_misattribution_N** (3 Qs if selected):
+- "If you didn't know, which brand would you guess created this?" (single_select from competitive_set + brand, metric_id: misattribution_risk)
+- "How ownable is this idea by {brand_name} vs competitors?" (rating 1-5, metric_id: ownability)
+- "Could a competitor have created something similar?" (single_select + open_text, metric_id: competitive_overlap)
+
+### Classification
+6. **S8_demographics** (4 Qs): Standard demographics. Must be LAST section.
+
+## Output Format
+Return ONLY a JSON object following the existing questionnaire schema:
+
+```json
+{{
+  "questionnaire_id": "<uuid>",
+  "study_id": "{study_id}",
+  "version": 1,
+  "estimated_duration_minutes": <calculated>,
+  "total_questions": <count>,
+  "sections": [
+    {{
+      "section_id": "<e.g. S1_screening>",
+      "section_name": "<display name>",
+      "questions": [
+        {{
+          "question_id": "<unique id>",
+          "section": "<section_id>",
+          "metric_id": "<metric_id or null>",
+          "question_text": {{"en": "<question text>"}},
+          "question_type": "<rating|single_select|multi_select|open_text>",
+          "scale": {{
+            "type": "<likert_5|categorical|semantic_differential>",
+            "options": [
+              {{"value": 1, "label": "<option text>"}},
+              {{"value": 2, "label": "<option text>"}}
+            ]
+          }},
+          "randomize": false,
+          "required": true,
+          "position_in_section": <1-based>
+        }}
+      ]
+    }}
+  ],
+  "quality_controls": {{
+    "attention_check": {{"question_id": "attn_1", "correct_answer": "..."}},
+    "speeder_threshold_seconds": 120,
+    "straightline_detection": true,
+    "open_end_quality_check": true
+  }},
+  "survey_logic": {{
+    "concept_rotation": "latin_square",
+    "concepts_per_respondent": {territories_per_respondent},
+    "randomize_within_section": [],
+    "skip_logic": []
+  }}
+}}
+```
+
+## Rules
+0. **Scale options format** — EVERY question of type single_select, multi_select, rating, or ranking MUST have `scale.options` as an array of objects `{{"value": <int 1..N>, "label": "<display text>"}}`. Never use plain strings. For likert_5 rating scales, provide 5 options with values 1-5 and descriptive labels (e.g., "Strongly disagree" to "Strongly agree"). For categorical single_select (e.g., purchase intent), use values 1-5 with labels like "Definitely would buy", "Probably would buy", etc.
+1. Section IDs for per-territory sections MUST follow the pattern: S3_territory_1, S4_unaided_recall_1, S5_aided_branding_1, M1_distinctiveness_1, etc.
+2. Question IDs must be unique across the entire questionnaire.
+3. metric_id must be set on all KPI module questions and S2 pre-exposure questions.
+4. Per-territory sections are repeated for each territory (1 to {num_territories}).
+5. S4 unaided recall MUST come before S5 aided branding (unaided before aided).
+6. Generate ONLY the KPI modules listed in the "Selected KPI Modules" input.
+7. Return ONLY valid JSON.

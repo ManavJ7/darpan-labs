@@ -268,6 +268,30 @@ class ConceptBoardService:
         return self._concept_to_response(concept)
 
     # ------------------------------------------------------------------
+    # delete_concept
+    # ------------------------------------------------------------------
+
+    async def delete_concept(
+        self,
+        study_id: uuid.UUID,
+        concept_id: uuid.UUID,
+        db: AsyncSession,
+    ) -> dict:
+        """Delete a concept. Step 2 must not be locked."""
+        study = await self._get_study(study_id, db)
+        if StudyStateMachine.is_step_locked(study, 2):
+            raise ValueError("Cannot delete concept: step 2 is locked.")
+
+        result = await db.execute(select(Concept).where(Concept.id == concept_id))
+        concept = result.scalar_one_or_none()
+        if not concept:
+            raise ValueError(f"Concept {concept_id} not found")
+
+        await db.delete(concept)
+        await db.commit()
+        return {"deleted": True, "concept_id": str(concept_id)}
+
+    # ------------------------------------------------------------------
     # update_concept
     # ------------------------------------------------------------------
 

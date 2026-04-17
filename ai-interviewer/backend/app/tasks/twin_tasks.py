@@ -329,6 +329,10 @@ def run_simulation_pipeline(self, job_id: str, simulation_id: str):
             snapshot = sim_run.questionnaire_snapshot
             questionnaire = snapshot.get("questions", [])
             concepts = snapshot.get("concepts", [])
+            # Present only for ad_creative_testing — the Product Brief is passed
+            # into every batch's prompt as per-study context but never written
+            # to the twin's persistent memory.
+            product_brief = snapshot.get("product_brief")
             inference_mode = sim_run.inference_mode
 
             # Load ChromaDB and KG
@@ -351,6 +355,7 @@ def run_simulation_pipeline(self, job_id: str, simulation_id: str):
                     participant_id=pid,
                     collection=collection,
                     kg=kg,
+                    product_brief=product_brief,
                 )
             )
 
@@ -536,22 +541,30 @@ def run_validation_report(self, job_id: str, report_id: str):
                 skip_themes=True,
             )
 
-            # Write JSON files to the dove-dashboard data directory
-            dashboard_data_dir = (
-                Path(settings.twin_data_dir).parent.parent
-                / "validation-dashboard" / "dove-dashboard" / "src" / "data"
-            )
-            dashboard_data_dir.mkdir(parents=True, exist_ok=True)
-
-            with open(dashboard_data_dir / "dashboard-data.json", "w") as f:
-                json.dump(result, f, indent=2, default=str)
-            logger.info(f"Wrote dashboard-data.json to {dashboard_data_dir}")
-
-            # Write individual validation if present
-            if "individual_validation" in result:
-                with open(dashboard_data_dir / "individual-validation-data.json", "w") as f:
-                    json.dump(result["individual_validation"], f, indent=2, default=str)
-                logger.info("Wrote individual-validation-data.json")
+            # NOTE: we used to write dashboard-data.json / individual-validation-data.json
+            # to a sibling validation-dashboard/ directory on local disk. That path
+            # doesn't exist in a containerized deploy (and even locally it only served
+            # a specific Dove demo dashboard). Result is stored directly in
+            # `validation_reports.report_data` JSONB below; the frontend reads it via
+            # the `/validation-report/{id}` endpoint and no longer needs the file.
+            # Keep the full result in a local file only when WORKER_WRITE_DASHBOARD_FILES
+            # is set (opt-in, for the legacy Dove dashboard during local dev).
+            if os.environ.get("WORKER_WRITE_DASHBOARD_FILES") == "true":
+                try:
+                    dashboard_data_dir = (
+                        Path(settings.twin_data_dir).parent.parent
+                        / "validation-dashboard" / "dove-dashboard" / "src" / "data"
+                    )
+                    dashboard_data_dir.mkdir(parents=True, exist_ok=True)
+                    with open(dashboard_data_dir / "dashboard-data.json", "w") as f:
+                        json.dump(result, f, indent=2, default=str)
+                    logger.info(f"Wrote dashboard-data.json to {dashboard_data_dir}")
+                    if "individual_validation" in result:
+                        with open(dashboard_data_dir / "individual-validation-data.json", "w") as f:
+                            json.dump(result["individual_validation"], f, indent=2, default=str)
+                        logger.info("Wrote individual-validation-data.json")
+                except Exception as e:
+                    logger.warning(f"Optional dashboard file write failed (ignoring): {e}")
 
             report.status = "completed"
             report.report_data = result
