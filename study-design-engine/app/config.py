@@ -1,3 +1,4 @@
+from pydantic import field_validator
 from pydantic_settings import BaseSettings
 
 
@@ -25,6 +26,24 @@ class Settings(BaseSettings):
     CORS_ORIGINS: str = "http://localhost:3099,http://localhost:3001,http://localhost:3000"
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
+
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def _normalize_db_url(cls, v: str) -> str:
+        """Force the async driver prefix regardless of how the URL is supplied.
+
+        Railway's Postgres add-on emits `postgres://` (historical Heroku format);
+        SQLAlchemy async needs `postgresql+asyncpg://`. Rewrite at load time so
+        the app + Alembic both work without the operator remembering to hand-edit
+        the connection string.
+        """
+        if not v:
+            return v
+        if v.startswith("postgres://"):
+            return "postgresql+asyncpg://" + v[len("postgres://") :]
+        if v.startswith("postgresql://") and "+asyncpg" not in v:
+            return "postgresql+asyncpg://" + v[len("postgresql://") :]
+        return v
 
     @property
     def allowed_emails_set(self) -> set[str]:
