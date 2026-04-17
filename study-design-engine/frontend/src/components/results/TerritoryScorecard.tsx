@@ -67,7 +67,7 @@ export function TerritoryScorecard({ territories, productBrief }: TerritoryScore
   // Build emotional radar scores from all emotional profile data
   const radarScores: Record<string, number> = {};
   for (const [, descriptors] of Object.entries(t.emotionalProfile)) {
-    for (const [key, val] of Object.entries(descriptors)) {
+    for (const [key, val] of Object.entries(descriptors as Record<string, number>)) {
       radarScores[key] = val;
     }
   }
