@@ -44,12 +44,14 @@ interface QuestionnaireViewProps {
 
 // ── Helpers ──────────────────────────────────────────────────────────
 
-/** Section IDs that are always pre-concept (shown once before any concept). */
+/** Section IDs that are always pre-concept / pre-exposure (shown once upfront). */
 const PRE_CONCEPT_IDS = new Set([
   "S1_screening", "S2_category_context", "S1_category_screening",
+  // Ad-creative: baseline questions asked BEFORE any territory is shown
+  "S2_pre_exposure_baseline",
 ]);
 
-/** Section IDs that are always post-concept (shown once after all concepts). */
+/** Section IDs that are always post-concept / post-exposure (after all territories). */
 const POST_CONCEPT_IDS = new Set([
   "S8_demographics", "S7_comparative_pricing",
 ]);
@@ -92,28 +94,45 @@ function classifySections(sections: QuestionnaireSection[], numConcepts: number)
   const conceptGroups: ConceptGroup[] = [];
   const postConcept: QuestionnaireSection[] = [];
 
-  // Detect per-concept format: sections with IDs like S2_concept_1, S3_concept_2, etc.
-  const conceptSectionRegex = /^S\d+_concept_(\d+)$/;
-  const hasPerConceptSections = sections.some(
-    (s) => conceptSectionRegex.test(s.section_id)
+  // Detect per-item format. Two shapes we support:
+  //   concept_testing:  S2_concept_1, S3_concept_2, ...          (middle + trailing idx)
+  //   ad_creative:      S3_territory_1, S4_unaided_recall_1,
+  //                     M1_distinctiveness_1, M2_message_clarity_1, ...
+  //                     (any prefix, trailing _N = which territory)
+  // Shared rule: if a section ID ends with _<digits> and isn't in PRE/POST
+  // sets, the trailing number is the concept/territory index (1-based).
+  // Multiple sections can share an index — all the _1 sections are Territory 1.
+  const perItemRegex = /_(\d+)$/;
+  const hasPerItemSections = sections.some(
+    (s) =>
+      !PRE_CONCEPT_IDS.has(s.section_id) &&
+      !POST_CONCEPT_IDS.has(s.section_id) &&
+      perItemRegex.test(s.section_id),
   );
 
-  if (hasPerConceptSections) {
+  if (hasPerItemSections) {
+    const groupsByIdx: Map<number, QuestionnaireSection[]> = new Map();
     for (const s of sections) {
-      const conceptMatch = s.section_id.match(conceptSectionRegex);
       if (PRE_CONCEPT_IDS.has(s.section_id)) {
         preConcept.push(s);
-      } else if (POST_CONCEPT_IDS.has(s.section_id)) {
+        continue;
+      }
+      if (POST_CONCEPT_IDS.has(s.section_id)) {
         postConcept.push(s);
-      } else if (conceptMatch) {
-        const idx = parseInt(conceptMatch[1], 10) - 1;
-        conceptGroups.push({
-          conceptIndex: idx,
-          sections: [{ ...s, _virtualConceptIndex: idx }],
-        });
+        continue;
+      }
+      const m = s.section_id.match(perItemRegex);
+      if (m) {
+        const idx = parseInt(m[1], 10) - 1;
+        const arr = groupsByIdx.get(idx) || [];
+        arr.push({ ...s, _virtualConceptIndex: idx });
+        groupsByIdx.set(idx, arr);
       } else {
         postConcept.push(s);
       }
+    }
+    for (const idx of [...groupsByIdx.keys()].sort((a, b) => a - b)) {
+      conceptGroups.push({ conceptIndex: idx, sections: groupsByIdx.get(idx)! });
     }
   } else {
     // Old / flat format — auto-detect which sections are per-concept
