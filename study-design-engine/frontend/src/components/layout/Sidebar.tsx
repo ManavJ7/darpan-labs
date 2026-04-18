@@ -1,26 +1,13 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import {
-  LayoutDashboard,
-  Users,
-  BarChart3,
-  Settings,
-} from "lucide-react";
+import { Users, LogOut } from "lucide-react";
 import { useAuthStore } from "@/store/authStore";
 import { cn } from "@/lib/utils";
 
-interface NavItem {
-  icon: typeof LayoutDashboard;
-  href: string;
-  label: string;
-}
-
-const navItems: NavItem[] = [
-  { icon: LayoutDashboard, href: "/", label: "Dashboard" },
-  { icon: Users, href: "/", label: "Studies" },
-  { icon: BarChart3, href: "#", label: "Analytics" },
-];
+// Keep the nav lean — only items that actually go somewhere. Add more as
+// those pages come online; don't leave dead icons hanging around.
+const navItems = [{ icon: Users, href: "/", label: "Studies" }];
 
 export function Sidebar({ activePage = "Studies" }: { activePage?: string }) {
   const router = useRouter();
@@ -28,7 +15,7 @@ export function Sidebar({ activePage = "Studies" }: { activePage?: string }) {
 
   const handleLogout = () => {
     logout();
-    router.push("/login");
+    router.replace("/");
   };
 
   const getInitials = () => {
@@ -43,21 +30,17 @@ export function Sidebar({ activePage = "Studies" }: { activePage?: string }) {
 
   return (
     <aside className="fixed left-0 top-0 bottom-0 w-[60px] bg-darpan-surface border-r border-darpan-border flex flex-col items-center py-4 z-50">
-      {/* Logo */}
       <div className="w-9 h-9 rounded-lg bg-darpan-lime/10 border border-darpan-lime/20 flex items-center justify-center mb-8">
-        <span className="text-darpan-lime text-xs font-bold tracking-tight">
-          DL
-        </span>
+        <span className="text-darpan-lime text-xs font-bold tracking-tight">DL</span>
       </div>
 
-      {/* Nav icons */}
       <nav className="flex-1 flex flex-col items-center gap-1">
         {navItems.map((item) => {
           const isActive = item.label === activePage;
           return (
             <button
               key={item.label}
-              onClick={() => item.href !== "#" && router.push(item.href)}
+              onClick={() => router.push(item.href)}
               className={cn(
                 "relative w-10 h-10 rounded-lg flex items-center justify-center transition-colors",
                 isActive
@@ -75,32 +58,23 @@ export function Sidebar({ activePage = "Studies" }: { activePage?: string }) {
         })}
       </nav>
 
-      {/* Bottom — Settings + Avatar */}
-      <div className="flex flex-col items-center gap-3">
-        <button
-          className="w-10 h-10 rounded-lg flex items-center justify-center text-white/30 hover:text-white/60 hover:bg-white/5 transition-colors"
-          title="Settings"
-        >
-          <Settings className="w-[18px] h-[18px]" />
-        </button>
-
-        {user && (
-          <button onClick={handleLogout} title="Sign out">
-            {user.picture_url ? (
-              <img
-                src={user.picture_url}
-                alt={user.name || ""}
-                className="w-8 h-8 rounded-full"
-                referrerPolicy="no-referrer"
-              />
-            ) : (
-              <div className="w-8 h-8 rounded-full bg-darpan-elevated border border-darpan-border flex items-center justify-center text-[10px] font-semibold text-white/70">
-                {getInitials()}
-              </div>
-            )}
+      {user && (
+        <div className="flex flex-col items-center gap-2">
+          <button
+            onClick={handleLogout}
+            title={`Signed in as ${user.name || user.email} — click to sign out`}
+            className="w-10 h-10 rounded-lg flex items-center justify-center text-white/30 hover:text-white hover:bg-white/5 transition-colors"
+          >
+            <LogOut className="w-[18px] h-[18px]" />
           </button>
-        )}
-      </div>
+          <div
+            className="w-8 h-8 rounded-full bg-darpan-elevated border border-darpan-border flex items-center justify-center text-[10px] font-semibold text-white/70"
+            title={user.name || user.email}
+          >
+            {getInitials()}
+          </div>
+        </div>
+      )}
     </aside>
   );
 }

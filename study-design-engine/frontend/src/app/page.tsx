@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Plus, Play, FlaskConical, Megaphone, LogIn, ArrowRight } from "lucide-react";
+import { Plus, Play, FlaskConical, Megaphone, LogIn, LogOut, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { useStudyStore } from "@/store/studyStore";
@@ -13,7 +13,12 @@ import type { StudyType, StudyResponse } from "@/types/study";
 export default function LandingPage() {
   const router = useRouter();
   const { studies, fetchStudies, createStudy } = useStudyStore();
-  const { user } = useAuthStore();
+  const { user, logout } = useAuthStore();
+
+  const handleLogout = () => {
+    logout();
+    router.replace("/");
+  };
 
   const [studyType, setStudyType] = useState<StudyType>("concept_testing");
   const [question, setQuestion] = useState("");
@@ -94,6 +99,9 @@ export default function LandingPage() {
           </div>
           {user ? (
             <div className="flex items-center gap-3">
+              <span className="text-xs text-white/50 hidden sm:inline">
+                {user.name || user.email}
+              </span>
               {user.picture_url ? (
                 <img
                   src={user.picture_url}
@@ -106,6 +114,14 @@ export default function LandingPage() {
                   {getInitials()}
                 </div>
               )}
+              <button
+                onClick={handleLogout}
+                title="Sign out"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-darpan-surface border border-darpan-border text-white/60 hover:text-white hover:border-darpan-border-active transition-colors text-xs"
+              >
+                <LogOut className="w-3.5 h-3.5" />
+                Sign out
+              </button>
             </div>
           ) : (
             <button
@@ -398,28 +414,38 @@ interface StudyCardProps {
 }
 
 function StudyCard({ study, onClick, formatTimeAgo, badge }: StudyCardProps) {
+  const primaryText = study.title || study.question;
   return (
     <button
       onClick={onClick}
-      className="w-full flex items-center justify-between py-3 px-3 group hover:bg-white/[0.02] rounded-lg transition-colors border border-darpan-border/40"
+      className="w-full text-left p-4 group hover:bg-white/[0.03] rounded-xl transition-colors border border-darpan-border/50 hover:border-darpan-border-active"
     >
-      <div className="flex items-center gap-3 min-w-0">
-        <div className="w-1.5 h-1.5 rounded-full bg-darpan-lime/50 shrink-0" />
-        <span className="text-sm text-white/70 group-hover:text-white transition-colors truncate">
-          {study.title || study.question}
+      <div className="flex items-start justify-between gap-3 min-w-0">
+        <div className="flex-1 min-w-0 space-y-1.5">
+          <div className="flex items-center gap-2">
+            <div className="w-1.5 h-1.5 rounded-full bg-darpan-lime/60 shrink-0" />
+            {badge && (
+              <span className="text-[9px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-darpan-lime/15 text-darpan-lime shrink-0">
+                {badge}
+              </span>
+            )}
+            {study.brand_name && (
+              <span className="text-[10px] uppercase tracking-wider text-white/40">
+                {study.brand_name}
+              </span>
+            )}
+          </div>
+          <p className="text-sm text-white/80 group-hover:text-white transition-colors line-clamp-2 leading-snug">
+            {primaryText}
+          </p>
           {study.category && (
-            <span className="text-white/25"> &mdash; {study.category}</span>
+            <p className="text-xs text-white/30">{study.category}</p>
           )}
+        </div>
+        <span className="text-xs text-white/30 shrink-0 pt-1">
+          {formatTimeAgo(study.created_at)}
         </span>
-        {badge && (
-          <span className="text-[9px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-darpan-lime/15 text-darpan-lime shrink-0">
-            {badge}
-          </span>
-        )}
       </div>
-      <span className="text-xs text-white/20 shrink-0 ml-4">
-        {formatTimeAgo(study.created_at)}
-      </span>
     </button>
   );
 }
