@@ -174,8 +174,13 @@ export default function SimulationView() {
         </div>
       )}
 
-      {/* Validation Dashboard — only for the Dove study (has real participant data) */}
-      {completedResults.length > 0 && study?.brand_name?.toLowerCase() === "dove" && (
+      {/* Validation Dashboard — only for the Dove study (has real participant
+          data). Also hide on public demo studies since the visitor can't
+          trigger a new report (require_study_owner blocks public studies) and
+          the buttons would just show "Missing or invalid authorization". */}
+      {completedResults.length > 0 &&
+        study?.brand_name?.toLowerCase() === "dove" &&
+        !study?.is_public && (
         <div className="rounded-lg border border-cyan-800/50 bg-cyan-950/20 p-5">
           <div className="flex items-center justify-between">
             <div>
