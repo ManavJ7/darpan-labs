@@ -22,8 +22,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Darpan Labs",
-  description: "AI-powered study design run against digital twins of your audience",
+  title: "Study Design Engine — Darpan Labs",
+  description: "AI-powered study design workflow",
 };
 
 // Without this, mobile Safari/Chrome render at a ~980px virtual width and
