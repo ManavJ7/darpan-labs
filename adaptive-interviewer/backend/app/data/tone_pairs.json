@@ -1,0 +1,89 @@
+{
+  "prosumer": {
+    "pair_a": {
+      "prompt": "I'm going to show you two short descriptions of laptop ads. Read both, then tell me which one feels more like a brand you'd take seriously — and why.",
+      "ad_a": {
+        "id": "A",
+        "label": "Dry / witty challenger",
+        "description": "A minimalist ad. No music. A single sentence: 'It's a laptop. Not a lifestyle.' Below: a spec sheet, a three-year warranty, and a price that undercuts the competition by 30%."
+      },
+      "ad_b": {
+        "id": "B",
+        "label": "Earnest / aspirational hero",
+        "description": "A montage of people creating and collaborating — a writer on a train, a designer in a cafe, a video editor in an apartment. Uplifting score. Final line: 'Built for the people who build the future.'"
+      }
+    },
+    "pair_b": {
+      "prompt": "Here's a second pair. Same instructions — which feels more like a brand you'd take seriously, and why.",
+      "ad_a": {
+        "id": "C",
+        "label": "Serious / authoritative",
+        "description": "A laptop sits on a desk in a quiet corporate office. Calm voice-over lists security features, enterprise support hours, and a five-year roadmap. Tagline: 'Trusted by 47 of the Fortune 100.'"
+      },
+      "ad_b": {
+        "id": "D",
+        "label": "Playful / irreverent peer",
+        "description": "Fast cuts. A developer throws her laptop into a bag, drops it twice, opens it at a rooftop bar, keeps coding. Text on screen: 'Relax. So is it.' No voice-over."
+      }
+    },
+    "projective_close": "A colleague at another company asks you whether they should buy a Lenovo or a Dell for their own work. What do you tell them?"
+  },
+  "smb_it": {
+    "pair_a": {
+      "prompt": "I'm going to show you two short laptop ads. Read both, then tell me which one feels more like a brand you'd take seriously for your fleet — and why.",
+      "ad_a": {
+        "id": "A",
+        "label": "Pragmatic reliability",
+        "description": "A small-business owner talks directly to camera: 'Last year, I lost three days of revenue to a laptop failure. This year, I'm not.' Cut to product, three-year onsite warranty callout, and a price. No music."
+      },
+      "ad_b": {
+        "id": "B",
+        "label": "Partnership narrative",
+        "description": "A reseller and a client CFO shake hands. Voice-over: 'We don't just sell you laptops. We build the fleet that builds your business.' Warm color grading, soft piano."
+      }
+    },
+    "pair_b": {
+      "prompt": "Here's a second pair. Same question — which feels more like a brand you'd take seriously, and why.",
+      "ad_a": {
+        "id": "C",
+        "label": "Operator-focused",
+        "description": "A fast-cut montage of IT-admin workflows — imaging, zero-touch deployment, single-pane-of-glass management dashboard. Tagline: 'For the person everyone calls when it breaks.'"
+      },
+      "ad_b": {
+        "id": "D",
+        "label": "Employee-pull",
+        "description": "Employees unboxing laptops, smiling, getting to work. Focus on the end-user experience. Tagline: 'Your team will thank you.'"
+      }
+    },
+    "projective_close": "A peer who runs IT at another small company is about to make their next laptop purchase. They ask you what they should buy and why. What do you tell them?"
+  },
+  "consumer": {
+    "pair_a": {
+      "prompt": "I'm going to show you two short laptop ads. Read both, then tell me which one feels more like a brand you'd actually buy — and why.",
+      "ad_a": {
+        "id": "A",
+        "label": "Aspirational lifestyle",
+        "description": "A person opens a sleek laptop on a cafe table. Cut to travel, photography, writing, coffee, plants. Warm music. Tagline: 'Make room for the life you want.'"
+      },
+      "ad_b": {
+        "id": "B",
+        "label": "Value-forward",
+        "description": "Plain white background. Laptop rotating. Text appears: 'All the things you actually need. None of the ones you don't. $799.' No music."
+      }
+    },
+    "pair_b": {
+      "prompt": "Here's a second pair. Same question — which one feels more like a brand you'd actually buy, and why.",
+      "ad_a": {
+        "id": "C",
+        "label": "Family / practical",
+        "description": "A mom hands a laptop to her teen for school. Cut to homework, video calls, a kitchen scene. Voice-over: 'Built for real life.' Gentle music."
+      },
+      "ad_b": {
+        "id": "D",
+        "label": "Playful / self-expression",
+        "description": "Fast cuts. Colors. A creator, a gamer, a student, a grandparent on a video call — all using laptops in very different ways. Tagline: 'However you use it, it's yours.'"
+      }
+    },
+    "projective_close": "A friend is about to buy their first laptop in five years. They ask you what they should get. What do you tell them, and why?"
+  }
+}

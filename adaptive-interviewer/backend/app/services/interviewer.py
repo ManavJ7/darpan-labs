@@ -32,8 +32,12 @@ def _load_prompt(name: str) -> str:
 
 
 SYSTEM_PROMPT = _load_prompt("interviewer_system.md")
+_PHASE3_EXTRAS = _load_prompt("phase3_variants.md")
 PHASE_EXTRAS = {
     "phase1": _load_prompt("phase1_preamble.md"),
+    "phase3a": _PHASE3_EXTRAS,
+    "phase3b": _PHASE3_EXTRAS,
+    "phase3c": _PHASE3_EXTRAS,
 }
 
 

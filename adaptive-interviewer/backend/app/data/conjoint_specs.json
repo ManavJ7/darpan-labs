@@ -1,0 +1,47 @@
+{
+  "prosumer": {
+    "attributes": {
+      "brand":          { "type": "nominal", "levels": ["Lenovo", "Dell", "HP", "Apple", "Microsoft Surface"] },
+      "price_usd":      { "type": "numeric", "levels": [1000, 1400, 1800, 2400] },
+      "battery_hours":  { "type": "numeric", "levels": [8, 12, 18] },
+      "weight_kg":      { "type": "numeric", "levels": [1.0, 1.4, 1.8] },
+      "ram_gb":         { "type": "numeric", "levels": [16, 32, 64] },
+      "warranty":       { "type": "nominal", "levels": ["1 yr basic", "3 yr onsite", "3 yr onsite + accidental"] }
+    },
+    "n_sets": 8,
+    "alternatives_per_set": 3,
+    "include_none_on_holdout": true,
+    "scenario": "Here are three laptops you could realistically buy for yourself for work. Which would you actually choose?",
+    "display_units": { "price_usd": "USD", "battery_hours": "hr", "weight_kg": "kg", "ram_gb": "GB" }
+  },
+  "smb_it": {
+    "attributes": {
+      "brand":           { "type": "nominal", "levels": ["Lenovo", "Dell", "HP", "Apple", "Microsoft Surface"] },
+      "unit_price_usd":  { "type": "numeric", "levels": [800, 1100, 1400, 1800] },
+      "warranty":        { "type": "nominal", "levels": ["1 yr basic", "3 yr onsite", "3 yr onsite + accidental", "4 yr premium"] },
+      "deployment":      { "type": "nominal", "levels": ["None", "Imaging only", "Imaging + staging + shipping"] },
+      "support_sla":     { "type": "nominal", "levels": ["Next-business-day", "4-hour onsite", "24x7 dedicated"] },
+      "mgmt_tooling":    { "type": "nominal", "levels": ["None", "Included", "Included + premium security"] }
+    },
+    "n_sets": 8,
+    "alternatives_per_set": 3,
+    "include_none_on_holdout": true,
+    "scenario": "You're buying 25 laptops for your team. Which of these three offers would you choose?",
+    "display_units": { "unit_price_usd": "USD per unit" }
+  },
+  "consumer": {
+    "attributes": {
+      "brand":          { "type": "nominal", "levels": ["Lenovo", "Dell", "HP", "Apple", "Acer"] },
+      "price_usd":      { "type": "numeric", "levels": [499, 799, 1199, 1699] },
+      "screen_quality": { "type": "nominal", "levels": ["Basic FHD", "Good FHD", "Premium OLED"] },
+      "battery_hours":  { "type": "numeric", "levels": [6, 10, 15] },
+      "weight_bucket":  { "type": "nominal", "levels": ["Under 1.3 kg", "1.3 to 1.8 kg", "Over 1.8 kg"] },
+      "warranty":       { "type": "nominal", "levels": ["1 yr basic", "2 yr", "2 yr + accidental"] }
+    },
+    "n_sets": 8,
+    "alternatives_per_set": 3,
+    "include_none_on_holdout": true,
+    "scenario": "You're buying a laptop for yourself or your family. Which of these three would you actually pick?",
+    "display_units": { "price_usd": "USD", "battery_hours": "hr" }
+  }
+}

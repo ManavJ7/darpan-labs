@@ -237,3 +237,8 @@ def find_item(phase_id: str, item_id: str) -> Optional[ItemDef]:
         if item.id == item_id or item.module_code == item_id:
             return item
     return None
+
+
+# Import variant phases for their side-effects (register_phase calls).
+# Must happen at module load so the state machine sees them.
+from app.services import phase_defs_p3  # noqa: E402, F401

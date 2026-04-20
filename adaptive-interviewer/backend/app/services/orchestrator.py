@@ -17,6 +17,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.models import InterviewSession
 from app.schemas import CompleteInterviewResponse, InterviewStateResponse, InterviewerMessage
 from app.services.interviewer import Interviewer, TurnContext
+from app.services.item_injections import resolve_item_prompt
 from app.services.phase_defs import Archetype, find_item
 from app.services.state_machine import (
     ARCHETYPE_PHASE_MAP,
@@ -34,6 +35,17 @@ from app.services.turns_repo import (
     record_user_turn,
     to_records,
 )
+from app.services.widget_resolver import resolve_widget
+
+STRUCTURED_KINDS = {"conjoint", "slider_matrix", "slider_battery", "rank", "tone_pair"}
+
+
+def _clone_item_with_prompt(item, new_prompt: str):
+    """Return a shallow copy of the item with `prompt` replaced.
+    Used to inject archetype-specific text (e.g. projective close)
+    without mutating the shared ItemDef registry."""
+    import dataclasses
+    return dataclasses.replace(item, prompt=new_prompt)
 
 logger = logging.getLogger(__name__)
 
@@ -184,6 +196,11 @@ class Orchestrator:
         item = cursor.item
         assert item is not None
 
+        # Resolve any dynamic prompt injections (e.g. archetype-
+        # specific projective-close text) + materialize widget.
+        resolved_prompt = resolve_item_prompt(item, archetype=archetype)
+        resolved_widget = resolve_widget(item.widget, session.id, archetype)
+
         # Build history for the LLM (prior chat turns across all items).
         history = self._chat_history_from_turns(turns)
 
@@ -195,27 +212,62 @@ class Orchestrator:
 
         user_answer = None
         if cursor.probe_index > 0 and turns:
-            # The probe decision is keyed off the most recent user answer.
             user_turns = [t for t in turns if t.role == "user"]
             if user_turns:
                 user_answer = user_turns[-1].answer_text
 
-        ctx = TurnContext(
-            item=item,
-            history=history,
-            probe_index=cursor.probe_index,
-            phase_transition_text=transition_text,
-            archetype=archetype,
-        )
+        # Auto-advance after a structured response. The respondent
+        # submitted the widget's structured answer; mark the current
+        # item satisfied via a synthetic interviewer row and recurse
+        # to emit the NEXT item naturally.
+        if (
+            item.kind in STRUCTURED_KINDS
+            and cursor.probe_index > 0
+            and turns
+            and turns[-1].role == "user"
+            and turns[-1].answer_structured is not None
+        ):
+            idx = await next_turn_index(self.db, session.id)
+            await record_interviewer_turn(
+                self.db,
+                session_id=session.id,
+                module_code=item.module_code,
+                turn_index=idx,
+                question_text="[structured advance]",
+                phase_id=item.phase,
+                probe_index=cursor.probe_index,
+                item_satisfied=True,
+                widget=None,
+                extra_meta={"auto_advance": True},
+            )
+            return await self._emit_next_interviewer_turn(session=session)
 
-        decision = await self.interviewer.decide(ctx, user_answer)
+        # Use the item's fixed prompt verbatim for structured kinds so
+        # the widget setup isn't paraphrased by the LLM.
+        observed: list[str] = []
+        reclassify: Optional[str] = None
+        if item.kind in STRUCTURED_KINDS and cursor.probe_index == 0:
+            body = resolved_prompt or item.prompt
+            advance = False
+        else:
+            effective_item = item
+            if resolved_prompt and resolved_prompt != item.prompt:
+                effective_item = _clone_item_with_prompt(item, resolved_prompt)
+            ctx = TurnContext(
+                item=effective_item,
+                history=history,
+                probe_index=cursor.probe_index,
+                phase_transition_text=transition_text,
+                archetype=archetype,
+            )
+            decision = await self.interviewer.decide(ctx, user_answer)
+            body = decision.message
+            advance = decision.advance
+            observed = decision.observed_signals
+            reclassify = decision.reclassify_signal
+            if cursor.probe_index > item.max_probes:
+                advance = True
 
-        # Force-advance if we've exceeded max probes.
-        advance = decision.advance
-        if cursor.probe_index > item.max_probes:
-            advance = True
-
-        body = decision.message
         if prepend_text:
             body = f"{prepend_text}\n\n{body}"
 
@@ -229,24 +281,26 @@ class Orchestrator:
             phase_id=item.phase,
             probe_index=cursor.probe_index,
             item_satisfied=advance,
-            widget=item.widget,
+            widget=resolved_widget,
             extra_meta={
-                "observed_signals": decision.observed_signals,
-                "reclassify_signal": decision.reclassify_signal,
+                "observed_signals": observed,
+                "reclassify_signal": reclassify,
+                "resolved_prompt": resolved_prompt,
             },
         )
 
+        decision_observed = observed
+        decision_reclassify = reclassify
+
         # Persist observed signals into session.settings for the
         # classifier to read later without re-walking every turn.
-        if decision.observed_signals or decision.reclassify_signal:
+        if decision_observed or decision_reclassify:
             settings_blob = dict(session.settings or {})
             sig = list(settings_blob.get("signals", []))
-            sig.extend(decision.observed_signals or [])
+            sig.extend(decision_observed or [])
             settings_blob["signals"] = sig
-            if decision.reclassify_signal:
-                settings_blob.setdefault("reclassify_hints", []).append(
-                    decision.reclassify_signal
-                )
+            if decision_reclassify:
+                settings_blob.setdefault("reclassify_hints", []).append(decision_reclassify)
             session.settings = settings_blob
 
         progress_label = self._progress_label(records, archetype)
@@ -256,7 +310,7 @@ class Orchestrator:
             block=item.block,
             item_id=item.id,
             text=body,
-            widget=item.widget,
+            widget=resolved_widget,
             progress_label=progress_label,
             is_terminal=False,
         )

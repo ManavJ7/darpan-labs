@@ -1,0 +1,47 @@
+{
+  "prosumer": {
+    "brands": ["Lenovo", "Dell", "HP", "Apple", "Microsoft Surface"],
+    "attributes": [
+      "Reliable",
+      "Innovative",
+      "Premium",
+      "For people like me",
+      "Boring",
+      "Professional",
+      "Trustworthy",
+      "Good value for money"
+    ],
+    "scale": { "min": 1, "max": 7, "labels": { "1": "Strongly disagree", "4": "Neutral", "7": "Strongly agree" } },
+    "dont_know_escape": true
+  },
+  "smb_it": {
+    "brands": ["Lenovo", "Dell", "HP", "Apple", "Microsoft Surface"],
+    "attributes": [
+      "Reliable over 3+ years",
+      "Good support experience",
+      "Easy to deploy at scale",
+      "Trustworthy for business",
+      "Good value for money",
+      "Modern / current",
+      "What my employees want",
+      "Safe choice for my career"
+    ],
+    "scale": { "min": 1, "max": 7, "labels": { "1": "Strongly disagree", "4": "Neutral", "7": "Strongly agree" } },
+    "dont_know_escape": true
+  },
+  "consumer": {
+    "brands": ["Lenovo", "Dell", "HP", "Apple", "Acer"],
+    "attributes": [
+      "Reliable",
+      "Cool / attractive",
+      "Premium / high-end",
+      "For people like me",
+      "Good value for money",
+      "Trustworthy",
+      "Fun / exciting",
+      "Something I'd be proud to own"
+    ],
+    "scale": { "min": 1, "max": 7, "labels": { "1": "Strongly disagree", "4": "Neutral", "7": "Strongly agree" } },
+    "dont_know_escape": true
+  }
+}
