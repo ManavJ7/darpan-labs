@@ -1,0 +1,67 @@
+version: "3.8"
+
+# Standalone docker-compose for the adaptive-interviewer module.
+# Shares the same Postgres used by ai-interviewer — if that module is
+# already running, skip the `db` service and point DATABASE_URL at the
+# existing instance.
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: darpan-db-adaptive
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: darpan
+      POSTGRES_DB: darpan
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: adaptive-backend
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:darpan@db:5432/darpan
+      - DEBUG=true
+      - ENVIRONMENT=development
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - LLM_PROVIDER=${LLM_PROVIDER:-openai}
+      - LLM_MODEL=${LLM_MODEL:-gpt-4-turbo-preview}
+      - LLM_CLASSIFIER_MODEL=${LLM_CLASSIFIER_MODEL:-gpt-4-turbo-preview}
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8002 --reload
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: adaptive-frontend
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://localhost:8002
+    ports:
+      - "3002:3002"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - backend
+    command: npm run dev
+
+volumes:
+  postgres_data:

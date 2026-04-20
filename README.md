@@ -4,13 +4,14 @@ A complete digital twin platform for consumer research. The platform enables cre
 
 ## Modules
 
-This repository contains three independent modules. Each module is self-contained with its own dependencies, configuration, and run instructions.
+This repository contains four independent modules. Each module is self-contained with its own dependencies, configuration, and run instructions.
 
 ```
 darpan-labs-V2/
-├── ai-interviewer/         # Module 1: AI Interview Platform
+├── ai-interviewer/         # Module 1: AI Interview Platform (M1-M8, voice+text)
 ├── study-design-engine/    # Module 2: Research Study Designer
-└── twin-generator/         # Module 3: Digital Twin Pipeline
+├── twin-generator/         # Module 3: Digital Twin Pipeline
+└── adaptive-interviewer/   # Module 4: Adaptive AI Interviewer (laptop category, digital-twin capture)
 ```
 
 ---
@@ -71,6 +72,26 @@ The final questionnaire is used by the Twin Generator for simulation.
 **Tech:** Python scripts + LiteLLM + ChromaDB + NetworkX + sentence-transformers
 
 **Run:** `cd twin-generator && pip install -r requirements.txt && python scripts/orchestrator.py`
+
+---
+
+### 4. Adaptive Interviewer (`adaptive-interviewer/`)
+
+**What:** A 60-minute text-administered adaptive AI interview for digital-twin capture in the laptop category. Silently classifies respondents into one of three archetypes (prosumer, SMB IT buyer, consumer) and routes through archetype-specific JTBD, conjoint, brand, and tone blocks before a universal BFI-2-S personality + PVQ-10 values tail.
+
+**How it works:**
+1. **Phase 1 — Universal Preamble (10 min):** Six open items (P1-P6) capture role, device landscape, last-purchase episode, decision unit, process formality, and engagement.
+2. **Phase 2 — Silent Classification:** LLM classifier emits archetype probability vector; disambiguation prompts when confidence < 0.50.
+3. **Phase 3 — Variant Body (33 min):** JTBD narrative (8-9 items) + choice-based conjoint (8 sets × 3 alternatives) + brand-attribute slider lattice + tone-pair + projective close. Attribute sets and ad descriptions differ per archetype.
+4. **Phase 4 — Universal Tail (15 min):** BFI-2-S (30 items) + PVQ-10 (10 items) + top-5 forced ranking on 10 aspirational adjectives + meta-feedback close.
+
+Produces a structured per-respondent JSON object (`context`, `archetype`, `jtbd`, `conjoint` with estimated part-worths + WTP, `brand_lattice`, `personality`, `values`, `identity`, `tone_preference`, `projective`, `qa`) persisted to the `adaptive_outputs` table.
+
+**Tech:** FastAPI (Python) + Next.js 14 (TypeScript) + PostgreSQL (shares `interview_sessions`/`interview_modules`/`interview_turns` tables with `ai-interviewer`) + LiteLLM (provider-agnostic)
+
+**Run:** `cd adaptive-interviewer && docker-compose up`
+
+**Ports:** Backend :8002, Frontend :3002
 
 ---
 

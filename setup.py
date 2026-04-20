@@ -178,6 +178,55 @@ def main():
     Base.metadata.create_all(engine)
     print("  [OK] AI Interviewer + Twin Pipeline tables created")
 
+    # Adaptive Interviewer tables — the module shares interview_sessions /
+    # interview_modules / interview_turns (already created above) and only
+    # adds two new tables. Create them via raw DDL to avoid mixing two
+    # SQLAlchemy Base registries in one process.
+    with engine.begin() as conn:
+        conn.execute(text("""
+            CREATE TABLE IF NOT EXISTS adaptive_classifications (
+                id UUID PRIMARY KEY,
+                session_id UUID NOT NULL REFERENCES interview_sessions(id) ON DELETE CASCADE,
+                sequence_index INTEGER NOT NULL DEFAULT 0,
+                probs JSONB NOT NULL,
+                primary_archetype VARCHAR(20) NOT NULL,
+                secondary_archetype VARCHAR(20),
+                is_hybrid BOOLEAN NOT NULL DEFAULT false,
+                is_enterprise_flag BOOLEAN NOT NULL DEFAULT false,
+                rationale TEXT,
+                trigger VARCHAR(40) NOT NULL DEFAULT 'initial',
+                created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+            )
+        """))
+        conn.execute(text(
+            "CREATE INDEX IF NOT EXISTS ix_adaptive_classifications_session "
+            "ON adaptive_classifications(session_id)"
+        ))
+        conn.execute(text("""
+            CREATE TABLE IF NOT EXISTS adaptive_outputs (
+                id UUID PRIMARY KEY,
+                session_id UUID NOT NULL UNIQUE REFERENCES interview_sessions(id) ON DELETE CASCADE,
+                context JSONB,
+                archetype JSONB,
+                jtbd JSONB,
+                conjoint JSONB,
+                brand_lattice JSONB,
+                personality JSONB,
+                values JSONB,
+                identity JSONB,
+                tone_preference JSONB,
+                projective JSONB,
+                qa JSONB,
+                created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+                updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+            )
+        """))
+        conn.execute(text(
+            "CREATE INDEX IF NOT EXISTS ix_adaptive_outputs_session "
+            "ON adaptive_outputs(session_id)"
+        ))
+    print("  [OK] Adaptive Interviewer tables created")
+
     # Create SDE tables (studies, step_versions, concepts, etc.)
     # These use a different Base, so we create them via raw SQL if they don't exist
     inspector = inspect(engine)
@@ -408,10 +457,21 @@ To start all services, open 4 terminal tabs and run:
     cd {SCRIPT_DIR / 'validation-dashboard' / 'dove-dashboard'}
     npm install && npm run dev
 
+  Tab 6 — Adaptive Interviewer Backend (port 8002):
+    cd {SCRIPT_DIR / 'adaptive-interviewer' / 'backend'}
+    pip install -r requirements.txt
+    uvicorn app.main:app --port 8002 --reload
+
+  Tab 7 — Adaptive Interviewer Frontend (port 3002):
+    cd {SCRIPT_DIR / 'adaptive-interviewer' / 'frontend'}
+    npm install && npm run dev
+
 Then open:
-  - Study Design Engine: http://localhost:3000
-  - Validation Dashboard: http://localhost:5173
-  - API Docs:             http://localhost:8001/docs
+  - Study Design Engine:   http://localhost:3000
+  - Validation Dashboard:  http://localhost:5173
+  - Adaptive Interviewer:  http://localhost:3002
+  - SDE API Docs:          http://localhost:8001/docs
+  - Adaptive API Docs:     http://localhost:8002/docs
 
 Study ID: {seed['studies'][0]['id'] if seed.get('studies') else 'N/A'}
 Participants: {len(seed.get('participants', []))}
