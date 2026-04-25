@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo, useCallback } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft, Loader2 } from "lucide-react";
+import { ArrowLeft, Loader2, BarChart3 } from "lucide-react";
 import { toast } from "sonner";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { ResultsFilters } from "@/components/results/ResultsFilters";
@@ -295,6 +295,12 @@ export default function ResultsDashboardPage() {
   const completedCount = simResults.filter((r) => r.status === "completed").length;
   const hasResults = completedCount > 0 && sections.length > 0 && concepts.length > 0;
 
+  const validationUrl = process.env.NEXT_PUBLIC_VALIDATION_URL;
+  const showValidationButton =
+    hasResults &&
+    !!validationUrl &&
+    study?.brand_name?.toLowerCase() === "dove";
+
   return (
     <div className="min-h-screen flex">
       <Sidebar activePage="Studies" />
@@ -347,13 +353,24 @@ export default function ResultsDashboardPage() {
             >
               <ArrowLeft className="w-4 h-4" />
             </Link>
-            <div>
+            <div className="flex-1 min-w-0">
               <h1 className="text-xl font-bold">Results Dashboard</h1>
               <p className="text-sm text-white/35 mt-0.5">
                 {completedCount} twin simulation{completedCount !== 1 ? "s" : ""} &middot;{" "}
                 {concepts.length} concept{concepts.length !== 1 ? "s" : ""}
               </p>
             </div>
+            {showValidationButton && (
+              <a
+                href={validationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-md bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition shrink-0"
+              >
+                <BarChart3 className="w-4 h-4" />
+                View Validation Dashboard
+              </a>
+            )}
           </div>
 
           {!hasResults ? (
