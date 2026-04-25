@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0A0A0A;
-  --color-surface: #111111;
-  --color-card: #1A1A1A;
-  --color-border: #2A2A2A;
-  --color-muted: #1A1A1A;
-  --color-primary: #C8FF00;
-  --color-secondary: #00D4FF;
-  --color-success: #00FF88;
-  --color-warning: #FFB800;
-  --color-destructive: #FF4444;
-  --color-text: #FFFFFF;
-  --color-text-secondary: #A0A0A0;
-  --color-text-muted: #666666;
+  --color-darpan-bg: #0A0A0A;
+  --color-darpan-surface: #111111;
+  --color-darpan-elevated: #1A1A1A;
+  --color-darpan-border: #2A2A2A;
+  --color-darpan-border-active: #333333;
+  --color-darpan-lime: #C8FF00;
+  --color-darpan-lime-dim: #9ACC00;
+  --color-darpan-cyan: #00D4FF;
+  --color-darpan-cyan-dim: #00A8CC;
+  --color-darpan-success: #00FF88;
+  --color-darpan-warning: #FFB800;
+  --color-darpan-error: #FF4444;
   --color-concept-1: #3B82F6;
   --color-concept-2: #10B981;
   --color-concept-3: #F59E0B;
   --color-concept-4: #EF4444;
   --color-concept-5: #8B5CF6;
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-darpan-bg);
   color: #FFFFFF;
   font-family: var(--font-sans);
   margin: 0;
@@ -38,17 +37,17 @@ body {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-bg);
+  background: var(--color-darpan-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
+  background: var(--color-darpan-border);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary);
+  background: var(--color-darpan-lime);
 }
 
 *:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--color-darpan-lime);
   outline-offset: 2px;
 }
