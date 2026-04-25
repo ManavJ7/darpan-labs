@@ -412,23 +412,6 @@ export function listTwinSimulationResults(
   return request(`/api/v1/studies/${studyId}/twin-simulation-results`);
 }
 
-export function createValidationReport(
-  studyId: string,
-  mode: "synthesis" | "comparison",
-): Promise<{ report_id: string; job_id: string; status: string }> {
-  return request(`/api/v1/studies/${studyId}/validation-report`, {
-    method: "POST",
-    body: JSON.stringify({ mode }),
-  });
-}
-
-export function getValidationReport(
-  studyId: string,
-  reportId: string,
-): Promise<ValidationReportDetail> {
-  return request(`/api/v1/studies/${studyId}/validation-report/${reportId}`);
-}
-
 export function listValidationReports(
   studyId: string,
 ): Promise<ValidationReportDetail[]> {
