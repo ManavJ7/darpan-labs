@@ -12,6 +12,7 @@ Three services in one Railway project:
 |---|---|---|
 | `sde-api` | `study-design-engine/` | FastAPI backend (port 8001 → Railway `$PORT`) |
 | `sde-frontend` | `study-design-engine/frontend/` | Next.js 16 UI (port 3000 → Railway `$PORT`) |
+| `sde-validation` | `validation-dashboard/dove-dashboard/` | Static Dove validation dashboard (Vite build served via `serve`) |
 | `postgres` | (Railway managed) | Shared DB for users + studies + twins |
 | `redis` | (Railway managed) | Celery broker + rate-limit counters |
 
@@ -70,8 +71,18 @@ Both services auto-generate `DATABASE_URL` and `REDIS_URL` env vars that other s
    | Key | Value |
    |---|---|
    | `NEXT_PUBLIC_API_URL` | `https://api.try.darpanlabs.ai` (the custom domain you'll set in step 5, **not** the `.up.railway.app` URL — it's baked into the JS bundle at build time) |
+   | `NEXT_PUBLIC_VALIDATION_URL` | `https://validation.try.darpanlabs.ai` (same build-time bake — set this before the first frontend deploy) |
 
 5. Click **Deploy**. The build will do `npm ci → npm run build → node server.js`. Takes ~2 min the first time.
+
+## 4b. Add the validation dashboard service
+
+1. **+ New** → **GitHub Repo** → same repo.
+2. **Settings** → **Source** → **Root Directory** = `validation-dashboard/dove-dashboard`. Railway will pick up `validation-dashboard/dove-dashboard/Dockerfile`.
+3. **Settings** → **Networking** → enable **Public Networking**.
+4. No environment variables needed — the dashboard is pure static (Dove JSON baked at build time).
+5. Click **Deploy**. Build does `npm ci → npm run build → serve dist`. Takes ~1 min.
+6. Once green, copy the public URL (e.g. `sde-validation-production-xxxx.up.railway.app`). Skip ahead to section 5 to wire up the custom domain `validation.try.darpanlabs.ai` the same way you did for the API and frontend.
 
 ## 5. Custom domains
 
@@ -82,6 +93,9 @@ Both services auto-generate `DATABASE_URL` and `REDIS_URL` env vars that other s
 2. Click the **frontend** service → **Settings** → **Networking** → **Custom Domains** → **Add Domain**.
    - Enter `try.darpanlabs.ai`.
    - Railway shows a different CNAME target. **Copy it.**
+3. Click the **sde-validation** service → **Settings** → **Networking** → **Custom Domains** → **Add Domain**.
+   - Enter `validation.try.darpanlabs.ai`.
+   - Railway shows a third CNAME target. **Copy it.**
 
 ### 5b. On Namecheap
 1. Log into Namecheap → **Domain List** → click **Manage** next to `darpanlabs.ai`.
@@ -91,6 +105,7 @@ Both services auto-generate `DATABASE_URL` and `REDIS_URL` env vars that other s
    |---|---|---|---|
    | CNAME | `try` | `<frontend CNAME from Railway>` | Automatic |
    | CNAME | `api.try` | `<backend CNAME from Railway>` | Automatic |
+   | CNAME | `validation.try` | `<validation CNAME from Railway>` | Automatic |
 
 3. Save.
 4. Repeat for `darpanlabs.com` if you want the same URLs working on the `.com` (optional — or set up a 301 redirect).
@@ -99,6 +114,7 @@ Both services auto-generate `DATABASE_URL` and `REDIS_URL` env vars that other s
 ### 5c. Verify
 - `https://api.try.darpanlabs.ai/health` → returns `{"status":"healthy",...}`
 - `https://try.darpanlabs.ai` → loads the landing page, shows the two Dove demo studies
+- `https://validation.try.darpanlabs.ai` → loads the Dove validation dashboard with radar charts, heatmaps, and tier rankings
 
 ## 6. Rebuild the frontend (because of the API URL)
 
