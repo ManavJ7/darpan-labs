@@ -8,12 +8,9 @@ import {
   listAvailableTwins,
   simulateTwins,
   listTwinSimulationResults,
-  createValidationReport,
-  getValidationReport,
   type AvailableTwin,
   type TwinSimulationResult,
   type SimulationJobItem,
-  type ValidationReportDetail,
 } from "@/lib/studyApi";
 
 type Tab = "twins" | "results";
@@ -27,7 +24,6 @@ export default function SimulationView() {
   const [simulating, setSimulating] = useState(false);
   const [simJobs, setSimJobs] = useState<SimulationJobItem[]>([]);
   const [expandedTwin, setExpandedTwin] = useState<string | null>(null);
-  const [validationStatus, setValidationStatus] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   const studyId = study?.id;
@@ -101,31 +97,6 @@ export default function SimulationView() {
     }
   };
 
-  const handleOpenDashboard = async (mode: "synthesis" | "comparison") => {
-    if (!studyId) return;
-    setValidationStatus(`Running ${mode} validation...`);
-    try {
-      const res = await createValidationReport(studyId, mode);
-      // Poll until done
-      const poll = setInterval(async () => {
-        const report = await getValidationReport(studyId, res.report_id);
-        if (report.status === "completed") {
-          clearInterval(poll);
-          setValidationStatus(null);
-          // Open the validation dashboard in a new tab
-          window.open("http://localhost:5173", "_blank");
-        } else if (report.status === "failed") {
-          clearInterval(poll);
-          setValidationStatus("Validation failed. Check server logs.");
-        } else {
-          setValidationStatus(`Validation running... (${report.status})`);
-        }
-      }, 2000);
-    } catch (e) {
-      setValidationStatus(`Error: ${(e as Error).message}`);
-    }
-  };
-
   return (
     <div className="space-y-6">
       {/* Tab bar */}
@@ -171,50 +142,6 @@ export default function SimulationView() {
               View Results
             </Link>
           </div>
-        </div>
-      )}
-
-      {/* Validation Dashboard — only for the Dove study (has real participant
-          data). Also hide on public demo studies since the visitor can't
-          trigger a new report (require_study_owner blocks public studies) and
-          the buttons would just show "Missing or invalid authorization". */}
-      {completedResults.length > 0 &&
-        study?.brand_name?.toLowerCase() === "dove" &&
-        !study?.is_public && (
-        <div className="rounded-lg border border-cyan-800/50 bg-cyan-950/20 p-5">
-          <div className="flex items-center justify-between">
-            <div>
-              <h3 className="text-lg font-semibold text-white">
-                Validation Dashboard
-              </h3>
-              <p className="text-sm text-gray-400 mt-1">
-                Compare twin vs. real participant data with radar charts, heatmaps,
-                tier analysis, TURF, and individual twin accuracy.
-              </p>
-            </div>
-            <div className="flex items-center gap-3 shrink-0 ml-6">
-              <button
-                onClick={() => handleOpenDashboard("synthesis")}
-                disabled={!!validationStatus}
-                className="rounded-md bg-darpan-lime px-5 py-2.5 text-sm font-semibold text-black hover:bg-lime-400 transition disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                Synthesis Report
-              </button>
-              <button
-                onClick={() => handleOpenDashboard("comparison")}
-                disabled={!!validationStatus}
-                className="rounded-md bg-cyan-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-cyan-500 transition disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                Comparison (Real vs Twin)
-              </button>
-            </div>
-          </div>
-          {validationStatus && (
-            <div className="mt-3 flex items-center gap-2 text-sm text-yellow-400">
-              <span className="inline-block w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />
-              {validationStatus}
-            </div>
-          )}
         </div>
       )}
 
