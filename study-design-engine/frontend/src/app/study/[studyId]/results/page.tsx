@@ -362,10 +362,10 @@ export default function ResultsDashboardPage() {
             </div>
             {showValidationButton && (
               <a
-                href={validationUrl}
+                href={validationUrl!}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-md bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition shrink-0"
+                className="flex items-center gap-2 rounded-md bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition-colors shrink-0"
               >
                 <BarChart3 className="w-4 h-4" />
                 View Validation Dashboard
