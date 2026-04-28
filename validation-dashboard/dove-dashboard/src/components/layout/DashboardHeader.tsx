@@ -2,7 +2,6 @@ import type { DashboardData, DashboardTab } from '../../types';
 
 interface Props {
   data: DashboardData;
-  extData?: DashboardData;
   activeTab: DashboardTab;
   onTabChange: (tab: DashboardTab) => void;
 }
@@ -10,14 +9,9 @@ interface Props {
 const TABS: { value: DashboardTab; label: string }[] = [
   { value: 'aggregate', label: 'Aggregate' },
   { value: 'individual', label: 'Individual' },
-  { value: 'extended-aggregate', label: 'Extended Aggregate' },
-  { value: 'extended-validation', label: 'Extended Validation' },
 ];
 
-export function DashboardHeader({ data, extData, activeTab, onTabChange }: Props) {
-  const isExtended = activeTab === 'extended-aggregate' || activeTab === 'extended-validation';
-  const displayData = isExtended && extData ? extData : data;
-
+export function DashboardHeader({ data, activeTab, onTabChange }: Props) {
   return (
     <header className="sticky top-0 z-40 h-12 flex items-center justify-between px-6 bg-darpan-bg/80 backdrop-blur-md border-b border-darpan-border">
       <div className="flex items-center gap-2 text-sm">
@@ -50,13 +44,13 @@ export function DashboardHeader({ data, extData, activeTab, onTabChange }: Props
 
         <div className="flex items-center gap-1.5">
           <span className="px-2 py-0.5 text-[10px] font-mono bg-white/[0.03] text-white/50 rounded border border-darpan-border tabular-nums">
-            n={displayData.metadata.real_n} real
+            n={data.metadata.real_n} real
           </span>
           <span className="px-2 py-0.5 text-[10px] font-mono bg-white/[0.03] text-white/50 rounded border border-darpan-border tabular-nums">
-            n={displayData.metadata.twin_n} twin{isExtended ? ' (5×17)' : ''}
+            n={data.metadata.twin_n} twin
           </span>
           <span className="px-2 py-0.5 text-[10px] font-mono bg-white/[0.03] text-white/50 rounded border border-darpan-border tabular-nums">
-            {displayData.metadata.concepts_tested} Concepts
+            {data.metadata.concepts_tested} Concepts
           </span>
         </div>
       </div>

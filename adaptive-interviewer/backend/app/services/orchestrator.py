@@ -298,12 +298,16 @@ class Orchestrator:
             effective_item = item
             if resolved_prompt and resolved_prompt != item.prompt:
                 effective_item = _clone_item_with_prompt(item, resolved_prompt)
+            # Look ahead to the next item so the LLM can weave its
+            # question into the turn when it decides to advance.
+            next_item_prompt = self._peek_next_item_prompt(cursor, archetype)
             ctx = TurnContext(
                 item=effective_item,
                 history=history,
                 probe_index=cursor.probe_index,
                 phase_transition_text=transition_text,
                 archetype=archetype,
+                next_item_prompt=next_item_prompt,
             )
             decision = await self.interviewer.decide(ctx, user_answer)
             body = decision.message
@@ -315,6 +319,45 @@ class Orchestrator:
 
         if prepend_text:
             body = f"{prepend_text}\n\n{body}"
+
+        # Persist observed signals into session.settings for the
+        # classifier to read later without re-walking every turn.
+        if observed or reclassify:
+            settings_blob = dict(session.settings or {})
+            sig = list(settings_blob.get("signals", []))
+            sig.extend(observed or [])
+            settings_blob["signals"] = sig
+            if reclassify:
+                settings_blob.setdefault("reclassify_hints", []).append(reclassify)
+            session.settings = settings_blob
+
+        # --- Advance path for open items ---
+        # When the LLM advances on an open item, its message usually
+        # contains the next item's woven question. We persist TWO
+        # rows: (1) a marker row closing out the CURRENT item, and
+        # (2) the real user-visible message attributed to the NEXT
+        # item's module_code so the respondent's subsequent answer
+        # is labelled correctly.
+        if advance and item.kind not in STRUCTURED_KINDS:
+            idx = await next_turn_index(self.db, session.id)
+            await record_interviewer_turn(
+                self.db,
+                session_id=session.id,
+                module_code=item.module_code,
+                turn_index=idx,
+                question_text="[advanced]",
+                phase_id=item.phase,
+                probe_index=cursor.probe_index,
+                item_satisfied=True,
+                widget=None,
+                extra_meta={
+                    "observed_signals": observed,
+                    "reclassify_signal": reclassify,
+                    "advance_marker": True,
+                    "woven_message_body": body,
+                },
+            )
+            return await self._attach_message_to_next_item(session=session, body=body)
 
         idx = await next_turn_index(self.db, session.id)
         await record_interviewer_turn(
@@ -334,20 +377,6 @@ class Orchestrator:
             },
         )
 
-        decision_observed = observed
-        decision_reclassify = reclassify
-
-        # Persist observed signals into session.settings for the
-        # classifier to read later without re-walking every turn.
-        if decision_observed or decision_reclassify:
-            settings_blob = dict(session.settings or {})
-            sig = list(settings_blob.get("signals", []))
-            sig.extend(decision_observed or [])
-            settings_blob["signals"] = sig
-            if decision_reclassify:
-                settings_blob.setdefault("reclassify_hints", []).append(decision_reclassify)
-            session.settings = settings_blob
-
         progress_label = self._progress_label(records, archetype)
 
         return InterviewerMessage(
@@ -363,22 +392,99 @@ class Orchestrator:
     async def _ensure_user(self, user_id: UUID) -> None:
         """Insert a minimal users row if one doesn't exist for this id.
 
-        The adaptive-interviewer has no auth of its own — the frontend
-        generates an anonymous UUID per browser and reuses it. We
-        upsert a stub user row so the interview_sessions FK resolves.
+        SELECT-then-INSERT (instead of UPSERT) because the users table
+        has two independent unique constraints (id pkey + email) and
+        a single `ON CONFLICT` target doesn't catch both.
         """
         from sqlalchemy import text
+        existing = await self.db.execute(
+            text("SELECT 1 FROM users WHERE id = :id"),
+            {"id": str(user_id)},
+        )
+        if existing.scalar():
+            return
         await self.db.execute(
             text(
                 "INSERT INTO users (id, email, display_name, profile_completed, is_admin) "
-                "VALUES (:id, :email, :name, false, false) "
-                "ON CONFLICT (id) DO NOTHING"
+                "VALUES (:id, :email, :name, false, false)"
             ),
             {
                 "id": str(user_id),
                 "email": f"anon-{user_id}@adaptive.local",
                 "name": "Adaptive respondent",
             },
+        )
+
+    async def _attach_message_to_next_item(
+        self,
+        session: InterviewSession,
+        body: str,
+    ) -> InterviewerMessage:
+        """After marking the current item satisfied, persist the
+        LLM's woven message under the NEXT item's module_code at
+        probe_index=0. This keeps subsequent user answers attributed
+        to the correct item.
+
+        Safety nets:
+          - If the next slot is phase 2 (classifier), hand off there.
+          - If terminal, emit terminal close.
+          - If the body lacks a question mark (LLM emitted a pure
+            ack), drop it and call the standard initial-ask path so
+            the LLM asks the next item properly.
+          - If next item is structured, ignore the LLM's weave and
+            deliver the item's fixed prompt + widget.
+        """
+        archetype: Optional[Archetype] = (session.settings or {}).get("archetype")
+        turns = await load_turns(self.db, session.id)
+        records = to_records(turns)
+        cursor = compute_cursor(records, archetype)
+
+        if cursor.phase_id == "phase2":
+            from app.services.classifier import run_phase2
+            return await run_phase2(db=self.db, session=session, records=records)
+        if cursor.is_terminal:
+            return await self._emit_terminal_message(session)
+
+        next_item = cursor.item
+        assert next_item is not None
+
+        # Structured items never accept a weaved ack — deliver the
+        # fixed prompt + widget as usual.
+        if next_item.kind in STRUCTURED_KINDS:
+            return await self._emit_next_interviewer_turn(session=session)
+
+        # If the LLM didn't actually include a question, fall back
+        # to the standard initial-ask path.
+        if "?" not in body or not body.strip():
+            return await self._emit_next_interviewer_turn(session=session)
+
+        resolved_prompt = resolve_item_prompt(next_item, archetype=archetype)
+        resolved_widget = resolve_widget(next_item.widget, session.id, archetype)
+
+        idx = await next_turn_index(self.db, session.id)
+        await record_interviewer_turn(
+            self.db,
+            session_id=session.id,
+            module_code=next_item.module_code,
+            turn_index=idx,
+            question_text=body,
+            phase_id=next_item.phase,
+            probe_index=0,
+            item_satisfied=False,
+            widget=resolved_widget,
+            extra_meta={
+                "advance_weave": True,
+                "resolved_prompt": resolved_prompt,
+            },
+        )
+        return InterviewerMessage(
+            phase=next_item.phase,
+            block=next_item.block,
+            item_id=next_item.id,
+            text=body,
+            widget=resolved_widget,
+            progress_label=self._progress_label(records, archetype),
+            is_terminal=False,
         )
 
     async def _maybe_reclassify(self, session: InterviewSession) -> None:
@@ -408,6 +514,36 @@ class Orchestrator:
             ),
             is_terminal=True,
         )
+
+    @staticmethod
+    def _message_looks_like_question(msg: str) -> bool:
+        """Heuristic — does this interviewer message end with an
+        actual question? Used as a safety net against the LLM
+        emitting a pure ack when it should chain to the next item."""
+        if not msg or not msg.strip():
+            return False
+        return "?" in msg
+
+    @staticmethod
+    def _peek_next_item_prompt(cursor, archetype: Optional[Archetype]) -> Optional[str]:
+        """Return the base prompt of the item after the cursor's
+        current item (skipping structured items — their setup is
+        fixed and delivered by the state machine, not woven into the
+        previous advance turn)."""
+        if cursor.item is None:
+            return None
+        items = flatten_items(archetype)
+        idx = next(
+            (i for i, item in enumerate(items)
+             if item.module_code == cursor.item.module_code),
+            None,
+        )
+        if idx is None or idx + 1 >= len(items):
+            return None
+        nxt = items[idx + 1]
+        if nxt.kind in STRUCTURED_KINDS:
+            return None
+        return nxt.prompt
 
     @staticmethod
     def _chat_history_from_turns(turns) -> list[dict[str, str]]:

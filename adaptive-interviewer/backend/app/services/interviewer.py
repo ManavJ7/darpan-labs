@@ -58,6 +58,7 @@ class TurnContext:
     phase_transition_text: Optional[str] = None  # e.g. "great, now onto..." handoff
     archetype: Optional[str] = None   # current archetype (null in phase 1/2)
     is_last_item_in_phase: bool = False
+    next_item_prompt: Optional[str] = None   # the question to ask next if advance=true
 
 
 def _user_message(ctx: TurnContext, user_answer: Optional[str]) -> str:
@@ -77,6 +78,17 @@ def _user_message(ctx: TurnContext, user_answer: Optional[str]) -> str:
                      f"{ctx.phase_transition_text!r}")
     if user_answer is not None:
         parts.append(f"RESPONDENT JUST SAID:\n{user_answer!r}")
+        if ctx.next_item_prompt:
+            parts.append(
+                "IF YOU ADVANCE (advance=true), the `message` MUST include "
+                "the next question, weaving in at most a short "
+                "acknowledgement. NEVER end your turn with a pure ack "
+                "like 'Thanks — that gives me the picture.' — the "
+                "respondent will sit staring at their screen with "
+                "nothing to answer.\n"
+                f"NEXT ITEM BASE PROMPT (rephrase in your voice): "
+                f"{ctx.next_item_prompt!r}"
+            )
         parts.append("DECIDE: probe again or advance? Respond with JSON only.")
     else:
         parts.append(

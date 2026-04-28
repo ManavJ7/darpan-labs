@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import Optional
 
 from pydantic import BaseModel, Field
+from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import settings as app_settings
@@ -80,9 +81,11 @@ async def _persist_classification(
     result: ClassifierResult,
     trigger: str,
 ) -> AdaptiveClassification:
-    sequence_index = 0
-    if session.classifications:
-        sequence_index = len(session.classifications)
+    count_res = await db.execute(
+        select(func.count(AdaptiveClassification.id))
+        .where(AdaptiveClassification.session_id == session.id)
+    )
+    sequence_index = int(count_res.scalar() or 0)
     row = AdaptiveClassification(
         session_id=session.id,
         sequence_index=sequence_index,
@@ -234,10 +237,12 @@ async def trigger_reclassification(
     Respects `adaptive_max_reclassifications`.
     """
     current_archetype: Optional[Archetype] = (session.settings or {}).get("archetype")
-    reclassifications_done = sum(
-        1 for c in (session.classifications or [])
-        if c.trigger == "reclassify"
+    recls_res = await db.execute(
+        select(func.count(AdaptiveClassification.id))
+        .where(AdaptiveClassification.session_id == session.id)
+        .where(AdaptiveClassification.trigger == "reclassify")
     )
+    reclassifications_done = int(recls_res.scalar() or 0)
     if reclassifications_done >= app_settings.adaptive_max_reclassifications:
         return None
 

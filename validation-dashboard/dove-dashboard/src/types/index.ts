@@ -131,4 +131,4 @@ export interface DashboardData {
 
 export type DataSource = "real" | "twin" | "both";
 
-export type DashboardTab = "aggregate" | "individual" | "extended-aggregate" | "extended-validation";
+export type DashboardTab = "aggregate" | "individual";
