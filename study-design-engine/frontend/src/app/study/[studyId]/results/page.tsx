@@ -13,6 +13,7 @@ import { Recommendation } from "@/components/results/Recommendation";
 import { QualitativeSummary } from "@/components/results/QualitativeSummary";
 import { TerritoryScorecard } from "@/components/results/TerritoryScorecard";
 import { CompareDecide } from "@/components/results/CompareDecide";
+import { ValidationDashboardModal } from "@/components/results/ValidationDashboardModal";
 import { useAuthStore } from "@/store/authStore";
 import {
   getStudy,
@@ -301,6 +302,8 @@ export default function ResultsDashboardPage() {
     !!validationUrl &&
     study?.brand_name?.toLowerCase() === "dove";
 
+  const [showValidation, setShowValidation] = useState(false);
+
   return (
     <div className="min-h-screen flex">
       <Sidebar activePage="Studies" />
@@ -361,15 +364,14 @@ export default function ResultsDashboardPage() {
               </p>
             </div>
             {showValidationButton && (
-              <a
-                href={validationUrl!}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={() => setShowValidation(true)}
                 className="flex items-center gap-2 rounded-md bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition-colors shrink-0"
               >
                 <BarChart3 className="w-4 h-4" />
                 View Validation Dashboard
-              </a>
+              </button>
             )}
           </div>
 
@@ -531,6 +533,12 @@ export default function ResultsDashboardPage() {
           )}
         </main>
       </div>
+
+      <ValidationDashboardModal
+        open={showValidation}
+        onClose={() => setShowValidation(false)}
+        url={validationUrl ?? ""}
+      />
     </div>
   );
 }
