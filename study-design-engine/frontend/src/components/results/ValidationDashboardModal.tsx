@@ -47,9 +47,6 @@ export function ValidationDashboardModal({ open, onClose, url }: Props) {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.15 }}
           className="fixed inset-0 z-50 flex items-center justify-center"
-          aria-modal="true"
-          role="dialog"
-          aria-label="Validation Dashboard"
         >
           {/* Backdrop */}
           <div
@@ -64,10 +61,16 @@ export function ValidationDashboardModal({ open, onClose, url }: Props) {
             exit={{ scale: 0.98, opacity: 0 }}
             transition={{ duration: 0.15 }}
             className="relative w-[95vw] h-[95vh] bg-darpan-surface border border-darpan-border rounded-xl overflow-hidden flex flex-col"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="validation-dashboard-title"
           >
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-2.5 border-b border-darpan-border shrink-0">
-              <h2 className="text-sm font-semibold text-white">
+              <h2
+                id="validation-dashboard-title"
+                className="text-sm font-semibold text-white"
+              >
                 Validation Dashboard
               </h2>
               <div className="flex items-center gap-2">

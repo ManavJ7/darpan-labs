@@ -65,6 +65,9 @@ export default function ResultsDashboardPage() {
   // Concepts to select — set by user in the wizard, stored in localStorage
   const [numToSelect, setNumToSelect] = useState<number>(1);
 
+  // Validation dashboard modal visibility
+  const [showValidation, setShowValidation] = useState(false);
+
   // ─── Data fetching ───────────────────────────────────
   useEffect(() => {
     async function load() {
@@ -301,8 +304,6 @@ export default function ResultsDashboardPage() {
     hasResults &&
     !!validationUrl &&
     study?.brand_name?.toLowerCase() === "dove";
-
-  const [showValidation, setShowValidation] = useState(false);
 
   return (
     <div className="min-h-screen flex">
