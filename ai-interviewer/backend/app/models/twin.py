@@ -294,40 +294,6 @@ class PipelineStepOutput(Base):
         return f"<PipelineStepOutput(id={self.id}, step={self.step_name}, participant={self.participant_id})>"
 
 
-class ValidationReport(Base):
-    """Validation report comparing twin simulation results (optionally vs real responses)."""
-
-    __tablename__ = "validation_reports"
-
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4,
-    )
-    study_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), nullable=False, index=True,
-    )
-    job_id: Mapped[uuid.UUID | None] = mapped_column(
-        UUID(as_uuid=True),
-        ForeignKey("pipeline_jobs.id", ondelete="SET NULL"),
-        nullable=True,
-    )
-    mode: Mapped[str] = mapped_column(String(20), nullable=False)  # comparison, synthesis
-    status: Mapped[str] = mapped_column(
-        String(20), nullable=False, default="pending", server_default="pending",
-    )
-    twin_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
-    real_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
-    report_data: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
-    created_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), server_default=func.now(), nullable=False,
-    )
-    completed_at: Mapped[datetime | None] = mapped_column(
-        DateTime(timezone=True), nullable=True,
-    )
-
-    def __repr__(self) -> str:
-        return f"<ValidationReport(id={self.id}, mode={self.mode}, status={self.status})>"
-
-
 class SimulationRun(Base):
     """Step 5 simulation execution and results."""
 
